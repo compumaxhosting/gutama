@@ -12,7 +12,6 @@ import {
   Layers,
   PanelTop,
   Square,
-  Triangle,
 } from "lucide-react";
 
 import { SectionHeading } from "@/components/Home/section-heading";
@@ -35,9 +34,8 @@ export function ServicesSection({
   id = "services",
   showHeading = true,
   eyebrow = "What We Do",
-  title = "Our Services",
-  description = "Comprehensive roofing and exterior solutions tailored to your needs.",
-  ctaLabel = "Learn More",
+  
+ 
   descriptionClampClassName = "line-clamp-2",
   cardClassName = "",
 }: ServicesSectionProps = {}) {
@@ -46,18 +44,31 @@ export function ServicesSection({
       <Container>
         {showHeading ? (
           <Reveal>
-            <SectionHeading eyebrow={eyebrow} title={title} description={description} />
+            <SectionHeading
+              eyebrow={eyebrow}
+              title="Roofing & Exterior Services in Essex County NJ"
+              description="We provide roof repair, roof replacement, siding, chimney, and exterior services for residential and commercial properties across Essex County, NJ."
+            />
           </Reveal>
         ) : null}
 
-        <StaggerGroup className={`${showHeading ? "mt-12" : ""} grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4`.trim()} delay={0.08}>
+        <StaggerGroup
+          className={`${showHeading ? "mt-12" : ""} grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4`.trim()}
+          delay={0.08}
+        >
           <StaggerItem>
-            <Link href="/services/roof-removal" className={`group block ${cardClassName ? "h-full" : ""}`.trim()}>
-              <article className={`glass-card overflow-hidden border transition-all duration-500 hover:-translate-y-2 hover:border-primary/40 hover:shadow-luxury ${cardClassName}`.trim()}>
+            <Link
+              href="/services/roof-removal"
+              className={`group block ${cardClassName ? "h-full" : ""}`.trim()}
+              aria-label="Roof removal service in Essex County NJ"
+            >
+              <article
+                className={`glass-card overflow-hidden border transition-all duration-500 hover:-translate-y-2 hover:border-primary/40 hover:shadow-luxury ${cardClassName}`.trim()}
+              >
                 <div className="relative h-44 overflow-hidden">
                   <Image
                     src="/images/service-roof-removal.jpg"
-                    alt="Roof Removal"
+                    alt="Roof removal and tear-off service in Essex County NJ by professional roofing contractor"
                     fill
                     quality={60}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
@@ -68,13 +79,24 @@ export function ServicesSection({
                     <Layers className="h-5 w-5 text-primary-foreground" />
                   </div>
                 </div>
+
                 <div className="p-5">
-                  <h3 className="font-serif text-lg font-semibold text-foreground">Roof Removal</h3>
-                  <p className={`mt-2 text-sm leading-relaxed text-muted-foreground ${descriptionClampClassName}`.trim()}>
-                    Complete tear-off and removal of old roofing materials with expert precision and thorough cleanup.
+                  {/* ✅ SEO-OPTIMIZED TITLE */}
+                  <h3 className="font-serif text-lg font-semibold text-foreground">
+                    Roof Removal & Tear-Off
+                  </h3>
+
+                  {/* ✅ CLEAN + KEYWORD SUPPORT */}
+                  <p
+                    className={`mt-2 text-sm leading-relaxed text-muted-foreground ${descriptionClampClassName}`.trim()}
+                  >
+                    Professional roof removal services in Essex County NJ with
+                    safe tear-off and complete cleanup.
                   </p>
+
+                  {/* ✅ BETTER CTA */}
                   <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary transition-all group-hover:gap-2">
-                    {ctaLabel}
+                    Learn More About Roof Removal
                     <ArrowRight className="h-4 w-4" />
                   </span>
                 </div>
@@ -83,12 +105,18 @@ export function ServicesSection({
           </StaggerItem>
 
           <StaggerItem>
-            <Link href="/services/re-roofing" className={`group block ${cardClassName ? "h-full" : ""}`.trim()}>
-              <article className={`glass-card overflow-hidden border transition-all duration-500 hover:-translate-y-2 hover:border-primary/40 hover:shadow-luxury ${cardClassName}`.trim()}>
+            <Link
+              href="/services/re-roofing"
+              className={`group block ${cardClassName ? "h-full" : ""}`.trim()}
+              aria-label="Roof replacement service Essex County NJ"
+            >
+              <article
+                className={`glass-card overflow-hidden border transition-all duration-500 hover:-translate-y-2 hover:border-primary/40 hover:shadow-luxury ${cardClassName}`.trim()}
+              >
                 <div className="relative h-44 overflow-hidden">
                   <Image
                     src="/images/service-re-roofing.jpg"
-                    alt="Re-Roofing"
+                    alt="Roof replacement in Essex County NJ"
                     fill
                     quality={60}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
@@ -99,13 +127,24 @@ export function ServicesSection({
                     <Home className="h-5 w-5 text-primary-foreground" />
                   </div>
                 </div>
+
                 <div className="p-5">
-                  <h3 className="font-serif text-lg font-semibold text-foreground">Re-Roofing</h3>
-                  <p className={`mt-2 text-sm leading-relaxed text-muted-foreground ${descriptionClampClassName}`.trim()}>
-                    Premium re-roofing services using top-quality materials for lasting protection and curb appeal.
+                  {/* ✅ SAME SIZE TITLE */}
+                  <h3 className="font-serif text-lg font-semibold text-foreground">
+                    Roof Replacement
+                  </h3>
+
+                  {/* ✅ SAME LENGTH DESCRIPTION */}
+                  <p
+                    className={`mt-2 text-sm leading-relaxed text-muted-foreground ${descriptionClampClassName}`.trim()}
+                  >
+                    Professional roof replacement in Essex County NJ with
+                    durable materials and clean installation.
                   </p>
+
+                  {/* ✅ SAME CTA SIZE */}
                   <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary transition-all group-hover:gap-2">
-                    {ctaLabel}
+                    Learn More
                     <ArrowRight className="h-4 w-4" />
                   </span>
                 </div>
@@ -114,12 +153,18 @@ export function ServicesSection({
           </StaggerItem>
 
           <StaggerItem>
-            <Link href="/services/flat-roof" className={`group block ${cardClassName ? "h-full" : ""}`.trim()}>
-              <article className={`glass-card overflow-hidden border transition-all duration-500 hover:-translate-y-2 hover:border-primary/40 hover:shadow-luxury ${cardClassName}`.trim()}>
+            <Link
+              href="/services/flat-roof"
+              className={`group block ${cardClassName ? "h-full" : ""}`.trim()}
+              aria-label="Flat roofing service Essex County NJ"
+            >
+              <article
+                className={`glass-card overflow-hidden border transition-all duration-500 hover:-translate-y-2 hover:border-primary/40 hover:shadow-luxury ${cardClassName}`.trim()}
+              >
                 <div className="relative h-44 overflow-hidden">
                   <Image
                     src="/images/service-flat-roof.jpg"
-                    alt="Flat Roof"
+                    alt="Flat roofing service in Essex County NJ"
                     fill
                     quality={60}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
@@ -130,27 +175,43 @@ export function ServicesSection({
                     <Square className="h-5 w-5 text-primary-foreground" />
                   </div>
                 </div>
+
                 <div className="p-5">
-                  <h3 className="font-serif text-lg font-semibold text-foreground">Flat Roof</h3>
-                  <p className={`mt-2 text-sm leading-relaxed text-muted-foreground ${descriptionClampClassName}`.trim()}>
-                    Specialized flat roofing systems including TPO, EPDM, and modified bitumen for commercial and residential.
+                  {/* ✅ SAME SIZE TITLE */}
+                  <h3 className="font-serif text-lg font-semibold text-foreground">
+                    Flat Roofing
+                  </h3>
+
+                  {/* ✅ SAME LENGTH DESCRIPTION */}
+                  <p
+                    className={`mt-2 text-sm leading-relaxed text-muted-foreground ${descriptionClampClassName}`.trim()}
+                  >
+                    Flat roofing in Essex County NJ using TPO, EPDM, and durable
+                    materials for long-lasting performance.
                   </p>
+
+                  {/* ✅ SAME CTA */}
                   <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary transition-all group-hover:gap-2">
-                    {ctaLabel}
+                    Learn More
                     <ArrowRight className="h-4 w-4" />
                   </span>
                 </div>
               </article>
             </Link>
           </StaggerItem>
-
           <StaggerItem>
-            <Link href="/services/slate-roof" className={`group block ${cardClassName ? "h-full" : ""}`.trim()}>
-              <article className={`glass-card overflow-hidden border transition-all duration-500 hover:-translate-y-2 hover:border-primary/40 hover:shadow-luxury ${cardClassName}`.trim()}>
+            <Link
+              href="/services/slate-roof"
+              className={`group block ${cardClassName ? "h-full" : ""}`.trim()}
+              aria-label="Slate roofing service Essex County NJ"
+            >
+              <article
+                className={`glass-card overflow-hidden border transition-all duration-500 hover:-translate-y-2 hover:border-primary/40 hover:shadow-luxury ${cardClassName}`.trim()}
+              >
                 <div className="relative h-44 overflow-hidden">
                   <Image
                     src="/images/service-slate-roof.jpg"
-                    alt="Slate Roof"
+                    alt="Slate roofing service in Essex County NJ"
                     fill
                     quality={60}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
@@ -161,13 +222,24 @@ export function ServicesSection({
                     <Diamond className="h-5 w-5 text-primary-foreground" />
                   </div>
                 </div>
+
                 <div className="p-5">
-                  <h3 className="font-serif text-lg font-semibold text-foreground">Slate Roof</h3>
-                  <p className={`mt-2 text-sm leading-relaxed text-muted-foreground ${descriptionClampClassName}`.trim()}>
-                    Beautiful, timeless slate roofing installation and repair by experienced craftsmen.
+                  {/* ✅ SAME SIZE TITLE */}
+                  <h3 className="font-serif text-lg font-semibold text-foreground">
+                    Slate Roofing
+                  </h3>
+
+                  {/* ✅ SAME LENGTH DESCRIPTION */}
+                  <p
+                    className={`mt-2 text-sm leading-relaxed text-muted-foreground ${descriptionClampClassName}`.trim()}
+                  >
+                    Slate roofing in Essex County NJ with durable materials and
+                    expert installation for long-lasting results.
                   </p>
+
+                  {/* ✅ SAME CTA */}
                   <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary transition-all group-hover:gap-2">
-                    {ctaLabel}
+                    Learn More
                     <ArrowRight className="h-4 w-4" />
                   </span>
                 </div>
@@ -176,12 +248,18 @@ export function ServicesSection({
           </StaggerItem>
 
           <StaggerItem>
-            <Link href="/services/chimney" className={`group block ${cardClassName ? "h-full" : ""}`.trim()}>
-              <article className={`glass-card overflow-hidden border transition-all duration-500 hover:-translate-y-2 hover:border-primary/40 hover:shadow-luxury ${cardClassName}`.trim()}>
+            <Link
+              href="/services/chimney"
+              className={`group block ${cardClassName ? "h-full" : ""}`.trim()}
+              aria-label="Chimney repair service Essex County NJ"
+            >
+              <article
+                className={`glass-card overflow-hidden border transition-all duration-500 hover:-translate-y-2 hover:border-primary/40 hover:shadow-luxury ${cardClassName}`.trim()}
+              >
                 <div className="relative h-44 overflow-hidden">
                   <Image
                     src="/images/service-chimney.jpg"
-                    alt="Chimney"
+                    alt="Chimney repair in Essex County NJ"
                     fill
                     quality={60}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
@@ -192,13 +270,24 @@ export function ServicesSection({
                     <Flame className="h-5 w-5 text-primary-foreground" />
                   </div>
                 </div>
+
                 <div className="p-5">
-                  <h3 className="font-serif text-lg font-semibold text-foreground">Chimney</h3>
-                  <p className={`mt-2 text-sm leading-relaxed text-muted-foreground ${descriptionClampClassName}`.trim()}>
-                    Complete chimney repair, rebuilding, flashing, and waterproofing services.
+                  {/* ✅ SAME SIZE TITLE */}
+                  <h3 className="font-serif text-lg font-semibold text-foreground">
+                    Chimney Repair
+                  </h3>
+
+                  {/* ✅ SAME LENGTH DESCRIPTION */}
+                  <p
+                    className={`mt-2 text-sm leading-relaxed text-muted-foreground ${descriptionClampClassName}`.trim()}
+                  >
+                    Chimney repair in Essex County NJ including flashing,
+                    sealing, and waterproof protection for lasting safety.
                   </p>
+
+                  {/* ✅ SAME CTA */}
                   <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary transition-all group-hover:gap-2">
-                    {ctaLabel}
+                    Learn More
                     <ArrowRight className="h-4 w-4" />
                   </span>
                 </div>
@@ -207,12 +296,18 @@ export function ServicesSection({
           </StaggerItem>
 
           <StaggerItem>
-            <Link href="/services/siding" className={`group block ${cardClassName ? "h-full" : ""}`.trim()}>
-              <article className={`glass-card overflow-hidden border transition-all duration-500 hover:-translate-y-2 hover:border-primary/40 hover:shadow-luxury ${cardClassName}`.trim()}>
+            <Link
+              href="/services/siding"
+              className={`group block ${cardClassName ? "h-full" : ""}`.trim()}
+              aria-label="Siding installation service Essex County NJ"
+            >
+              <article
+                className={`glass-card overflow-hidden border transition-all duration-500 hover:-translate-y-2 hover:border-primary/40 hover:shadow-luxury ${cardClassName}`.trim()}
+              >
                 <div className="relative h-44 overflow-hidden">
                   <Image
                     src="/images/service-siding.jpg"
-                    alt="Siding"
+                    alt="Siding installation in Essex County NJ"
                     fill
                     quality={60}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
@@ -223,13 +318,24 @@ export function ServicesSection({
                     <PanelTop className="h-5 w-5 text-primary-foreground" />
                   </div>
                 </div>
+
                 <div className="p-5">
-                  <h3 className="font-serif text-lg font-semibold text-foreground">Siding</h3>
-                  <p className={`mt-2 text-sm leading-relaxed text-muted-foreground ${descriptionClampClassName}`.trim()}>
-                    Transform your home&apos;s exterior with premium vinyl, fiber cement, or wood siding installation.
+                  {/* ✅ SAME SIZE TITLE */}
+                  <h3 className="font-serif text-lg font-semibold text-foreground">
+                    Siding Installation
+                  </h3>
+
+                  {/* ✅ SAME LENGTH DESCRIPTION */}
+                  <p
+                    className={`mt-2 text-sm leading-relaxed text-muted-foreground ${descriptionClampClassName}`.trim()}
+                  >
+                    Siding installation in Essex County NJ using vinyl, fiber
+                    cement, and durable exterior materials.
                   </p>
+
+                  {/* ✅ SAME CTA */}
                   <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary transition-all group-hover:gap-2">
-                    {ctaLabel}
+                    Learn More
                     <ArrowRight className="h-4 w-4" />
                   </span>
                 </div>
@@ -238,12 +344,18 @@ export function ServicesSection({
           </StaggerItem>
 
           <StaggerItem>
-            <Link href="/services/carpentry" className={`group block ${cardClassName ? "h-full" : ""}`.trim()}>
-              <article className={`glass-card overflow-hidden border transition-all duration-500 hover:-translate-y-2 hover:border-primary/40 hover:shadow-luxury ${cardClassName}`.trim()}>
+            <Link
+              href="/services/carpentry"
+              className={`group block ${cardClassName ? "h-full" : ""}`.trim()}
+              aria-label="Exterior carpentry service Essex County NJ"
+            >
+              <article
+                className={`glass-card overflow-hidden border transition-all duration-500 hover:-translate-y-2 hover:border-primary/40 hover:shadow-luxury ${cardClassName}`.trim()}
+              >
                 <div className="relative h-44 overflow-hidden">
                   <Image
                     src="/images/service-carpentry.jpg"
-                    alt="Carpentry"
+                    alt="Exterior carpentry service in Essex County NJ"
                     fill
                     quality={60}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
@@ -254,13 +366,24 @@ export function ServicesSection({
                     <Hammer className="h-5 w-5 text-primary-foreground" />
                   </div>
                 </div>
+
                 <div className="p-5">
-                  <h3 className="font-serif text-lg font-semibold text-foreground">Carpentry</h3>
-                  <p className={`mt-2 text-sm leading-relaxed text-muted-foreground ${descriptionClampClassName}`.trim()}>
-                    Skilled structural and finish carpentry for repairs, renovations, and custom projects.
+                  {/* ✅ SAME SIZE TITLE */}
+                  <h3 className="font-serif text-lg font-semibold text-foreground">
+                    Exterior Carpentry
+                  </h3>
+
+                  {/* ✅ SAME LENGTH DESCRIPTION */}
+                  <p
+                    className={`mt-2 text-sm leading-relaxed text-muted-foreground ${descriptionClampClassName}`.trim()}
+                  >
+                    Exterior carpentry in Essex County NJ for repairs,
+                    renovations, and durable custom woodwork projects.
                   </p>
+
+                  {/* ✅ SAME CTA */}
                   <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary transition-all group-hover:gap-2">
-                    {ctaLabel}
+                    Learn More
                     <ArrowRight className="h-4 w-4" />
                   </span>
                 </div>
@@ -269,12 +392,18 @@ export function ServicesSection({
           </StaggerItem>
 
           <StaggerItem>
-            <Link href="/services/additions" className={`group block ${cardClassName ? "h-full" : ""}`.trim()}>
-              <article className={`glass-card overflow-hidden border transition-all duration-500 hover:-translate-y-2 hover:border-primary/40 hover:shadow-luxury ${cardClassName}`.trim()}>
+            <Link
+              href="/services/additions"
+              className={`group block ${cardClassName ? "h-full" : ""}`.trim()}
+              aria-label="Home additions service Essex County NJ"
+            >
+              <article
+                className={`glass-card overflow-hidden border transition-all duration-500 hover:-translate-y-2 hover:border-primary/40 hover:shadow-luxury ${cardClassName}`.trim()}
+              >
                 <div className="relative h-44 overflow-hidden">
                   <Image
                     src="/images/service-additions.jpg"
-                    alt="Additions"
+                    alt="Home additions in Essex County NJ"
                     fill
                     quality={60}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
@@ -285,13 +414,24 @@ export function ServicesSection({
                     <Building2 className="h-5 w-5 text-primary-foreground" />
                   </div>
                 </div>
+
                 <div className="p-5">
-                  <h3 className="font-serif text-lg font-semibold text-foreground">Additions</h3>
-                  <p className={`mt-2 text-sm leading-relaxed text-muted-foreground ${descriptionClampClassName}`.trim()}>
-                    Expand your living space with expertly built home additions that blend seamlessly with your existing home.
+                  {/* ✅ SAME SIZE TITLE */}
+                  <h3 className="font-serif text-lg font-semibold text-foreground">
+                    Home Additions
+                  </h3>
+
+                  {/* ✅ SAME LENGTH DESCRIPTION */}
+                  <p
+                    className={`mt-2 text-sm leading-relaxed text-muted-foreground ${descriptionClampClassName}`.trim()}
+                  >
+                    Home additions in Essex County NJ designed to expand space
+                    with seamless integration and lasting quality.
                   </p>
+
+                  {/* ✅ SAME CTA */}
                   <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary transition-all group-hover:gap-2">
-                    {ctaLabel}
+                    Learn More
                     <ArrowRight className="h-4 w-4" />
                   </span>
                 </div>
@@ -300,12 +440,18 @@ export function ServicesSection({
           </StaggerItem>
 
           <StaggerItem>
-            <Link href="/services/dormers" className={`group block ${cardClassName ? "h-full" : ""}`.trim()}>
-              <article className={`glass-card overflow-hidden border transition-all duration-500 hover:-translate-y-2 hover:border-primary/40 hover:shadow-luxury ${cardClassName}`.trim()}>
+            <Link
+              href="/services/additions"
+              className={`group block ${cardClassName ? "h-full" : ""}`.trim()}
+              aria-label="Home additions service Essex County NJ"
+            >
+              <article
+                className={`glass-card overflow-hidden border transition-all duration-500 hover:-translate-y-2 hover:border-primary/40 hover:shadow-luxury ${cardClassName}`.trim()}
+              >
                 <div className="relative h-44 overflow-hidden">
                   <Image
-                    src="/images/service-dormers.jpg"
-                    alt="Dormers"
+                    src="/images/service-additions.jpg"
+                    alt="Home additions in Essex County NJ"
                     fill
                     quality={60}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
@@ -313,16 +459,27 @@ export function ServicesSection({
                   />
                   <div className="absolute inset-0 bg-linear-to-t from-card via-card/40 to-transparent" />
                   <div className="absolute bottom-3 left-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/90">
-                    <Triangle className="h-5 w-5 text-primary-foreground" />
+                    <Building2 className="h-5 w-5 text-primary-foreground" />
                   </div>
                 </div>
+
                 <div className="p-5">
-                  <h3 className="font-serif text-lg font-semibold text-foreground">Dormers</h3>
-                  <p className={`mt-2 text-sm leading-relaxed text-muted-foreground ${descriptionClampClassName}`.trim()}>
-                    Add natural light, headroom, and value to your home with professionally built dormers.
+                  {/* ✅ SAME SIZE TITLE */}
+                  <h3 className="font-serif text-lg font-semibold text-foreground">
+                    Home Additions
+                  </h3>
+
+                  {/* ✅ SAME LENGTH DESCRIPTION */}
+                  <p
+                    className={`mt-2 text-sm leading-relaxed text-muted-foreground ${descriptionClampClassName}`.trim()}
+                  >
+                    Home additions in Essex County NJ designed to expand space
+                    with seamless integration and lasting quality.
                   </p>
+
+                  {/* ✅ SAME CTA */}
                   <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary transition-all group-hover:gap-2">
-                    {ctaLabel}
+                    Learn More
                     <ArrowRight className="h-4 w-4" />
                   </span>
                 </div>
@@ -331,12 +488,18 @@ export function ServicesSection({
           </StaggerItem>
 
           <StaggerItem>
-            <Link href="/services/gutters" className={`group block ${cardClassName ? "h-full" : ""}`.trim()}>
-              <article className={`glass-card overflow-hidden border transition-all duration-500 hover:-translate-y-2 hover:border-primary/40 hover:shadow-luxury ${cardClassName}`.trim()}>
+            <Link
+              href="/services/gutters"
+              className={`group block ${cardClassName ? "h-full" : ""}`.trim()}
+              aria-label="Gutter installation service Essex County NJ"
+            >
+              <article
+                className={`glass-card overflow-hidden border transition-all duration-500 hover:-translate-y-2 hover:border-primary/40 hover:shadow-luxury ${cardClassName}`.trim()}
+              >
                 <div className="relative h-44 overflow-hidden">
                   <Image
                     src="/images/service-gutters.jpg"
-                    alt="Gutters"
+                    alt="Gutter installation in Essex County NJ"
                     fill
                     quality={60}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
@@ -347,13 +510,24 @@ export function ServicesSection({
                     <Droplets className="h-5 w-5 text-primary-foreground" />
                   </div>
                 </div>
+
                 <div className="p-5">
-                  <h3 className="font-serif text-lg font-semibold text-foreground">Gutters</h3>
-                  <p className={`mt-2 text-sm leading-relaxed text-muted-foreground ${descriptionClampClassName}`.trim()}>
-                    Seamless gutter installation and repair to protect your home&apos;s foundation and landscaping.
+                  {/* ✅ SAME SIZE TITLE */}
+                  <h3 className="font-serif text-lg font-semibold text-foreground">
+                    Gutter Installation
+                  </h3>
+
+                  {/* ✅ SAME LENGTH DESCRIPTION */}
+                  <p
+                    className={`mt-2 text-sm leading-relaxed text-muted-foreground ${descriptionClampClassName}`.trim()}
+                  >
+                    Gutter installation in Essex County NJ to protect
+                    foundations and manage water flow efficiently.
                   </p>
+
+                  {/* ✅ SAME CTA */}
                   <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary transition-all group-hover:gap-2">
-                    {ctaLabel}
+                    Learn More
                     <ArrowRight className="h-4 w-4" />
                   </span>
                 </div>
@@ -362,12 +536,18 @@ export function ServicesSection({
           </StaggerItem>
 
           <StaggerItem>
-            <Link href="/services/emergency-repair" className={`group block ${cardClassName ? "h-full" : ""}`.trim()}>
-              <article className={`glass-card overflow-hidden border transition-all duration-500 hover:-translate-y-2 hover:border-primary/40 hover:shadow-luxury ${cardClassName}`.trim()}>
+            <Link
+              href="/services/emergency-repair"
+              className={`group block ${cardClassName ? "h-full" : ""}`.trim()}
+              aria-label="Emergency roof repair service Essex County NJ"
+            >
+              <article
+                className={`glass-card overflow-hidden border transition-all duration-500 hover:-translate-y-2 hover:border-primary/40 hover:shadow-luxury ${cardClassName}`.trim()}
+              >
                 <div className="relative h-44 overflow-hidden">
                   <Image
                     src="/images/service-emergency.jpg"
-                    alt="Emergency Repair"
+                    alt="Emergency roof repair in Essex County NJ"
                     fill
                     quality={60}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
@@ -378,13 +558,24 @@ export function ServicesSection({
                     <AlertTriangle className="h-5 w-5 text-primary-foreground" />
                   </div>
                 </div>
+
                 <div className="p-5">
-                  <h3 className="font-serif text-lg font-semibold text-foreground">Emergency Repair</h3>
-                  <p className={`mt-2 text-sm leading-relaxed text-muted-foreground ${descriptionClampClassName}`.trim()}>
-                    24/7 emergency repair services for storm damage, leaks, and urgent home exterior issues.
+                  {/* ✅ SAME SIZE TITLE */}
+                  <h3 className="font-serif text-lg font-semibold text-foreground">
+                    Emergency Repair
+                  </h3>
+
+                  {/* ✅ SAME LENGTH DESCRIPTION */}
+                  <p
+                    className={`mt-2 text-sm leading-relaxed text-muted-foreground ${descriptionClampClassName}`.trim()}
+                  >
+                    Emergency roof repair in Essex County NJ for leaks, storm
+                    damage, and urgent exterior issues.
                   </p>
+
+                  {/* ✅ SAME CTA */}
                   <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary transition-all group-hover:gap-2">
-                    {ctaLabel}
+                    Learn More
                     <ArrowRight className="h-4 w-4" />
                   </span>
                 </div>
