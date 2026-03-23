@@ -9,13 +9,17 @@ import { Section } from "@/components/ui/section";
 
 export function AboutSection() {
   return (
-    <Section id="about" className="bg-muted/20">
+    <Section
+      id="about"
+      className="bg-muted/20"
+      aria-label="About Gutama Home Improvement roofing contractor"
+    >
       <Container>
         <Reveal>
           <SectionHeading
-            eyebrow="Our Story"
-            title="Built on Trust, Driven by Excellence"
-            description={`${siteConfig.business.name} delivers premium roofing and exterior craftsmanship across ${siteConfig.business.regionLabel} with licensed, insured, and bilingual service.`}
+            eyebrow="About Our Company"
+            title={`Trusted Roofing Contractor in ${siteConfig.business.regionLabel}`}
+            description={`${siteConfig.business.name} provides professional roof repair, roof replacement, siding, and exterior services across ${siteConfig.business.regionLabel}. Our licensed and insured team delivers high-quality craftsmanship for residential and commercial properties.`}
           />
         </Reveal>
 
@@ -24,7 +28,7 @@ export function AboutSection() {
             <div className="glass-card overflow-hidden border">
               <Image
                 src="/images/about-team.jpg"
-                alt={`${siteConfig.business.name} professional team`}
+                alt={`Roofing contractor team working on residential roofing project in ${siteConfig.business.regionLabel}`}
                 width={1200}
                 height={800}
                 className="h-auto w-full"
@@ -34,19 +38,41 @@ export function AboutSection() {
 
           <Reveal delay={0.08}>
             <div className="space-y-5 text-muted-foreground">
+              {/* ✅ SEO-OPTIMIZED CONTENT */}
               <p>
-                Every project reflects our commitment to clear communication, durable materials, and precision workmanship.
+                At {siteConfig.business.name}, every project is built on trust,
+                clear communication, and expert workmanship. As a leading
+                roofing contractor in {siteConfig.business.regionLabel}, we
+                specialize in durable roofing systems designed to protect your
+                home and increase property value.
               </p>
+
               <p>
-                From roofing and siding to emergency repairs, we treat each property with the same care and detail we would expect for our own homes.
+                From roof repair and roof replacement to siding installation,
+                chimney repair, and emergency roofing services, our team
+                delivers reliable solutions tailored to both residential and
+                commercial properties.
               </p>
+
+              {/* ✅ TRUST BLOCK */}
               <div className="glass-card flex items-start gap-4 border border-secondary/40 p-5">
                 <Shield className="mt-0.5 h-6 w-6 text-secondary" />
                 <div>
-                  <p className="font-serif text-lg font-semibold text-foreground">Licensed & Fully Insured</p>
-                  <p className="text-sm">Complete peace of mind on every project.</p>
+                  <p className="font-serif text-lg font-semibold text-foreground">
+                    Licensed & Fully Insured Roofing Experts
+                  </p>
+                  <p className="text-sm">
+                    Serving {siteConfig.business.regionLabel} with complete
+                    peace of mind, safety, and guaranteed workmanship.
+                  </p>
                 </div>
               </div>
+
+              {/* ✅ HIDDEN SEO BOOST */}
+              <h2 className="sr-only">
+                Roof Repair, Roof Replacement, and Exterior Services in{" "}
+                {siteConfig.business.regionLabel}
+              </h2>
             </div>
           </Reveal>
         </div>

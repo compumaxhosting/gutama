@@ -19,4 +19,4 @@ export const siteConfig = {
   },
 } as const;
 
-export const siteUrl = "https://gutamahomeimprovement.com";
+export const siteUrl = "https://www.gutamaroofingnj.com/";
