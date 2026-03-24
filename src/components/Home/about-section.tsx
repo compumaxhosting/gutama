@@ -27,11 +27,11 @@ export function AboutSection() {
           <Reveal>
             <div className="glass-card overflow-hidden border">
               <Image
-                src="/images/about-team.jpg"
+                src="/images/service-additions.jpg"
                 alt={`Roofing contractor team working on residential roofing project in ${siteConfig.business.regionLabel}`}
                 width={1200}
                 height={800}
-                className="h-auto w-full"
+                className="h-64 w-full object-cover sm:h-72 lg:h-96"
               />
             </div>
           </Reveal>

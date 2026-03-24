@@ -33,11 +33,11 @@ export function AboutStory() {
           <Reveal>
             <div className="glass-card overflow-hidden border shadow-luxury">
               <Image
-                src="/images/about-team.jpg"
-                alt={`${siteConfig.business.name} professional team`}
+                src="/images/service-additions.jpg"
+                alt={`Roofing contractor team working on residential roofing project in ${siteConfig.business.regionLabel}`}
                 width={1200}
                 height={800}
-                className="h-auto w-full object-cover"
+                className="h-64 w-full object-cover sm:h-72 lg:h-120"
               />
             </div>
           </Reveal>

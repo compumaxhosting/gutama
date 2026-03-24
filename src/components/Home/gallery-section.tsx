@@ -19,12 +19,12 @@ const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     title: "Storm Damage Roof Repair",
-    image: "/images/gallery-roof-3.jpg",
+    image: "/images/service-dormers.jpg",
     category: "roofing",
   },
   {
     title: "Siding Installation & Exterior Upgrade",
-    image: "/images/gallery-siding-1.jpg",
+    image: "/images/service-siding.jpg",
     category: "siding",
   },
   {
@@ -34,7 +34,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     title: "Custom Home Addition Project",
-    image: "/images/gallery-addition-1.jpg",
+    image: "/images/service-additions.jpg",
     category: "additions",
   },
 ];
