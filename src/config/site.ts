@@ -13,8 +13,10 @@ export const siteConfig = {
   },
   email: "antoniogutama@gmail.com",
   address: {
-    locality: "Essex County",
+    streetAddress: "272-274 Orange St",
+    locality: "Newark",
     region: "NJ",
+    postalCode: "07103",
     country: "US",
   },
 } as const;

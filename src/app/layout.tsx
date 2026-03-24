@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import Script from "next/script";
 
-import { siteUrl } from "@/config/site";
+import { siteConfig, siteUrl } from "@/config/site";
 import { SiteShell } from "@/components/layout/site-shell";
 
 import "./globals.css";
@@ -98,9 +98,11 @@ export default function RootLayout({
 
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Essex County",
-      addressRegion: "NJ",
-      addressCountry: "US",
+      streetAddress: siteConfig.address.streetAddress,
+      addressLocality: siteConfig.address.locality,
+      addressRegion: siteConfig.address.region,
+      postalCode: siteConfig.address.postalCode,
+      addressCountry: siteConfig.address.country,
     },
 
     areaServed: {

@@ -54,10 +54,16 @@ export function Footer() {
               <Mail className="h-4 w-4 text-secondary" />
               {siteConfig.email}
             </a>
-            <p className="flex items-center gap-2 text-muted-foreground">
+            <a
+              href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${siteConfig.address.streetAddress}, ${siteConfig.address.locality}, ${siteConfig.address.region} ${siteConfig.address.postalCode}, ${siteConfig.address.country}`)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-muted-foreground transition-colors hover:text-foreground"
+              aria-label="Open business location in Google Maps"
+            >
               <MapPin className="h-4 w-4 text-primary" />
-              {siteConfig.business.regionLabel}
-            </p>
+              {siteConfig.address.streetAddress}, {siteConfig.address.locality}, {siteConfig.address.region} {siteConfig.address.postalCode}
+            </a>
           </div>
         </div>
 
