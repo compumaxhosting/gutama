@@ -50,16 +50,16 @@ export function MobileNavMenu({
       >
         <div className="absolute right-0 top-0 h-full w-px bg-linear-to-b from-transparent via-primary/40 to-transparent" />
 
-        <div className="flex items-center border-b border-border/40 px-8 pb-6 pt-8">
+        <div className="flex items-center border-b border-border/40 px-8">
           <Link href="/" onClick={close} aria-label={businessName}>
             <Image
-              src="/images/logo2.png"
+              src="/images/logo.png"
               alt={businessName}
               width={180}
               height={72}
-              quality={60}
+              quality={100}
               sizes="180px"
-              className="h-18 w-auto object-contain"
+              className="h-32 w-auto object-contain"
             />
           </Link>
         </div>
@@ -132,7 +132,7 @@ export function MobileNavMenu({
             </p>
             <div className="flex items-center gap-3">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/antonio_gutama/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Follow us on Instagram"
@@ -145,7 +145,7 @@ export function MobileNavMenu({
                 <Instagram className="h-4.5 w-4.5 transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-[0_0_8px_rgba(201,159,58,0.45)]" />
               </a>
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/roofer55/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Follow us on Facebook"

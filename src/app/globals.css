@@ -191,3 +191,68 @@
   from { transform: scaleX(0); }
   to { transform: scaleX(1); }
 }
+
+/* Google Translate widget tweaks */
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+body {
+  top: 0 !important;
+}
+
+.goog-te-gadget,
+.goog-te-gadget .goog-te-combo,
+.goog-te-gadget span {
+  display: none !important;
+}
+
+.goog-tooltip,
+.goog-tooltip:hover,
+.goog-te-balloon-frame,
+#goog-gt-tt {
+  display: none !important;
+}
+
+.goog-text-highlight {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+body.translated-ltr .goog-text-highlight,
+body.translated-rtl .goog-text-highlight,
+body.translated-ltr font,
+body.translated-rtl font,
+body.translated-ltr span[style*="background"],
+body.translated-rtl span[style*="background"],
+body.translated-ltr font[style*="background"],
+body.translated-rtl font[style*="background"] {
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+iframe.VIpgJd-ZVi9od-ORHb-OEVmcd,
+iframe.skiptranslate,
+.VIpgJd-ZVi9od-ORHb-OEVmcd,
+iframe[id$=".container"],
+iframe[id*=".container"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  position: fixed !important;
+  inset: auto !important;
+  right: -9999px !important;
+  bottom: -9999px !important;
+  width: 0 !important;
+  height: 0 !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  border: 0 !important;
+}
+
+html,
+body {
+  margin-top: 0 !important;
+}

@@ -27,8 +27,8 @@ const TOP_SERVICES = [
 ];
 
 const SOCIAL_LINKS = [
-  { label: "Instagram", href: "https://instagram.com", icon: Instagram },
-  { label: "Facebook", href: "https://facebook.com", icon: Facebook },
+  { label: "Instagram", href: "https://www.instagram.com/antonio_gutama/", icon: Instagram },
+  { label: "Facebook", href: "https://www.facebook.com/roofer55/", icon: Facebook },
   { label: "TikTok", href: "https://www.tiktok.com/@gutamaroofing.com", icon: Music2 },
 ] as const;
 
@@ -40,7 +40,7 @@ export function Footer() {
           <Link href="/" className="inline-flex">
             <Image src="/images/logo2.png" alt={siteConfig.business.name} width={180} height={72} quality={60} sizes="360px" className="h-20 w-auto object-contain" />
           </Link>
-          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{siteConfig.business.description}</p>
+          <p className="text-sm leading-relaxed text-muted-foreground">{siteConfig.business.description}</p>
           <div className="mt-4 flex flex-col gap-2 text-sm">
             <a href={`tel:${siteConfig.phones.english}`} className="flex items-center gap-2 text-muted-foreground transition-colors hover:text-foreground">
               <Phone className="h-4 w-4 text-primary" />
@@ -124,7 +124,7 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-3 border-t border-border/40 px-4 py-5 text-sm text-muted-foreground md:flex-row">
+      <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-3 border-t border-border/40 px-4 py-5 text-xs text-muted-foreground sm:text-sm md:flex-row">
         <p>© {new Date().getFullYear()} {siteConfig.business.name}. All rights reserved.</p>
         <p>Licensed & Fully Insured | {siteConfig.business.regionLabel}</p>
       </div>
