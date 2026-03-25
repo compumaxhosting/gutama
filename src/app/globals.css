@@ -192,67 +192,37 @@
   to { transform: scaleX(1); }
 }
 
-/* Google Translate widget tweaks */
-.goog-te-banner-frame.skiptranslate {
-  display: none !important;
+/* Google Translate widget styling */
+.translate-widget .goog-te-gadget {
+  font-size: 0;
 }
 
-body {
-  top: 0 !important;
+.translate-widget .goog-te-gadget-simple {
+  border: 1px solid hsl(0 0% 25%) !important;
+  background: hsl(0 0% 12%) !important;
+  border-radius: 9999px !important;
+  padding: 0.25rem 0.5rem !important;
 }
 
-.goog-te-gadget,
-.goog-te-gadget .goog-te-combo,
-.goog-te-gadget span {
-  display: none !important;
+.translate-widget .goog-te-menu-value {
+  color: hsl(0 0% 100%) !important;
+  font-size: 0.75rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
-.goog-tooltip,
-.goog-tooltip:hover,
-.goog-te-balloon-frame,
-#goog-gt-tt {
-  display: none !important;
-}
-
-.goog-text-highlight {
-  background: transparent !important;
-  box-shadow: none !important;
-}
-
-body.translated-ltr .goog-text-highlight,
-body.translated-rtl .goog-text-highlight,
-body.translated-ltr font,
-body.translated-rtl font,
-body.translated-ltr span[style*="background"],
-body.translated-rtl span[style*="background"],
-body.translated-ltr font[style*="background"],
-body.translated-rtl font[style*="background"] {
-  background: transparent !important;
-  background-color: transparent !important;
-  box-shadow: none !important;
-}
-
-iframe.VIpgJd-ZVi9od-ORHb-OEVmcd,
-iframe.skiptranslate,
-.VIpgJd-ZVi9od-ORHb-OEVmcd,
-iframe[id$=".container"],
-iframe[id*=".container"] {
-  display: none !important;
-  visibility: hidden !important;
-  opacity: 0 !important;
-  pointer-events: none !important;
-  position: fixed !important;
-  inset: auto !important;
-  right: -9999px !important;
-  bottom: -9999px !important;
-  width: 0 !important;
-  height: 0 !important;
-  min-width: 0 !important;
-  min-height: 0 !important;
+.translate-widget .goog-te-menu-value span {
+  color: hsl(0 0% 100%) !important;
   border: 0 !important;
 }
 
-html,
-body {
-  margin-top: 0 !important;
+.translate-widget .goog-te-gadget-simple a,
+.translate-widget .goog-te-gadget-simple a span {
+  color: hsl(0 0% 100%) !important;
 }
+
+.translate-widget img {
+  display: none !important;
+}
+
