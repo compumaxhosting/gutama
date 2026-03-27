@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const TRANSLATE_SCRIPT_ID = "google-translate-script";
 const TRANSLATE_CONTAINER_ID = "google_translate_element";
@@ -28,7 +28,37 @@ declare global {
 }
 
 export function GoogleTranslateWidget() {
+  const [shouldLoadScript, setShouldLoadScript] = useState(false);
+  const hasInitializedRef = useRef(false);
+
   useEffect(() => {
+    if (shouldLoadScript) {
+      return;
+    }
+
+    // Load the script only when users show intent to translate.
+    const onFirstInteraction = () => {
+      setShouldLoadScript(true);
+      window.removeEventListener("pointerdown", onFirstInteraction);
+      window.removeEventListener("focusin", onFirstInteraction);
+    };
+
+    window.addEventListener("pointerdown", onFirstInteraction, { once: true });
+    window.addEventListener("focusin", onFirstInteraction, { once: true });
+
+    return () => {
+      window.removeEventListener("pointerdown", onFirstInteraction);
+      window.removeEventListener("focusin", onFirstInteraction);
+    };
+  }, [shouldLoadScript]);
+
+  useEffect(() => {
+    if (!shouldLoadScript || hasInitializedRef.current) {
+      return;
+    }
+
+    hasInitializedRef.current = true;
+
     window.googleTranslateElementInit = () => {
       const Widget = window.google?.translate?.TranslateElement;
 
@@ -61,7 +91,7 @@ export function GoogleTranslateWidget() {
     return () => {
       delete window.googleTranslateElementInit;
     };
-  }, []);
+  }, [shouldLoadScript]);
 
   return <div id={TRANSLATE_CONTAINER_ID} className="translate-widget" />;
 }

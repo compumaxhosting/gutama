@@ -20,7 +20,8 @@ export function HeroSection() {
           alt="Roofing contractor working on residential roof in Essex County NJ"
           fill
           priority
-          quality={90}
+          fetchPriority="high"
+          quality={75}
           sizes="100vw"
           className="object-cover object-center"
         />
