@@ -4,6 +4,7 @@ import { CheckCircle2 } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import { SectionHeading } from "@/components/Home/section-heading";
 import { Container } from "@/components/ui/container";
+import { BrandLink } from "@/components/ui/brand-link";
 import { Section } from "@/components/ui/section";
 import { Reveal } from "@/components/motion/reveal";
 
@@ -51,9 +52,9 @@ export function AboutStory() {
               </p>
 
               <p className="mb-5 text-base leading-loose text-muted-foreground">
-                Antonio Gutama founded {siteConfig.business.name} with a simple belief: every
-                homeowner deserves honest advice, premium materials, and work done right the first
-                time. That commitment has never wavered.
+                Antonio <BrandLink>Gutama</BrandLink> founded <BrandLink>{siteConfig.business.name}</BrandLink> with a simple belief: every homeowner
+                deserves honest advice, premium materials, and work done right the first time. That
+                commitment has never wavered.
               </p>
 
               <p className="mb-8 text-base leading-loose text-muted-foreground">

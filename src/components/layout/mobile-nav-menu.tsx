@@ -145,7 +145,7 @@ export function MobileNavMenu({
                 <Instagram className="h-4.5 w-4.5 transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-[0_0_8px_rgba(201,159,58,0.45)]" />
               </a>
               <a
-                href="https://www.facebook.com/roofer55/"
+                href="https://www.facebook.com/gutamaroofingnj"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Follow us on Facebook"
@@ -158,7 +158,7 @@ export function MobileNavMenu({
                 <Facebook className="h-4.5 w-4.5 transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-[0_0_8px_rgba(201,159,58,0.45)]" />
               </a>
               <a
-                href="https://www.tiktok.com/@gutamaroofing.com"
+                href="https://www.tiktok.com/@gutamaroofingnj.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Follow us on TikTok"

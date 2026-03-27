@@ -5,6 +5,7 @@ import { SectionHeading } from "@/components/Home/section-heading";
 import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
 import { Reveal, StaggerGroup, StaggerItem } from "@/components/motion/reveal";
+import { BrandLink } from "@/components/ui/brand-link";
 import type { Testimonial } from "@/types/site";
 import { siteConfig } from "@/config/site";
 
@@ -31,6 +32,24 @@ const TESTIMONIALS: Testimonial[] = [
     image: "/Images New/testimonial-3.webp",
   },
 ];
+
+function withBrandLink(text: string) {
+  const firstMatchIndex = text.search(/\bGutama\b/i);
+
+  if (firstMatchIndex === -1) {
+    return text;
+  }
+
+  const matchedText = text.slice(firstMatchIndex, firstMatchIndex + "Gutama".length);
+
+  return (
+    <>
+      {text.slice(0, firstMatchIndex)}
+      <BrandLink>{matchedText}</BrandLink>
+      {text.slice(firstMatchIndex + matchedText.length)}
+    </>
+  );
+}
 
 export function TestimonialsSection() {
   return (
@@ -72,7 +91,7 @@ export function TestimonialsSection() {
 
                 {/* 💬 Review Text (SEO enhanced but natural) */}
                 <p className="text-sm italic leading-relaxed text-foreground">
-                  &ldquo;{item.text}&rdquo;
+                  &ldquo;{withBrandLink(item.text)}&rdquo;
                 </p>
 
                 {/* 👤 User */}
