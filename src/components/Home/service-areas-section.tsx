@@ -37,7 +37,7 @@ export function ServiceAreasSection() {
     >
       {/* Background */}
       <div
-        className="absolute inset-0 bg-[url('/images/about-aerial.jpg')] bg-cover bg-center opacity-10"
+        className="absolute inset-0 bg-[url('/Images New/about-aerial.webp')] bg-cover bg-center opacity-10"
         aria-hidden="true"
       />
       <div className="absolute inset-0 bg-background/90" aria-hidden="true" />

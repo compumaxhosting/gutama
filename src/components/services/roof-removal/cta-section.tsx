@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 
 export function RoofRemovalCtaSection() {
   const content = {
-        image: "/images/service-roof-removal.jpg",
+        image: "/Images New/service-roof-removal.webp",
         imageAlt: "Roof removal background",
         title: "Need a Clean Start",
         accent: "For Your Next Roof?",

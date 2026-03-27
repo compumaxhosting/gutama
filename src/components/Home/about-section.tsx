@@ -27,7 +27,7 @@ export function AboutSection() {
           <Reveal>
             <div className="glass-card overflow-hidden border">
               <Image
-                src="/images/service-additions.jpg"
+                src="/Images New/service-additions.webp"
                 alt={`Roofing contractor team working on residential roofing project in ${siteConfig.business.regionLabel}`}
                 width={1200}
                 height={800}

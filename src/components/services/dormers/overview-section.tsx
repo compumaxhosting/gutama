@@ -9,7 +9,7 @@ export function DormersOverviewSection() {
           "Our team integrates framing, roofing, siding, flashing, and finish work into one coordinated scope so the new dormer performs properly and looks proportionate to your existing home.",
         ],
         bullets: ["More usable headroom", "Integrated roofline framing", "Natural light improvements", "Architectural curb appeal"],
-        image: "/images/gallery-roof-1.jpg",
+        image: "/Images New/gallery-roof-1.webp",
         imageAlt: "Dormer construction detail",
         badgeValue: "140+",
         badgeLabel: "Dormers Completed",

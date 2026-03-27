@@ -9,7 +9,7 @@ export function SlateRoofOverviewSection() {
           "Whether we are repairing a damaged area or completing a larger slate roofing scope, we focus on durability, visual consistency, and preservation of the roof's architectural character.",
         ],
         bullets: ["Slate roof repairs", "Selective slate replacement", "Flashing integration", "Historic roof detailing"],
-        image: "/images/service-slate-roof.jpg",
+        image: "/Images New/service-slate-roof.webp",
         imageAlt: "Slate roofing detail",
         badgeValue: "120+",
         badgeLabel: "Slate Projects Completed",

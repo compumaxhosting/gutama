@@ -39,12 +39,12 @@ export function EmergencyRepairShowcaseSection() {
   const content = {
         title: "Rapid-Response",
         accent: "Projects",
-        featured: { src: "/images/service-emergency.jpg", location: siteConfig.business.regionLabel, title: "Storm Damage Tarp & Roofline Repair" },
+        featured: { src: "/Images New/service-emergency.webp", location: siteConfig.business.regionLabel, title: "Storm Damage Tarp & Roofline Repair" },
         items: [
-          { src: "/images/gallery-roof-1.jpg", location: "Montclair, NJ", title: "Active Leak Stabilization" },
-          { src: "/images/gallery-roof-2.jpg", location: "Maplewood, NJ", title: "Wind Damage Securement" },
-          { src: "/images/gallery-roof-3.jpg", location: "Livingston, NJ", title: "Flashing Failure Emergency Repair" },
-          { src: "/images/service-emergency.jpg", location: "Verona, NJ", title: "Temporary Protection to Permanent Repair" },
+          { src: "/Images New/gallery-roof-1.webp", location: "Montclair, NJ", title: "Active Leak Stabilization" },
+          { src: "/Images New/gallery-roof-2.webp", location: "Maplewood, NJ", title: "Wind Damage Securement" },
+          { src: "/Images New/gallery-roof-3.webp", location: "Livingston, NJ", title: "Flashing Failure Emergency Repair" },
+          { src: "/Images New/service-emergency.webp", location: "Verona, NJ", title: "Temporary Protection to Permanent Repair" },
         ],
       };
 

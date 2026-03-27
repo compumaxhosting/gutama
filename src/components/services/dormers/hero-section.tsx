@@ -10,7 +10,7 @@ export function DormersHeroSection() {
         label: "Dormers",
         title: "Dormer",
         accent: "Installation",
-        image: "/images/service-dormers.jpg",
+        image: "/Images New/service-dormers.webp",
         imageAlt: "Dormer installation services",
         description: "Add natural light, headroom, and usable living space with dormers designed to improve both function and curb appeal.",
         stats: [

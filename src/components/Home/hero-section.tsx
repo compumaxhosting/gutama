@@ -16,7 +16,7 @@ export function HeroSection() {
       {/* ✅ Background Image (SEO optimized alt) */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero-bg3.png"
+          src="/Images New/hero-bg3.webp"
           alt="Roofing contractor working on residential roof in Essex County NJ"
           fill
           priority

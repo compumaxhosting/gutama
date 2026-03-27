@@ -9,32 +9,32 @@ import type { GalleryItem } from "@/types/site";
 const GALLERY_ITEMS: GalleryItem[] = [
   {
     title: "Roof Replacement in Essex County NJ",
-    image: "/images/gallery-roof-1.jpg",
+    image: "/Images New/gallery-roof-1.webp",
     category: "roofing",
   },
   {
     title: "Architectural Shingle Roofing Installation",
-    image: "/images/gallery-roof-2.jpg",
+    image: "/Images New/gallery-roof-2.webp",
     category: "roofing",
   },
   {
     title: "Storm Damage Roof Repair",
-    image: "/images/service-dormers.jpg",
+    image: "/Images New/service-dormers.webp",
     category: "roofing",
   },
   {
     title: "Siding Installation & Exterior Upgrade",
-    image: "/images/service-siding.jpg",
+    image: "/Images New/service-siding.webp",
     category: "siding",
   },
   {
     title: "Chimney Repair & Restoration",
-    image: "/images/gallery-chimney-1.jpg",
+    image: "/Images New/gallery-chimney-1.webp",
     category: "chimney",
   },
   {
     title: "Custom Home Addition Project",
-    image: "/images/service-additions.jpg",
+    image: "/Images New/service-additions.webp",
     category: "additions",
   },
 ];

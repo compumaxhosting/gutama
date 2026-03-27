@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 
 export function ChimneyCtaSection() {
   const content = {
-        image: "/images/service-chimney.jpg",
+        image: "/Images New/service-chimney.webp",
         imageAlt: "Chimney project background",
         title: "Ready to Restore",
         accent: "Your Chimney?",

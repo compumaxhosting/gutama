@@ -9,7 +9,7 @@ export function ChimneyOverviewSection() {
           "Our chimney work addresses the full system, from brick and mortar to flashing transitions and waterproofing, so the finished repair is stable, watertight, and visually clean.",
         ],
         bullets: ["Chimney rebuilding", "Flashing replacement", "Crown and cap repairs", "Waterproofing protection"],
-        image: "/images/gallery-chimney-1.jpg",
+        image: "/Images New/gallery-chimney-1.webp",
         imageAlt: "Chimney masonry detail",
         badgeValue: "310+",
         badgeLabel: "Repairs Completed",

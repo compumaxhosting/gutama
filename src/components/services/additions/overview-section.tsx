@@ -46,7 +46,7 @@ export function AdditionsOverviewSection() {
           <div className="relative">
             <div className="relative aspect-4/5 overflow-hidden">
               <Image
-                src="/images/gallery-addition-1.jpg"
+                src="/Images New/gallery-addition-1.webp"
                 alt="Addition craftsmanship detail"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"

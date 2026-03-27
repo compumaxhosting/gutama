@@ -70,7 +70,7 @@ export function Navbar() {
         <div className="mx-auto flex h-24 w-full max-w-7xl items-center justify-between px-4">
           <Link href="/" className="flex items-center gap-2" aria-label={siteConfig.business.name}>
             <Image
-              src="/images/logo.png"
+              src="/Images New/logo.webp"
               alt={siteConfig.business.name}
               width={180}
               height={96}

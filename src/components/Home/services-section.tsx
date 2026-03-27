@@ -68,7 +68,7 @@ export function ServicesSection({
               >
                 <div className="relative h-44 overflow-hidden">
                   <Image
-                    src="/images/service-roof-removal.jpg"
+                    src="/Images New/service-roof-removal.webp"
                     alt="Roof removal and tear-off service in Essex County NJ by professional roofing contractor"
                     fill
                     quality={60}
@@ -115,7 +115,7 @@ export function ServicesSection({
               >
                 <div className="relative h-44 overflow-hidden">
                   <Image
-                    src="/images/service-re-roofing.jpg"
+                    src="/Images New/service-re-roofing.webp"
                     alt="Roof replacement in Essex County NJ"
                     fill
                     quality={60}
@@ -162,7 +162,7 @@ export function ServicesSection({
               >
                 <div className="relative h-44 overflow-hidden">
                   <Image
-                    src="/images/service-flat-roof.jpg"
+                    src="/Images New/service-flat-roof.webp"
                     alt="Flat roofing service in Essex County NJ"
                     fill
                     quality={60}
@@ -208,7 +208,7 @@ export function ServicesSection({
               >
                 <div className="relative h-44 overflow-hidden">
                   <Image
-                    src="/images/service-slate-roof.jpg"
+                    src="/Images New/service-slate-roof.webp"
                     alt="Slate roofing service in Essex County NJ"
                     fill
                     quality={60}
@@ -255,7 +255,7 @@ export function ServicesSection({
               >
                 <div className="relative h-44 overflow-hidden">
                   <Image
-                    src="/images/service-chimney.jpg"
+                    src="/Images New/service-chimney.webp"
                     alt="Chimney repair in Essex County NJ"
                     fill
                     quality={60}
@@ -302,7 +302,7 @@ export function ServicesSection({
               >
                 <div className="relative h-44 overflow-hidden">
                   <Image
-                    src="/images/service-siding.jpg"
+                    src="/Images New/service-siding.webp"
                     alt="Siding installation in Essex County NJ"
                     fill
                     quality={60}
@@ -349,7 +349,7 @@ export function ServicesSection({
               >
                 <div className="relative h-44 overflow-hidden">
                   <Image
-                    src="/images/service-carpentry.jpg"
+                    src="/Images New/service-carpentry.webp"
                     alt="Exterior carpentry service in Essex County NJ"
                     fill
                     quality={60}
@@ -396,7 +396,7 @@ export function ServicesSection({
               >
                 <div className="relative h-44 overflow-hidden">
                   <Image
-                    src="/images/service-dormers.jpg"
+                    src="/Images New/service-dormers.webp"
                     alt="Dormer installation in Essex County NJ"
                     fill
                     quality={60}
@@ -443,7 +443,7 @@ export function ServicesSection({
               >
                 <div className="relative h-44 overflow-hidden">
                   <Image
-                    src="/images/service-additions.jpg"
+                    src="/Images New/service-additions.webp"
                     alt="Home additions in Essex County NJ"
                     fill
                     quality={60}
@@ -490,7 +490,7 @@ export function ServicesSection({
               >
                 <div className="relative h-44 overflow-hidden">
                   <Image
-                    src="/images/service-gutters.jpg"
+                    src="/Images New/service-gutters.webp"
                     alt="Gutter installation in Essex County NJ"
                     fill
                     quality={60}
@@ -537,7 +537,7 @@ export function ServicesSection({
               >
                 <div className="relative h-44 overflow-hidden">
                   <Image
-                    src="/images/service-emergency.jpg"
+                    src="/Images New/service-emergency.webp"
                     alt="Emergency roof repair in Essex County NJ"
                     fill
                     quality={60}

@@ -9,7 +9,7 @@ export function FlatRoofOverviewSection() {
           "We install and repair flat roofing systems with close attention to substrate condition, fastening patterns, insulation layout, and watertight detailing so the system performs in demanding weather conditions.",
         ],
         bullets: ["TPO and EPDM systems", "Drainage planning", "Seam and edge detailing", "Leak-focused repairs"],
-        image: "/images/after-flat.jpg",
+        image: "/Images New/after-flat.webp",
         imageAlt: "Completed flat roof system",
         badgeValue: "220+",
         badgeLabel: "Systems Installed",

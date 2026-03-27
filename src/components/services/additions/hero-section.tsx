@@ -18,7 +18,7 @@ export function AdditionsHeroSection() {
       <div className="absolute inset-0">
         <div className="relative h-[115%] w-full">
           <Image
-            src="/images/service-additions.jpg"
+            src="/Images New/service-additions.webp"
             alt="Home Addition craftsmanship"
             fill
             priority

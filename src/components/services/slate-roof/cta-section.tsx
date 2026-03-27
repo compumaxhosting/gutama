@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 
 export function SlateRoofCtaSection() {
   const content = {
-        image: "/images/service-slate-roof.jpg",
+        image: "/Images New/service-slate-roof.webp",
         imageAlt: "Slate roofing background",
         title: "Ready to Protect",
         accent: "Your Slate Roof?",
