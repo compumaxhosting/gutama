@@ -3,6 +3,7 @@ import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
 import { Reveal, StaggerGroup, StaggerItem } from "@/components/motion/reveal";
 import { siteConfig } from "@/config/site";
+import { BrandLink } from "@/components/ui/brand-link";
 
 const SERVICE_AREA_LABEL = `Roofing Services in ${siteConfig.business.regionLabel}`;
 
@@ -47,7 +48,13 @@ export function ServiceAreasSection() {
           <SectionHeading
             eyebrow="Service Areas"
             title={SERVICE_AREA_LABEL}
-            description={`Gutama Home Improvement provides roof repair, roof replacement, siding, and exterior services across ${siteConfig.business.regionLabel}, including the following cities and ZIP codes.`}
+            description={
+              <>
+                <BrandLink>Gutama Home Improvement</BrandLink> provides roof repair, roof
+                replacement, siding, and exterior services across {siteConfig.business.regionLabel},
+                including the following cities and ZIP codes.
+              </>
+            }
           />
         </Reveal>
 

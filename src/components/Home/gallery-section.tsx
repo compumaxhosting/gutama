@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import { Reveal, StaggerGroup, StaggerItem } from "@/components/motion/reveal";
 import { SectionHeading } from "@/components/Home/section-heading";
+import { BrandLink } from "@/components/ui/brand-link";
 import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
 import type { GalleryItem } from "@/types/site";
@@ -51,7 +52,13 @@ export function GallerySection() {
           <SectionHeading
             eyebrow="Project Gallery"
             title="Roofing & Exterior Projects in Essex County NJ"
-            description="Explore recent roof replacement, siding installation, chimney repair, and exterior renovation projects completed by Gutama Home Improvement across Essex County, NJ."
+            description={
+              <>
+                Explore recent roof replacement, siding installation, chimney repair, and exterior
+                renovation projects completed by <BrandLink>Gutama Home Improvement</BrandLink>
+                across Essex County, NJ.
+              </>
+            }
           />
         </Reveal>
 

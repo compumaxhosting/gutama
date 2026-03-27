@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight, Phone } from "lucide-react";
 
 import { siteConfig } from "@/config/site";
+import { BrandLink } from "@/components/ui/brand-link";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
@@ -43,7 +44,7 @@ export function AboutCta() {
         <Reveal delay={0.06}>
           <p className="mx-auto mt-5 max-w-xl text-lg text-muted-foreground">
             Join over a thousand satisfied homeowners across {siteConfig.business.regionLabel} who
-            chose {siteConfig.business.name} for quality that lasts.
+            chose <BrandLink>{siteConfig.business.name}</BrandLink> for quality that lasts.
           </p>
         </Reveal>
 

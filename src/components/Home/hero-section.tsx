@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2, Phone } from "lucide-react";
 
 import { siteConfig } from "@/config/site";
+import { BrandLink } from "@/components/ui/brand-link";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { Reveal } from "@/components/motion/reveal";
@@ -60,7 +61,7 @@ export function HeroSection() {
         {/* ✅ SEO-OPTIMIZED SUBTEXT */}
         <Reveal delay={0.08}>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-white md:text-xl">
-            Gutama Home Improvement provides expert roof repair, roof
+            <BrandLink>Gutama Home Improvement</BrandLink> provides expert roof repair, roof
             replacement, siding, and chimney services in{" "}
             {siteConfig.business.regionLabel}. Trusted for residential and
             commercial projects with high-quality craftsmanship built to last.
