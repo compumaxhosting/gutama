@@ -11,7 +11,7 @@ export function BrandLink({ children, className }: BrandLinkProps) {
   return (
     <Link
       href={siteUrl}
-      className={className ?? "underline decoration-current underline-offset-2"}
+      className={className}
     >
       {children}
     </Link>
