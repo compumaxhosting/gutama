@@ -93,5 +93,43 @@ export function GoogleTranslateWidget() {
     };
   }, [shouldLoadScript]);
 
-  return <div id={TRANSLATE_CONTAINER_ID} className="translate-widget" />;
+  return (
+    <>
+      <div id={TRANSLATE_CONTAINER_ID} className="translate-widget" />
+      <style jsx global>{`
+        .translate-widget .goog-te-gadget {
+          font-size: 0;
+        }
+
+        .translate-widget .goog-te-gadget-simple {
+          border: 1px solid hsl(0 0% 25%) !important;
+          background: hsl(0 0% 12%) !important;
+          border-radius: 9999px !important;
+          padding: 0.25rem 0.5rem !important;
+        }
+
+        .translate-widget .goog-te-menu-value {
+          color: hsl(0 0% 100%) !important;
+          font-size: 0.75rem !important;
+          font-weight: 600 !important;
+          text-transform: uppercase;
+          letter-spacing: 0.06em;
+        }
+
+        .translate-widget .goog-te-menu-value span {
+          color: hsl(0 0% 100%) !important;
+          border: 0 !important;
+        }
+
+        .translate-widget .goog-te-gadget-simple a,
+        .translate-widget .goog-te-gadget-simple a span {
+          color: hsl(0 0% 100%) !important;
+        }
+
+        .translate-widget img {
+          display: none !important;
+        }
+      `}</style>
+    </>
+  );
 }
