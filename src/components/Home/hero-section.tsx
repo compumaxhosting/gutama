@@ -17,16 +17,16 @@ export function HeroSection() {
       {/* ✅ Background Image (SEO optimized alt) */}
       <div className="absolute inset-0">
         <Image
-          src="/Images New/hero-bg3.webp"
+          src="/Images New/Hero.webp"
           alt="Roofing contractor working on residential roof in Essex County NJ"
           fill
           priority
           fetchPriority="high"
-          quality={75}
           sizes="100vw"
+          quality={75}
           className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-black/10" />
       </div>
 
       <Container className="relative text-center">
