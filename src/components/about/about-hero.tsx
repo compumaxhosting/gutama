@@ -4,6 +4,7 @@ import { ArrowRight, Phone } from "lucide-react";
 
 import { siteConfig } from "@/config/site";
 import { Button } from "@/components/ui/button";
+import { BrandLink } from "@/components/ui/brand-link";
 import { Reveal } from "@/components/motion/reveal";
 
 export function AboutHero() {
@@ -12,7 +13,7 @@ export function AboutHero() {
       {/* Background image with layered overlays */}
       <div className="absolute inset-0">
         <Image
-          src="/images/about-aerial.jpg"
+          src="/Images New/about-aerial.webp"
           alt="Aerial view of completed roofing projects in Essex County"
           fill
           priority
@@ -70,9 +71,8 @@ export function AboutHero() {
         {/* Description */}
         <Reveal delay={0.08}>
           <p className="mb-12 max-w-lg text-[clamp(15px,1.7vw,18px)] leading-relaxed text-muted-foreground">
-            Since {siteConfig.business.foundedYear}, {siteConfig.business.name} has been delivering
-            premium roofing, siding, and exterior craftsmanship—licensed, bilingual, and built on
-            trust.
+            Since {siteConfig.business.foundedYear}, <BrandLink>{siteConfig.business.name}</BrandLink> has been delivering premium roofing,
+            siding, and exterior craftsmanship-licensed, bilingual, and built on trust.
           </p>
         </Reveal>
 

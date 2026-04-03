@@ -12,6 +12,7 @@ import {
   Layers,
   PanelTop,
   Square,
+  Triangle,
 } from "lucide-react";
 
 import { SectionHeading } from "@/components/Home/section-heading";
@@ -67,14 +68,13 @@ export function ServicesSection({
               >
                 <div className="relative h-44 overflow-hidden">
                   <Image
-                    src="/images/service-roof-removal.jpg"
+                    src="/Images New/service-roof-removal.webp"
                     alt="Roof removal and tear-off service in Essex County NJ by professional roofing contractor"
                     fill
                     quality={60}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-linear-to-t from-card via-card/40 to-transparent" />
                   <div className="absolute bottom-3 left-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/90">
                     <Layers className="h-5 w-5 text-primary-foreground" />
                   </div>
@@ -115,14 +115,13 @@ export function ServicesSection({
               >
                 <div className="relative h-44 overflow-hidden">
                   <Image
-                    src="/images/service-re-roofing.jpg"
+                    src="/Images New/service-re-roofing.webp"
                     alt="Roof replacement in Essex County NJ"
                     fill
                     quality={60}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-linear-to-t from-card via-card/40 to-transparent" />
                   <div className="absolute bottom-3 left-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/90">
                     <Home className="h-5 w-5 text-primary-foreground" />
                   </div>
@@ -163,14 +162,13 @@ export function ServicesSection({
               >
                 <div className="relative h-44 overflow-hidden">
                   <Image
-                    src="/images/service-flat-roof.jpg"
+                    src="/Images New/service-flat-roof.webp"
                     alt="Flat roofing service in Essex County NJ"
                     fill
                     quality={60}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-linear-to-t from-card via-card/40 to-transparent" />
                   <div className="absolute bottom-3 left-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/90">
                     <Square className="h-5 w-5 text-primary-foreground" />
                   </div>
@@ -210,14 +208,13 @@ export function ServicesSection({
               >
                 <div className="relative h-44 overflow-hidden">
                   <Image
-                    src="/images/service-slate-roof.jpg"
+                    src="/Images New/service-slate-roof.webp"
                     alt="Slate roofing service in Essex County NJ"
                     fill
                     quality={60}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-linear-to-t from-card via-card/40 to-transparent" />
                   <div className="absolute bottom-3 left-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/90">
                     <Diamond className="h-5 w-5 text-primary-foreground" />
                   </div>
@@ -258,14 +255,13 @@ export function ServicesSection({
               >
                 <div className="relative h-44 overflow-hidden">
                   <Image
-                    src="/images/service-chimney.jpg"
+                    src="/Images New/service-chimney.webp"
                     alt="Chimney repair in Essex County NJ"
                     fill
                     quality={60}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-linear-to-t from-card via-card/40 to-transparent" />
                   <div className="absolute bottom-3 left-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/90">
                     <Flame className="h-5 w-5 text-primary-foreground" />
                   </div>
@@ -306,14 +302,13 @@ export function ServicesSection({
               >
                 <div className="relative h-44 overflow-hidden">
                   <Image
-                    src="/images/service-siding.jpg"
+                    src="/Images New/service-siding.webp"
                     alt="Siding installation in Essex County NJ"
                     fill
                     quality={60}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-linear-to-t from-card via-card/40 to-transparent" />
                   <div className="absolute bottom-3 left-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/90">
                     <PanelTop className="h-5 w-5 text-primary-foreground" />
                   </div>
@@ -354,14 +349,13 @@ export function ServicesSection({
               >
                 <div className="relative h-44 overflow-hidden">
                   <Image
-                    src="/images/service-carpentry.jpg"
+                    src="/Images New/service-carpentry.webp"
                     alt="Exterior carpentry service in Essex County NJ"
                     fill
                     quality={60}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-linear-to-t from-card via-card/40 to-transparent" />
                   <div className="absolute bottom-3 left-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/90">
                     <Hammer className="h-5 w-5 text-primary-foreground" />
                   </div>
@@ -393,40 +387,39 @@ export function ServicesSection({
 
           <StaggerItem>
             <Link
-              href="/services/additions"
+              href="/services/dormers"
               className={`group block ${cardClassName ? "h-full" : ""}`.trim()}
-              aria-label="Home additions service Essex County NJ"
+              aria-label="Dormer installation service Essex County NJ"
             >
               <article
                 className={`glass-card overflow-hidden border transition-all duration-500 hover:-translate-y-2 hover:border-primary/40 hover:shadow-luxury ${cardClassName}`.trim()}
               >
                 <div className="relative h-44 overflow-hidden">
                   <Image
-                    src="/images/service-additions.jpg"
-                    alt="Home additions in Essex County NJ"
+                    src="/Images New/service-dormers.webp"
+                    alt="Dormer installation in Essex County NJ"
                     fill
                     quality={60}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-linear-to-t from-card via-card/40 to-transparent" />
                   <div className="absolute bottom-3 left-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/90">
-                    <Building2 className="h-5 w-5 text-primary-foreground" />
+                    <Triangle className="h-5 w-5 text-primary-foreground" />
                   </div>
                 </div>
 
                 <div className="p-5">
                   {/* ✅ SAME SIZE TITLE */}
                   <h3 className="font-serif text-lg font-semibold text-foreground">
-                    Home Additions
+                    Dormer Installation
                   </h3>
 
                   {/* ✅ SAME LENGTH DESCRIPTION */}
                   <p
                     className={`mt-2 text-sm leading-relaxed text-muted-foreground ${descriptionClampClassName}`.trim()}
                   >
-                    Home additions in Essex County NJ designed to expand space
-                    with seamless integration and lasting quality.
+                    Dormer installation in Essex County NJ to add natural light,
+                    headroom, and value to your home.
                   </p>
 
                   {/* ✅ SAME CTA */}
@@ -450,14 +443,13 @@ export function ServicesSection({
               >
                 <div className="relative h-44 overflow-hidden">
                   <Image
-                    src="/images/service-additions.jpg"
+                    src="/Images New/service-additions.webp"
                     alt="Home additions in Essex County NJ"
                     fill
                     quality={60}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-linear-to-t from-card via-card/40 to-transparent" />
                   <div className="absolute bottom-3 left-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/90">
                     <Building2 className="h-5 w-5 text-primary-foreground" />
                   </div>
@@ -498,14 +490,13 @@ export function ServicesSection({
               >
                 <div className="relative h-44 overflow-hidden">
                   <Image
-                    src="/images/service-gutters.jpg"
+                    src="/Images New/service-gutters.webp"
                     alt="Gutter installation in Essex County NJ"
                     fill
                     quality={60}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-linear-to-t from-card via-card/40 to-transparent" />
                   <div className="absolute bottom-3 left-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/90">
                     <Droplets className="h-5 w-5 text-primary-foreground" />
                   </div>
@@ -546,14 +537,13 @@ export function ServicesSection({
               >
                 <div className="relative h-44 overflow-hidden">
                   <Image
-                    src="/images/service-emergency.jpg"
+                    src="/Images New/service-emergency.webp"
                     alt="Emergency roof repair in Essex County NJ"
                     fill
                     quality={60}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-linear-to-t from-card via-card/40 to-transparent" />
                   <div className="absolute bottom-3 left-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/90">
                     <AlertTriangle className="h-5 w-5 text-primary-foreground" />
                   </div>

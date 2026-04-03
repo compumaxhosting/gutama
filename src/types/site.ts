@@ -40,8 +40,10 @@ export interface SiteConfig {
   };
   email: string;
   address: {
+    streetAddress: string;
     locality: string;
     region: string;
+    postalCode: string;
     country: string;
   };
   navLinks: Array<{ label: string; href: string }>;

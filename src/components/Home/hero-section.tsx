@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2, Phone } from "lucide-react";
 
 import { siteConfig } from "@/config/site";
+import { BrandLink } from "@/components/ui/brand-link";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { Reveal } from "@/components/motion/reveal";
@@ -16,15 +17,16 @@ export function HeroSection() {
       {/* ✅ Background Image (SEO optimized alt) */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero-bg3.png"
+          src="/Images New/Hero.webp"
           alt="Roofing contractor working on residential roof in Essex County NJ"
           fill
           priority
+          fetchPriority="high"
+          sizes="(max-width: 768px) 100vw, (max-width: 1280px) 100vw, 1280px"
           quality={90}
-          sizes="100vw"
           className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-black/10" />
       </div>
 
       <Container className="relative text-center">
@@ -59,7 +61,7 @@ export function HeroSection() {
         {/* ✅ SEO-OPTIMIZED SUBTEXT */}
         <Reveal delay={0.08}>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-white md:text-xl">
-            Gutama Home Improvement provides expert roof repair, roof
+            <BrandLink>Gutama Home Improvement</BrandLink> provides expert roof repair, roof
             replacement, siding, and chimney services in{" "}
             {siteConfig.business.regionLabel}. Trusted for residential and
             commercial projects with high-quality craftsmanship built to last.

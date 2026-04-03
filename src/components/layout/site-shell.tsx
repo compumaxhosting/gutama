@@ -5,6 +5,7 @@ import { siteConfig } from "@/config/site";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import BackToTop from "@/components/layout/BackToTop";
+import { ScrollToTopOnRouteChange } from "@/components/layout/scroll-to-top-on-route-change";
 
 interface SiteShellProps {
   children: ReactNode;
@@ -13,6 +14,7 @@ interface SiteShellProps {
 export function SiteShell({ children }: SiteShellProps) {
   return (
     <div className="min-h-screen bg-background">
+      <ScrollToTopOnRouteChange />
       <Navbar />
       <main className="pt-24">{children}</main>
       <Footer />

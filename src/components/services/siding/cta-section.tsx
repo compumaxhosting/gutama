@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 
 export function SidingCtaSection() {
   const content = {
-        image: "/images/service-siding.jpg",
+        image: "/Images New/service-siding.webp",
         imageAlt: "Siding project background",
         title: "Ready to Refresh",
         accent: "Your Exterior?",

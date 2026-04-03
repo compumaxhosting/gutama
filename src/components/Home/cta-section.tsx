@@ -1,6 +1,7 @@
 import { Banknote, Phone } from "lucide-react";
 
 import { siteConfig } from "@/config/site";
+import { BrandLink } from "@/components/ui/brand-link";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
@@ -31,7 +32,7 @@ export function CtaSection() {
         <Reveal delay={0.08}>
           {/* ✅ KEYWORD + LOCATION BOOST */}
           <p className="mx-auto mt-5 max-w-xl text-lg text-muted-foreground">
-            Contact {siteConfig.business.name} for expert roof repair, roof
+            Contact <BrandLink>{siteConfig.business.name}</BrandLink> for expert roof repair, roof
             replacement, siding, and exterior services in{" "}
             {siteConfig.business.regionLabel}. We deliver reliable, high-quality
             results for residential and commercial properties.

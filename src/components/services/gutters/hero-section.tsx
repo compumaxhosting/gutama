@@ -10,7 +10,7 @@ export function GuttersHeroSection() {
         label: "Gutters",
         title: "Gutters",
         accent: "Installation",
-        image: "/images/service-gutters.jpg",
+        image: "/Images New/service-gutters.webp",
         imageAlt: "Gutter installation services",
         description: "Seamless gutter installation and repair designed to control roof runoff, protect your foundation, and preserve exterior finishes.",
         stats: [

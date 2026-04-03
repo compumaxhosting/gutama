@@ -9,7 +9,7 @@ export function RoofRemovalOverviewSection() {
           "Our roof removal crews protect the property, work efficiently, and leave a clean, inspection-ready surface so the next roofing system can be installed on a dependable foundation.",
         ],
         bullets: ["Controlled tear-off", "Clean jobsite practices", "Deck exposure for inspection", "Disposal and site protection"],
-        image: "/images/before-roof.jpg",
+        image: "/Images New/before-roof.webp",
         imageAlt: "Roof tear-off preparation",
         badgeValue: "740+",
         badgeLabel: "Roofs Removed",

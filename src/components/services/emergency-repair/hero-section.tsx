@@ -10,7 +10,7 @@ export function EmergencyRepairHeroSection() {
         label: "Emergency Repair",
         title: "Emergency",
         accent: "Repair",
-        image: "/images/service-emergency.jpg",
+        image: "/Images New/service-emergency.webp",
         imageAlt: "Emergency exterior repair services",
         description: "Rapid-response emergency repairs for storm damage, active leaks, and urgent exterior failures that need immediate stabilization.",
         stats: [

@@ -5,6 +5,7 @@ import { SectionHeading } from "@/components/Home/section-heading";
 import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
 import { Reveal, StaggerGroup, StaggerItem } from "@/components/motion/reveal";
+import { BrandLink } from "@/components/ui/brand-link";
 import type { Testimonial } from "@/types/site";
 import { siteConfig } from "@/config/site";
 
@@ -14,23 +15,41 @@ const TESTIMONIALS: Testimonial[] = [
     location: "West Orange, NJ",
     text: "Gutama transformed our roof with incredible professionalism. The roof replacement was done efficiently with high-quality workmanship.",
     rating: 5,
-    image: "/images/testimonial-1.jpg",
+    image: "/Images New/testimonial-1.webp",
   },
   {
     name: "Sandra M.",
     location: "Bloomfield, NJ",
     text: "After a storm, their team handled our roof repair quickly and professionally. Great communication and reliable service.",
     rating: 5,
-    image: "/images/testimonial-2.jpg",
+    image: "/Images New/testimonial-2.webp",
   },
   {
     name: "Carlos D.",
     location: "Newark, NJ",
     text: "Excelente servicio. Professional roofing team, smooth process, and excellent final results for our home.",
     rating: 5,
-    image: "/images/testimonial-3.jpg",
+    image: "/Images New/testimonial-3.webp",
   },
 ];
+
+function withBrandLink(text: string) {
+  const firstMatchIndex = text.search(/\bGutama\b/i);
+
+  if (firstMatchIndex === -1) {
+    return text;
+  }
+
+  const matchedText = text.slice(firstMatchIndex, firstMatchIndex + "Gutama".length);
+
+  return (
+    <>
+      {text.slice(0, firstMatchIndex)}
+      <BrandLink>{matchedText}</BrandLink>
+      {text.slice(firstMatchIndex + matchedText.length)}
+    </>
+  );
+}
 
 export function TestimonialsSection() {
   return (
@@ -72,7 +91,7 @@ export function TestimonialsSection() {
 
                 {/* 💬 Review Text (SEO enhanced but natural) */}
                 <p className="text-sm italic leading-relaxed text-foreground">
-                  &ldquo;{item.text}&rdquo;
+                  &ldquo;{withBrandLink(item.text)}&rdquo;
                 </p>
 
                 {/* 👤 User */}

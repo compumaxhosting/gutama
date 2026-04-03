@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import Script from "next/script";
 
-import { siteUrl } from "@/config/site";
+import { siteConfig, siteUrl } from "@/config/site";
 import { SiteShell } from "@/components/layout/site-shell";
 
 import "./globals.css";
@@ -101,9 +101,11 @@ export default function RootLayout({
 
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Essex County",
-      addressRegion: "NJ",
-      addressCountry: "US",
+      streetAddress: siteConfig.address.streetAddress,
+      addressLocality: siteConfig.address.locality,
+      addressRegion: siteConfig.address.region,
+      postalCode: siteConfig.address.postalCode,
+      addressCountry: siteConfig.address.country,
     },
 
     areaServed: {
@@ -182,9 +184,9 @@ export default function RootLayout({
         {/* ✅ GOOGLE ANALYTICS */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-8K697EFF53"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}

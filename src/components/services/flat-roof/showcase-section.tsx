@@ -38,12 +38,12 @@ export function FlatRoofShowcaseSection() {
   const content = {
         title: "Flat Roof",
         accent: "Projects",
-        featured: { src: "/images/service-flat-roof.jpg", location: "Newark, NJ", title: "Low-Slope Membrane Replacement" },
+        featured: { src: "/Images New/service-flat-roof.webp", location: "Newark, NJ", title: "Low-Slope Membrane Replacement" },
         items: [
-          { src: "/images/before-flat.jpg", location: "Montclair, NJ", title: "Ponding Water Correction" },
-          { src: "/images/after-flat.jpg", location: "Bloomfield, NJ", title: "TPO System Installation" },
-          { src: "/images/gallery-roof-2.jpg", location: "Maplewood, NJ", title: "Drainage & Edge Metal Upgrade" },
-          { src: "/images/gallery-roof-3.jpg", location: "Livingston, NJ", title: "Leak Repair & Flashing Restoration" },
+          { src: "/Images New/before-flat.webp", location: "Montclair, NJ", title: "Ponding Water Correction" },
+          { src: "/Images New/after-flat.webp", location: "Bloomfield, NJ", title: "TPO System Installation" },
+          { src: "/Images New/gallery-roof-2.webp", location: "Maplewood, NJ", title: "Drainage & Edge Metal Upgrade" },
+          { src: "/Images New/gallery-roof-3.webp", location: "Livingston, NJ", title: "Leak Repair & Flashing Restoration" },
         ],
       };
 

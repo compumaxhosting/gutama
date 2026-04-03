@@ -10,7 +10,7 @@ export function SlateRoofHeroSection() {
         label: "Slate Roof",
         title: "Elegant",
         accent: "Slate Roofing",
-        image: "/images/service-slate-roof.jpg",
+        image: "/Images New/service-slate-roof.webp",
         imageAlt: "Slate roofing services",
         description: "Timeless slate roofing installation and repair completed with specialized handling, traditional detailing, and long-term performance in mind.",
         stats: [

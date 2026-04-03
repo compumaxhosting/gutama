@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import { Reveal, StaggerGroup, StaggerItem } from "@/components/motion/reveal";
 import { SectionHeading } from "@/components/Home/section-heading";
+import { BrandLink } from "@/components/ui/brand-link";
 import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
 import type { GalleryItem } from "@/types/site";
@@ -9,32 +10,32 @@ import type { GalleryItem } from "@/types/site";
 const GALLERY_ITEMS: GalleryItem[] = [
   {
     title: "Roof Replacement in Essex County NJ",
-    image: "/images/gallery-roof-1.jpg",
+    image: "/Images New/gallery-roof-1.webp",
     category: "roofing",
   },
   {
     title: "Architectural Shingle Roofing Installation",
-    image: "/images/gallery-roof-2.jpg",
+    image: "/Images New/gallery-roof-2.webp",
     category: "roofing",
   },
   {
     title: "Storm Damage Roof Repair",
-    image: "/images/gallery-roof-3.jpg",
+    image: "/Images New/service-dormers.webp",
     category: "roofing",
   },
   {
     title: "Siding Installation & Exterior Upgrade",
-    image: "/images/gallery-siding-1.jpg",
+    image: "/Images New/service-siding.webp",
     category: "siding",
   },
   {
     title: "Chimney Repair & Restoration",
-    image: "/images/gallery-chimney-1.jpg",
+    image: "/Images New/gallery-chimney-1.webp",
     category: "chimney",
   },
   {
     title: "Custom Home Addition Project",
-    image: "/images/gallery-addition-1.jpg",
+    image: "/Images New/service-additions.webp",
     category: "additions",
   },
 ];
@@ -51,7 +52,13 @@ export function GallerySection() {
           <SectionHeading
             eyebrow="Project Gallery"
             title="Roofing & Exterior Projects in Essex County NJ"
-            description="Explore recent roof replacement, siding installation, chimney repair, and exterior renovation projects completed by Gutama Home Improvement across Essex County, NJ."
+            description={
+              <>
+                Explore recent roof replacement, siding installation, chimney repair, and exterior
+                renovation projects completed by <BrandLink>Gutama Home Improvement</BrandLink>
+                across Essex County, NJ.
+              </>
+            }
           />
         </Reveal>
 

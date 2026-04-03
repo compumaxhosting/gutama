@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 
 export function EmergencyRepairCtaSection() {
   const content = {
-        image: "/images/service-emergency.jpg",
+        image: "/Images New/service-emergency.webp",
         imageAlt: "Emergency repair background",
         title: "Need Immediate",
         accent: "Site Protection?",

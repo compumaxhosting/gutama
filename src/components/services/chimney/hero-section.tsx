@@ -10,7 +10,7 @@ export function ChimneyHeroSection() {
         label: "Chimney",
         title: "Chimney",
         accent: "Services",
-        image: "/images/service-chimney.jpg",
+        image: "/Images New/service-chimney.webp",
         imageAlt: "Chimney repair and restoration",
         description: "Complete chimney repair, rebuilding, flashing, and waterproofing services focused on safety, weather protection, and lasting masonry performance.",
         stats: [

@@ -10,7 +10,7 @@ export function SidingHeroSection() {
         label: "Siding",
         title: "Premium",
         accent: "Siding",
-        image: "/images/service-siding.jpg",
+        image: "/Images New/service-siding.webp",
         imageAlt: "Siding installation services",
         description: "Transform your exterior with premium siding installation, moisture-conscious detailing, and finish work that sharpens curb appeal.",
         stats: [

@@ -9,7 +9,7 @@ export function ReRoofingOverviewSection() {
           "We handle re-roofing with a complete system mindset, removing failing materials, correcting problem conditions, and installing a new assembly built for durability, weather resistance, and clean visual finish.",
         ],
         bullets: ["Full tear-off replacement", "Deck and flashing review", "Ventilation improvements", "Premium roofing materials"],
-        image: "/images/after-roof.jpg",
+        image: "/Images New/after-roof.webp",
         imageAlt: "Completed re-roofing project",
         badgeValue: "690+",
         badgeLabel: "Roofs Replaced",

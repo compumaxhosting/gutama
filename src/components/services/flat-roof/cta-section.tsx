@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 
 export function FlatRoofCtaSection() {
   const content = {
-        image: "/images/service-flat-roof.jpg",
+        image: "/Images New/service-flat-roof.webp",
         imageAlt: "Flat roof project background",
         title: "Ready to Upgrade",
         accent: "Your Flat Roof?",

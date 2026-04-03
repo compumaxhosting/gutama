@@ -9,7 +9,7 @@ export function CarpentryOverviewSection() {
           "We coordinate material selection, site protection, and finish detailing so the final result looks refined, functions properly, and integrates naturally with the rest of your home.",
         ],
         bullets: ["Structural repairs", "Exterior trim replacement", "Finish carpentry detailing", "Custom framing solutions"],
-        image: "/images/about-team.jpg",
+        image: "/Images New/about-team.webp",
         imageAlt: "Carpentry detail work",
         badgeValue: "480+",
         badgeLabel: "Projects Delivered",

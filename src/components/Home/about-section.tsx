@@ -4,6 +4,7 @@ import { Shield } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import { Reveal } from "@/components/motion/reveal";
 import { SectionHeading } from "@/components/Home/section-heading";
+import { BrandLink } from "@/components/ui/brand-link";
 import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
 
@@ -19,7 +20,14 @@ export function AboutSection() {
           <SectionHeading
             eyebrow="About Our Company"
             title={`Trusted Roofing Contractor in ${siteConfig.business.regionLabel}`}
-            description={`${siteConfig.business.name} provides professional roof repair, roof replacement, siding, and exterior services across ${siteConfig.business.regionLabel}. Our licensed and insured team delivers high-quality craftsmanship for residential and commercial properties.`}
+            description={
+              <>
+                <BrandLink>{siteConfig.business.name}</BrandLink> provides professional roof repair,
+                roof replacement, siding, and exterior services across{" "}
+                {siteConfig.business.regionLabel}. Our licensed and insured team delivers
+                high-quality craftsmanship for residential and commercial properties.
+              </>
+            }
           />
         </Reveal>
 
@@ -27,11 +35,11 @@ export function AboutSection() {
           <Reveal>
             <div className="glass-card overflow-hidden border">
               <Image
-                src="/images/about-team.jpg"
+                src="/Images New/service-additions.webp"
                 alt={`Roofing contractor team working on residential roofing project in ${siteConfig.business.regionLabel}`}
                 width={1200}
                 height={800}
-                className="h-auto w-full"
+                className="h-64 w-full object-cover sm:h-72 lg:h-96"
               />
             </div>
           </Reveal>
@@ -40,7 +48,8 @@ export function AboutSection() {
             <div className="space-y-5 text-muted-foreground">
               {/* ✅ SEO-OPTIMIZED CONTENT */}
               <p>
-                At {siteConfig.business.name}, every project is built on trust,
+                At <BrandLink>{siteConfig.business.name}</BrandLink>, every project is built on
+                trust,
                 clear communication, and expert workmanship. As a leading
                 roofing contractor in {siteConfig.business.regionLabel}, we
                 specialize in durable roofing systems designed to protect your

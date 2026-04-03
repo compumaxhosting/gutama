@@ -3,6 +3,7 @@ import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
 import { Reveal, StaggerGroup, StaggerItem } from "@/components/motion/reveal";
 import { siteConfig } from "@/config/site";
+import { BrandLink } from "@/components/ui/brand-link";
 
 const SERVICE_AREA_LABEL = `Roofing Services in ${siteConfig.business.regionLabel}`;
 
@@ -37,7 +38,7 @@ export function ServiceAreasSection() {
     >
       {/* Background */}
       <div
-        className="absolute inset-0 bg-[url('/images/about-aerial.jpg')] bg-cover bg-center opacity-10"
+        className="absolute inset-0 bg-[url('/Images New/about-aerial.webp')] bg-cover bg-center opacity-10"
         aria-hidden="true"
       />
       <div className="absolute inset-0 bg-background/90" aria-hidden="true" />
@@ -47,7 +48,13 @@ export function ServiceAreasSection() {
           <SectionHeading
             eyebrow="Service Areas"
             title={SERVICE_AREA_LABEL}
-            description={`Gutama Home Improvement provides roof repair, roof replacement, siding, and exterior services across ${siteConfig.business.regionLabel}, including the following cities and ZIP codes.`}
+            description={
+              <>
+                <BrandLink>Gutama Home Improvement</BrandLink> provides roof repair, roof
+                replacement, siding, and exterior services across {siteConfig.business.regionLabel},
+                including the following cities and ZIP codes.
+              </>
+            }
           />
         </Reveal>
 
