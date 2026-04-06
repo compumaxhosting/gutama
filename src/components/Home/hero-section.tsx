@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2, Phone } from "lucide-react";
 
 import { siteConfig } from "@/config/site";
-import { BrandLink } from "@/components/ui/brand-link";
+// import { BrandLink } from "@/components/ui/brand-link";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { Reveal } from "@/components/motion/reveal";
@@ -53,28 +53,10 @@ export function HeroSection() {
         <h1 className="mx-auto mt-6 max-w-5xl font-serif text-4xl font-bold leading-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
           Roofing Contractor in {siteConfig.business.regionLabel}
           <br />
-          <span className="text-gradient-gold">
+          <span className="text-gradient-gold text-[0.8em]">
             Premium Roofing & Exterior Solutions
           </span>
         </h1>
-
-        {/* ❌ REMOVE ANIMATION FROM TEXT (LCP FIX) */}
-        <p className="mx-auto mt-6 max-w-2xl text-lg text-white md:text-xl">
-          <BrandLink>Gutama Home Improvement</BrandLink> provides expert roof
-          repair, roof replacement, siding, and chimney services in{" "}
-          {siteConfig.business.regionLabel}. Trusted for residential and
-          commercial projects with high-quality craftsmanship built to last.
-        </p>
-
-        {/* ✅ KEEP SMALL ANIMATION HERE (below LCP) */}
-        <Reveal delay={0.1}>
-          <div className="mt-6 flex flex-wrap items-center justify-center gap-4 text-sm text-white/90">
-            <span>✔ Free Roof Inspections & Estimates</span>
-            <span>✔ 5-Year Installation Warranty</span>
-            <span>✔ Emergency Roof Repair Available</span>
-            <span>✔ English & Español</span>
-          </div>
-        </Reveal>
 
         <Reveal delay={0.12}>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">

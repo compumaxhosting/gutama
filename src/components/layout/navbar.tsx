@@ -75,7 +75,6 @@ export function Navbar() {
               width={180}
               height={96}
               priority
-              quality={100}
               sizes="180px"
               className="h-42 w-auto object-contain mt-6"
             />

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useCallback, useState } from "react";
 import { ArrowRight, Check, TriangleAlert, Loader2 } from "lucide-react";
 
 import { siteConfig } from "@/config/site";
@@ -21,15 +21,27 @@ const INPUT_CLASS =
 const LABEL_CLASS =
   "text-[0.7rem] font-medium uppercase tracking-[0.1em] text-white/60";
 
+const NAME_FIELDS = [
+  { id: "fn", label: "First name", placeholder: "John" },
+  { id: "ln", label: "Last name", placeholder: "Doe" },
+] as const;
+
 export function ContactForm() {
   const [service, setService] = useState<Service | null>(null);
-  const [step2, setStep2] = useState(false);
   const [step3, setStep3] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
-  const formRef = useRef<HTMLFormElement>(null);
+  const step2 = Boolean(service);
+
+  const markStep3Started = useCallback(() => {
+    setStep3((prev) => (prev ? prev : true));
+  }, []);
+
+  const handleServiceSelect = useCallback((selectedService: Service) => {
+    setService((prev) => (prev === selectedService ? prev : selectedService));
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -60,7 +72,6 @@ export function ContactForm() {
           }
         });
         setFieldErrors(errors);
-        setLoading(false);
         return;
       }
 
@@ -80,7 +91,6 @@ export function ContactForm() {
         } else {
           setError(result.error || "Something went wrong. Please try again.");
         }
-        setLoading(false);
         return;
       }
 
@@ -89,14 +99,17 @@ export function ContactForm() {
     } catch (err) {
       console.error("Form submission error:", err);
       setError("Unable to send message. Please try again later.");
+    } finally {
       setLoading(false);
     }
   };
 
   const handleReset = () => {
     setService(null);
-    setStep2(false);
     setStep3(false);
+    setLoading(false);
+    setError(null);
+    setFieldErrors({});
     setSubmitted(false);
   };
 
@@ -140,7 +153,7 @@ export function ContactForm() {
                 <button
                   key={s}
                   type="button"
-                  onClick={() => { setService(s); setStep2(true); }}
+                  onClick={() => handleServiceSelect(s)}
                   className={cn(
                     "whitespace-nowrap rounded-full border-[1.5px] px-3 py-1.5 text-[0.78rem] font-medium transition-all duration-150",
                     service === s
@@ -162,9 +175,8 @@ export function ContactForm() {
 
             {/* Form */}
             <form
-              ref={formRef}
               onSubmit={handleSubmit}
-              onInput={() => setStep3(true)}
+              onInput={step3 ? undefined : markStep3Started}
               className="flex flex-col gap-4"
             >
               {/* Hidden service field */}
@@ -172,10 +184,7 @@ export function ContactForm() {
 
               {/* Name row */}
               <div className="grid grid-cols-2 gap-3.5 max-[520px]:grid-cols-1">
-                {([
-                  { id: "fn", label: "First name", placeholder: "John" },
-                  { id: "ln", label: "Last name", placeholder: "Doe" },
-                ] as const).map(({ id, label, placeholder }) => (
+                {NAME_FIELDS.map(({ id, label, placeholder }) => (
                   <div key={id} className="flex flex-col gap-1">
                     <label htmlFor={id} className={LABEL_CLASS}>{label}</label>
                     <input
