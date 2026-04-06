@@ -85,7 +85,7 @@ export function ContactInfoPanel() {
 
             {/* Hours badge */}
             <div className="inline-flex w-fit items-center gap-2 rounded-full border border-white/10 px-3.5 py-1.5">
-              <div className="h-1.5 w-1.5 animate-pulse rounded-full bg-green-500" />
+              <div className="h-1.5 w-1.5 rounded-full bg-green-500" />
               <span className="text-xs text-white/45">Open · Mon–Sat, 7am – 7pm</span>
             </div>
           </div>

@@ -16,7 +16,7 @@ export const metadata: Metadata = buildMetadata({
 export default function ServicesPage() {
   return (
     <>
-      <section className="relative py-20">
+      <section className="relative pt-20">
         <div className="absolute inset-0 bg-linear-to-br from-secondary/10 via-background to-background" />
         <Container className="relative text-center">
           <Reveal>

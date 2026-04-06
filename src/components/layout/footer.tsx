@@ -36,10 +36,10 @@ const SOCIAL_LINKS = [
 export function Footer() {
   return (
     <footer className="border-t border-border/40 bg-muted/20">
-      <div className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-10 px-4 py-16 md:grid-cols-2 lg:grid-cols-4">
+      <div className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-y-10 px-4 py-16 md:grid-cols-2 md:gap-x-12 md:gap-y-12 lg:grid-cols-4 lg:gap-x-12 lg:gap-y-12">
         <div>
           <Link href="/" className="inline-flex">
-            <Image src="/Images New/logo2.webp" alt={siteConfig.business.name} width={180} height={72} quality={60} sizes="360px" className="h-20 w-auto object-contain" />
+            <Image src="/Images New/logo2.webp" alt={siteConfig.business.name} width={200} height={80} quality={60} sizes="400px" className="h-22 w-auto object-contain" />
           </Link>
           <p className="text-sm leading-relaxed text-muted-foreground">{siteConfig.business.description}</p>
           <div className="mt-4 flex flex-col gap-2 text-sm">
@@ -68,7 +68,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div>
+        <div className="md:pl-6 lg:pl-10">
           <h3 className="font-serif text-lg text-foreground">Quick Links</h3>
           <div className="gold-divider mx-0! my-4" />
           <div className="flex flex-col gap-2">
