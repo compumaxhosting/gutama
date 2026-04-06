@@ -25,11 +25,6 @@ const headingFont = Playfair_Display({
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
 
-  title: {
-    default: "Roofing Contractor Essex County NJ | Gutama Home Improvement",
-    template: "%s | Gutama Home Improvement",
-  },
-
   description:
     "Gutama Home Improvement provides expert roofing, siding, and exterior services in Essex County, NJ. Licensed, insured, and trusted for roof repair, replacement, and emergency services. Get a free estimate today.",
 

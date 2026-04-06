@@ -28,7 +28,7 @@ export function RoofRemovalOverviewSection() {
 
           <h3 className="mb-4 text-xl font-serif text-foreground">
             Why Choose Our Essex County Roof Tear-Off?
-          </h3>
+          </h3> 
 
           <p className="mb-4 text-base leading-loose text-muted-foreground">
             We handle the heavy lifting so you don&apos;t have to. From
