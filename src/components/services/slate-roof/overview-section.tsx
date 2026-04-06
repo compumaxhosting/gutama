@@ -2,17 +2,26 @@ import Image from "next/image";
 
 export function SlateRoofOverviewSection() {
   const content = {
-        title: "Traditional roofing with",
-        accent: "specialized precision",
+        title: "Premium Slate Roofing Installation",
+        accent: "& Repair in Essex County, NJ",
+        subtitle: "Expert Slate Roof Maintenance & Repair",
         paragraphs: [
-          "Slate roofing is a specialty system that requires careful handling, compatible flashings, exact layout work, and a strong understanding of how the roof ages over time. It is not a standard shingle installation.",
-          "Whether we are repairing a damaged area or completing a larger slate roofing scope, we focus on durability, visual consistency, and preservation of the roof's architectural character.",
+          "Gutama Home Improvement is the leading slate roofing contractor in Essex County, specializing in the timeless elegance of natural slate roof installation in New Jersey. We provide expert residential slate roofing in Newark, NJ and comprehensive commercial slate roofing NJ solutions tailored to the unique architectural needs of historic North Jersey properties.",
+          "Maintaining a slate roof requires specialized knowledge. Our professional slate roofing company offers dedicated slate roof repair services in NJ and routine slate roof maintenance services NJ to protect your investment. Whether you need a full slate roof replacement NJ or minor tile repairs in Livingston or Montclair, we provide affordable slate roofing services NJ without compromising on quality.",
         ],
-        bullets: ["Slate roof repairs", "Selective slate replacement", "Flashing integration", "Historic roof detailing"],
+        bullets: [
+          "Longevity: We use weather-resistant, industrial-grade slate for century-long durability.",
+          "Local Heritage: Serving historic districts in Newark, Glen Ridge, and South Orange.",
+          "Precision: Skilled craftsmanship in every slate roofing installation NJ.",
+        ],
+        bottomTitle: "Slate Roofing Installation in NJ",
+        bottomTitleAccent: "Elegant & Durable Roofs in Essex County",
+        bottomDescription:
+          "Gutama Home Improvement provides expert slate roofing installation NJ, offering homeowners and businesses in Essex County durable, high-end natural slate solutions. Our specialists provide professional repairs and replacements, ensuring your property features a weather-resistant, elegant, and long-lasting roof tailored to North Jersey's climate.",
         image: "/Images New/service-slate-roof.webp",
         imageAlt: "Slate roofing detail",
-        badgeValue: "120+",
-        badgeLabel: "Slate Projects Completed",
+        badgeValue: "Essex",
+        badgeLabel: "County Slate Specialists",
       };
 
   return (
@@ -26,7 +35,8 @@ export function SlateRoofOverviewSection() {
             <em className="text-secondary">{content.accent}</em>
           </h2>
           <div className="mx-0 mb-7 h-px w-24 bg-linear-to-r from-secondary to-secondary/30" />
-          <p className="mb-8 text-base leading-loose text-muted-foreground">{content.paragraphs[0]}</p>
+          <p className="mb-6 text-base leading-loose text-muted-foreground">{content.paragraphs[0]}</p>
+          <h3 className="mb-4 text-xl font-serif text-foreground">{content.subtitle}</h3>
           <p className="mb-10 text-base leading-loose text-muted-foreground">{content.paragraphs[1]}</p>
           <ul className="flex flex-col gap-3.5">
             {content.bullets.map((item) => (
@@ -51,6 +61,17 @@ export function SlateRoofOverviewSection() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="mx-auto mt-20 max-w-4xl text-center">
+        <div className="mx-auto mb-6 h-px w-24 bg-linear-to-r from-secondary to-secondary/30" />
+        <h3 className="mb-4 font-serif text-[clamp(24px,2.5vw,32px)] text-foreground">
+          {content.bottomTitle}{" "}
+          <em className="text-secondary">{content.bottomTitleAccent}</em>
+        </h3>
+        <p className="text-base leading-loose text-muted-foreground">
+          {content.bottomDescription}
+        </p>
       </div>
     </section>
   );

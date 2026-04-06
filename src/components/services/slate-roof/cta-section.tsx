@@ -9,10 +9,11 @@ export function SlateRoofCtaSection() {
   const content = {
         image: "/Images New/service-slate-roof.webp",
         imageAlt: "Slate roofing background",
-        title: "Ready to Protect",
-        accent: "Your Slate Roof?",
-        description: "Schedule a no-cost roof evaluation and estimate. We'll inspect the slate system, identify vulnerable details, and outline the right repair or restoration approach.",
-        buttonLabel: "Schedule a Free Roof Evaluation",
+        title: "Looking for a",
+        accent: "Specialist in Slate?",
+        description: "Contact Gutama Home Improvement today for your expert Essex County consultation.",
+        buttonLabel: "Explore our Historic Slate Portfolio",
+        secondaryLabel: "Get a Quote for Roof Removal",
       };
 
   return (
@@ -30,7 +31,8 @@ export function SlateRoofCtaSection() {
         <h2 className="mb-5 font-serif text-[clamp(38px,5vw,64px)] leading-none text-foreground">{content.title}<br /><em className="text-secondary">{content.accent}</em></h2>
         <p className="mx-auto mb-14 max-w-lg text-base leading-loose text-muted-foreground">{content.description}</p>
         <div className="flex flex-wrap justify-center gap-4">
-          <Button asChild className="h-12 px-7 text-sm uppercase tracking-[0.14em]"><Link href="/contact">{content.buttonLabel}</Link></Button>
+          <Button asChild className="h-12 px-7 text-sm uppercase tracking-[0.14em]"><Link href="/gallery">{content.buttonLabel}</Link></Button>
+          <Button asChild variant="outline" className="h-12 border-secondary/40 px-6 text-sm text-secondary hover:bg-secondary/10 hover:text-secondary"><Link href="/services/roof-removal">{content.secondaryLabel}</Link></Button>
           <Button asChild variant="outline" className="h-12 border-secondary/40 px-6 text-sm text-secondary hover:bg-secondary/10 hover:text-secondary"><a href={`tel:${siteConfig.phones.english}`}><Phone size={14} className="mr-2 inline-block" />Call {siteConfig.phones.english}</a></Button>
         </div>
         <p className="mt-7 text-xs tracking-wide text-muted-foreground">No obligation - Licensed & insured - {siteConfig.business.regionLabel}</p>
