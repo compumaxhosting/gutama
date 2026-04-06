@@ -4,8 +4,7 @@ import { Phone } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
-import BackToTop from "@/components/layout/BackToTop";
-import { ScrollToTopOnRouteChange } from "@/components/layout/scroll-to-top-on-route-change";
+import ClientOnly from "@/components/layout/client-only";
 
 interface SiteShellProps {
   children: ReactNode;
@@ -14,11 +13,13 @@ interface SiteShellProps {
 export function SiteShell({ children }: SiteShellProps) {
   return (
     <div className="min-h-screen bg-background">
-      <ScrollToTopOnRouteChange />
       <Navbar />
+
       <main className="pt-24">{children}</main>
+
       <Footer />
-      {/* Mobile call FAB — bottom-left */}
+
+      {/* ✅ Mobile call FAB */}
       <a
         href={`tel:${siteConfig.phones.english}`}
         className="fixed bottom-8 left-8 z-40 inline-flex h-14 w-14 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-xl transition hover:bg-primary/90 lg:hidden"
@@ -26,8 +27,9 @@ export function SiteShell({ children }: SiteShellProps) {
       >
         <Phone className="h-6 w-6" />
       </a>
-      {/* Back to top — bottom-right */}
-      <BackToTop />
+
+      {/* ✅ Client-side only stuff */}
+      <ClientOnly />
     </div>
   );
 }

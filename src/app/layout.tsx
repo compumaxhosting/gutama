@@ -7,14 +7,19 @@ import { SiteShell } from "@/components/layout/site-shell";
 
 import "./globals.css";
 
+// ✅ OPTIMIZED FONTS (big performance win)
 const bodyFont = Inter({
   variable: "--font-body",
   subsets: ["latin"],
+  display: "swap",
+  preload: true,
 });
 
 const headingFont = Playfair_Display({
   variable: "--font-heading",
   subsets: ["latin"],
+  display: "swap",
+  preload: true,
 });
 
 export const metadata: Metadata = {
@@ -83,22 +88,16 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // ✅ INLINE ADVANCED SCHEMA
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "RoofingContractor",
-
     name: "Gutama Home Improvement",
     url: siteUrl,
-
     description:
       "Professional roofing contractor in Essex County, NJ offering roof repair, replacement, siding, chimney, and emergency services.",
-
     image: `${siteUrl}/logo.png`,
-
     telephone: "+1-973-820-5130",
     email: "antoniogutama@gmail.com",
-
     address: {
       "@type": "PostalAddress",
       streetAddress: siteConfig.address.streetAddress,
@@ -107,18 +106,15 @@ export default function RootLayout({
       postalCode: siteConfig.address.postalCode,
       addressCountry: siteConfig.address.country,
     },
-
     areaServed: {
       "@type": "Place",
       name: "Essex County, NJ",
     },
-
     geo: {
       "@type": "GeoCoordinates",
       latitude: "40.7357",
       longitude: "-74.1724",
     },
-
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
@@ -134,9 +130,7 @@ export default function RootLayout({
         closes: "18:00",
       },
     ],
-
     priceRange: "$$",
-
     makesOffer: [
       {
         "@type": "Offer",
@@ -174,19 +168,26 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* ✅ PERFORMANCE BOOST */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+      </head>
+
       <body
         className={`${bodyFont.variable} ${headingFont.variable} antialiased`}
       >
         {/* ✅ MAIN LAYOUT */}
         <SiteShell>{children}</SiteShell>
 
-        {/* ✅ GOOGLE ANALYTICS */}
+        {/* ✅ GOOGLE ANALYTICS (non-blocking) */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-8K697EFF53"
-          strategy="lazyOnload"
+          strategy="afterInteractive"
         />
-        <Script id="google-analytics" strategy="lazyOnload">
+
+        <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -195,10 +196,11 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* ✅ SEO SCHEMA */}
+        {/* ✅ SEO SCHEMA (non-blocking) */}
         <Script
           id="local-business-schema"
           type="application/ld+json"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(localBusinessSchema),
           }}

@@ -14,7 +14,7 @@ export function HeroSection() {
       id="home"
       className="relative flex items-center justify-center overflow-hidden py-24 md:py-32 lg:py-36"
     >
-      {/* ✅ Background Image (SEO optimized alt) */}
+      {/* ✅ OPTIMIZED BACKGROUND IMAGE */}
       <div className="absolute inset-0">
         <Image
           src="/Images New/Hero.webp"
@@ -22,15 +22,17 @@ export function HeroSection() {
           fill
           priority
           fetchPriority="high"
-          sizes="(max-width: 768px) 100vw, (max-width: 1280px) 100vw, 1280px"
-          quality={90}
+          placeholder="blur"
+          blurDataURL="/Images New/Hero.webp"
+          sizes="100vw"
+          quality={75} // 🔥 reduced from 90 → big performance win
           className="object-cover object-center"
         />
         <div className="absolute inset-0 bg-black/10" />
       </div>
 
       <Container className="relative text-center">
-        {/* ✅ Trust Badges */}
+        {/* ✅ TRUST BADGES (light animation ok) */}
         <Reveal>
           <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
             {(["Certified", "Licensed", "Bonded", "Insured"] as const).map(
@@ -47,28 +49,24 @@ export function HeroSection() {
           </div>
         </Reveal>
 
-        {/* ✅ MAIN H1 (CRITICAL SEO FIX) */}
-        <Reveal delay={0.05}>
-          <h1 className="mx-auto mt-6 max-w-5xl font-serif text-4xl font-bold leading-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
-            Roofing Contractor in {siteConfig.business.regionLabel}
-            <br />
-            <span className="text-gradient-gold">
-              Premium Roofing & Exterior Solutions
-            </span>
-          </h1>
-        </Reveal>
+        {/* ❌ REMOVE HEAVY ANIMATION FROM H1 (LCP FIX) */}
+        <h1 className="mx-auto mt-6 max-w-5xl font-serif text-4xl font-bold leading-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
+          Roofing Contractor in {siteConfig.business.regionLabel}
+          <br />
+          <span className="text-gradient-gold">
+            Premium Roofing & Exterior Solutions
+          </span>
+        </h1>
 
-        {/* ✅ SEO-OPTIMIZED SUBTEXT */}
-        <Reveal delay={0.08}>
-          <p className="mx-auto mt-6 max-w-2xl text-lg text-white md:text-xl">
-            <BrandLink>Gutama Home Improvement</BrandLink> provides expert roof repair, roof
-            replacement, siding, and chimney services in{" "}
-            {siteConfig.business.regionLabel}. Trusted for residential and
-            commercial projects with high-quality craftsmanship built to last.
-          </p>
-        </Reveal>
+        {/* ❌ REMOVE ANIMATION FROM TEXT (LCP FIX) */}
+        <p className="mx-auto mt-6 max-w-2xl text-lg text-white md:text-xl">
+          <BrandLink>Gutama Home Improvement</BrandLink> provides expert roof
+          repair, roof replacement, siding, and chimney services in{" "}
+          {siteConfig.business.regionLabel}. Trusted for residential and
+          commercial projects with high-quality craftsmanship built to last.
+        </p>
 
-        {/* ✅ VALUE POINTS (KEYWORD SUPPORT + CONVERSION) */}
+        {/* ✅ KEEP SMALL ANIMATION HERE (below LCP) */}
         <Reveal delay={0.1}>
           <div className="mt-6 flex flex-wrap items-center justify-center gap-4 text-sm text-white/90">
             <span>✔ Free Roof Inspections & Estimates</span>
@@ -78,7 +76,6 @@ export function HeroSection() {
           </div>
         </Reveal>
 
-        {/* ✅ CTA BUTTONS (IMPROVED TEXT) */}
         <Reveal delay={0.12}>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Button
