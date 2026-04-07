@@ -2,34 +2,34 @@ import { Award, Clock, Home, Ruler, Shield, Users } from "lucide-react";
 
 const BENEFITS = [
   {
-    icon: Ruler,
-    title: "Seamless Integration",
-    desc: "Every addition is architecturally matched to your existing structure - materials, pitch, trim, and profile.",
-  },
-  {
     icon: Shield,
-    title: "Fully Permitted & Compliant",
-    desc: "We handle all municipal permits and code compliance so your project is protected and insurable.",
-  },
-  {
-    icon: Award,
-    title: "Master Craftsmanship",
-    desc: "Our crews bring decades of residential addition experience to every beam, wall, and finish detail.",
-  },
-  {
-    icon: Clock,
-    title: "Milestone-Based Schedule",
-    desc: "A clear project timeline with defined milestones keeps your build on track and on budget.",
-  },
-  {
-    icon: Users,
-    title: "Dedicated Project Manager",
-    desc: "One point of contact from permit to punch-list. No runarounds, no confusion.",
+    title: "Local Permitting Expertise",
+    desc: "We handle Essex County building codes and municipality-specific zoning requirements from start to finish.",
   },
   {
     icon: Home,
-    title: "Long-Term Value",
-    desc: "Thoughtfully designed additions consistently deliver the highest ROI of any home improvement.",
+    title: "Seamless Integration",
+    desc: "Room additions are designed to blend with your existing roofline, siding, and architectural character.",
+  },
+  {
+    icon: Users,
+    title: "All-In-One Solution",
+    desc: "As a full-service home addition contractor, we manage design, framing, exterior work, and final finishes.",
+  },
+  {
+    icon: Award,
+    title: "Enhanced Value",
+    desc: "Expert-grade house extensions increase square footage, comfort, and long-term property ROI.",
+  },
+  {
+    icon: Ruler,
+    title: "Durable Materials",
+    desc: "We prioritize weather-resistant materials suitable for New Jersey conditions and long-term performance.",
+  },
+  {
+    icon: Clock,
+    title: "Transparent Timeline",
+    desc: "From permits to final walkthrough, your project follows a clear schedule with regular milestone updates.",
   },
 ] as const;
 

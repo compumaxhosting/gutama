@@ -1,13 +1,38 @@
 import Image from "next/image";
-
-const OVERVIEW_BULLETS = [
-  "Architectural design included",
-  "Full permit management",
-  "Structural engineering on staff",
-  "Material matching guaranteed",
-] as const;
+import Link from "next/link";
 
 export function AdditionsOverviewSection() {
+  const content = {
+    introParagraph:
+      "Growing families and remote work demands shouldn&apos;t force you out of the neighborhood you love. Whether you&apos;re looking for a second story addition in Montclair or a spacious kitchen extension in Livingston, navigating local zoning laws and historic requirements can be daunting. As a premier general contractor in Essex County, NJ, we specialize in seamless house extensions that match your home&apos;s original character while adding modern functionality.",
+    title: "Expert Custom Home Additions",
+    accent: "in Essex County, NJ",
+    paragraphs: [
+      "Our team provides end-to-end home remodeling in Essex County, NJ, ensuring every square foot is optimized for your lifestyle. From the initial permits in West Orange to the final walkthrough in Newark, we prioritize durable, weather-resistant materials and transparent timelines.",
+      "We solve your space constraints with high-quality custom home additions designed to boost both your comfort and your property value.",
+    ],
+    bullets: [
+      "Local Permitting Expertise: We handle all Essex County building codes and township-specific zoning.",
+      "Seamless Integration: Our room additions blend perfectly with your existing architecture.",
+      "All-In-One Solution: As a full-service home addition contractor, we manage design, framing, and finish work.",
+      "Enhanced Value: Increase your square footage and ROI with expert-grade house extensions.",
+    ],
+    links: [
+      {
+        href: "/services",
+        label: "Complete Kitchen Remodeling Services",
+        description:
+          "A service focus on interior renovations that often accompany home additions.",
+      },
+      {
+        href: "/services/re-roofing",
+        label: "Essex County Roofing & Exterior Solutions",
+        description:
+          "See how additions are protected with weather-ready roofing expertise.",
+      },
+    ],
+  };
+
   return (
     <section className="relative bg-background py-28 px-6">
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-20 lg:grid-cols-2">
@@ -17,29 +42,37 @@ export function AdditionsOverviewSection() {
             What We Do
           </p>
           <h2 className="mb-6 font-serif text-[clamp(36px,4vw,56px)] leading-snug text-foreground">
-            Additions that become
+            {content.title}
             <br />
-            <em className="text-secondary">part of the story</em>
+            <em className="text-secondary">{content.accent}</em>
           </h2>
           <div className="mx-0 mb-7 h-px w-24 bg-linear-to-r from-secondary to-secondary/30" />
+          <p className="mb-8 text-base leading-loose text-muted-foreground">{content.introParagraph}</p>
           <p className="mb-8 text-base leading-loose text-muted-foreground">
-            A poorly conceived addition is immediately visible: wrong roof pitch, mismatched
-            siding, awkward proportion. We prevent that. Every project begins with architectural
-            study of your home&apos;s existing geometry, materiality, and style before a single
-            drawing is produced.
+            {content.paragraphs[0]}
           </p>
           <p className="mb-10 text-base leading-loose text-muted-foreground">
-            The result is an addition that reads as original construction, adding square footage,
-            light, and lasting value without sacrificing your home&apos;s integrity.
+            {content.paragraphs[1]}
           </p>
           <ul className="flex flex-col gap-3.5">
-            {OVERVIEW_BULLETS.map((item) => (
+            {content.bullets.map((item) => (
               <li key={item} className="flex items-center gap-3">
                 <div className="h-px w-5 shrink-0 bg-secondary" />
                 <span className="text-sm tracking-wide text-foreground/80">{item}</span>
               </li>
             ))}
           </ul>
+          <div className="mt-10 space-y-4 border-t border-secondary/20 pt-6">
+            {content.links.map((item) => (
+              <p key={item.label} className="text-sm leading-loose text-muted-foreground">
+                <Link href={item.href} className="font-medium text-secondary underline-offset-4 hover:underline">
+                  {item.label}
+                </Link>
+                {" - "}
+                {item.description}
+              </p>
+            ))}
+          </div>
         </div>
 
         <div>
@@ -62,6 +95,17 @@ export function AdditionsOverviewSection() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="mx-auto mt-20 max-w-4xl text-center">
+        <div className="mx-auto mb-6 h-px w-24 bg-linear-to-r from-secondary to-secondary/30" />
+
+        <h3 className="mb-4 font-serif text-[clamp(24px,2.5vw,32px)] text-foreground">
+          Ready to <em className="text-secondary">Expand Your Living Space?</em>
+        </h3>
+
+        <p className="text-base leading-loose text-muted-foreground">
+          Contact our Essex County team today for a free consultation and personalized estimate on your home addition project.
+        </p>
       </div>
     </section>
   );

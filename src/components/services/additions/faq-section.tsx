@@ -9,20 +9,16 @@ import { siteConfig } from "@/config/site";
 
 const FAQS = [
   {
-    q: "How long does a typical addition take?",
-    a: "Most single-story additions run 12-18 weeks from permit approval. Multi-story projects typically range 20-28 weeks. We provide a milestone schedule before any work begins.",
+    q: "How much does a home addition cost in Essex County, NJ?",
+    a: "Costs vary based on the project&apos;s scope, but a second story addition or room extension typically depends on square footage and material choices. We provide detailed, transparent quotes tailored to your specific Newark or West Orange property.",
   },
   {
-    q: "What is included in your free estimate?",
-    a: "A detailed line-item scope, preliminary material selections, permit cost estimate, and projected timeline - all at no charge and with no obligation.",
+    q: "Do I need a permit for a room addition in Essex County?",
+    a: "Yes. Every municipality, from Bloomfield to Livingston, requires specific building permits for structural changes. As your general contractor, we manage the entire application process to ensure your project is fully compliant.",
   },
   {
-    q: "Do you handle the architectural drawings?",
-    a: "Yes. We have licensed architects and structural engineers on staff. Full permit-ready drawings are included in your project contract.",
-  },
-  {
-    q: "Can you match my existing exterior materials?",
-    a: "Always. Matching siding, roofing, brick, or stone is a non-negotiable part of our process. We source exact matches or provide tested alternatives before any work begins.",
+    q: "Can you match my new house extension to my existing home?",
+    a: "Absolutely. We specialize in custom home additions that replicate your home&apos;s current siding, roofline, and architectural style, ensuring the new space looks like it was always part of the original build.",
   },
 ] as const;
 
@@ -45,7 +41,7 @@ export function AdditionsFaqSection() {
             </h2>
             <div className="mx-0 mb-7 h-px w-24 bg-linear-to-r from-secondary to-secondary/30" />
             <p className="mb-8 text-sm leading-loose text-muted-foreground">
-              Still have questions? Our project specialists are available to walk through any aspect of your addition.
+              Still have questions? Our project specialists can walk you through permitting, scope, and budget options for your addition.
             </p>
             <Button asChild variant="outline" className="h-12 border-secondary/40 px-6 text-sm text-secondary hover:bg-secondary/10 hover:text-secondary">
               <a href={`tel:${siteConfig.phones.english}`}>

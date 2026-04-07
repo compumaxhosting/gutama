@@ -6,10 +6,10 @@ import { siteConfig } from "@/config/site";
 import { Button } from "@/components/ui/button";
 
 const STATS = [
-  { value: "22+", label: "Years in Essex County" },
-  { value: "340+", label: "Additions Completed" },
-  { value: "100%", label: "Permit Success Rate" },
-  { value: "4.9", label: "Average Client Rating" },
+  { value: "Local", label: "Permitting Expertise" },
+  { value: "Seamless", label: "Integration" },
+  { value: "All-In-One", label: "Build Solution" },
+  { value: "Enhanced", label: "Home Value" },
 ] as const;
 
 export function AdditionsHeroSection() {

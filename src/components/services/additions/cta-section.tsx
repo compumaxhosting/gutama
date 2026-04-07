@@ -29,17 +29,16 @@ export function AdditionsCtaSection() {
           <em className="text-secondary">Your Home?</em>
         </h2>
         <p className="mx-auto mb-14 max-w-lg text-base leading-loose text-muted-foreground">
-          Schedule a no-cost site visit and estimate. We&apos;ll review your vision, walk your
-          property, and provide a detailed proposal within five business days.
+          Contact our Essex County team today for a free consultation and personalized estimate on your home addition project.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <Button asChild className="h-12 px-7 text-sm uppercase tracking-[0.14em]">
-            <Link href="/contact">Schedule a Free Site Visit</Link>
+            <Link href="/contact">Request Free Consultation</Link>
           </Button>
           <Button asChild variant="outline" className="h-12 border-secondary/40 px-6 text-sm text-secondary hover:bg-secondary/10 hover:text-secondary">
             <a href={`tel:${siteConfig.phones.english}`}>
               <Phone size={14} className="mr-2 inline-block" />
-              Call {siteConfig.phones.english}
+              Call 973-820-5130
             </a>
           </Button>
         </div>

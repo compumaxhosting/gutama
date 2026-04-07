@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import { Facebook, Instagram, Music2, Phone } from "lucide-react";
+import { ChevronDown, Facebook, Instagram, Music2, Phone } from "lucide-react";
+import { useState } from "react";
 
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -10,6 +13,25 @@ type NavLink = {
   href: string;
   isActive: boolean;
 };
+
+type ServiceLink = {
+  label: string;
+  href: string;
+};
+
+const MOBILE_SERVICE_LINKS: readonly ServiceLink[] = [
+  { label: "Roof Removal", href: "/services/roof-removal" },
+  { label: "Re-Roofing", href: "/services/re-roofing" },
+  { label: "Flat Roof", href: "/services/flat-roof" },
+  { label: "Slate Roof", href: "/services/slate-roof" },
+  { label: "Chimney", href: "/services/chimney" },
+  { label: "Siding", href: "/services/siding" },
+  { label: "Carpentry", href: "/services/carpentry" },
+  { label: "Dormers", href: "/services/dormers" },
+  { label: "Home Additions", href: "/services/additions" },
+  { label: "Gutters", href: "/services/gutters" },
+  { label: "Emergency Repair", href: "/services/emergency-repair" },
+];
 
 type MobileNavMenuProps = {
   isOpen: boolean;
@@ -26,6 +48,8 @@ export function MobileNavMenu({
   businessName,
   phone,
 }: MobileNavMenuProps) {
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
+
   return (
     <>
       <div
@@ -65,35 +89,104 @@ export function MobileNavMenu({
         </div>
 
         <nav className="flex flex-1 flex-col px-6 py-4">
-          {navLinks.map((link, i) => (
-            <Link
-              key={link.label}
-              href={link.href}
-              onClick={close}
-              className={cn(
-                "group relative flex items-center gap-4 border-b border-border/40 px-2 py-4 last:border-b-0",
-                "text-[15px] font-medium uppercase tracking-[0.08em]",
-                "transition-all duration-300",
-                link.isActive
-                  ? "text-foreground"
-                  : "text-foreground/50 hover:text-foreground",
-                isOpen ? "translate-x-0 opacity-100" : "-translate-x-4 opacity-0"
-              )}
-            >
-              <span
+          {navLinks.map((link, i) => {
+            if (link.label === "Services") {
+              return (
+                <div key={link.label} className="border-b border-border/40">
+                  <button
+                    type="button"
+                    onClick={() => setIsServicesOpen((prev) => !prev)}
+                    className={cn(
+                      "group relative flex w-full items-center gap-4 px-2 py-4 text-left",
+                      "text-[15px] font-medium uppercase tracking-[0.08em]",
+                      "transition-all duration-300",
+                      link.isActive
+                        ? "text-foreground"
+                        : "text-foreground/50 hover:text-foreground",
+                      isOpen ? "translate-x-0 opacity-100" : "-translate-x-4 opacity-0"
+                    )}
+                    aria-expanded={isServicesOpen}
+                    aria-label="Toggle Services menu"
+                  >
+                    <span
+                      className={cn(
+                        "absolute left-0 top-1/2 w-0.5 -translate-y-1/2 rounded-full bg-primary transition-all duration-300 group-hover:h-5",
+                        link.isActive ? "h-5" : "h-0"
+                      )}
+                    />
+                    <span className="w-5 font-mono text-[11px] text-foreground/20 transition-colors duration-300 group-hover:text-primary/60">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <span className="transition-transform duration-300 group-hover:translate-x-1">
+                      {link.label}
+                    </span>
+                    <ChevronDown className={cn("ml-auto h-4 w-4 transition-transform duration-300", isServicesOpen ? "rotate-180" : "rotate-0")} />
+                  </button>
+
+                  <div
+                    className={cn(
+                      "grid transition-all duration-300 ease-out",
+                      isServicesOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                    )}
+                  >
+                    <div className="overflow-hidden">
+                      <div className="mb-3 ml-8 mr-2 mt-1 rounded-md border border-border/50 bg-card/40 p-2.5">
+                        <Link
+                          href="/services"
+                          onClick={close}
+                          className="block rounded-sm px-2 py-1.5 text-[11px] font-medium uppercase tracking-[0.12em] text-secondary"
+                        >
+                          View All Services
+                        </Link>
+                        <div className="mt-1 grid grid-cols-1 gap-0.5">
+                          {MOBILE_SERVICE_LINKS.map((service) => (
+                            <Link
+                              key={service.href}
+                              href={service.href}
+                              onClick={close}
+                              className="rounded-sm px-2 py-1.5 text-[12px] text-foreground/75 transition-colors hover:bg-secondary/10 hover:text-foreground"
+                            >
+                              {service.label}
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              );
+            }
+
+            return (
+              <Link
+                key={link.label}
+                href={link.href}
+                onClick={close}
                 className={cn(
-                  "absolute left-0 top-1/2 w-0.5 -translate-y-1/2 rounded-full bg-primary transition-all duration-300 group-hover:h-5",
-                  link.isActive ? "h-5" : "h-0"
+                  "group relative flex items-center gap-4 border-b border-border/40 px-2 py-4 last:border-b-0",
+                  "text-[15px] font-medium uppercase tracking-[0.08em]",
+                  "transition-all duration-300",
+                  link.isActive
+                    ? "text-foreground"
+                    : "text-foreground/50 hover:text-foreground",
+                  isOpen ? "translate-x-0 opacity-100" : "-translate-x-4 opacity-0"
                 )}
-              />
-              <span className="w-5 font-mono text-[11px] text-foreground/20 transition-colors duration-300 group-hover:text-primary/60">
-                {String(i + 1).padStart(2, "0")}
-              </span>
-              <span className="transition-transform duration-300 group-hover:translate-x-1">
-                {link.label}
-              </span>
-            </Link>
-          ))}
+              >
+                <span
+                  className={cn(
+                    "absolute left-0 top-1/2 w-0.5 -translate-y-1/2 rounded-full bg-primary transition-all duration-300 group-hover:h-5",
+                    link.isActive ? "h-5" : "h-0"
+                  )}
+                />
+                <span className="w-5 font-mono text-[11px] text-foreground/20 transition-colors duration-300 group-hover:text-primary/60">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <span className="transition-transform duration-300 group-hover:translate-x-1">
+                  {link.label}
+                </span>
+              </Link>
+            );
+          })}
 
           <div
             className={cn(

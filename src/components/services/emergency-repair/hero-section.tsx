@@ -14,10 +14,10 @@ export function EmergencyRepairHeroSection() {
         imageAlt: "Emergency exterior repair services",
         description: "Rapid-response emergency repairs for storm damage, active leaks, and urgent exterior failures that need immediate stabilization.",
         stats: [
-          { value: "24/7", label: "Rapid Response Support" },
-          { value: "260+", label: "Urgent Repairs Completed" },
-          { value: "100%", label: "Site Protection First" },
-          { value: "4.9", label: "Average Client Rating" },
+          { value: "24/7", label: "Availability" },
+          { value: "Same-Day", label: "Rapid Response" },
+          { value: "Tarping", label: "& Patching" },
+          { value: "Insurance", label: "Assistance" },
         ],
       };
 

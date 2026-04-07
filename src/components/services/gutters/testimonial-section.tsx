@@ -2,9 +2,9 @@ import { Star } from "lucide-react";
 
 export function GuttersTestimonialSection() {
   const content = {
-        quote: "The new gutter layout solved the overflow problem immediately. The installation looks clean and the drainage works exactly as it should.",
-        name: "Heather L.",
-        location: "Montclair, NJ - Seamless Gutter Installation",
+        quote: "They replaced our failing gutters with a seamless system that finally handles heavy rain without overflow. The workmanship was clean and professional.",
+        name: "Homeowner Review",
+        location: "West Orange, NJ - Gutter Installation",
       };
 
   return (

@@ -2,9 +2,9 @@ import { Star } from "lucide-react";
 
 export function EmergencyRepairTestimonialSection() {
   const content = {
-        quote: "They responded quickly, secured the damage the same day, and followed through with a proper permanent repair. Exactly what we needed in a stressful situation.",
-        name: "Jason T.",
-        location: "Maplewood, NJ - Emergency Roof Repair",
+        quote: "They responded during the storm, secured our roof immediately, and followed up with a solid permanent repair. Fast, professional, and reliable when we needed it most.",
+        name: "Homeowner Review",
+        location: "Newark, NJ - Emergency Roof Repair",
       };
 
   return (

@@ -9,12 +9,11 @@ import { siteConfig } from "@/config/site";
 
 export function GuttersFaqSection() {
   const content = {
-        intro: "Still have questions? Our team can review drainage issues, gutter sizing, and whether repair or replacement is the right move.",
+        intro: "Still have questions? We can walk you through pricing, gutter types, and what system is best for your home's drainage needs.",
         items: [
-          { q: "How do I know if my gutters need replacement?", a: "Frequent overflow, sagging, leaking seams, rust, repeated clogs in the same areas, or fascia damage are common signs that replacement may be more practical than ongoing repair." },
-          { q: "Do you install seamless gutters?", a: "Yes. Seamless gutter systems reduce the number of joints, improve appearance, and often perform better over time than pieced-together runs." },
-          { q: "Can you adjust downspouts to improve drainage?", a: "Absolutely. Downspout placement and discharge routing are critical parts of solving water management issues around the home." },
-          { q: "Do gutters protect siding and foundation areas too?", a: "Yes. A properly functioning gutter system helps reduce splashback, soil erosion, staining, and excess water near the foundation." },
+          { q: "How much does gutter installation in Essex County, NJ, cost?", a: "Pricing for gutter installation in Essex County, NJ, depends on linear footage and material choice, such as aluminum or copper. We offer competitive rates and free onsite estimates in cities like West Orange and Bloomfield to ensure you get an accurate, transparent quote." },
+          { q: "Why should I choose seamless gutters over traditional ones?", a: "Seamless gutter installation in NJ is superior because it eliminates the seams where most leaks occur. This design reduces maintenance needs and significantly extends system lifespan, providing better long-term protection for your Essex County property." },
+          { q: "Do you provide gutter installation near me in Newark?", a: "Yes, we are full-service gutter installers in Essex County, NJ, providing expert residential services across Newark, East Orange, and Irvington. We handle everything from initial measurements to final debris cleanup after your rain gutter installation." },
         ],
       };
   const [activeIndex, setActiveIndex] = useState<number | null>(null);

@@ -10,13 +10,13 @@ export function AdditionsTestimonialSection() {
           ))}
         </div>
         <p className="mb-12 font-serif text-[clamp(22px,3vw,36px)] italic leading-relaxed text-foreground">
-          &ldquo;From the first site visit to the final walkthrough, the team was meticulous.
-          The addition looks like it was always part of the house - the craftsmanship is simply outstanding.&rdquo;
+          &ldquo;The team handled permits, framing, and finish work with excellent communication.
+          Our new addition blends perfectly with the original house and gave us the space we needed.&rdquo;
         </p>
         <div className="mx-auto mb-7 h-px w-10 bg-secondary" />
-        <p className="mb-1 font-serif text-xl text-secondary">Margaret & Thomas H.</p>
+        <p className="mb-1 font-serif text-xl text-secondary">Homeowner Review</p>
         <p className="text-[12px] tracking-[0.12em] uppercase text-muted-foreground">
-          Montclair, NJ - Two-Story Family Room Addition
+          West Orange, NJ - Custom Home Addition
         </p>
       </div>
     </section>

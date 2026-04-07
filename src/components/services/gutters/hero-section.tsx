@@ -14,10 +14,10 @@ export function GuttersHeroSection() {
         imageAlt: "Gutter installation services",
         description: "Seamless gutter installation and repair designed to control roof runoff, protect your foundation, and preserve exterior finishes.",
         stats: [
-          { value: "22+", label: "Years in Exterior Protection" },
-          { value: "520+", label: "Gutter Systems Installed" },
-          { value: "100%", label: "Drainage-Focused Layouts" },
-          { value: "4.9", label: "Average Client Rating" },
+          { value: "Leak-Free", label: "Performance" },
+          { value: "Weather", label: "Resistance" },
+          { value: "Precision", label: "Fit" },
+          { value: "Essex", label: "County Coverage" },
         ],
       };
 
