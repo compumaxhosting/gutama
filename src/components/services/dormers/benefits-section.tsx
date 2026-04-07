@@ -18,12 +18,12 @@ const ICON_MAP = {
 
 export function DormersBenefitsSection() {
   const content: Array<{ icon: keyof typeof ICON_MAP; title: string; desc: string }> = [
-        { icon: "home", title: "Architectural Fit", desc: "We design dormers to match roof proportions, siding lines, trim details, and overall massing." },
-        { icon: "shield", title: "Weather-Tight Integration", desc: "Flashing, roofing transitions, and exterior cladding are handled as part of one protected envelope." },
-        { icon: "award", title: "Finish-Ready Craftsmanship", desc: "Framing, windows, trim, and siding are installed with a high standard of finish quality." },
-        { icon: "clock", title: "Managed Build Sequence", desc: "Design, approvals, structural work, and exterior finishing are kept on a clear project schedule." },
-        { icon: "users", title: "One Coordinated Team", desc: "You avoid fragmented trades by working with one team managing the entire dormer scope." },
-        { icon: "ruler", title: "Functional Space Gain", desc: "The layout is planned to improve how the upper level actually works, not just how it looks." },
+        { icon: "home", title: "Increased Square Footage", desc: "Transform dark attics into practical bedrooms, offices, and upper-level living space." },
+        { icon: "award", title: "Enhanced Curb Appeal", desc: "Custom dormer designs are built to complement your home's roofline and architectural style." },
+        { icon: "shield", title: "Natural Lighting", desc: "Strategic dormer windows brighten upper floors and improve overall interior comfort." },
+        { icon: "ruler", title: "Local Code Compliance", desc: "Our team navigates Newark and Essex County permit requirements for safe, compliant construction." },
+        { icon: "users", title: "Expert Dormer Contractors", desc: "Licensed builders with local experience in custom dormer additions and attic transformations." },
+        { icon: "clock", title: "Reliable Build Timeline", desc: "Structured project planning keeps your dormer installation moving efficiently from start to finish." },
       ];
 
   return (

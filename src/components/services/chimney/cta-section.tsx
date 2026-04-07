@@ -9,10 +9,10 @@ export function ChimneyCtaSection() {
   const content = {
         image: "/Images New/service-chimney.webp",
         imageAlt: "Chimney project background",
-        title: "Ready to Restore",
-        accent: "Your Chimney?",
-        description: "Schedule a no-cost inspection and estimate. We'll assess masonry condition, identify the source of failure, and provide a clear plan for durable repair.",
-        buttonLabel: "Schedule a Free Inspection",
+        title: "Keep Your Family",
+        accent: "Safe This Season",
+        description: "Call today for affordable chimney maintenance in Essex County, NJ. We provide same-day inspections, cleaning, and reliable repair plans for long-term home safety.",
+        buttonLabel: "Request Chimney Service",
       };
 
   return (

@@ -9,12 +9,11 @@ import { siteConfig } from "@/config/site";
 
 export function DormersFaqSection() {
   const content = {
-        intro: "Still have questions? Our team can explain dormer options, structural considerations, and how the build affects roof performance.",
+        intro: "Still have questions? We can walk you through build timelines, permit steps, and the best dormer type for your home.",
         items: [
-          { q: "What type of dormer is right for my home?", a: "That depends on your roof structure, desired interior space, and architectural style. We review the layout and recommend the dormer type that balances function and curb appeal." },
-          { q: "Will a dormer require structural changes?", a: "Usually yes. A dormer involves roof framing modifications and load support planning, which is why structural review is a key part of the process." },
-          { q: "Can you match my existing roofing and siding?", a: "We always aim to match roofing, siding, trim, and windows closely so the dormer reads as part of the original home." },
-          { q: "How disruptive is dormer construction?", a: "There is active roof and framing work involved, but we sequence the build to protect the home quickly and limit disruption as much as possible." },
+          { q: "How long does a roof dormer installation in East Orange take?", a: "Most projects are completed within 2-4 weeks, depending on the complexity of the custom dormer construction and local permit approvals in Essex County." },
+          { q: "What is the benefit of a shed dormer installation in Livingston, NJ?", a: "Shed dormers provide maximum interior headspace and usable floor area, making them one of the most affordable dormer options for adding extra rooms." },
+          { q: "Do I need a permit for a dormer addition in Irvington, NJ?", a: "Yes, all dormer additions require local building permits. Our team handles the entire process to ensure your project meets Newark and Essex County safety standards." },
         ],
       };
   const [activeIndex, setActiveIndex] = useState<number | null>(null);

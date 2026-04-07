@@ -7,17 +7,17 @@ import { siteConfig } from "@/config/site";
 
 export function CarpentryHeroSection() {
   const content = {
-        label: "Carpentry",
+        label: "Carpentry Services",
         title: "Expert",
         accent: "Carpentry",
         image: "/Images New/service-carpentry.webp",
         imageAlt: "Expert carpentry services",
         description: "Skilled structural and finish carpentry for repairs, trim restoration, and exterior renovations completed with precision.",
         stats: [
-          { value: "25+", label: "Years of Craftsmanship" },
-          { value: "480+", label: "Projects Completed" },
-          { value: "100%", label: "Detail-Driven Finishes" },
-          { value: "4.9", label: "Average Client Rating" },
+          { value: "Custom", label: "Cabinetry & Shelving" },
+          { value: "Finish", label: "Trim Excellence" },
+          { value: "Same-Day", label: "Consultations" },
+          { value: "Durable", label: "Material Selection" },
         ],
       };
 

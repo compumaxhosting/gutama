@@ -7,7 +7,6 @@ import { SidingProcessSection } from "@/components/services/siding/process-secti
 import { SidingShowcaseSection } from "@/components/services/siding/showcase-section";
 import { SidingTestimonialSection } from "@/components/services/siding/testimonial-section";
 
-
 export default function Page() {
   return (
     <div className="bg-background text-foreground selection:bg-secondary/30">

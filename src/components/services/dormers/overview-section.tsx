@@ -1,18 +1,38 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export function DormersOverviewSection() {
   const content = {
-        title: "Dormers that add",
-        accent: "space and balance",
+        introParagraph:
+          "Expand your living space and increase your property value with professional dormer installation in Essex County, NJ. Many North Jersey homeowners struggle with cramped attics and limited natural light. Our team solves these space constraints by providing expert dormer contractors in Newark, NJ, who specialize in seamless structural additions. Whether you require a functional shed dormer installation in Livingston, NJ, or a stylish roof dormer installation in East Orange, NJ, we deliver weather-resistant, high-quality results.",
+        title: "Expert Dormer Installation in",
+        accent: "Essex County, NJ",
         paragraphs: [
-          "A well-designed dormer transforms an upper floor by improving headroom, daylight, ventilation, and the way the exterior reads from the street. It has to feel intentional, not added on as an afterthought.",
-          "Our team integrates framing, roofing, siding, flashing, and finish work into one coordinated scope so the new dormer performs properly and looks proportionate to your existing home.",
+          "Our dormer addition services in Irvington, NJ, focus on structural integrity and architectural harmony. As the best dormer contractors in Essex County, we handle everything from custom dormer construction in Bloomfield, NJ, to full attic transformations.",
+          "We pride ourselves on being the go-to house dormer builders in Newark, offering affordable dormer installation in West Orange, NJ, that meets strict local building codes. If you are searching for reliable dormer installation near me, our licensed experts ensure a stress-free construction process from start to finish.",
         ],
-        bullets: ["More usable headroom", "Integrated roofline framing", "Natural light improvements", "Architectural curb appeal"],
+        bullets: [
+          "Increased Square Footage: Transform dark attics into functional bedrooms or home offices.",
+          "Enhanced Curb Appeal: Custom designs that complement your home's existing architecture.",
+          "Natural Lighting: Strategically placed windows to brighten upper-level living spaces.",
+          "Local Code Compliance: Expert navigation of Essex County and Newark building permits.",
+        ],
+        links: [
+          {
+            href: "/services/re-roofing",
+            label: "Roofing Replacement Guide",
+            description: "Ensure your roof is addition-ready before construction.",
+          },
+          {
+            href: "/gallery",
+            label: "Home Addition Gallery",
+            description: "View our custom dormer projects across Essex County.",
+          },
+        ],
         image: "/Images New/gallery-roof-1.webp",
         imageAlt: "Dormer construction detail",
-        badgeValue: "140+",
-        badgeLabel: "Dormers Completed",
+        badgeValue: "2-4 Weeks",
+        badgeLabel: "Most Projects",
       };
 
   return (
@@ -26,6 +46,7 @@ export function DormersOverviewSection() {
             <em className="text-secondary">{content.accent}</em>
           </h2>
           <div className="mx-0 mb-7 h-px w-24 bg-linear-to-r from-secondary to-secondary/30" />
+          <p className="mb-8 text-base leading-loose text-muted-foreground">{content.introParagraph}</p>
           <p className="mb-8 text-base leading-loose text-muted-foreground">{content.paragraphs[0]}</p>
           <p className="mb-10 text-base leading-loose text-muted-foreground">{content.paragraphs[1]}</p>
           <ul className="flex flex-col gap-3.5">
@@ -36,6 +57,17 @@ export function DormersOverviewSection() {
               </li>
             ))}
           </ul>
+          <div className="mt-10 space-y-4 border-t border-secondary/20 pt-6">
+            {content.links.map((item) => (
+              <p key={item.label} className="text-sm leading-loose text-muted-foreground">
+                <Link href={item.href} className="font-medium text-secondary underline-offset-4 hover:underline">
+                  {item.label}
+                </Link>
+                {" - "}
+                {item.description}
+              </p>
+            ))}
+          </div>
         </div>
         <div>
           <div className="relative">
@@ -51,6 +83,17 @@ export function DormersOverviewSection() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="mx-auto mt-20 max-w-4xl text-center">
+        <div className="mx-auto mb-6 h-px w-24 bg-linear-to-r from-secondary to-secondary/30" />
+
+        <h3 className="mb-4 font-serif text-[clamp(24px,2.5vw,32px)] text-foreground">
+          Professional Dormer Contractors in <em className="text-secondary">Newark & East Orange, NJ</em>
+        </h3>
+
+        <p className="text-base leading-loose text-muted-foreground">
+          Gutama Roofing specializes in professional dormer installation in Essex County, NJ, including Newark and East Orange. Our expert dormer contractors in Newark provide custom shed and roof dormer construction to increase living space and home value with affordable, weather-resistant structural additions across all NJ neighborhoods.
+        </p>
       </div>
     </section>
   );

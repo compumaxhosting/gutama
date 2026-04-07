@@ -1,19 +1,39 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export function CarpentryOverviewSection() {
   const content = {
-        title: "Precision built for",
-        accent: "lasting performance",
-        paragraphs: [
-          "Our carpentry work supports the structure, finish quality, and weather performance of your exterior. From framing corrections to custom trim, every cut and connection is planned for durability and clean alignment.",
-          "We coordinate material selection, site protection, and finish detailing so the final result looks refined, functions properly, and integrates naturally with the rest of your home.",
-        ],
-        bullets: ["Structural repairs", "Exterior trim replacement", "Finish carpentry detailing", "Custom framing solutions"],
-        image: "/Images New/about-team.webp",
-        imageAlt: "Carpentry detail work",
-        badgeValue: "480+",
-        badgeLabel: "Projects Delivered",
-      };
+    introParagraph:
+      "Elevate your home's interior with precision craftsmanship from the best carpentry company in Essex County, NJ. Whether you are looking for an expert carpenter in Newark, NJ, or specialized custom carpentry in East Orange, NJ, our team delivers high-quality solutions that blend functionality with aesthetic appeal. We solve common local pain points like aging trim, poorly fitted cabinetry, and structural wear by providing durable, handcrafted woodwork.",
+    title: "Expert Carpentry Services in",
+    accent: "Essex County, NJ",
+    paragraphs: [
+      "From intricate finish carpentry in Irvington, NJ, to comprehensive residential carpentry in Livingston, NJ, we handle every detail with professional care. As a leading woodwork contractor in Bloomfield, NJ, we specialize in everything from custom shelving to structural repairs.",
+      "If you've been searching for an affordable carpenter in West Orange, NJ, who understands the unique architectural styles of North Jersey, our licensed experts are ready to transform your space with custom woodwork in Newark, NJ, and beyond.",
+    ],
+    bullets: [
+      "Custom Design: Tailored cabinetry and shelving built to your exact specifications.",
+      "Finish Excellence: Expert crown molding, baseboards, and trim for a polished look.",
+      "Local Reliability: Serving all Essex County neighborhoods with same-day consultations.",
+      "Durable Materials: High-quality wood selection for long-lasting structural integrity.",
+    ],
+    links: [
+      {
+        href: "/gallery",
+        label: "Custom Shelving Gallery",
+        description: "Explore our previous custom woodwork projects in Newark.",
+      },
+      {
+        href: "/services/additions",
+        label: "Home Renovation Services",
+        description: "See how our carpentry integrates with full residential upgrades.",
+      },
+    ],
+    image: "/Images New/service-carpentry.webp",
+    imageAlt: "Carpentry detail work",
+    badgeValue: "Same-Day",
+    badgeLabel: "Consultations Available",
+  };
 
   return (
     <section className="relative bg-background py-28 px-6">
@@ -26,6 +46,7 @@ export function CarpentryOverviewSection() {
             <em className="text-secondary">{content.accent}</em>
           </h2>
           <div className="mx-0 mb-7 h-px w-24 bg-linear-to-r from-secondary to-secondary/30" />
+          <p className="mb-8 text-base leading-loose text-muted-foreground">{content.introParagraph}</p>
           <p className="mb-8 text-base leading-loose text-muted-foreground">{content.paragraphs[0]}</p>
           <p className="mb-10 text-base leading-loose text-muted-foreground">{content.paragraphs[1]}</p>
           <ul className="flex flex-col gap-3.5">
@@ -36,6 +57,17 @@ export function CarpentryOverviewSection() {
               </li>
             ))}
           </ul>
+          <div className="mt-10 space-y-4 border-t border-secondary/20 pt-6">
+            {content.links.map((item) => (
+              <p key={item.label} className="text-sm leading-loose text-muted-foreground">
+                <Link href={item.href} className="font-medium text-secondary underline-offset-4 hover:underline">
+                  {item.label}
+                </Link>
+                {" - "}
+                {item.description}
+              </p>
+            ))}
+          </div>
         </div>
         <div>
           <div className="relative">
@@ -51,6 +83,17 @@ export function CarpentryOverviewSection() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="mx-auto mt-20 max-w-4xl text-center">
+        <div className="mx-auto mb-6 h-px w-24 bg-linear-to-r from-secondary to-secondary/30" />
+
+        <h3 className="mb-4 font-serif text-[clamp(24px,2.5vw,32px)] text-foreground">
+          Professional Finish & <em className="text-secondary">Custom Carpentry in Newark & East Orange, NJ</em>
+        </h3>
+
+        <p className="text-base leading-loose text-muted-foreground">
+          Gutama Roofing & Chimney offers expert carpentry services in Essex County, NJ, specializing in custom carpentry in East Orange and Newark. From professional finish carpentry to residential woodwork, we provide affordable, high-quality solutions across Livingston and Bloomfield to enhance your home&apos;s beauty and structural integrity.
+        </p>
       </div>
     </section>
   );

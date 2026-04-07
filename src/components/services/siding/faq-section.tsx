@@ -9,12 +9,11 @@ import { siteConfig } from "@/config/site";
 
 export function SidingFaqSection() {
   const content = {
-        intro: "Still have questions? We can walk you through siding options, trim details, and how we approach moisture control behind the finished exterior.",
+        intro: "Still have questions? We can walk you through pricing, material options, and how our siding installation process protects your home long term.",
         items: [
-          { q: "Can you replace siding and exterior trim at the same time?", a: "Yes. We often handle trim, fascia, soffits, and accent details together so the final exterior looks cohesive and complete." },
-          { q: "Do you inspect for hidden wall damage during siding replacement?", a: "Absolutely. Once old siding is removed, we check the exposed substrate for moisture damage or deterioration that should be addressed before the new system is installed." },
-          { q: "Can you help me choose a style that fits my home?", a: "Yes. We guide siding profile, color, and trim choices based on the architecture and overall look you want to achieve." },
-          { q: "How important is moisture detailing behind siding?", a: "It is critical. Good siding appearance means little if the underlying weather barrier and transition detailing are not handled correctly." },
+          { q: "How much does vinyl siding installation cost in East Orange, NJ?", a: "Costs vary based on your home's size, but we provide affordable siding installation starting with a free, transparent estimate to fit your specific budget." },
+          { q: "Where can I find reliable siding contractors in Newark, NJ?", a: "Our team provides expert residential siding services across all Newark neighborhoods, specializing in both emergency repairs and full-scale house siding installation." },
+          { q: "Do you offer fiber cement siding installation in Livingston, NJ?", a: "Yes. We specialize in James Hardie and fiber cement products, providing Livingston homeowners with a fire-resistant, durable, and low-maintenance exterior solution." },
         ],
       };
   const [activeIndex, setActiveIndex] = useState<number | null>(null);

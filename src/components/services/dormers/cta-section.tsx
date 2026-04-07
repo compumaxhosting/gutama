@@ -9,10 +9,10 @@ export function DormersCtaSection() {
   const content = {
         image: "/Images New/service-dormers.webp",
         imageAlt: "Dormer installation background",
-        title: "Ready to Add",
-        accent: "Space and Light?",
-        description: "Schedule a no-cost site visit and estimate. We'll review your roof structure, discuss dormer options, and provide a clear build plan.",
-        buttonLabel: "Schedule a Free Site Visit",
+        title: "Ready to Grow",
+        accent: "Your Home?",
+        description: "Ready to grow your home? Call 973-820-5130 today for a free consultation with the top dormer contractors in Essex County.",
+        buttonLabel: "Request a Free Consultation",
       };
 
   return (
@@ -31,7 +31,7 @@ export function DormersCtaSection() {
         <p className="mx-auto mb-14 max-w-lg text-base leading-loose text-muted-foreground">{content.description}</p>
         <div className="flex flex-wrap justify-center gap-4">
           <Button asChild className="h-12 px-7 text-sm uppercase tracking-[0.14em]"><Link href="/contact">{content.buttonLabel}</Link></Button>
-          <Button asChild variant="outline" className="h-12 border-secondary/40 px-6 text-sm text-secondary hover:bg-secondary/10 hover:text-secondary"><a href={`tel:${siteConfig.phones.english}`}><Phone size={14} className="mr-2 inline-block" />Call {siteConfig.phones.english}</a></Button>
+          <Button asChild variant="outline" className="h-12 border-secondary/40 px-6 text-sm text-secondary hover:bg-secondary/10 hover:text-secondary"><a href={`tel:${siteConfig.phones.english}`}><Phone size={14} className="mr-2 inline-block" />Call 973-820-5130</a></Button>
         </div>
         <p className="mt-7 text-xs tracking-wide text-muted-foreground">No obligation - Licensed & insured - {siteConfig.business.regionLabel}</p>
         <div className="mx-auto mt-12 h-14 w-px bg-linear-to-t from-transparent to-secondary/30" />

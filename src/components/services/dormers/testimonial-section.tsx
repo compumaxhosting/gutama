@@ -2,9 +2,9 @@ import { Star } from "lucide-react";
 
 export function DormersTestimonialSection() {
   const content = {
-        quote: "The new dormer completely changed our upper floor. It feels brighter, bigger, and looks like it was always meant to be part of the house.",
-        name: "Priya & Daniel S.",
-        location: "South Orange, NJ - Dormer Expansion",
+        quote: "Their crew managed our dormer addition from permits to finish work and gave us the extra space we needed without compromising the look of the home.",
+        name: "Homeowner Review",
+        location: "Newark, NJ - Dormer Installation",
       };
 
   return (

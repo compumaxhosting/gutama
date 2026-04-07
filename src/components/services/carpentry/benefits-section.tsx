@@ -18,12 +18,12 @@ const ICON_MAP = {
 
 export function CarpentryBenefitsSection() {
   const content: Array<{ icon: keyof typeof ICON_MAP; title: string; desc: string }> = [
-        { icon: "ruler", title: "Precise Fit & Finish", desc: "Accurate measuring, clean cuts, and crisp detailing keep the final work refined and consistent." },
-        { icon: "shield", title: "Structural Confidence", desc: "We correct framing and support issues with code-conscious execution and durable materials." },
-        { icon: "award", title: "Craftsmanship First", desc: "Every trim line, joint, and finish surface is handled with a high standard of workmanship." },
-        { icon: "clock", title: "Clear Scheduling", desc: "You receive a realistic scope, timeline, and phased plan before work begins." },
-        { icon: "users", title: "Single Point of Contact", desc: "We keep communication simple with direct updates from planning through final review." },
-        { icon: "home", title: "Seamless Integration", desc: "New carpentry elements are matched to the style and proportions of your existing exterior." },
+        { icon: "home", title: "Custom Design", desc: "Tailored cabinetry and shelving built to your exact specifications and layout needs." },
+        { icon: "ruler", title: "Finish Excellence", desc: "Expert crown molding, baseboards, and trim deliver a polished, architectural finish." },
+        { icon: "users", title: "Local Reliability", desc: "Serving Newark and all Essex County neighborhoods with dependable workmanship and clear communication." },
+        { icon: "clock", title: "Same-Day Consultations", desc: "Fast, professional assessments for carpentry repairs and custom woodwork projects." },
+        { icon: "shield", title: "Durable Materials", desc: "High-quality wood selection supports long-term performance and structural integrity." },
+        { icon: "award", title: "Licensed Experts", desc: "Fully licensed and insured carpentry professionals trusted by North Jersey homeowners." },
       ];
 
   return (

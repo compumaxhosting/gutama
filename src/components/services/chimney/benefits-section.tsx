@@ -18,12 +18,12 @@ const ICON_MAP = {
 
 export function ChimneyBenefitsSection() {
   const content: Array<{ icon: keyof typeof ICON_MAP; title: string; desc: string }> = [
-        { icon: "shield", title: "Weatherproof Protection", desc: "We stop water intrusion at the roofline and chimney envelope before deeper damage develops." },
-        { icon: "ruler", title: "Clean Masonry Detailing", desc: "Mortar joints, brick alignment, flashing bends, and finish transitions are handled with precision." },
-        { icon: "award", title: "Repair or Rebuild Expertise", desc: "We can stabilize isolated failures or execute full chimney rebuilds when structural damage requires it." },
-        { icon: "clock", title: "Straightforward Scheduling", desc: "You get a defined repair scope, timeline, and sequence before work begins." },
-        { icon: "users", title: "Clear Communication", desc: "We explain the cause of failure, the recommended fix, and the expected life cycle of the repair." },
-        { icon: "home", title: "Integrated Roofline Work", desc: "Chimney masonry, flashing, and adjacent roofing details are treated as one coordinated system." },
+        { icon: "clock", title: "Same-Day Inspections", desc: "Rapid chimney safety checks across Livingston, West Orange, and nearby Essex County towns." },
+        { icon: "ruler", title: "Affordable Repairs", desc: "Budget-friendly masonry restoration, liner fixes, and targeted repair scopes that solve root issues." },
+        { icon: "award", title: "Certified Sweeps", desc: "Professional chimney cleaning helps remove creosote and reduce the risk of chimney fires." },
+        { icon: "shield", title: "Code-Focused Safety", desc: "Inspections and repairs are performed with local compliance and long-term fire safety in mind." },
+        { icon: "users", title: "Local Service Team", desc: "Trusted by homeowners in Newark, East Orange, Bloomfield, Irvington, and surrounding areas." },
+        { icon: "home", title: "All-in-One Care", desc: "From maintenance and cleanings to restoration and emergency response, we cover complete chimney care." },
       ];
 
   return (

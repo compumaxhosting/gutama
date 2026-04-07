@@ -32,11 +32,11 @@ export const metadata: Metadata = {
     title: "Expert Roof Replacement Services in Newark & Essex County, NJ",
     description:
       "Upgrade your property with affordable, professional roof replacement. Serving Newark, West Orange, and all Essex County with top-tier materials.",
-    url: "/Images New/before-roof.webp",
+    url: "https://www.gutamaroofingnj.com/services/re-roofing",
     siteName: "Gutama Home Improvement",
     images: [
       {
-        url: "/images/roof-replacement-nj.jpg",
+        url: "https://www.gutamaroofingnj.com/Images%20New/service-re-roofing.webp",
         width: 1200,
         height: 630,
       },
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     title: "NJ Roof Replacement | Gutama Home Improvement",
     description:
       "Top-rated asphalt and flat roof replacement in Newark and Essex County. Get a free estimate from the local experts.",
-    images: ["/Images New/before-roof.webp"],
+    images: ["https://www.gutamaroofingnj.com/Images%20New/service-re-roofing.webp"],
     creator: "@GutamaRoofingNJ",
   },
 };

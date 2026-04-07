@@ -2,9 +2,9 @@ import { Star } from "lucide-react";
 
 export function SidingTestimonialSection() {
   const content = {
-        quote: "The new siding completely changed the house. The lines are clean, the trim detail is beautiful, and everything feels much more finished and protected.",
-        name: "Lisa N.",
-        location: "South Orange, NJ - Full Siding Replacement",
+        quote: "The team replaced our siding on schedule, handled the trim details carefully, and the house looks sharper and better protected than ever.",
+        name: "Homeowner Review",
+        location: "Newark, NJ - Siding Installation",
       };
 
   return (

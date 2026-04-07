@@ -9,12 +9,11 @@ import { siteConfig } from "@/config/site";
 
 export function CarpentryFaqSection() {
   const content = {
-        intro: "Still have questions? Our carpentry specialists can walk you through repair strategy, materials, and finish options.",
+        intro: "Still have questions? We can walk you through custom carpentry options, project scope, and repair strategies for your home.",
         items: [
-          { q: "Do you handle both structural and finish carpentry?", a: "Yes. We manage framing corrections, exterior trim, fascia, soffits, decorative millwork, and finish carpentry details as part of one coordinated scope." },
-          { q: "Can you match existing woodwork and trim profiles?", a: "In most cases, yes. We source close matches or fabricate compatible profiles so new work blends with your existing architecture." },
-          { q: "How do you determine whether wood should be repaired or replaced?", a: "We inspect for rot depth, moisture damage, and structural compromise. If material can be stabilized reliably, we recommend repair; otherwise replacement is the safer option." },
-          { q: "Do you provide painting or finishing after carpentry work?", a: "We can prepare surfaces for paint or finish and coordinate the final protective coating as part of the overall project scope." },
+          { q: "Do you provide custom carpentry in East Orange, NJ, for small repairs?", a: "Yes. We offer a full range of services, from minor repairs to large-scale custom carpentry projects, ensuring every home in East Orange receives expert attention." },
+          { q: "What makes you the best carpentry company in Essex County, NJ?", a: "Our reputation is built on reliability, superior finish carpentry, and deep local knowledge. We provide affordable, high-end woodwork across all major cities, including Newark and Livingston." },
+          { q: "Are your residential carpentry services in Livingston, NJ, licensed and insured?", a: "Absolutely. All our woodwork projects are performed by fully licensed and insured contractors, guaranteeing peace of mind and professional results for every Essex County homeowner." },
         ],
       };
   const [activeIndex, setActiveIndex] = useState<number | null>(null);

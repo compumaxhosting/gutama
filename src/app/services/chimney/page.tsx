@@ -1,7 +1,3 @@
-import type { Metadata } from "next";
-
-import { siteConfig } from "@/config/site";
-import { buildMetadata } from "@/lib/seo";
 import { ChimneyBenefitsSection } from "@/components/services/chimney/benefits-section";
 import { ChimneyCtaSection } from "@/components/services/chimney/cta-section";
 import { ChimneyFaqSection } from "@/components/services/chimney/faq-section";
@@ -10,12 +6,6 @@ import { ChimneyOverviewSection } from "@/components/services/chimney/overview-s
 import { ChimneyProcessSection } from "@/components/services/chimney/process-section";
 import { ChimneyShowcaseSection } from "@/components/services/chimney/showcase-section";
 import { ChimneyTestimonialSection } from "@/components/services/chimney/testimonial-section";
-
-export const metadata: Metadata = buildMetadata({
-  title: `Chimney Services | ${siteConfig.business.regionLabel}`,
-  description: "Complete chimney repair, rebuilding, flashing, and waterproofing services.",
-  path: "/services/chimney",
-});
 
 export default function Page() {
   return (

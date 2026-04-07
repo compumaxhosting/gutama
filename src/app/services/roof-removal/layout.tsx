@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     siteName: "Gutama Home Improvement",
     images: [
       {
-        url: "https://gutamaroofingnj.com/images/roof-removal-nj.jpg",
+        url: "https://www.gutamaroofingnj.com/Images%20New/service-roof-removal.webp",
         width: 1200,
         height: 630,
       },
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Roof Removal & Tear-Off Contractor NJ",
     description:
       "Fast, affordable roof removal in Newark, West Orange, and Essex County. Local experts for residential & commercial needs.",
-    images: ["https://gutamaroofingnj.com/images/roof-removal-nj.jpg"],
+    images: ["https://www.gutamaroofingnj.com/Images%20New/service-roof-removal.webp"],
     creator: "@GutamaRoofingNJ",
   },
 
@@ -70,7 +70,7 @@ export default function RoofRemovalLayout({
             "@type": "RoofingContractor",
             name: "Gutama Home Improvement",
             image:
-              "https://www.gutamaroofingnj.com/Images New/before-roof.webp",
+              "https://www.gutamaroofingnj.com/Images%20New/service-roof-removal.webp",
             "@id": "https://www.gutamaroofingnj.com/services/roof-removal",
             url: "https://www.gutamaroofingnj.com/services/roof-removal",
             telephone: ["+1-973-820-5130", "+1-973-342-4134"],

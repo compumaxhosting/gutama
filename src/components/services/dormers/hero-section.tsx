@@ -12,12 +12,12 @@ export function DormersHeroSection() {
         accent: "Installation",
         image: "/Images New/service-dormers.webp",
         imageAlt: "Dormer installation services",
-        description: "Add natural light, headroom, and usable living space with dormers designed to improve both function and curb appeal.",
+        description: "Expand your living space with weather-resistant dormer construction by licensed local contractors serving Newark and Essex County.",
         stats: [
-          { value: "18+", label: "Years of Build Experience" },
-          { value: "140+", label: "Dormers Completed" },
-          { value: "100%", label: "Permit-Managed Projects" },
-          { value: "4.9", label: "Average Client Rating" },
+          { value: "More", label: "Square Footage" },
+          { value: "Natural", label: "Light Gains" },
+          { value: "Code", label: "Compliance" },
+          { value: "Same-Day", label: "Consultations" },
         ],
       };
 

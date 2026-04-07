@@ -1,18 +1,36 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export function SidingOverviewSection() {
   const content = {
-        title: "Exterior finishes that",
-        accent: "perform beautifully",
+        title: "Top-Rated Siding Company",
+        accent: "in Newark & East Orange, NJ",
         paragraphs: [
-          "Siding is more than appearance. It is part of the home's protective envelope, which means alignment, moisture control, trim transitions, flashing, and fastening details all matter just as much as the product itself.",
-          "We install siding systems with a clean architectural eye and a weather-performance mindset, helping homeowners improve both the look and resilience of their exterior.",
+          "Protecting your home from New Jersey's unpredictable weather starts with high-quality exterior solutions. As the best siding company in Essex County, NJ, we specialize in durable, weather-resistant upgrades tailored to local architecture. Whether you need a full vinyl siding installation in East Orange, NJ, or a specific siding repair in Irvington, NJ, our licensed team ensures your property remains energy-efficient and visually stunning.",
+          "Homeowners often face issues like warping, moisture infiltration, or storm damage. Our siding contractors in Newark, NJ, provide immediate solutions, from minor fixes to complete house siding installation in Bloomfield, NJ. We offer premium materials, including fiber cement siding installation in Livingston, NJ, ensuring long-term curb appeal and structural protection. With our affordable siding installation in West Orange, NJ, you get expert craftsmanship without the premium price tag.",
         ],
-        bullets: ["Full siding replacement", "Trim and accent detailing", "Moisture-conscious installation", "Curb appeal upgrades"],
+        bullets: [
+          "Weather-Ready Protection: High-durability materials designed for NJ’s harsh seasonal shifts.",
+          "Energy Efficiency: Insulated siding options to lower your monthly utility bills.",
+          "Expert Siding Contractors: Serving all Newark and Essex County neighborhoods since day one.",
+          "Same-Day Consultations: Fast, professional assessments for siding repair and replacement.",
+        ],
+        links: [
+          {
+            href: "/contact",
+            label: "Common Siding Damage Signs",
+            description: "Learn when to call for a professional siding repair.",
+          },
+          {
+            href: "/contact",
+            label: "Fiber Cement vs. Vinyl",
+            description: "Compare the best residential siding services for Newark homes.",
+          },
+        ],
         image: "/Images New/after-siding.webp",
         imageAlt: "Completed siding installation",
-        badgeValue: "360+",
-        badgeLabel: "Projects Completed",
+        badgeValue: "Same-Day",
+        badgeLabel: "Consultations Available",
       };
 
   return (
@@ -36,6 +54,17 @@ export function SidingOverviewSection() {
               </li>
             ))}
           </ul>
+          <div className="mt-10 space-y-4 border-t border-secondary/20 pt-6">
+            {content.links.map((item) => (
+              <p key={item.label} className="text-sm leading-loose text-muted-foreground">
+                <Link href={item.href} className="font-medium text-secondary underline-offset-4 hover:underline">
+                  {item.label}
+                </Link>
+                {" - "}
+                {item.description}
+              </p>
+            ))}
+          </div>
         </div>
         <div>
           <div className="relative">
@@ -51,6 +80,17 @@ export function SidingOverviewSection() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="mx-auto mt-20 max-w-4xl text-center">
+        <div className="mx-auto mb-6 h-px w-24 bg-linear-to-r from-secondary to-secondary/30" />
+
+        <h3 className="mb-4 font-serif text-[clamp(24px,2.5vw,32px)] text-foreground">
+          Top-Rated <em className="text-secondary">Siding Company in Newark & East Orange, NJ</em>
+        </h3>
+
+        <p className="text-base leading-loose text-muted-foreground">
+          Gutama Roofing provides expert siding installation in Essex County, NJ, specializing in vinyl, fiber cement, and professional repairs. Serving Newark and East Orange, our best siding company in Essex County, NJ ensures weather-resistant, energy-efficient protection, enhancing your home&apos;s value with affordable, high-quality residential services.
+        </p>
       </div>
     </section>
   );

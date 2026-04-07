@@ -9,12 +9,11 @@ import { siteConfig } from "@/config/site";
 
 export function ChimneyFaqSection() {
   const content = {
-        intro: "Still have questions? Our chimney specialists can explain repair options, expected service life, and how we handle active leaks safely.",
+        intro: "Need help deciding what your chimney needs? We can walk you through cleaning schedules, repair options, and what to expect from a safety inspection.",
         items: [
-          { q: "How do I know if my chimney needs repair or rebuilding?", a: "We look at mortar erosion, cracked bricks, leaning, crown failure, and water damage. Minor failures may only need repair, while advanced structural deterioration can require partial or full rebuilding." },
-          { q: "Do you replace chimney flashing as part of the repair?", a: "Yes. If flashing is compromised, we replace it as part of the scope because masonry repairs alone will not solve a roofline leak." },
-          { q: "Can you waterproof my chimney after repairs?", a: "Absolutely. Once the masonry is properly restored, we can apply breathable waterproofing to help reduce future moisture absorption." },
-          { q: "How long does chimney repair usually last?", a: "Service life depends on exposure and the existing condition of the structure, but properly executed masonry and flashing repairs are designed for long-term performance." },
+          { q: "How often should I schedule a chimney cleaning in East Orange?", a: "You should schedule a chimney cleaning at least once a year to remove dangerous creosote and debris buildup." },
+          { q: "Do you offer chimney repair near me in Newark?", a: "Yes. We provide full-service chimney repairs, including tuckpointing, liner installation, and masonry restoration throughout Newark and nearby Essex County communities." },
+          { q: "What is included in a chimney inspection in Irvington, NJ?", a: "Our inspection includes a multi-point safety review of the flue, masonry, chimney cap, and related components to confirm structural integrity and safe operation." },
         ],
       };
   const [activeIndex, setActiveIndex] = useState<number | null>(null);

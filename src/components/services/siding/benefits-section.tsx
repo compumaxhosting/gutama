@@ -18,12 +18,12 @@ const ICON_MAP = {
 
 export function SidingBenefitsSection() {
   const content: Array<{ icon: keyof typeof ICON_MAP; title: string; desc: string }> = [
-        { icon: "home", title: "Sharper Curb Appeal", desc: "Updated siding can dramatically improve the visual quality and value perception of the home." },
-        { icon: "shield", title: "Envelope Protection", desc: "Flashing, trim transitions, and moisture management are handled to support long-term exterior performance." },
-        { icon: "ruler", title: "Straight Lines & Clean Finish", desc: "Alignment, reveal consistency, and detail transitions are treated as finish-level craftsmanship." },
-        { icon: "award", title: "Material-Specific Installation", desc: "Different siding products need different fastening, spacing, and detailing approaches, and we install accordingly." },
-        { icon: "clock", title: "Organized Scheduling", desc: "We keep removal, repairs, trim work, and final installation on a clear project plan." },
-        { icon: "users", title: "Guided Selections", desc: "We help you choose colors, textures, and trim combinations that suit the architecture of your home." },
+        { icon: "shield", title: "Weather-Ready Protection", desc: "Durable siding materials are installed to withstand NJ's harsh seasonal shifts and reduce exposure issues." },
+        { icon: "home", title: "Energy Efficiency", desc: "Insulated siding options can help support better comfort and lower monthly utility costs." },
+        { icon: "users", title: "Expert Siding Contractors", desc: "Our team serves Newark and Essex County neighborhoods with reliable communication and craftsmanship." },
+        { icon: "clock", title: "Same-Day Consultations", desc: "We provide fast assessments for siding repair, replacement, and exterior upgrades." },
+        { icon: "award", title: "Premium Material Options", desc: "Vinyl and fiber cement siding solutions are selected for long-term durability and clean appearance." },
+        { icon: "ruler", title: "Clean Finish Details", desc: "Trim transitions, alignment, and moisture-conscious detailing are handled with precision." },
       ];
 
   return (

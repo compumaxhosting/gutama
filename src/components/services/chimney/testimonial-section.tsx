@@ -2,9 +2,9 @@ import { Star } from "lucide-react";
 
 export function ChimneyTestimonialSection() {
   const content = {
-        quote: "They found the real source of the leak, rebuilt the damaged chimney sections, and finished everything with clean flashing detail. The result feels solid and professional.",
-        name: "Angela M.",
-        location: "Maplewood, NJ - Chimney Restoration",
+        quote: "Searching for expert chimney services in Essex County, NJ? Their team handled our chimney repair in Newark quickly, explained every step, and completed maintenance that made our home safer for winter.",
+        name: "Homeowner Review",
+        location: "Newark, NJ - Chimney Repair & Maintenance",
       };
 
   return (

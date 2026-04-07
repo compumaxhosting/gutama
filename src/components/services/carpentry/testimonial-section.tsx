@@ -2,9 +2,9 @@ import { Star } from "lucide-react";
 
 export function CarpentryTestimonialSection() {
   const content = {
-        quote: "The crew handled structural repairs and finish trim with exceptional care. Everything lines up beautifully and feels built to last.",
-        name: "David R.",
-        location: "Montclair, NJ - Exterior Carpentry Upgrade",
+        quote: "They upgraded our trim and custom shelving with clean workmanship and excellent communication from start to finish. The final result looks sharp and feels solid.",
+        name: "Homeowner Review",
+        location: "East Orange, NJ - Custom Carpentry",
       };
 
   return (

@@ -1,18 +1,36 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export function ChimneyOverviewSection() {
   const content = {
-        title: "Restoration built for",
-        accent: "safety and longevity",
+        title: "Trusted Chimney Repair",
+        accent: "& Maintenance",
         paragraphs: [
-          "Chimney issues often begin quietly: cracked mortar, failed flashing, loose crowns, or moisture intrusion at the roofline. Left unresolved, these problems can quickly affect both masonry integrity and interior protection.",
-          "Our chimney work addresses the full system, from brick and mortar to flashing transitions and waterproofing, so the finished repair is stable, watertight, and visually clean.",
+          "Our chimney inspection service in Irvington, NJ identifies safety risks early so you can avoid costly structural damage and keep your home compliant with local fire codes.",
+          "Searching for expert chimney services in Essex County, NJ? We specialize in chimney repair in Newark and maintenance across Livingston and Bloomfield with same-day inspections and dependable workmanship.",
         ],
-        bullets: ["Chimney rebuilding", "Flashing replacement", "Crown and cap repairs", "Waterproofing protection"],
+        bullets: [
+          "Same-Day inspections in Livingston and West Orange",
+          "Affordable masonry and liner repairs",
+          "Certified chimney sweeps to reduce fire risk",
+          "Local expertise across Essex County zip codes",
+        ],
+        links: [
+          {
+            href: "/services/emergency-repair",
+            label: "Emergency Masonry Repair",
+            description: "Fixing cracked chimney crowns and urgent failures",
+          },
+          {
+            href: "/contact",
+            label: "Annual Maintenance Plans",
+            description: "Year-round chimney safety support in Essex County",
+          },
+        ],
         image: "/Images New/gallery-chimney-1.webp",
         imageAlt: "Chimney masonry detail",
-        badgeValue: "310+",
-        badgeLabel: "Repairs Completed",
+        badgeValue: "20+",
+        badgeLabel: "Years of Local Service",
       };
 
   return (
@@ -36,6 +54,17 @@ export function ChimneyOverviewSection() {
               </li>
             ))}
           </ul>
+          <div className="mt-10 space-y-4 border-t border-secondary/20 pt-6">
+            {content.links.map((item) => (
+              <p key={item.label} className="text-sm leading-loose text-muted-foreground">
+                <Link href={item.href} className="font-medium text-secondary underline-offset-4 hover:underline">
+                  {item.label}
+                </Link>
+                {" - "}
+                {item.description}
+              </p>
+            ))}
+          </div>
         </div>
         <div>
           <div className="relative">
@@ -51,6 +80,21 @@ export function ChimneyOverviewSection() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="mx-auto mt-20 max-w-4xl text-center">
+        <div className="mx-auto mb-6 h-px w-24 bg-linear-to-r from-secondary to-secondary/30" />
+
+        <h3 className="mb-4 font-serif text-[clamp(24px,2.5vw,32px)] text-foreground">
+          Trusted <em className="text-secondary">Chimney Repair & Maintenance</em>
+        </h3>
+
+        <p className="text-base leading-loose text-muted-foreground">
+          Searching for expert chimney services in Essex County, NJ? Our team
+          specializes in chimney repair in Newark and maintenance across
+          Livingston and Bloomfield. We provide affordable, same-day safety
+          inspections and professional cleaning to keep your home warm and
+          fire-safe throughout the New Jersey winters.
+        </p>
       </div>
     </section>
   );

@@ -7,17 +7,17 @@ import { siteConfig } from "@/config/site";
 
 export function ChimneyHeroSection() {
   const content = {
-        label: "Chimney",
-        title: "Chimney",
-        accent: "Services",
+        label: "Chimney Services",
+        title: "Expert Chimney Services",
+        accent: "Essex County, NJ",
         image: "/Images New/service-chimney.webp",
         imageAlt: "Chimney repair and restoration",
-        description: "Complete chimney repair, rebuilding, flashing, and waterproofing services focused on safety, weather protection, and lasting masonry performance.",
+        description: "Need chimney repair in Newark or routine chimney cleaning in East Orange? We deliver precise inspections, safe cleanings, and durable repairs across Essex County to protect your home from winter moisture and creosote buildup.",
         stats: [
-          { value: "20+", label: "Years of Repair Experience" },
-          { value: "310+", label: "Chimneys Restored" },
-          { value: "100%", label: "Code-Focused Repairs" },
-          { value: "4.9", label: "Average Client Rating" },
+          { value: "Same-Day", label: "Safety Inspections" },
+          { value: "20+", label: "Years in Essex County" },
+          { value: "Certified", label: "Chimney Sweep Team" },
+          { value: "Affordable", label: "Repair & Maintenance" },
         ],
       };
 
