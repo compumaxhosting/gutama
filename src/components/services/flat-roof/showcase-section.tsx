@@ -59,7 +59,7 @@ export function FlatRoofShowcaseSection() {
           <Button asChild variant="outline" className="h-12 border-secondary/40 px-6 text-sm text-secondary hover:bg-secondary/10 hover:text-secondary"><Link href="/gallery">Full Portfolio <ArrowUpRight size={14} className="ml-2" /></Link></Button>
         </div>
         <div className="grid grid-cols-2 gap-1.5 lg:grid-cols-[1.5fr_1fr_1fr] lg:grid-rows-[auto_auto] lg:gap-1">
-          <GalleryTile src={content.featured.src} location={content.featured.location} title={content.featured.title} className="col-span-2 min-h-[240px] lg:col-span-1 lg:row-span-2 lg:min-h-[520px]" titleSize="text-2xl" />
+          <GalleryTile src={content.featured.src} location={content.featured.location} title={content.featured.title} className="col-span-2 min-h-60 lg:col-span-1 lg:row-span-2 lg:min-h-130" titleSize="text-2xl" />
           {content.items.map((item) => (
             <GalleryTile key={`${item.title}-${item.location}`} src={item.src} location={item.location} title={item.title} className="aspect-4/3" titleSize="text-base" />
           ))}
