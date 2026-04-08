@@ -176,13 +176,13 @@ export default function RootLayout({
         {/* ✅ MAIN LAYOUT */}
         <SiteShell>{children}</SiteShell>
 
-        {/* ✅ GOOGLE ANALYTICS (non-blocking) */}
+        {/* ✅ GOOGLE ANALYTICS (fully deferred - no render blocking) */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-8K697EFF53"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
 
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}

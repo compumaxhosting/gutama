@@ -53,7 +53,7 @@
   --card-foreground: hsl(0 0% 100%);
   --popover: hsl(0 0% 12%);
   --popover-foreground: hsl(0 0% 100%);
-  --primary: hsl(0 72% 45%);
+  --primary: hsl(0 72% 60%);
   --primary-foreground: hsl(0 0% 100%);
   --secondary: hsl(43 56% 52%);
   --secondary-foreground: hsl(0 0% 7%);
@@ -64,8 +64,8 @@
   --destructive: hsl(0 84% 60%);
   --border: hsl(0 0% 20%);
   --input: hsl(0 0% 20%);
-  --ring: hsl(0 72% 45%);
-  --chart-1: hsl(0 72% 45%);
+  --ring: hsl(0 72% 60%);
+  --chart-1: hsl(0 72% 60%);
   --chart-2: hsl(43 56% 52%);
   --chart-3: hsl(0 0% 35%);
   --chart-4: hsl(0 0% 45%);
@@ -73,12 +73,12 @@
   --radius: 0.5rem;
   --sidebar: hsl(0 0% 7%);
   --sidebar-foreground: hsl(0 0% 90%);
-  --sidebar-primary: hsl(0 72% 45%);
+  --sidebar-primary: hsl(0 72% 60%);
   --sidebar-primary-foreground: hsl(0 0% 100%);
   --sidebar-accent: hsl(0 0% 15%);
   --sidebar-accent-foreground: hsl(0 0% 90%);
   --sidebar-border: hsl(0 0% 20%);
-  --sidebar-ring: hsl(0 72% 45%);
+  --sidebar-ring: hsl(0 72% 60%);
 }
 
 .dark {
@@ -88,7 +88,7 @@
   --card-foreground: hsl(0 0% 100%);
   --popover: hsl(0 0% 12%);
   --popover-foreground: hsl(0 0% 100%);
-  --primary: hsl(0 72% 45%);
+  --primary: hsl(0 72% 60%);
   --primary-foreground: hsl(0 0% 100%);
   --secondary: hsl(43 56% 52%);
   --secondary-foreground: hsl(0 0% 7%);
@@ -99,20 +99,20 @@
   --destructive: hsl(0 84% 60%);
   --border: hsl(0 0% 20%);
   --input: hsl(0 0% 20%);
-  --ring: hsl(0 72% 45%);
-  --chart-1: hsl(0 72% 45%);
+  --ring: hsl(0 72% 60%);
+  --chart-1: hsl(0 72% 60%);
   --chart-2: hsl(43 56% 52%);
   --chart-3: hsl(0 0% 35%);
   --chart-4: hsl(0 0% 45%);
   --chart-5: hsl(0 0% 55%);
   --sidebar: hsl(0 0% 7%);
   --sidebar-foreground: hsl(0 0% 90%);
-  --sidebar-primary: hsl(0 72% 45%);
+  --sidebar-primary: hsl(0 72% 60%);
   --sidebar-primary-foreground: hsl(0 0% 100%);
   --sidebar-accent: hsl(0 0% 15%);
   --sidebar-accent-foreground: hsl(0 0% 90%);
   --sidebar-border: hsl(0 0% 20%);
-  --sidebar-ring: hsl(0 72% 45%);
+  --sidebar-ring: hsl(0 72% 60%);
 }
 
 @layer base {
