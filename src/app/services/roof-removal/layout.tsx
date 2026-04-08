@@ -48,7 +48,9 @@ export const metadata: Metadata = {
     images: ["https://www.gutamaroofingnj.com/Images%20New/service-roof-removal.webp"],
     creator: "@GutamaRoofingNJ",
   },
+};
 
+export const viewport = {
   themeColor: "#ffffff",
 };
 

@@ -46,13 +46,16 @@ export const metadata: Metadata = {
     images: ["https://www.gutamaroofingnj.com/Images%20New/service-slate-roof.webp"],
     creator: "@GutamaRoofingNJ",
   },
-  themeColor: "#ffffff",
   appleWebApp: {
     capable: true,
     title: "Gutama Roofing NJ",
     statusBarStyle: "black",
   },
   referrer: "strict-origin-when-cross-origin",
+};
+
+export const viewport = {
+  themeColor: "#ffffff",
 };
 
 export default function SlateRoofLayout({

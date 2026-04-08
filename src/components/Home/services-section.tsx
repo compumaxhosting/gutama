@@ -96,7 +96,7 @@ export function ServicesSection({
 
                   {/* ✅ BETTER CTA */}
                   <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary transition-all group-hover:gap-2">
-                    Learn More About Roof Removal
+                    Learn More
                     <ArrowRight className="h-4 w-4" />
                   </span>
                 </div>
