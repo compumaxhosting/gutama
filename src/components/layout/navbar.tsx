@@ -76,7 +76,7 @@ const ServicesMenu = memo(function ServicesMenu({
 
       <div
         className={cn(
-          "absolute left-1/2 top-full z-60 mt-3 w-150 -translate-x-1/2 transition-all duration-200",
+          "absolute left-1/2 top-full z-60 w-150 -translate-x-1/2 pt-3 transition-all duration-200",
           isOpen ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
         )}
       >
@@ -189,7 +189,12 @@ export function Navbar() {
             {navLinks.map((link) => {
               if (link.label === "Services") {
                 return (
-                  <div key={link.label} ref={servicesMenuRef}>
+                  <div
+                    key={link.label}
+                    ref={servicesMenuRef}
+                    onMouseEnter={() => setIsServicesOpen(true)}
+                    onMouseLeave={() => setIsServicesOpen(false)}
+                  >
                     <ServicesMenu
                       isActive={link.isActive}
                       isOpen={isServicesOpen}
