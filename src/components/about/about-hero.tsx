@@ -19,6 +19,7 @@ export function AboutHero() {
           priority
           className="object-cover object-center"
           sizes="100vw"
+          quality={60}
         />
         <div className="absolute inset-0 bg-linear-to-r from-background/95 via-background/70 to-background/40" />
         <div className="absolute inset-0 bg-linear-to-t from-background via-transparent to-transparent" />

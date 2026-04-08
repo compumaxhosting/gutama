@@ -40,6 +40,7 @@ export function AboutSection() {
                 width={1200}
                 height={800}
                 className="h-64 w-full object-cover sm:h-72 lg:h-96"
+                quality={60}
               />
             </div>
           </Reveal>

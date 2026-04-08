@@ -25,7 +25,7 @@ export function DormersHeroSection() {
     <section className="relative flex min-h-[90vh] items-end overflow-hidden">
       <div className="absolute inset-0">
         <div className="relative h-[115%] w-full">
-          <Image src={content.image} alt={content.imageAlt} fill priority className="object-cover object-[center_30%]" sizes="100vw" />
+          <Image src={content.image} alt={content.imageAlt} fill priority className="object-cover object-[center_30%]" sizes="100vw" quality={75} />
         </div>
         <div className="absolute inset-0 bg-linear-to-r from-background/95 via-background/70 to-background/40" />
         <div className="absolute inset-0 bg-linear-to-t from-background via-transparent to-transparent" />

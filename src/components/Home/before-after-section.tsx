@@ -62,6 +62,7 @@ export function BeforeAfterSection() {
                       fill
                       className="object-cover"
                       sizes="(max-width: 768px) 50vw, 33vw"
+                      quality={60}
                     />
                     <span className="absolute left-2 top-2 rounded bg-primary px-2 py-1 text-xs font-bold text-primary-foreground">
                       BEFORE
@@ -76,6 +77,7 @@ export function BeforeAfterSection() {
                       fill
                       className="object-cover"
                       sizes="(max-width: 768px) 50vw, 33vw"
+                      quality={60}
                     />
                     <span className="absolute left-2 top-2 rounded bg-secondary px-2 py-1 text-xs font-bold text-secondary-foreground">
                       AFTER

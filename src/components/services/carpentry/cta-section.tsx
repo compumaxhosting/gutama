@@ -18,7 +18,7 @@ export function CarpentryCtaSection() {
   return (
     <section className="relative overflow-hidden py-36 px-6">
       <div className="absolute inset-0">
-        <Image src={content.image} alt={content.imageAlt} fill className="object-cover" sizes="100vw" />
+        <Image src={content.image} alt={content.imageAlt} fill className="object-cover" sizes="100vw" quality={60} />
         <div className="absolute inset-0 bg-background/90" />
         <div className="absolute inset-0 bg-radial-[ellipse_at_60%_50%] from-secondary/12 to-transparent" />
       </div>

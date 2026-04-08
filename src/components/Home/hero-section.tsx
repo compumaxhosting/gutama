@@ -25,7 +25,7 @@ export function HeroSection() {
           placeholder="blur"
           blurDataURL="/Images New/Hero.webp"
           sizes="100vw"
-          quality={75} // 🔥 reduced from 90 → big performance win
+          quality={60}
           className="object-cover object-center"
         />
         <div className="absolute inset-0 bg-black/10" />

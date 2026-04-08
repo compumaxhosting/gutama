@@ -28,6 +28,7 @@ function GalleryTile({ src, location, title, className = "", titleSize = "text-l
         fill
         className="object-cover transition-transform duration-700 group-hover:scale-[1.07]"
         sizes="(max-width: 1024px) 100vw, 33vw"
+        quality={60}
       />
       <div className="absolute inset-0 flex flex-col justify-end bg-background/70 p-[clamp(16px,2vw,32px)] opacity-0 transition-opacity duration-400  group-hover:opacity-100">
         <p className="mb-1.5 text-[10px] tracking-[0.2em] uppercase text-secondary">{location}</p>

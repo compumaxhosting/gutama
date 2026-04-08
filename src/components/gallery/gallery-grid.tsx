@@ -33,6 +33,7 @@ export function GalleryGrid({ projects, activeCategory }: GalleryGridProps) {
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-110"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                quality={60}
               />
               <div className="absolute inset-0 bg-linear-to-t from-card/80 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
               <span className="absolute left-3 top-3 rounded bg-secondary/90 px-2 py-1 text-xs font-bold text-secondary-foreground">

@@ -24,6 +24,7 @@ export function AdditionsHeroSection() {
             priority
             className="object-cover object-[center_30%]"
             sizes="100vw"
+            quality={75}
           />
         </div>
         <div className="absolute inset-0 bg-linear-to-r from-background/95 via-background/70 to-background/40" />
