@@ -3,11 +3,11 @@ import Link from "next/link";
 
 export function ChimneyOverviewSection() {
   const content = {
-        title: "Trusted Chimney Repair",
-        accent: "& Maintenance",
+    title: "Expert Chimney Services",
+    accent: "in Essex County, NJ",
         paragraphs: [
-          "Our chimney inspection service in Irvington, NJ identifies safety risks early so you can avoid costly structural damage and keep your home compliant with local fire codes.",
-          "Searching for expert chimney services in Essex County, NJ? We specialize in chimney repair in Newark and maintenance across Livingston and Bloomfield with same-day inspections and dependable workmanship.",
+          "Whether you need a chimney repair in Newark, NJ, or a routine chimney cleaning in East Orange, NJ, our team provides expert care across Essex County. We solve local issues like moisture damage from NJ winters and creosote buildup with precision.",
+          "Our chimney inspection service in Irvington, NJ identifies safety risks early so you can avoid costly structural damage and keep your home compliant with local fire codes."
         ],
         bullets: [
           "Same-Day inspections in Livingston and West Orange",

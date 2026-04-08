@@ -3,35 +3,35 @@ import Link from "next/link";
 
 export function SidingOverviewSection() {
   const content = {
-        title: "Top-Rated Siding Company",
-        accent: "in Newark & East Orange, NJ",
-        paragraphs: [
-          "Protecting your home from New Jersey's unpredictable weather starts with high-quality exterior solutions. As the best siding company in Essex County, NJ, we specialize in durable, weather-resistant upgrades tailored to local architecture. Whether you need a full vinyl siding installation in East Orange, NJ, or a specific siding repair in Irvington, NJ, our licensed team ensures your property remains energy-efficient and visually stunning.",
-          "Homeowners often face issues like warping, moisture infiltration, or storm damage. Our siding contractors in Newark, NJ, provide immediate solutions, from minor fixes to complete house siding installation in Bloomfield, NJ. We offer premium materials, including fiber cement siding installation in Livingston, NJ, ensuring long-term curb appeal and structural protection. With our affordable siding installation in West Orange, NJ, you get expert craftsmanship without the premium price tag.",
-        ],
-        bullets: [
-          "Weather-Ready Protection: High-durability materials designed for NJ’s harsh seasonal shifts.",
-          "Energy Efficiency: Insulated siding options to lower your monthly utility bills.",
-          "Expert Siding Contractors: Serving all Newark and Essex County neighborhoods since day one.",
-          "Same-Day Consultations: Fast, professional assessments for siding repair and replacement.",
-        ],
-        links: [
-          {
-            href: "/contact",
-            label: "Common Siding Damage Signs",
-            description: "Learn when to call for a professional siding repair.",
-          },
-          {
-            href: "/contact",
-            label: "Fiber Cement vs. Vinyl",
-            description: "Compare the best residential siding services for Newark homes.",
-          },
-        ],
-        image: "/Images New/after-siding.webp",
-        imageAlt: "Completed siding installation",
-        badgeValue: "Same-Day",
-        badgeLabel: "Consultations Available",
-      };
+    title: "Expert Siding Installation ",
+    accent: "in Essex County, NJ",
+    paragraphs: [
+      "Protecting your home from New Jersey's unpredictable weather starts with high-quality exterior solutions. As the best siding company in Essex County, NJ, we specialize in durable, weather-resistant upgrades tailored to local architecture. Whether you need a full vinyl siding installation in East Orange, NJ, or a specific siding repair in Irvington, NJ, our licensed team ensures your property remains energy-efficient and visually stunning.",
+      "Homeowners often face issues like warping, moisture infiltration, or storm damage. Our siding contractors in Newark, NJ, provide immediate solutions, from minor fixes to complete house siding installation in Bloomfield, NJ. We offer premium materials, including fiber cement siding installation in Livingston, NJ, ensuring long-term curb appeal and structural protection. With our affordable siding installation in West Orange, NJ, you get expert craftsmanship without the premium price tag.",
+    ],
+    bullets: [
+      "Weather-Ready Protection: High-durability materials designed for NJ’s harsh seasonal shifts.",
+      "Energy Efficiency: Insulated siding options to lower your monthly utility bills.",
+      "Expert Siding Contractors: Serving all Newark and Essex County neighborhoods since day one.",
+      "Same-Day Consultations: Fast, professional assessments for siding repair and replacement.",
+    ],
+    links: [
+      {
+        href: "/contact",
+        label: "Common Siding Damage Signs",
+        description: "Learn when to call for a professional siding repair.",
+      },
+      {
+        href: "/contact",
+        label: "Fiber Cement vs. Vinyl",
+        description: "Compare the best residential siding services for Newark homes.",
+      },
+    ],
+    image: "/Images New/after-siding.webp",
+    imageAlt: "Completed siding installation",
+    badgeValue: "Same-Day",
+    badgeLabel: "Consultations Available",
+  };
 
   return (
     <section className="relative bg-background py-28 px-6">

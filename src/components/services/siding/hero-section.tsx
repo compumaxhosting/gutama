@@ -7,12 +7,12 @@ import { siteConfig } from "@/config/site";
 
 export function SidingHeroSection() {
   const content = {
-        label: "Siding Installation",
-        title: "Expert Siding Installation",
-        accent: "in Essex County, NJ",
-        image: "/Images New/service-siding.webp",
-        imageAlt: "Siding installation services",
-        description: "Protecting your home from New Jersey's unpredictable weather starts with high-quality exterior solutions. We deliver durable siding installation and repair across Newark, East Orange, Livingston, and the surrounding Essex County area.",
+    label: "Siding",
+    title: "Premium",
+    accent: "Siding",
+    image: "/Images New/service-siding.webp",
+    imageAlt: "Siding installation services",
+    description: "Transform your exterior with premium siding installation, moisture-conscious detailing, and finish work that sharpens curb appeal.",
         stats: [
           { value: "Same-Day", label: "Consultations" },
           { value: "Vinyl + Fiber", label: "Siding Options" },
