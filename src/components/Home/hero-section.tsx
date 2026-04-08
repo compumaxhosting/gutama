@@ -39,9 +39,9 @@ export function HeroSection() {
               (badge) => (
                 <span
                   key={badge}
-                  className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-2 text-sm font-black uppercase tracking-widest text-primary shadow-lg ring-2 ring-white/40"
+                  className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-2 text-sm font-black uppercase tracking-widest text-background shadow-lg ring-2 ring-white/40"
                 >
-                  <CheckCircle2 className="h-4 w-4 shrink-0 text-primary" />
+                  <CheckCircle2 className="h-4 w-4 shrink-0 text-background" />
                   {badge}
                 </span>
               ),

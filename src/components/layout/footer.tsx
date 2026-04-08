@@ -101,7 +101,7 @@ export function Footer() {
           <div className="gold-divider mx-0! my-4" />
           <div className="space-y-3 text-sm text-muted-foreground">
             <p>Call us for free consultation and project planning.</p>
-            <Link href="/contact" className="text-primary hover:text-primary/80">
+            <Link href="/contact" className="text-secondary hover:text-secondary/85">
               Go to Contact Page
             </Link>
             <div className="pt-2">
