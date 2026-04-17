@@ -10,32 +10,32 @@ import type { GalleryItem } from "@/types/site";
 const GALLERY_ITEMS: GalleryItem[] = [
   {
     title: "Roof Replacement in Essex County NJ",
-    image: "/Images New/gallery-roof-1.webp",
+    image: "/images/gallery-roof-1.webp",
     category: "roofing",
   },
   {
     title: "Architectural Shingle Roofing Installation",
-    image: "/Images New/gallery-roof-2.webp",
+    image: "/images/gallery-roof-2.webp",
     category: "roofing",
   },
   {
     title: "Storm Damage Roof Repair",
-    image: "/Images New/service-dormers.webp",
+    image: "/images/service-dormers.webp",
     category: "roofing",
   },
   {
     title: "Siding Installation & Exterior Upgrade",
-    image: "/Images New/service-siding.webp",
+    image: "/images/service-siding.webp",
     category: "siding",
   },
   {
     title: "Chimney Repair & Restoration",
-    image: "/Images New/gallery-chimney-1.webp",
+    image: "/images/gallery-chimney-1.webp",
     category: "chimney",
   },
   {
     title: "Custom Home Addition Project",
-    image: "/Images New/service-additions.webp",
+    image: "/images/service-additions.webp",
     category: "additions",
   },
 ];
@@ -105,3 +105,4 @@ export function GallerySection() {
     </Section>
   );
 }
+

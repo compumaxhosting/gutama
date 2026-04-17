@@ -13,7 +13,7 @@ export function AboutHero() {
       {/* Background image with layered overlays */}
       <div className="absolute inset-0">
         <Image
-          src="/Images New/about-aerial.webp"
+          src="/images/about-aerial.webp"
           alt="Aerial view of completed roofing projects in Essex County"
           fill
           priority
@@ -121,3 +121,4 @@ export function AboutHero() {
     </section>
   );
 }
+

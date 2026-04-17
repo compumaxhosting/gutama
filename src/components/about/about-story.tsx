@@ -34,7 +34,7 @@ export function AboutStory() {
           <Reveal>
             <div className="glass-card overflow-hidden border shadow-luxury">
               <Image
-                src="/Images New/service-additions.webp"
+                src="/images/service-additions.webp"
                 alt={`Roofing contractor team working on residential roofing project in ${siteConfig.business.regionLabel}`}
                 width={1200}
                 height={800}
@@ -78,3 +78,4 @@ export function AboutStory() {
     </Section>
   );
 }
+

@@ -39,12 +39,12 @@ export function DormersShowcaseSection() {
   const content = {
         title: "Dormer",
         accent: "Projects",
-        featured: { src: "/Images New/service-dormers.webp", location: "South Orange, NJ", title: "Rear Dormer Expansion" },
+        featured: { src: "/images/service-dormers.webp", location: "South Orange, NJ", title: "Rear Dormer Expansion" },
         items: [
-          { src: "/Images New/gallery-roof-1.webp", location: "Montclair, NJ", title: "Shed Dormer Addition" },
-          { src: "/Images New/service-dormers.webp", location: "Maplewood, NJ", title: "Twin Front Dormers" },
-          { src: "/Images New/gallery-roof-2.webp", location: "Glen Ridge, NJ", title: "Primary Suite Roofline Upgrade" },
-          { src: "/Images New/gallery-roof-3.webp", location: "Livingston, NJ", title: "Upper-Level Space Conversion" },
+          { src: "/images/gallery-roof-1.webp", location: "Montclair, NJ", title: "Shed Dormer Addition" },
+          { src: "/images/service-dormers.webp", location: "Maplewood, NJ", title: "Twin Front Dormers" },
+          { src: "/images/gallery-roof-2.webp", location: "Glen Ridge, NJ", title: "Primary Suite Roofline Upgrade" },
+          { src: "/images/gallery-roof-3.webp", location: "Livingston, NJ", title: "Upper-Level Space Conversion" },
         ],
       };
 
@@ -68,3 +68,4 @@ export function DormersShowcaseSection() {
     </section>
   );
 }
+

@@ -77,7 +77,7 @@ export function MobileNavMenu({
         <div className="flex items-center border-b border-border/40 px-8">
           <Link href="/" onClick={close} aria-label={businessName}>
             <Image
-              src="/Images New/logo.webp"
+              src="/images/logo.webp"
               alt={businessName}
               width={180}
               height={72}
@@ -272,3 +272,4 @@ export function MobileNavMenu({
     </>
   );
 }
+

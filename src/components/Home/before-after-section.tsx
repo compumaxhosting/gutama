@@ -10,18 +10,18 @@ import { siteConfig } from "@/config/site";
 const BEFORE_AFTER_ITEMS: BeforeAfterItem[] = [
   {
     title: "Roof Replacement Transformation",
-    beforeImage: "/Images New/before-roof.webp",
-    afterImage: "/Images New/after-roof.webp",
+    beforeImage: "/images/before-roof.webp",
+    afterImage: "/images/after-roof.webp",
   },
   {
     title: "Siding Installation Upgrade",
-    beforeImage: "/Images New/before-siding.webp",
-    afterImage: "/Images New/after-siding.webp",
+    beforeImage: "/images/before-siding.webp",
+    afterImage: "/images/after-siding.webp",
   },
   {
     title: "Flat Roof Replacement Project",
-    beforeImage: "/Images New/before-flat.webp",
-    afterImage: "/Images New/after-flat.webp",
+    beforeImage: "/images/before-flat.webp",
+    afterImage: "/images/after-flat.webp",
   },
 ];
 
@@ -98,3 +98,4 @@ export function BeforeAfterSection() {
     </Section>
   );
 }
+

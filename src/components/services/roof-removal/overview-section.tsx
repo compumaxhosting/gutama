@@ -67,7 +67,7 @@ export function RoofRemovalOverviewSection() {
           <div className="relative">
             <div className="relative aspect-4/5 overflow-hidden">
               <Image
-                src="/Images New/before-roof.webp"
+                src="/images/before-roof.webp"
                 alt="Trusted Roof Removal Services by Gutama Home Improvement"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -111,3 +111,4 @@ export function RoofRemovalOverviewSection() {
     </section>
   );
 }
+

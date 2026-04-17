@@ -39,7 +39,7 @@ export function Footer() {
       <div className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-y-10 px-4 py-16 md:grid-cols-2 md:gap-x-12 md:gap-y-12 lg:grid-cols-4 lg:gap-x-12 lg:gap-y-12">
         <div>
           <Link href="/" className="inline-flex">
-            <Image src="/Images New/logo2.webp" alt={siteConfig.business.name} width={200} height={80} quality={60} sizes="400px" className="h-22 w-auto object-contain" />
+            <Image src="/images/logo2.webp" alt={siteConfig.business.name} width={200} height={80} quality={60} sizes="400px" className="h-22 w-auto object-contain" />
           </Link>
           <p className="text-sm leading-relaxed text-muted-foreground">{siteConfig.business.description}</p>
           <div className="mt-4 flex flex-col gap-2 text-sm">
@@ -132,3 +132,4 @@ export function Footer() {
     </footer>
   );
 }
+

@@ -10,7 +10,7 @@ export function FlatRoofHeroSection() {
         label: "Flat Roof",
         title: "Flat Roof",
         accent: "Solutions",
-        image: "/Images New/service-flat-roof.webp",
+        image: "/images/service-flat-roof.webp",
         imageAlt: "Flat roof installation and repair",
         description: "Specialized flat roofing systems including TPO, EPDM, and modified bitumen installed with precise drainage and seam detailing.",
         stats: [
@@ -77,3 +77,4 @@ export function FlatRoofHeroSection() {
     </section>
   );
 }
+

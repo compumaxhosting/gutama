@@ -39,12 +39,12 @@ export function ChimneyShowcaseSection() {
   const content = {
         title: "Restoration",
         accent: "Projects",
-        featured: { src: "/Images New/service-chimney.webp", location: "Montclair, NJ", title: "Full Chimney Rebuild & Flashing Upgrade" },
+        featured: { src: "/images/service-chimney.webp", location: "Montclair, NJ", title: "Full Chimney Rebuild & Flashing Upgrade" },
         items: [
-          { src: "/Images New/gallery-chimney-1.webp", location: "Maplewood, NJ", title: "Masonry Repointing Repair" },
-          { src: "/Images New/service-chimney.webp", location: "Livingston, NJ", title: "Crown & Cap Restoration" },
-          { src: "/Images New/gallery-chimney-1.webp", location: "Verona, NJ", title: "Leak Investigation & Flashing Replacement" },
-          { src: "/Images New/service-chimney.webp", location: "Millburn, NJ", title: "Brick Stabilization Project" },
+          { src: "/images/gallery-chimney-1.webp", location: "Maplewood, NJ", title: "Masonry Repointing Repair" },
+          { src: "/images/service-chimney.webp", location: "Livingston, NJ", title: "Crown & Cap Restoration" },
+          { src: "/images/gallery-chimney-1.webp", location: "Verona, NJ", title: "Leak Investigation & Flashing Replacement" },
+          { src: "/images/service-chimney.webp", location: "Millburn, NJ", title: "Brick Stabilization Project" },
         ],
       };
 
@@ -68,3 +68,4 @@ export function ChimneyShowcaseSection() {
     </section>
   );
 }
+

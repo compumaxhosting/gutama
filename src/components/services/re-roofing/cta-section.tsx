@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 
 export function ReRoofingCtaSection() {
   const content = {
-        image: "/Images New/service-re-roofing.webp",
+        image: "/images/service-re-roofing.webp",
         imageAlt: "Re-roofing background",
         title: "Ready for a",
         accent: "New Roof System?",
@@ -39,3 +39,4 @@ export function ReRoofingCtaSection() {
     </section>
   );
 }
+

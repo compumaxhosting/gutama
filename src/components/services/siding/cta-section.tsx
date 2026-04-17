@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 
 export function SidingCtaSection() {
   const content = {
-        image: "/Images New/service-siding.webp",
+        image: "/images/service-siding.webp",
         imageAlt: "Siding project background",
         title: "Ready to Transform",
         accent: "Your Home's Exterior?",
@@ -39,3 +39,4 @@ export function SidingCtaSection() {
     </section>
   );
 }
+

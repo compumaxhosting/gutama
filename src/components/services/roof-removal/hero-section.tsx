@@ -10,7 +10,7 @@ export function RoofRemovalHeroSection() {
         label: "Roof Removal",
         title: "Professional",
         accent: "Roof Removal",
-        image: "/Images New/service-roof-removal.webp",
+        image: "/images/service-roof-removal.webp",
         imageAlt: "Roof removal services",
         description: "Complete tear-off and roof removal with safe disposal, careful site protection, and a clean deck ready for the next installation phase.",
         stats: [
@@ -77,3 +77,4 @@ export function RoofRemovalHeroSection() {
     </section>
   );
 }
+

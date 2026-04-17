@@ -40,12 +40,12 @@ export function EmergencyRepairShowcaseSection() {
   const content = {
         title: "Rapid-Response",
         accent: "Projects",
-        featured: { src: "/Images New/service-emergency.webp", location: siteConfig.business.regionLabel, title: "Storm Damage Tarp & Roofline Repair" },
+        featured: { src: "/images/service-emergency.webp", location: siteConfig.business.regionLabel, title: "Storm Damage Tarp & Roofline Repair" },
         items: [
-          { src: "/Images New/gallery-roof-1.webp", location: "Montclair, NJ", title: "Active Leak Stabilization" },
-          { src: "/Images New/gallery-roof-2.webp", location: "Maplewood, NJ", title: "Wind Damage Securement" },
-          { src: "/Images New/gallery-roof-3.webp", location: "Livingston, NJ", title: "Flashing Failure Emergency Repair" },
-          { src: "/Images New/service-emergency.webp", location: "Verona, NJ", title: "Temporary Protection to Permanent Repair" },
+          { src: "/images/gallery-roof-1.webp", location: "Montclair, NJ", title: "Active Leak Stabilization" },
+          { src: "/images/gallery-roof-2.webp", location: "Maplewood, NJ", title: "Wind Damage Securement" },
+          { src: "/images/gallery-roof-3.webp", location: "Livingston, NJ", title: "Flashing Failure Emergency Repair" },
+          { src: "/images/service-emergency.webp", location: "Verona, NJ", title: "Temporary Protection to Permanent Repair" },
         ],
       };
 
@@ -69,3 +69,4 @@ export function EmergencyRepairShowcaseSection() {
     </section>
   );
 }
+

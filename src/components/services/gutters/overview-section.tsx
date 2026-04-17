@@ -29,7 +29,7 @@ export function GuttersOverviewSection() {
             description: "Learn how new gutters protect your home's exterior investment.",
           },
         ],
-        image: "/Images New/service-gutters.webp",
+        image: "/images/service-gutters.webp",
         imageAlt: "Exterior drainage planning",
         badgeValue: "Seamless",
         badgeLabel: "Custom-Cut Systems",
@@ -98,3 +98,4 @@ export function GuttersOverviewSection() {
     </section>
   );
 }
+

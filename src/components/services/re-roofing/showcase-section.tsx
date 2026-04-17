@@ -39,12 +39,12 @@ export function ReRoofingShowcaseSection() {
   const content = {
         title: "Completed",
         accent: "Projects",
-        featured: { src: "/Images New/service-re-roofing.webp", location: "Montclair, NJ", title: "Architectural Shingle Roof Replacement" },
+        featured: { src: "/images/service-re-roofing.webp", location: "Montclair, NJ", title: "Architectural Shingle Roof Replacement" },
         items: [
-          { src: "/Images New/before-roof.webp", location: "Maplewood, NJ", title: "Aging Roof Tear-Off" },
-          { src: "/Images New/after-roof.webp", location: "South Orange, NJ", title: "Full System Re-Roof" },
-          { src: "/Images New/gallery-roof-1.webp", location: "Verona, NJ", title: "Flashing & Ventilation Upgrade" },
-          { src: "/Images New/gallery-roof-2.webp", location: "Livingston, NJ", title: "Premium Curb Appeal Improvement" },
+          { src: "/images/before-roof.webp", location: "Maplewood, NJ", title: "Aging Roof Tear-Off" },
+          { src: "/images/after-roof.webp", location: "South Orange, NJ", title: "Full System Re-Roof" },
+          { src: "/images/gallery-roof-1.webp", location: "Verona, NJ", title: "Flashing & Ventilation Upgrade" },
+          { src: "/images/gallery-roof-2.webp", location: "Livingston, NJ", title: "Premium Curb Appeal Improvement" },
         ],
       };
 
@@ -68,3 +68,4 @@ export function ReRoofingShowcaseSection() {
     </section>
   );
 }
+

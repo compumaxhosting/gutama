@@ -27,7 +27,7 @@ export function ChimneyOverviewSection() {
             description: "Year-round chimney safety support in Essex County",
           },
         ],
-        image: "/Images New/gallery-chimney-1.webp",
+        image: "/images/gallery-chimney-1.webp",
         imageAlt: "Chimney masonry detail",
         badgeValue: "20+",
         badgeLabel: "Years of Local Service",
@@ -99,3 +99,4 @@ export function ChimneyOverviewSection() {
     </section>
   );
 }
+

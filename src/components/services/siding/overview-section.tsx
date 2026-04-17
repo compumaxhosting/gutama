@@ -27,7 +27,7 @@ export function SidingOverviewSection() {
         description: "Compare the best residential siding services for Newark homes.",
       },
     ],
-    image: "/Images New/after-siding.webp",
+    image: "/images/after-siding.webp",
     imageAlt: "Completed siding installation",
     badgeValue: "Same-Day",
     badgeLabel: "Consultations Available",
@@ -95,3 +95,4 @@ export function SidingOverviewSection() {
     </section>
   );
 }
+

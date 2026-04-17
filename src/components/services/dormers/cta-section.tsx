@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 
 export function DormersCtaSection() {
   const content = {
-        image: "/Images New/service-dormers.webp",
+        image: "/images/service-dormers.webp",
         imageAlt: "Dormer installation background",
         title: "Ready to Grow",
         accent: "Your Home?",
@@ -39,3 +39,4 @@ export function DormersCtaSection() {
     </section>
   );
 }
+

@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 
 export function CarpentryCtaSection() {
   const content = {
-        image: "/Images New/service-carpentry.webp",
+        image: "/images/service-carpentry.webp",
         imageAlt: "Carpentry background",
         title: "Enhance Your Home",
         accent: "With Expert Carpentry",
@@ -39,3 +39,4 @@ export function CarpentryCtaSection() {
     </section>
   );
 }
+

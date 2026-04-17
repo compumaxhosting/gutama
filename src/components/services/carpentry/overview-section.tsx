@@ -29,7 +29,7 @@ export function CarpentryOverviewSection() {
         description: "See how our carpentry integrates with full residential upgrades.",
       },
     ],
-    image: "/Images New/service-carpentry.webp",
+    image: "/images/service-carpentry.webp",
     imageAlt: "Carpentry detail work",
     badgeValue: "Same-Day",
     badgeLabel: "Consultations Available",
@@ -98,3 +98,4 @@ export function CarpentryOverviewSection() {
     </section>
   );
 }
+

@@ -39,12 +39,12 @@ export function SidingShowcaseSection() {
   const content = {
         title: "Exterior",
         accent: "Projects",
-        featured: { src: "/Images New/service-siding.webp", location: "Montclair, NJ", title: "Full Exterior Siding Upgrade" },
+        featured: { src: "/images/service-siding.webp", location: "Montclair, NJ", title: "Full Exterior Siding Upgrade" },
         items: [
-          { src: "/Images New/before-siding.webp", location: "Maplewood, NJ", title: "Outdated Cladding Replacement" },
-          { src: "/Images New/after-siding.webp", location: "South Orange, NJ", title: "Modern Siding Transformation" },
-          { src: "/Images New/gallery-siding-1.webp", location: "Verona, NJ", title: "Trim & Accent Detail Package" },
-          { src: "/Images New/service-siding.webp", location: "Glen Ridge, NJ", title: "Weatherproof Envelope Upgrade" },
+          { src: "/images/before-siding.webp", location: "Maplewood, NJ", title: "Outdated Cladding Replacement" },
+          { src: "/images/after-siding.webp", location: "South Orange, NJ", title: "Modern Siding Transformation" },
+          { src: "/images/gallery-siding-1.webp", location: "Verona, NJ", title: "Trim & Accent Detail Package" },
+          { src: "/images/service-siding.webp", location: "Glen Ridge, NJ", title: "Weatherproof Envelope Upgrade" },
         ],
       };
 
@@ -68,3 +68,4 @@ export function SidingShowcaseSection() {
     </section>
   );
 }
+

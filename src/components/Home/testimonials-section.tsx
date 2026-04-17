@@ -15,21 +15,21 @@ const TESTIMONIALS: Testimonial[] = [
     location: "West Orange, NJ",
     text: "Gutama transformed our roof with incredible professionalism. The roof replacement was done efficiently with high-quality workmanship.",
     rating: 5,
-    image: "/Images New/testimonial-1.webp",
+    image: "/images/testimonial-1.webp",
   },
   {
     name: "Sandra M.",
     location: "Bloomfield, NJ",
     text: "After a storm, their team handled our roof repair quickly and professionally. Great communication and reliable service.",
     rating: 5,
-    image: "/Images New/testimonial-2.webp",
+    image: "/images/testimonial-2.webp",
   },
   {
     name: "Carlos D.",
     location: "Newark, NJ",
     text: "Excelente servicio. Professional roofing team, smooth process, and excellent final results for our home.",
     rating: 5,
-    image: "/Images New/testimonial-3.webp",
+    image: "/images/testimonial-3.webp",
   },
 ];
 
@@ -120,3 +120,4 @@ export function TestimonialsSection() {
     </Section>
   );
 }
+

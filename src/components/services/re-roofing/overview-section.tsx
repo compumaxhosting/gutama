@@ -66,7 +66,7 @@ export function ReRoofingOverviewSection() {
           <div className="relative">
             <div className="relative aspect-4/5 overflow-hidden">
               <Image
-                src="/Images New/before-roof.webp"
+                src="/images/before-roof.webp"
                 alt="Roof tear-off preparation"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -109,3 +109,4 @@ export function ReRoofingOverviewSection() {
     </section>
   );
 }
+

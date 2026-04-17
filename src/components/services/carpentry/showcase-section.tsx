@@ -39,12 +39,12 @@ export function CarpentryShowcaseSection() {
   const content = {
         title: "Crafted",
         accent: "Projects",
-        featured: { src: "/Images New/service-carpentry.webp", location: "Montclair, NJ", title: "Custom Exterior Trim Restoration" },
+        featured: { src: "/images/service-carpentry.webp", location: "Montclair, NJ", title: "Custom Exterior Trim Restoration" },
         items: [
-          { src: "/Images New/about-team.webp", location: "Maplewood, NJ", title: "Porch Framing Repair" },
-          { src: "/Images New/service-carpentry.webp", location: "South Orange, NJ", title: "Decorative Millwork Upgrade" },
-          { src: "/Images New/about-team.webp", location: "Verona, NJ", title: "Window & Fascia Rebuild" },
-          { src: "/Images New/service-carpentry.webp", location: "Glen Ridge, NJ", title: "Custom Soffit Detailing" },
+          { src: "/images/about-team.webp", location: "Maplewood, NJ", title: "Porch Framing Repair" },
+          { src: "/images/service-carpentry.webp", location: "South Orange, NJ", title: "Decorative Millwork Upgrade" },
+          { src: "/images/about-team.webp", location: "Verona, NJ", title: "Window & Fascia Rebuild" },
+          { src: "/images/service-carpentry.webp", location: "Glen Ridge, NJ", title: "Custom Soffit Detailing" },
         ],
       };
 
@@ -68,3 +68,4 @@ export function CarpentryShowcaseSection() {
     </section>
   );
 }
+

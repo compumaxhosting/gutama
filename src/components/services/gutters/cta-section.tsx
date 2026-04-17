@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 
 export function GuttersCtaSection() {
   const content = {
-        image: "/Images New/service-gutters.webp",
+        image: "/images/service-gutters.webp",
         imageAlt: "Gutter system background",
         title: "Protect Your Home",
         accent: "Today",
@@ -39,3 +39,4 @@ export function GuttersCtaSection() {
     </section>
   );
 }
+

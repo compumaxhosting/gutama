@@ -10,7 +10,7 @@ export function ReRoofingHeroSection() {
         label: "Re-Roofing",
         title: "Expert",
         accent: "Re-Roofing",
-        image: "/Images New/service-re-roofing.webp",
+        image: "/images/service-re-roofing.webp",
         imageAlt: "Re-roofing services",
         description: "Premium re-roofing services using top-quality materials and disciplined installation for lasting protection and stronger curb appeal.",
         stats: [
@@ -77,3 +77,4 @@ export function ReRoofingHeroSection() {
     </section>
   );
 }
+

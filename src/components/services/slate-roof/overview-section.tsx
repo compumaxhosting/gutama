@@ -18,7 +18,7 @@ export function SlateRoofOverviewSection() {
         bottomTitleAccent: "Elegant & Durable Roofs in Essex County",
         bottomDescription:
           "Gutama Home Improvement provides expert slate roofing installation NJ, offering homeowners and businesses in Essex County durable, high-end natural slate solutions. Our specialists provide professional repairs and replacements, ensuring your property features a weather-resistant, elegant, and long-lasting roof tailored to North Jersey's climate.",
-        image: "/Images New/service-slate-roof.webp",
+        image: "/images/service-slate-roof.webp",
         imageAlt: "Slate roofing detail",
         badgeValue: "Essex",
         badgeLabel: "County Slate Specialists",
@@ -76,3 +76,4 @@ export function SlateRoofOverviewSection() {
     </section>
   );
 }
+

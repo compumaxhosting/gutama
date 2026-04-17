@@ -29,7 +29,7 @@ export function DormersOverviewSection() {
             description: "View our custom dormer projects across Essex County.",
           },
         ],
-        image: "/Images New/gallery-roof-1.webp",
+        image: "/images/gallery-roof-1.webp",
         imageAlt: "Dormer construction detail",
         badgeValue: "2-4 Weeks",
         badgeLabel: "Most Projects",
@@ -98,3 +98,4 @@ export function DormersOverviewSection() {
     </section>
   );
 }
+

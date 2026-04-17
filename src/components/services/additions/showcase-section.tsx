@@ -5,10 +5,10 @@ import { ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const GALLERY_ITEMS = [
-  { src: "/Images New/gallery-addition-1.webp", location: "Maplewood, NJ", title: "Master Suite Addition" },
-  { src: "/Images New/service-additions.webp", location: "South Orange, NJ", title: "Kitchen Expansion" },
-  { src: "/Images New/gallery-addition-1.webp", location: "Verona, NJ", title: "Sunroom & Porch" },
-  { src: "/Images New/service-additions.webp", location: "Glen Ridge, NJ", title: "In-Law Suite" },
+  { src: "/images/gallery-addition-1.webp", location: "Maplewood, NJ", title: "Master Suite Addition" },
+  { src: "/images/service-additions.webp", location: "South Orange, NJ", title: "Kitchen Expansion" },
+  { src: "/images/gallery-addition-1.webp", location: "Verona, NJ", title: "Sunroom & Porch" },
+  { src: "/images/service-additions.webp", location: "Glen Ridge, NJ", title: "In-Law Suite" },
 ] as const;
 
 interface GalleryTileProps {
@@ -61,7 +61,7 @@ export function AdditionsShowcaseSection() {
 
         <div className="grid grid-cols-2 gap-1.5 lg:grid-cols-[1.5fr_1fr_1fr] lg:grid-rows-[auto_auto] lg:gap-1">
             <GalleryTile
-              src="/Images New/service-additions.webp"
+              src="/images/service-additions.webp"
               location="Montclair, NJ"
               title="Two-Story Family Addition"
               className="col-span-2 min-h-60 lg:col-span-1 lg:row-span-2 lg:min-h-130"
@@ -75,3 +75,4 @@ export function AdditionsShowcaseSection() {
     </section>
   );
 }
+

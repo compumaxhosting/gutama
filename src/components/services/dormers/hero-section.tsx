@@ -10,7 +10,7 @@ export function DormersHeroSection() {
         label: "Dormers",
         title: "Dormer",
         accent: "Installation",
-        image: "/Images New/service-dormers.webp",
+        image: "/images/service-dormers.webp",
         imageAlt: "Dormer installation services",
         description: "Expand your living space with weather-resistant dormer construction by licensed local contractors serving Newark and Essex County.",
         stats: [
@@ -77,3 +77,4 @@ export function DormersHeroSection() {
     </section>
   );
 }
+

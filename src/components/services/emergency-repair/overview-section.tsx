@@ -29,7 +29,7 @@ export function EmergencyRepairOverviewSection() {
             description: "See how gutter flow prevents backups that often trigger emergency leaks.",
           },
         ],
-        image: "/Images New/gallery-roof-3.webp",
+        image: "/images/gallery-roof-3.webp",
         imageAlt: "Emergency roof repair response",
         badgeValue: "24/7",
         badgeLabel: "Hotline Response",
@@ -98,3 +98,4 @@ export function EmergencyRepairOverviewSection() {
     </section>
   );
 }
+

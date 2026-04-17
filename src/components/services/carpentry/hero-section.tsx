@@ -10,7 +10,7 @@ export function CarpentryHeroSection() {
         label: "Carpentry Services",
         title: "Expert",
         accent: "Carpentry",
-        image: "/Images New/service-carpentry.webp",
+        image: "/images/service-carpentry.webp",
         imageAlt: "Expert carpentry services",
         description: "Skilled structural and finish carpentry for repairs, trim restoration, and exterior renovations completed with precision.",
         stats: [
@@ -77,3 +77,4 @@ export function CarpentryHeroSection() {
     </section>
   );
 }
+

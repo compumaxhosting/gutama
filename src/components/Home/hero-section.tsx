@@ -17,13 +17,13 @@ export function HeroSection() {
       {/* ✅ OPTIMIZED BACKGROUND IMAGE */}
       <div className="absolute inset-0">
         <Image
-          src="/Images New/Hero.webp"
+          src="/images/Hero.webp"
           alt="Roofing contractor working on residential roof in Essex County NJ"
           fill
           priority
           fetchPriority="high"
           placeholder="blur"
-          blurDataURL="/Images New/Hero.webp"
+          blurDataURL="/images/Hero.webp"
           sizes="100vw"
           quality={60}
           className="object-cover object-center"

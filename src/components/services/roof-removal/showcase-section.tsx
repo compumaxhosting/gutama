@@ -39,12 +39,12 @@ export function RoofRemovalShowcaseSection() {
   const content = {
         title: "Removal",
         accent: "Projects",
-        featured: { src: "/Images New/service-roof-removal.webp", location: "Bloomfield, NJ", title: "Full Tear-Off & Deck Prep" },
+        featured: { src: "/images/service-roof-removal.webp", location: "Bloomfield, NJ", title: "Full Tear-Off & Deck Prep" },
         items: [
-          { src: "/Images New/before-roof.webp", location: "Montclair, NJ", title: "Multi-Layer Shingle Removal" },
-          { src: "/Images New/gallery-roof-1.webp", location: "Maplewood, NJ", title: "Deck Exposure & Inspection" },
-          { src: "/Images New/gallery-roof-2.webp", location: "Livingston, NJ", title: "Property Protection Setup" },
-          { src: "/Images New/gallery-roof-3.webp", location: "Verona, NJ", title: "Tear-Off Prior to Replacement" },
+          { src: "/images/before-roof.webp", location: "Montclair, NJ", title: "Multi-Layer Shingle Removal" },
+          { src: "/images/gallery-roof-1.webp", location: "Maplewood, NJ", title: "Deck Exposure & Inspection" },
+          { src: "/images/gallery-roof-2.webp", location: "Livingston, NJ", title: "Property Protection Setup" },
+          { src: "/images/gallery-roof-3.webp", location: "Verona, NJ", title: "Tear-Off Prior to Replacement" },
         ],
       };
 
@@ -68,3 +68,4 @@ export function RoofRemovalShowcaseSection() {
     </section>
   );
 }
+

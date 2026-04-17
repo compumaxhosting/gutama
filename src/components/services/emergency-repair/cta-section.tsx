@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 
 export function EmergencyRepairCtaSection() {
   const content = {
-        image: "/Images New/service-emergency.webp",
+        image: "/images/service-emergency.webp",
         imageAlt: "Emergency repair background",
         title: "Need Urgent",
         accent: "Help?",
@@ -39,3 +39,4 @@ export function EmergencyRepairCtaSection() {
     </section>
   );
 }
+

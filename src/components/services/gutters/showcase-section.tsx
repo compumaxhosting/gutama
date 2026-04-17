@@ -39,12 +39,12 @@ export function GuttersShowcaseSection() {
   const content = {
         title: "Drainage",
         accent: "Projects",
-        featured: { src: "/Images New/service-gutters.webp", location: "Montclair, NJ", title: "Seamless Gutter & Downspout Upgrade" },
+        featured: { src: "/images/service-gutters.webp", location: "Montclair, NJ", title: "Seamless Gutter & Downspout Upgrade" },
         items: [
-          { src: "/Images New/about-aerial.webp", location: "Maplewood, NJ", title: "Foundation Runoff Improvement" },
-          { src: "/Images New/service-gutters.webp", location: "South Orange, NJ", title: "Full Gutter Replacement" },
-          { src: "/Images New/gallery-roof-1.webp", location: "Verona, NJ", title: "Overflow Correction Project" },
-          { src: "/Images New/gallery-roof-2.webp", location: "Livingston, NJ", title: "Fascia & Gutter Repair" },
+          { src: "/images/about-aerial.webp", location: "Maplewood, NJ", title: "Foundation Runoff Improvement" },
+          { src: "/images/service-gutters.webp", location: "South Orange, NJ", title: "Full Gutter Replacement" },
+          { src: "/images/gallery-roof-1.webp", location: "Verona, NJ", title: "Overflow Correction Project" },
+          { src: "/images/gallery-roof-2.webp", location: "Livingston, NJ", title: "Fascia & Gutter Repair" },
         ],
       };
 
@@ -68,3 +68,4 @@ export function GuttersShowcaseSection() {
     </section>
   );
 }
+
