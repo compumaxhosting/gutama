@@ -52,7 +52,7 @@ const BackToTop = () => {
 			type="button"
 			onClick={scrollToTop}
 			aria-label="Back to top"
-			className={`group fixed bottom-8 right-8 z-50 flex cursor-pointer items-center justify-center rounded-full text-secondary transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 ${
+			className={`group fixed bottom-24 right-4 z-50 flex cursor-pointer items-center justify-center rounded-full text-secondary transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 sm:right-6 lg:bottom-8 lg:right-8 ${
 				visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"
 			}`}
 			style={{ width: SIZE, height: SIZE }}
