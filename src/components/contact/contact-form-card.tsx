@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useState } from "react";
-import { ArrowRight, Check, TriangleAlert, Loader2 } from "lucide-react";
+import { ArrowRight, Check, Loader2 } from "lucide-react";
 
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
@@ -279,7 +279,6 @@ export function ContactForm() {
 
             {/* Emergency strip */}
             <div className="mt-8 flex items-center gap-3.5 rounded-r-lg border-l-[3px] border-secondary bg-black/25 p-4 shadow-[0_10px_26px_rgba(0,0,0,0.3)]">
-              <TriangleAlert className="h-5 w-5 shrink-0 text-primary" />
               <div>
                 <span className="mb-0.5 block text-[0.68rem] font-semibold uppercase tracking-widest text-primary">
                   Storm damage or active leak?
