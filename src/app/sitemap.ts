@@ -17,6 +17,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
+      url: `https://www.gutamaroofingnj.com/`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 1,
+    },
+    {
       url: `${siteUrl}/contact`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
@@ -215,6 +221,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: `http://www.gutamaroofingnj.com/blog/roofing-contractors-essex-county-nj`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    },
+    {
       url: `${siteUrl}/tel:973-820-5130`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
@@ -246,6 +258,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/#service-areas`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.5,
+    },
+    {
+      url: `http://www.gutamaroofingnj.com/#about`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.5,
+    },
+    {
+      url: `http://www.gutamaroofingnj.com/#service-areas`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.5,
