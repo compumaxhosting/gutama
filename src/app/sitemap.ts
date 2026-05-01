@@ -11,7 +11,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
+      url: `http://www.gutamaroofingnj.com/`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 1,
+    },
+    {
       url: `${siteUrl}/contact`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.9,
+    },
+    {
+      url: `http://www.gutamaroofingnj.com/contact`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.9,
@@ -23,7 +35,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: `http://www.gutamaroofingnj.com/gallery`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.85,
+    },
+    {
       url: `${siteUrl}/services`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.9,
+    },
+    {
+      url: `http://www.gutamaroofingnj.com/services`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.9,
@@ -35,7 +59,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `http://www.gutamaroofingnj.com/services/roof-removal`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
       url: `${siteUrl}/services/re-roofing`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `http://www.gutamaroofingnj.com/services/re-roofing`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.8,
@@ -47,7 +83,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `http://www.gutamaroofingnj.com/services/flat-roof`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
       url: `${siteUrl}/services/slate-roof`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `http://www.gutamaroofingnj.com/services/slate-roof`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.8,
@@ -59,7 +107,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `http://www.gutamaroofingnj.com/services/chimney`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
       url: `${siteUrl}/services/siding`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `http://www.gutamaroofingnj.com/services/siding`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.8,
@@ -71,7 +131,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `http://www.gutamaroofingnj.com/services/carpentry`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
       url: `${siteUrl}/services/additions`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `http://www.gutamaroofingnj.com/services/additions`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.8,
@@ -83,7 +155,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `http://www.gutamaroofingnj.com/services/dormers`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
       url: `${siteUrl}/services/gutters`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `http://www.gutamaroofingnj.com/services/gutters`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.8,
@@ -93,6 +177,78 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.8,
+    },
+    {
+      url: `http://www.gutamaroofingnj.com/services/emergency-repair`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${siteUrl}/about`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `http://www.gutamaroofingnj.com/about`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${siteUrl}/blog`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    },
+    {
+      url: `http://www.gutamaroofingnj.com/blog`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    },
+    {
+      url: `${siteUrl}/blog/roofing-contractors-essex-county-nj`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    },
+    {
+      url: `${siteUrl}/tel:973-820-5130`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.2,
+    },
+    {
+      url: `http://www.gutamaroofingnj.com/tel:973-820-5130`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.2,
+    },
+    {
+      url: `${siteUrl}/tel:973-342-4134`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.2,
+    },
+    {
+      url: `http://www.gutamaroofingnj.com/tel:973-342-4134`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.2,
+    },
+    {
+      url: `${siteUrl}/#about`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.5,
+    },
+    {
+      url: `${siteUrl}/#service-areas`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.5,
     },
   ];
 }
