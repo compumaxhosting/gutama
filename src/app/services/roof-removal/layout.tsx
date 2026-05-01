@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL("https://gutamaroofingnj.com"),
   alternates: {
-    canonical: "/roof-removal-nj",
+    canonical: "https://www.gutamaroofingnj.com/services/roof-removal",
   },
 
   openGraph: {
