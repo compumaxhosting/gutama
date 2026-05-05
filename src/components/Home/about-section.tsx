@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Shield } from "lucide-react";
 
 import { siteConfig } from "@/config/site";
@@ -22,8 +23,10 @@ export function AboutSection() {
             title={`Trusted Roofing Contractor in ${siteConfig.business.regionLabel}`}
             description={
               <>
-                <BrandLink>{siteConfig.business.name}</BrandLink> provides professional roof repair,
-                roof replacement, siding, and exterior services across{" "}
+                <BrandLink>{siteConfig.business.name}</BrandLink> provides professional{" "}
+                <Link href="/services/re-roofing" className="contents">roof repair</Link>,{" "}
+                <Link href="/services/re-roofing" className="contents">roof replacement</Link>,{" "}
+                <Link href="/services/siding" className="contents">siding</Link>, and exterior services across{" "}
                 {siteConfig.business.regionLabel}. Our licensed and insured team delivers
                 high-quality craftsmanship for residential and commercial properties.
               </>
@@ -58,8 +61,11 @@ export function AboutSection() {
               </p>
 
               <p>
-                From roof repair and roof replacement to siding installation,
-                chimney repair, and emergency roofing services, our team
+                From <Link href="/services/emergency-repair" className="contents">roof repair</Link> and{" "}
+                <Link href="/services/re-roofing" className="contents">roof replacement</Link> to{" "}
+                <Link href="/services/siding" className="contents">siding installation</Link>,{" "}
+                <Link href="/services/chimney" className="contents">chimney repair</Link>, and{" "}
+                <Link href="/services/emergency-repair" className="contents">emergency roofing services</Link>, our team
                 delivers reliable solutions tailored to both residential and
                 commercial properties.
               </p>

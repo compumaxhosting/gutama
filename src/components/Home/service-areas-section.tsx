@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { SectionHeading } from "@/components/Home/section-heading";
 import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
@@ -50,8 +51,10 @@ export function ServiceAreasSection() {
             title={SERVICE_AREA_LABEL}
             description={
               <>
-                <BrandLink>Gutama Home Improvement</BrandLink> provides roof repair, roof
-                replacement, siding, and exterior services across {siteConfig.business.regionLabel},
+                <BrandLink>Gutama Home Improvement</BrandLink> provides{" "}
+                <Link href="/services/re-roofing" className="contents">roof repair</Link>,{" "}
+                <Link href="/services/re-roofing" className="contents">roof replacement</Link>,{" "}
+                <Link href="/services/siding" className="contents">siding</Link>, and exterior services across {siteConfig.business.regionLabel},
                 including the following cities and ZIP codes.
               </>
             }
