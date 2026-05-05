@@ -15,59 +15,59 @@ interface RelatedService {
 
 const ALL_SERVICES: RelatedService[] = [
   {
-    name: "Roof Repair",
-    slug: "emergency-repair",
-    description: "Fast and reliable roof repairs for emergencies and damage",
+    name: "Roof Removal & Tear-Off",
+    slug: "roof-removal",
+    description: "Professional roof removal services in Essex County NJ with safe tear-off and complete cleanup.",
   },
   {
     name: "Roof Replacement",
     slug: "re-roofing",
-    description: "Complete roof replacement with quality materials",
+    description: "Professional roof replacement in Essex County NJ with durable materials and clean installation.",
   },
   {
-    name: "Flat Roof",
+    name: "Flat Roofing",
     slug: "flat-roof",
-    description: "Specialized flat roof installation and repair",
+    description: "Flat roofing in Essex County NJ using TPO, EPDM, and durable materials for long-lasting performance.",
   },
   {
-    name: "Slate Roof",
+    name: "Slate Roofing",
     slug: "slate-roof",
-    description: "Premium slate roofing solutions",
+    description: "Slate roofing in Essex County NJ with durable materials and expert installation for long-lasting results.",
   },
   {
-    name: "Siding",
-    slug: "siding",
-    description: "Durable siding installation and replacement",
-  },
-  {
-    name: "Additions",
-    slug: "additions",
-    description: "Home additions and structural improvements",
-  },
-  {
-    name: "Carpentry",
-    slug: "carpentry",
-    description: "Expert carpentry services for interior and exterior",
-  },
-  {
-    name: "Chimney",
+    name: "Chimney Repair",
     slug: "chimney",
-    description: "Chimney repair, cleaning, and maintenance",
+    description: "Chimney repair in Essex County NJ including flashing, sealing, and waterproof protection for lasting safety.",
   },
   {
-    name: "Dormers",
+    name: "Siding Installation",
+    slug: "siding",
+    description: "Siding installation in Essex County NJ using vinyl, fiber cement, and durable exterior materials.",
+  },
+  {
+    name: "Exterior Carpentry",
+    slug: "carpentry",
+    description: "Exterior carpentry in Essex County NJ for repairs, renovations, and durable custom woodwork projects.",
+  },
+  {
+    name: "Dormer Installation",
     slug: "dormers",
-    description: "Dormer installation and repair",
+    description: "Dormer installation in Essex County NJ to add natural light, headroom, and value to your home.",
   },
   {
-    name: "Gutters",
+    name: "Home Additions",
+    slug: "additions",
+    description: "Home additions in Essex County NJ designed to expand space with seamless integration and lasting quality.",
+  },
+  {
+    name: "Gutter Installation",
     slug: "gutters",
-    description: "Gutter installation, repair, and maintenance",
+    description: "Gutter installation in Essex County NJ to protect foundations and manage water flow efficiently.",
   },
   {
-    name: "Roof Removal",
-    slug: "roof-removal",
-    description: "Safe and efficient roof removal services",
+    name: "Emergency Repair",
+    slug: "emergency-repair",
+    description: "Emergency roof repair in Essex County NJ for leaks, storm damage, and urgent exterior issues.",
   },
 ];
 
