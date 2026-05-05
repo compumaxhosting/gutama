@@ -6,6 +6,7 @@ import { EmergencyRepairOverviewSection } from "@/components/services/emergency-
 import { EmergencyRepairProcessSection } from "@/components/services/emergency-repair/process-section";
 import { EmergencyRepairShowcaseSection } from "@/components/services/emergency-repair/showcase-section";
 import { EmergencyRepairTestimonialSection } from "@/components/services/emergency-repair/testimonial-section";
+import { RelatedServicesSection } from "@/components/services/related-services-section";
 
 export default function Page() {
   return (
@@ -17,6 +18,7 @@ export default function Page() {
       <EmergencyRepairShowcaseSection />
       <EmergencyRepairTestimonialSection />
       <EmergencyRepairFaqSection />
+      <RelatedServicesSection currentServiceSlug="emergency-repair" />
       <EmergencyRepairCtaSection />
     </div>
   );

@@ -6,6 +6,7 @@ import { SlateRoofOverviewSection } from "@/components/services/slate-roof/overv
 import { SlateRoofProcessSection } from "@/components/services/slate-roof/process-section";
 import { SlateRoofShowcaseSection } from "@/components/services/slate-roof/showcase-section";
 import { SlateRoofTestimonialSection } from "@/components/services/slate-roof/testimonial-section";
+import { RelatedServicesSection } from "@/components/services/related-services-section";
 
 export default function Page() {
   return (
@@ -17,6 +18,7 @@ export default function Page() {
       <SlateRoofShowcaseSection />
       <SlateRoofTestimonialSection />
       <SlateRoofFaqSection />
+      <RelatedServicesSection currentServiceSlug="slate-roof" />
       <SlateRoofCtaSection />
     </div>
   );

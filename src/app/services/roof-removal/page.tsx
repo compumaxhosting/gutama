@@ -7,6 +7,7 @@ import { RoofRemovalOverviewSection } from "@/components/services/roof-removal/o
 import { RoofRemovalProcessSection } from "@/components/services/roof-removal/process-section";
 import { RoofRemovalShowcaseSection } from "@/components/services/roof-removal/showcase-section";
 import { RoofRemovalTestimonialSection } from "@/components/services/roof-removal/testimonial-section";
+import { RelatedServicesSection } from "@/components/services/related-services-section";
 
 
 
@@ -20,6 +21,7 @@ export default function Page() {
       <RoofRemovalShowcaseSection />
       <RoofRemovalTestimonialSection />
       <RoofRemovalFaqSection />
+      <RelatedServicesSection currentServiceSlug="roof-removal" />
       <RoofRemovalCtaSection />
     </div>
   );

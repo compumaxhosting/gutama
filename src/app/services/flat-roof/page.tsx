@@ -10,6 +10,7 @@ import { FlatRoofOverviewSection } from "@/components/services/flat-roof/overvie
 import { FlatRoofProcessSection } from "@/components/services/flat-roof/process-section";
 import { FlatRoofShowcaseSection } from "@/components/services/flat-roof/showcase-section";
 import { FlatRoofTestimonialSection } from "@/components/services/flat-roof/testimonial-section";
+import { RelatedServicesSection } from "@/components/services/related-services-section";
 
 export const metadata: Metadata = buildMetadata({
   title: `Flat Roof Installation & Repair | ${siteConfig.business.regionLabel}`,
@@ -27,6 +28,7 @@ export default function Page() {
       <FlatRoofShowcaseSection />
       <FlatRoofTestimonialSection />
       <FlatRoofFaqSection />
+      <RelatedServicesSection currentServiceSlug="flat-roof" />
       <FlatRoofCtaSection />
     </div>
   );

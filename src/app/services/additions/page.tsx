@@ -6,6 +6,7 @@ import { AdditionsOverviewSection } from "@/components/services/additions/overvi
 import { AdditionsProcessSection } from "@/components/services/additions/process-section";
 import { AdditionsShowcaseSection } from "@/components/services/additions/showcase-section";
 import { AdditionsTestimonialSection } from "@/components/services/additions/testimonial-section";
+import { RelatedServicesSection } from "@/components/services/related-services-section";
 
 export default function Page() {
   return (
@@ -17,6 +18,7 @@ export default function Page() {
       <AdditionsShowcaseSection />
       <AdditionsTestimonialSection />
       <AdditionsFaqSection />
+      <RelatedServicesSection currentServiceSlug="additions" />
       <AdditionsCtaSection />
     </div>
   );

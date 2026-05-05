@@ -6,6 +6,7 @@ import { ChimneyOverviewSection } from "@/components/services/chimney/overview-s
 import { ChimneyProcessSection } from "@/components/services/chimney/process-section";
 import { ChimneyShowcaseSection } from "@/components/services/chimney/showcase-section";
 import { ChimneyTestimonialSection } from "@/components/services/chimney/testimonial-section";
+import { RelatedServicesSection } from "@/components/services/related-services-section";
 
 export default function Page() {
   return (
@@ -17,6 +18,7 @@ export default function Page() {
       <ChimneyShowcaseSection />
       <ChimneyTestimonialSection />
       <ChimneyFaqSection />
+      <RelatedServicesSection currentServiceSlug="chimney" />
       <ChimneyCtaSection />
     </div>
   );
