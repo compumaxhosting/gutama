@@ -29,9 +29,21 @@ const TOP_SERVICES = [
 ];
 
 const SOCIAL_LINKS = [
-  { label: "Instagram", href: "https://www.instagram.com/antonio_gutama/", icon: Instagram },
-  { label: "Facebook", href: "https://www.facebook.com/gutamaroofingnj", icon: Facebook },
-  { label: "TikTok", href: "https://www.tiktok.com/@gutamaroofingnj.com", icon: Music2 },
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/gutamahomeimprovement",
+    icon: Instagram,
+  },
+  {
+    label: "Facebook",
+    href: "https://www.facebook.com/gutamaroofingnj",
+    icon: Facebook,
+  },
+  {
+    label: "TikTok",
+    href: "https://www.tiktok.com/@gutamaroofingnj.com",
+    icon: Music2,
+  },
 ] as const;
 
 export function Footer() {
