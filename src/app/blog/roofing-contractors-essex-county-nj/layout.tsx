@@ -138,55 +138,41 @@ export default function RootLayout({
     };
 
     return (
-        <html lang="en">
-            <head>
-                {/* Advanced Robots */}
-                <meta
-                    name="robots"
-                    content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
-                />
+        <>
+            <div className={`${bodyFont.variable} ${headingFont.variable} antialiased`}>
+                {children}
+            </div>
 
-                {/* Performance */}
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-            </head>
+            {/* Analytics */}
+            <Script
+                src="https://www.googletagmanager.com/gtag/js?id=G-8K697EFF53"
+                strategy="lazyOnload"
+            />
 
-            <body
-                className={`${bodyFont.variable} ${headingFont.variable} antialiased`}
-            >
-                    {children}
-
-                {/* Analytics */}
-                <Script
-                    src="https://www.googletagmanager.com/gtag/js?id=G-8K697EFF53"
-                    strategy="lazyOnload"
-                />
-
-                <Script id="ga">
-                    {`window.dataLayer = window.dataLayer || [];
+            <Script id="ga" strategy="lazyOnload">
+                {`window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'G-8K697EFF53');`}
-                </Script>
+            </Script>
 
-                {/* ✅ BLOG SCHEMA */}
-                <Script
-                    id="article-schema"
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{
-                        __html: JSON.stringify(articleSchema),
-                    }}
-                />
+            {/* ✅ BLOG SCHEMA */}
+            <Script
+                id="article-schema"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(articleSchema),
+                }}
+            />
 
-                {/* ✅ BUSINESS SCHEMA */}
-                <Script
-                    id="business-schema"
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{
-                        __html: JSON.stringify(businessSchema),
-                    }}
-                />
-            </body>
-        </html>
+            {/* ✅ BUSINESS SCHEMA */}
+            <Script
+                id="business-schema"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(businessSchema),
+                }}
+            />
+        </>
     );
 }
