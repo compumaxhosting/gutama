@@ -100,14 +100,14 @@ export function RelatedServicesSection({
           {relatedServices.map((service) => (
             <StaggerItem key={service.slug}>
               <Link href={`/services/${service.slug}`}>
-                <div className="glass-card group relative flex h-full flex-col border border-secondary/20 p-6 transition-all duration-300 hover:border-secondary/40 hover:shadow-lg">
-                  <h3 className="text-lg font-semibold text-foreground group-hover:text-secondary transition-colors">
+                <div className="glass-card group relative flex h-full flex-col border border-secondary/20 p-6 shadow-lg transition-all duration-300 hover:border-secondary/40 active:scale-[0.95]">
+                  <h3 className="text-lg font-semibold text-secondary transition-colors">
                     {service.name}
                   </h3>
                   <p className="mt-2 text-sm text-muted-foreground grow">
                     {service.description}
                   </p>
-                  <div className="mt-4 flex items-center text-secondary opacity-0 transition-opacity group-hover:opacity-100">
+                  <div className="mt-4 flex items-center text-secondary opacity-100 transition-opacity">
                     <span className="text-sm font-medium">Learn More</span>
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </div>
