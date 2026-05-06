@@ -6,6 +6,7 @@ import { DormersOverviewSection } from "@/components/services/dormers/overview-s
 import { DormersProcessSection } from "@/components/services/dormers/process-section";
 import { DormersShowcaseSection } from "@/components/services/dormers/showcase-section";
 import { DormersTestimonialSection } from "@/components/services/dormers/testimonial-section";
+import { RelatedServicesSection } from "@/components/services/related-services-section";
 
 export default function Page() {
   return (
@@ -17,6 +18,7 @@ export default function Page() {
       <DormersShowcaseSection />
       <DormersTestimonialSection />
       <DormersFaqSection />
+      <RelatedServicesSection currentServiceSlug="dormers" />
       <DormersCtaSection />
     </div>
   );

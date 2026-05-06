@@ -6,6 +6,7 @@ import { GuttersOverviewSection } from "@/components/services/gutters/overview-s
 import { GuttersProcessSection } from "@/components/services/gutters/process-section";
 import { GuttersShowcaseSection } from "@/components/services/gutters/showcase-section";
 import { GuttersTestimonialSection } from "@/components/services/gutters/testimonial-section";
+import { RelatedServicesSection } from "@/components/services/related-services-section";
 
 export default function Page() {
   return (
@@ -17,6 +18,7 @@ export default function Page() {
       <GuttersShowcaseSection />
       <GuttersTestimonialSection />
       <GuttersFaqSection />
+      <RelatedServicesSection currentServiceSlug="gutters" />
       <GuttersCtaSection />
     </div>
   );

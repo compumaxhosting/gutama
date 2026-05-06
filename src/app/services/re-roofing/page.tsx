@@ -7,6 +7,7 @@ import { ReRoofingOverviewSection } from "@/components/services/re-roofing/overv
 import { ReRoofingProcessSection } from "@/components/services/re-roofing/process-section";
 import { ReRoofingShowcaseSection } from "@/components/services/re-roofing/showcase-section";
 import { ReRoofingTestimonialSection } from "@/components/services/re-roofing/testimonial-section";
+import { RelatedServicesSection } from "@/components/services/related-services-section";
 
 
 
@@ -20,6 +21,7 @@ export default function Page() {
       <ReRoofingShowcaseSection />
       <ReRoofingTestimonialSection />
       <ReRoofingFaqSection />
+      <RelatedServicesSection currentServiceSlug="re-roofing" />
       <ReRoofingCtaSection />
     </div>
   );

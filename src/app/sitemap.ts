@@ -1,111 +1,78 @@
-import type { MetadataRoute } from "next";
-
-import { siteUrl } from "@/config/site";
+import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = "https://www.gutamaroofingnj.com";
+  const now = new Date();
+
   return [
+    // 🔝 Core Pages (Highest Priority)
     {
-      url: `${siteUrl}/`,
-      lastModified: new Date(),
-      changeFrequency: "weekly" as const,
-      priority: 1,
+      url: `${baseUrl}/`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 1.0,
     },
     {
-      url: `${siteUrl}/contact`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.9,
+      url: `${baseUrl}/about`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.7,
     },
     {
-      url: `${siteUrl}/gallery`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.85,
-    },
-    {
-      url: `${siteUrl}/services`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.9,
-    },
-    {
-      url: `${siteUrl}/services/roof-removal`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-    },
-    {
-      url: `${siteUrl}/services/re-roofing`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-    },
-    {
-      url: `${siteUrl}/services/flat-roof`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-    },
-    {
-      url: `${siteUrl}/services/slate-roof`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-    },
-    {
-      url: `${siteUrl}/services/chimney`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-    },
-    {
-      url: `${siteUrl}/services/siding`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-    },
-    {
-      url: `${siteUrl}/services/carpentry`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-    },
-    {
-      url: `${siteUrl}/services/additions`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-    },
-    {
-      url: `${siteUrl}/services/dormers`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-    },
-    {
-      url: `${siteUrl}/services/gutters`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-    },
-    {
-      url: `${siteUrl}/services/emergency-repair`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
+      url: `${baseUrl}/contact`,
+      lastModified: now,
+      changeFrequency: "monthly",
       priority: 0.8,
     },
 
+    // 🛠 Services Hub
     {
-      url: `${siteUrl}/blog`,
-      lastModified: new Date(),
+      url: `${baseUrl}/services`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+
+    // 🔧 Individual Services (High Intent SEO Pages)
+    ...[
+      "roof-removal",
+      "re-roofing",
+      "flat-roof",
+      "slate-roof",
+      "chimney",
+      "siding",
+      "carpentry",
+      "dormers",
+      "additions",
+      "gutters",
+      "emergency-repair",
+    ].map((service) => ({
+      url: `${baseUrl}/services/${service}`,
+      lastModified: now,
       changeFrequency: "monthly" as const,
-      priority: 0.8,
+      priority: 0.85,
+    })),
+
+    // 📸 Supporting Pages
+    {
+      url: `${baseUrl}/gallery`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+
+    // 📝 Blog (SEO Engine)
+    {
+      url: `${baseUrl}/blog`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
     },
     {
-      url: `${siteUrl}/blog/roofing-contractors-essex-county-nj`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
+      url: `${baseUrl}/blog/roofing-contractors-essex-county-nj`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.95, // 🔥 high because it's location SEO
     },
   ];
 }

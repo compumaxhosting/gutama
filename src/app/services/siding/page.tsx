@@ -6,6 +6,7 @@ import { SidingOverviewSection } from "@/components/services/siding/overview-sec
 import { SidingProcessSection } from "@/components/services/siding/process-section";
 import { SidingShowcaseSection } from "@/components/services/siding/showcase-section";
 import { SidingTestimonialSection } from "@/components/services/siding/testimonial-section";
+import { RelatedServicesSection } from "@/components/services/related-services-section";
 
 export default function Page() {
   return (
@@ -17,6 +18,7 @@ export default function Page() {
       <SidingShowcaseSection />
       <SidingTestimonialSection />
       <SidingFaqSection />
+      <RelatedServicesSection currentServiceSlug="siding" />
       <SidingCtaSection />
     </div>
   );
