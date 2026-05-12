@@ -334,74 +334,41 @@ export const roofingContractorsNj = {
       subtitle: "7. FAQ: Roofing Services in Essex County, NJ",
       content: (
         <>
-          <div className="space-y-2">
-
-            <details className="border rounded-lg p-2">
-              <summary className="cursor-pointer text-secondary">
-                How do I know if my roof needs repair or full replacement?
-              </summary>
-              <p className="mt-2">
-                If your roof is under 15 years old with isolated damage (a few missing shingles or a minor leak), repair is usually sufficient. If it&apos;s over 20 years old, shows widespread granule loss, has multiple leak points, or has damaged decking underneath, a full replacement is typically more cost-effective long-term.
-              </p>
-            </details>
-
-            <details className="border rounded-lg p-2">
-              <summary className="cursor-pointer text-secondary">
-                How long does a roof replacement take in NJ?
-              </summary>
-              <p className="mt-2">
-                Most residential roof replacements in Essex County take one to three days depending on the home&apos;s size, roof complexity, and weather conditions. Larger or multi-story homes may take longer. Your contractor should provide a clear timeline before work begins.
-              </p>
-            </details>
-
-            <details className="border rounded-lg p-2">
-              <summary className="cursor-pointer text-secondary">
-                Does Gutama Home Improvement serve all of Essex County?
-              </summary>
-              <p className="mt-2">
-                Yes. Gutama Home Improvement provides roofing, siding, and exterior services across all municipalities in Essex County, including Newark, West Orange, Livingston, Bloomfield, Nutley, Maplewood, and surrounding areas.
-              </p>
-            </details>
-
-            <details className="border rounded-lg p-2">
-              <summary className="cursor-pointer text-secondary">
-                What roofing materials are best for New Jersey&apos;s climate?
-              </summary>
-              <p className="mt-2">
-                Architectural asphalt shingles are the most popular choice for NJ homes — they handle freeze-thaw cycles well, are affordable, and come in 30–50 year lifespans. Metal roofing is an excellent premium option for longevity and energy efficiency. Flat roofs (TPO or EPDM) are common for additions and low-slope areas.
-              </p>
-            </details>
-
-            <details className="border rounded-lg p-2">
-              <summary className="cursor-pointer text-secondary">
-                Are permits required for roof replacement in Essex County towns?
-              </summary>
-              <p className="mt-2">
-                Most municipalities in Essex County require a building permit for full roof replacements. Requirements vary by town — Newark, Bloomfield, and West Orange, for example, each have their own permitting offices. A licensed local contractor like Gutama will typically pull all required permits on your behalf.
-              </p>
-            </details>
-
-            <details className="border rounded-lg p-2">
-              <summary className="cursor-pointer text-secondary">
-                What should I do if my roof is damaged after a storm?
-              </summary>
-              <p className="mt-2">
-                First, document all visible damage with photos. Avoid DIY patching on a damaged roof for safety reasons. Contact a local licensed roofer for an inspection as soon as possible. If there is an active leak, temporary tarping may be applied until repairs begin. Check with your homeowner&apos;s insurance provider, as storm damage is often a covered claim.
-              </p>
-            </details>
-
-            <details className="border rounded-lg p-2">
-              <summary className="cursor-pointer text-secondary">
-                Does Gutama Home Improvement offer free estimates?
-              </summary>
-              <p className="mt-2">
-                Yes. Gutama Home Improvement offers free, no-obligation roof inspections and written estimates for homeowners throughout Essex County, NJ. Contact them to schedule an assessment at your convenience.
-              </p>
-            </details>
-
-          </div>
+          <p>
+            Get quick answers to the most common homeowner questions before scheduling your estimate.
+          </p>
         </>
       ),
+      faqs: [
+        {
+          q: "How do I know if my roof needs repair or full replacement?",
+          a: "If your roof is under 15 years old with isolated damage (a few missing shingles or a minor leak), repair is usually sufficient. If it is over 20 years old, shows widespread granule loss, has multiple leak points, or has damaged decking underneath, a full replacement is typically more cost-effective long-term.",
+        },
+        {
+          q: "How long does a roof replacement take in NJ?",
+          a: "Most residential roof replacements in Essex County take one to three days depending on the home size, roof complexity, and weather conditions. Larger or multi-story homes may take longer. Your contractor should provide a clear timeline before work begins.",
+        },
+        {
+          q: "Does Gutama Home Improvement serve all of Essex County?",
+          a: "Yes. Gutama Home Improvement provides roofing, siding, and exterior services across all municipalities in Essex County, including Newark, West Orange, Livingston, Bloomfield, Nutley, Maplewood, and surrounding areas.",
+        },
+        {
+          q: "What roofing materials are best for New Jersey climate?",
+          a: "Architectural asphalt shingles are the most popular choice for NJ homes because they handle freeze-thaw cycles well, are affordable, and come in 30-50 year lifespans. Metal roofing is an excellent premium option for longevity and energy efficiency. Flat roofs (TPO or EPDM) are common for additions and low-slope areas.",
+        },
+        {
+          q: "Are permits required for roof replacement in Essex County towns?",
+          a: "Most municipalities in Essex County require a building permit for full roof replacements. Requirements vary by town. A licensed local contractor like Gutama will typically pull all required permits on your behalf.",
+        },
+        {
+          q: "What should I do if my roof is damaged after a storm?",
+          a: "First, document visible damage with photos. Avoid DIY patching on a damaged roof for safety reasons. Contact a local licensed roofer for an inspection as soon as possible. If there is an active leak, temporary tarping may be applied until repairs begin. Check with your homeowners insurance provider, as storm damage is often a covered claim.",
+        },
+        {
+          q: "Does Gutama Home Improvement offer free estimates?",
+          a: "Yes. Gutama Home Improvement offers free, no-obligation roof inspections and written estimates for homeowners throughout Essex County, NJ.",
+        },
+      ],
     },
 
     {
