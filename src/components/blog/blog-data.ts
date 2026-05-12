@@ -5,6 +5,7 @@
     shortDesc: string;
     image: string;
     href: string;
+    date: string;
   }
 
 
@@ -14,6 +15,7 @@
       shortDesc: "If you're searching for roofing services in Essex County, NJ, you need a contractor who understands the region's climate, building codes, and neighborhood-specific challenges. ",
       image: "/blog/roofing-blog.webp",
       href: "/blog/roofing-contractors-essex-county-nj",
+      date: "1st May 2026",
     },
     
   ];

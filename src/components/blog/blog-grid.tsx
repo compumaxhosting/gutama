@@ -47,9 +47,16 @@ export function BlogGrid({ projects }: BlogGridProps) {
 
               {/* CONTENT */}
               <div className="p-4">
-                <h3 className="mb-1 font-serif text-base font-semibold text-foreground group-hover:text-secondary transition">
-                  {project.title}
-                </h3>
+                <div className="flex items-start justify-between mb-1">
+                  <h3 className="font-serif text-base font-semibold text-foreground group-hover:text-secondary transition">
+                    {project.title}
+                  </h3>
+                </div>
+                {project.date && (
+                  <p className="text-xs text-muted-foreground mb-2">
+                    {project.date}
+                  </p>
+                )}
                 <p className="text-sm text-muted-foreground">
                   {project.shortDesc}
                 </p>
