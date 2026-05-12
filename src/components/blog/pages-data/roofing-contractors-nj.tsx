@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export const roofingContractorsNj = {
   title:
@@ -405,6 +407,43 @@ export const roofingContractorsNj = {
             <li>✓ Warranties on both materials and workmanship</li>
             <li>✓ Trusted by homeowners from Newark to Millburn and everywhere in between</li>
           </ul>
+        </>
+      ),
+    },
+
+    {
+      subtitle: "Call to Action",
+      content: (
+        <>
+          <p>
+            Don&apos;t wait until a small leak becomes a major structural problem. The best time to address roofing issues is before the next storm season hits. Contact Gutama Home Improvement today for a free inspection and written estimate.
+          </p>
+          <div className="mt-8 rounded-2xl border border-secondary/20 bg-linear-to-br from-secondary/10 via-background to-background p-5 shadow-[0_20px_60px_-30px_rgba(181,137,0,0.35)] md:p-6">
+            <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between">
+              <div className="space-y-1">
+                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-secondary">
+                  Ready to get started?
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  Visit the roofing service page to request a quote and learn more.
+                </p>
+              </div>
+
+              <Button
+                asChild
+                size="lg"
+                className="h-12 rounded-full bg-secondary! px-8 text-sm font-semibold text-white! shadow-lg shadow-secondary/20"
+              >
+                <Link
+                  href="/services/re-roofing"
+                  className="flex items-center gap-2 text-white! "
+                >
+                  Get Your Free Roofing Estimate Today
+                  <ArrowRight className="ml-2 size-4 text-white!" />
+                </Link>
+              </Button>
+            </div>
+          </div>
         </>
       ),
     }

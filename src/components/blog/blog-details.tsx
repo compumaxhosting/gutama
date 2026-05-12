@@ -3,6 +3,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { Section } from "@/components/ui/section";
 import { Container } from "@/components/ui/container";
@@ -44,12 +45,33 @@ export function BlogDetails({
             .replace(/\s+/g, "-");
 
     return (
-        <Section className="relative -mt-8 overflow-hidden pb-0 md:-mt-8 md:pb-12 lg:pb-20">
+        <>
+            <nav 
+                className="sticky top-24.25 z-999 border-b border-secondary/10 bg-background/80 backdrop-blur-md"
+                aria-label="Breadcrumb"
+            >
+                <Container className="py-2 sm:py-3">
+                    <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[11px] sm:text-xs md:text-sm">
+                        <Link href="/" className="relative z-9999 shrink-0 text-muted-foreground transition-colors duration-200 hover:text-secondary">
+                            Home
+                        </Link>
+                        <ChevronRight size={12} className="text-muted-foreground/40 shrink-0 sm:size-3.5" />
+                        <Link href="/blog" className="relative z-9999 shrink-0 text-muted-foreground transition-colors duration-200 hover:text-secondary">
+                            Blog
+                        </Link>
+                        <ChevronRight size={12} className="text-muted-foreground/40 shrink-0 sm:size-3.5" />
+                        <span className="w-full text-foreground font-medium sm:w-auto sm:truncate sm:shrink-0">{title}</span>
+                    </div>
+                </Container>
+            </nav>
+
+            <Section className="relative -mt-8 overflow-hidden pb-0 md:-mt-8 md:pb-12 lg:pb-20">
             <div
                 aria-hidden
                 className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_14%_20%,hsla(43,56%,52%,0.16),transparent_38%),radial-gradient(circle_at_88%_12%,hsla(0,78%,68%,0.2),transparent_40%)]"
             />
             <Container>
+
                 <Reveal>
                     <SectionHeading
                         eyebrow="Blog Article"
@@ -199,5 +221,6 @@ export function BlogDetails({
                 </article>
             </Container>
         </Section>
+        </>
     );
 }

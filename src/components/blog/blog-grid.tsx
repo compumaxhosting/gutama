@@ -10,16 +10,14 @@ interface BlogGridProps {
   projects: BlogProject[];
 }
 
-function getCardHeight(index: number) {
-  if (index % 3 === 0) return "h-64";
-  if (index % 3 === 1) return "h-48";
-  return "h-56";
+function getCardHeight() {
+  return "h-64";
 }
 
 export function BlogGrid({ projects }: BlogGridProps) {
   return (
     <div className="columns-1 gap-6 space-y-6 sm:columns-2 lg:columns-3">
-      {projects.map((project, index) => (
+      {[...projects].reverse().map((project, index) => (
         <Reveal key={project.title} delay={index * 0.04} y={16}>
 
           {/* ✅ Wrap entire card with Link */}
@@ -31,7 +29,7 @@ export function BlogGrid({ projects }: BlogGridProps) {
 
               {/* IMAGE */}
               <div
-                className={`relative w-full overflow-hidden ${getCardHeight(index)}`}
+                className={`relative w-full overflow-hidden ${getCardHeight()}`}
               >
                 <Image
                   src={project.image}
