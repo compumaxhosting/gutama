@@ -3,12 +3,12 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
 import { Section } from "@/components/ui/section";
 import { Container } from "@/components/ui/container";
 import { SectionHeading } from "@/components/Home/section-heading";
 import { Reveal } from "@/components/motion/reveal";
+import { BlogBreadcrumbs } from "@/components/blog/blog-breadcrumbs";
 
 type FaqItem = {
     q: string;
@@ -46,24 +46,7 @@ export function BlogDetails({
 
     return (
         <>
-            <nav 
-                className="sticky top-24.25 z-999 border-b border-secondary/10 bg-background/80 backdrop-blur-md"
-                aria-label="Breadcrumb"
-            >
-                <Container className="py-2 sm:py-3">
-                    <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[11px] sm:text-xs md:text-sm">
-                        <Link href="/" className="relative z-9999 shrink-0 text-muted-foreground transition-colors duration-200 hover:text-secondary">
-                            Home
-                        </Link>
-                        <ChevronRight size={12} className="text-muted-foreground/40 shrink-0 sm:size-3.5" />
-                        <Link href="/blog" className="relative z-9999 shrink-0 text-muted-foreground transition-colors duration-200 hover:text-secondary">
-                            Blog
-                        </Link>
-                        <ChevronRight size={12} className="text-muted-foreground/40 shrink-0 sm:size-3.5" />
-                        <span className="w-full text-foreground font-medium sm:w-auto sm:truncate sm:shrink-0">{title}</span>
-                    </div>
-                </Container>
-            </nav>
+            <BlogBreadcrumbs title={title} />
 
             <Section className="relative -mt-8 overflow-hidden pb-0 md:-mt-8 md:pb-12 lg:pb-20">
             <div

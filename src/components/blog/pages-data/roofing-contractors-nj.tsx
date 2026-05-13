@@ -432,14 +432,14 @@ export const roofingContractorsNj = {
               <Button
                 asChild
                 size="lg"
-                className="h-12 rounded-full bg-secondary! px-8 text-sm font-semibold text-white! shadow-lg shadow-secondary/20"
+                className="h-auto w-full rounded-2xl bg-secondary! px-5 py-3 text-sm font-semibold whitespace-normal text-white! shadow-lg shadow-secondary/20 sm:h-12 sm:w-auto sm:rounded-full sm:px-8"
               >
                 <Link
                   href="/services/re-roofing"
-                  className="flex items-center gap-2 text-white! "
+                  className="flex w-full items-center justify-center gap-2 text-center leading-snug text-white!"
                 >
                   Get Your Free Roofing Estimate Today
-                  <ArrowRight className="ml-2 size-4 text-white!" />
+                  <ArrowRight className="ml-1 size-4 shrink-0 text-white!" />
                 </Link>
               </Button>
             </div>
