@@ -1,19 +1,40 @@
 import { z } from "zod";
 
-export const contactSchema = z.object({
-  service: z.enum([
-    "Roof Removal",
-    "Re-Roofing",
-    "Flat Roof",
-    "Slate Roof",
-    "Chimney",
-    "Siding",
-    "Carpentry",
-    "Additions",
-    "Dormers",
-    "Gutters",
-    "Emergency",
-  ]),
+export const SERVICE_OPTIONS = [
+  "Roof Removal",
+  "Re-Roofing",
+  "Flat Roof",
+  "Slate Roof",
+  "Chimney",
+  "Siding",
+  "Carpentry",
+  "Additions",
+  "Dormers",
+  "Gutters",
+  "Emergency",
+] as const;
+
+const appointmentDateSchema = z
+  .string()
+  .min(1, "Select an appointment date")
+  .refine((value) => {
+    const parsedDate = new Date(`${value}T00:00:00`);
+
+    return !Number.isNaN(parsedDate.getTime());
+  }, "Enter a valid appointment date")
+  .refine((value) => {
+    const parsedDate = new Date(`${value}T00:00:00`);
+    const today = new Date();
+
+    today.setHours(0, 0, 0, 0);
+
+    return parsedDate >= today;
+  }, "Appointment date must be today or later");
+
+const contactFormBaseSchema = z.object({
+  formType: z.enum(["contact", "appointment"]).optional(),
+  service: z.enum(SERVICE_OPTIONS),
+  appointmentDate: z.string().optional(),
   fn: z
     .string()
     .min(2, "First name must be at least 2 characters")
@@ -31,7 +52,29 @@ export const contactSchema = z.object({
     .default(""),
 });
 
+export const contactSchema = contactFormBaseSchema.superRefine((data, ctx) => {
+  if (data.formType === "appointment") {
+    const appointmentDateResult = appointmentDateSchema.safeParse(data.appointmentDate);
+
+    if (!appointmentDateResult.success) {
+      const issue = appointmentDateResult.error.issues[0];
+
+      ctx.addIssue({
+        code: z.ZodIssueCode.custom,
+        path: ["appointmentDate"],
+        message: issue?.message || "Select an appointment date",
+      });
+    }
+  }
+});
+
+export const appointmentSchema = contactFormBaseSchema.extend({
+  formType: z.literal("appointment"),
+  appointmentDate: appointmentDateSchema,
+});
+
 export type ContactFormInput = z.infer<typeof contactSchema>;
+export type AppointmentFormInput = z.infer<typeof appointmentSchema>;
 
 export function mapZodErrorsToFieldErrors(
   errors: z.ZodError<ContactFormInput>

@@ -1,9 +1,9 @@
 import { ContactFormInput } from "@/lib/contact-schema";
 
 const brandName = "Gutama Home Improvement";
-const brandColor = "#b3482e"; // Primary red
-const accentColor = "#d4a574"; // Gold accent
-const textColor = "#2d2520"; // Dark brown text
+const brandColor = "#b3482e";
+const accentColor = "#d4a574";
+const textColor = "#2d2520";
 
 function escapeHtml(text: string): string {
   const map: Record<string, string> = {
@@ -13,7 +13,27 @@ function escapeHtml(text: string): string {
     '"': "&quot;",
     "'": "&#39;",
   };
+
   return text.replace(/[&<>"']/g, (char) => map[char]);
+}
+
+function formatAppointmentDate(dateString?: string): string | null {
+  if (!dateString) {
+    return null;
+  }
+
+  const parsedDate = new Date(`${dateString}T00:00:00`);
+
+  if (Number.isNaN(parsedDate.getTime())) {
+    return dateString;
+  }
+
+  return new Intl.DateTimeFormat("en-US", {
+    weekday: "long",
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+  }).format(parsedDate);
 }
 
 export function generateContactEmailHtml(data: ContactFormInput): {
@@ -25,6 +45,8 @@ export function generateContactEmailHtml(data: ContactFormInput): {
   const escapedEm = escapeHtml(data.em);
   const escapedPh = escapeHtml(data.ph);
   const escapedService = escapeHtml(data.service);
+  const appointmentDateLabel = formatAppointmentDate(data.appointmentDate);
+  const escapedAppointmentDate = appointmentDateLabel ? escapeHtml(appointmentDateLabel) : null;
   const escapedMsg = escapeHtml(data.msg);
 
   const html = `<!DOCTYPE html>
@@ -39,8 +61,6 @@ export function generateContactEmailHtml(data: ContactFormInput): {
     <tr>
       <td align="center" style="padding: 40px 20px;">
         <table width="600" cellpadding="0" cellspacing="0" style="max-width: 600px; background-color: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-          
-          <!-- Header -->
           <tr>
             <td style="background: linear-gradient(135deg, ${brandColor} 0%, ${brandColor}cc 100%); padding: 40px 20px; text-align: center;">
               <h1 style="margin: 0; color: white; font-size: 28px; font-weight: bold; font-family: Georgia, serif;">
@@ -51,17 +71,11 @@ export function generateContactEmailHtml(data: ContactFormInput): {
               </p>
             </td>
           </tr>
-
-          <!-- Content -->
           <tr>
             <td style="padding: 40px 30px;">
-              
-              <!-- Greeting -->
               <p style="margin: 0 0 24px 0; color: ${textColor}; font-size: 16px; line-height: 1.6;">
                 <strong>New service request received from ${escapedFn} ${escapedLn}</strong>
               </p>
-
-              <!-- Service Badge -->
               <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom: 24px;">
                 <tr>
                   <td style="background-color: ${accentColor}; padding: 12px 16px; border-radius: 4px; text-align: center;">
@@ -71,16 +85,26 @@ export function generateContactEmailHtml(data: ContactFormInput): {
                   </td>
                 </tr>
               </table>
-
-              <!-- Contact Information -->
+              ${
+                escapedAppointmentDate
+                  ? `
+              <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom: 24px;">
+                <tr>
+                  <td style="background-color: #f4efe9; padding: 12px 16px; border-radius: 4px; border-left: 3px solid ${brandColor};">
+                    <p style="margin: 0 0 4px 0; color: #999; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; font-weight: bold;">Appointment Date</p>
+                    <p style="margin: 0; color: ${textColor}; font-size: 14px; font-weight: 600;">${escapedAppointmentDate}</p>
+                  </td>
+                </tr>
+              </table>
+              `
+                  : ""
+              }
               <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom: 32px; border-bottom: 1px solid #e0e0e0; padding-bottom: 24px;">
                 <tr>
                   <td style="padding: 8px 0;">
                     <p style="margin: 0; color: #999; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; font-weight: bold;">Email</p>
                     <p style="margin: 4px 0 0 0; color: ${textColor}; font-size: 14px;">
-                      <a href="mailto:${escapedEm}" style="color: ${brandColor}; text-decoration: none;">
-                        ${escapedEm}
-                      </a>
+                      <a href="mailto:${escapedEm}" style="color: ${brandColor}; text-decoration: none;">${escapedEm}</a>
                     </p>
                   </td>
                 </tr>
@@ -91,9 +115,7 @@ export function generateContactEmailHtml(data: ContactFormInput): {
                   <td style="padding: 8px 0;">
                     <p style="margin: 0; color: #999; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; font-weight: bold;">Phone</p>
                     <p style="margin: 4px 0 0 0; color: ${textColor}; font-size: 14px;">
-                      <a href="tel:${escapedPh}" style="color: ${brandColor}; text-decoration: none;">
-                        ${escapedPh}
-                      </a>
+                      <a href="tel:${escapedPh}" style="color: ${brandColor}; text-decoration: none;">${escapedPh}</a>
                     </p>
                   </td>
                 </tr>
@@ -101,8 +123,6 @@ export function generateContactEmailHtml(data: ContactFormInput): {
                     : ""
                 }
               </table>
-
-              <!-- Message -->
               ${
                 escapedMsg
                   ? `
@@ -117,8 +137,6 @@ export function generateContactEmailHtml(data: ContactFormInput): {
               `
                   : ""
               }
-
-              <!-- Call to Action -->
               <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #f9f9f9; padding: 20px; border-radius: 4px; margin-bottom: 24px;">
                 <tr>
                   <td style="text-align: center;">
@@ -131,11 +149,8 @@ export function generateContactEmailHtml(data: ContactFormInput): {
                   </td>
                 </tr>
               </table>
-
             </td>
           </tr>
-
-          <!-- Footer -->
           <tr>
             <td style="background-color: #f5f5f5; padding: 24px 30px; text-align: center; border-top: 1px solid #e0e0e0;">
               <p style="margin: 0; color: #666; font-size: 12px; line-height: 1.6;">
@@ -144,7 +159,6 @@ export function generateContactEmailHtml(data: ContactFormInput): {
               </p>
             </td>
           </tr>
-
         </table>
       </td>
     </tr>
@@ -157,6 +171,7 @@ export function generateContactEmailHtml(data: ContactFormInput): {
 FROM: ${escapedFn} ${escapedLn}
 EMAIL: ${escapedEm}
 ${escapedPh ? `PHONE: ${escapedPh}\n` : ""}SERVICE: ${escapedService}
+${escapedAppointmentDate ? `APPOINTMENT DATE: ${escapedAppointmentDate}\n` : ""}
 
 ${escapedMsg ? `PROJECT DETAILS:\n${escapedMsg}\n` : ""}
 ---

@@ -1,11 +1,11 @@
 "use client";
 
-import { useCallback, useState } from "react";
-import { ArrowRight, Check, Loader2 } from "lucide-react";
+import { useCallback, useMemo, useState } from "react";
+import { ArrowRight, CalendarDays, Check, Loader2 } from "lucide-react";
 
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
-import { SERVICE_OPTIONS, contactSchema, type ContactFormInput } from "@/lib/contact-schema";
+import { SERVICE_OPTIONS, appointmentSchema, type AppointmentFormInput } from "@/lib/contact-schema";
 
 type Service = (typeof SERVICE_OPTIONS)[number];
 
@@ -20,7 +20,7 @@ const NAME_FIELDS = [
   { id: "ln", label: "Last name", placeholder: "Doe" },
 ] as const;
 
-export function ContactForm() {
+export function BookAppointmentForm() {
   const [service, setService] = useState<Service | null>(null);
   const [step3, setStep3] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -28,6 +28,15 @@ export function ContactForm() {
   const [error, setError] = useState<string | null>(null);
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const step2 = Boolean(service);
+
+  const todayValue = useMemo(() => {
+    const now = new Date();
+    const year = now.getFullYear();
+    const month = `${now.getMonth() + 1}`.padStart(2, "0");
+    const day = `${now.getDate()}`.padStart(2, "0");
+
+    return `${year}-${month}-${day}`;
+  }, []);
 
   const markStep3Started = useCallback(() => {
     setStep3((prev) => (prev ? prev : true));
@@ -44,10 +53,11 @@ export function ContactForm() {
     setFieldErrors({});
 
     try {
-      // Get form data
       const formData = new FormData(e.currentTarget);
-      const payload: ContactFormInput = {
+      const payload: AppointmentFormInput = {
+        formType: "appointment",
         service: formData.get("service") as Service,
+        appointmentDate: (formData.get("appointmentDate") as string).trim(),
         fn: (formData.get("fn") as string).trim(),
         ln: (formData.get("ln") as string).trim(),
         em: (formData.get("em") as string).trim(),
@@ -55,21 +65,21 @@ export function ContactForm() {
         msg: (formData.get("msg") as string).trim(),
       };
 
-      // Client-side validation
-      const validation = contactSchema.safeParse(payload);
+      const validation = appointmentSchema.safeParse(payload);
       if (!validation.success) {
         const errors: Record<string, string> = {};
+
         validation.error.issues.forEach((issue) => {
           const field = issue.path[0] as string;
           if (field) {
             errors[field] = issue.message;
           }
         });
+
         setFieldErrors(errors);
         return;
       }
 
-      // Submit to API
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -79,7 +89,6 @@ export function ContactForm() {
       const result = await response.json();
 
       if (!response.ok) {
-        // Handle server validation errors
         if (result.fieldErrors && Object.keys(result.fieldErrors).length > 0) {
           setFieldErrors(result.fieldErrors);
         } else {
@@ -88,11 +97,10 @@ export function ContactForm() {
         return;
       }
 
-      // Success
       setSubmitted(true);
-    } catch (err) {
-      console.error("Form submission error:", err);
-      setError("Unable to send message. Please try again later.");
+    } catch (submissionError) {
+      console.error("Appointment form error:", submissionError);
+      setError("Unable to send your appointment request. Please try again later.");
     } finally {
       setLoading(false);
     }
@@ -109,22 +117,19 @@ export function ContactForm() {
 
   return (
     <div className="contact-form-bg relative flex min-h-155 flex-col overflow-y-auto border-l border-white/12 bg-[#120d09]/85 backdrop-blur-xl lg:min-h-full">
-      {/* Paper grain texture */}
       <div className="paper-grain pointer-events-none absolute inset-0 z-0 opacity-40" aria-hidden="true" />
 
       <div className="relative z-10 flex min-h-full flex-col justify-center px-[clamp(1.75rem,5vw,3.5rem)] py-[clamp(2.3rem,5vw,3.6rem)] max-[900px]:px-7 max-[900px]:py-10">
         {!submitted ? (
           <>
-            {/* Header */}
             <p className="mb-2 text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-primary opacity-0 animate-[fade-up_0.3s_0.05s_ease_both]">
-              Step 01 — Free estimate
+              Step 01 — Appointment request
             </p>
             <h2 className="font-serif text-[clamp(1.75rem,3vw,2.4rem)] font-bold leading-[1.1] text-[#f6f0e9] opacity-0 animate-[fade-up_0.3s_0.1s_ease_both]">
               Tell us about<br />
               your <strong className="font-black text-primary">project</strong>
             </h2>
 
-            {/* Step progress dots */}
             <div className="mt-4 mb-7 flex gap-1 opacity-0 animate-[fade-in_0.3s_0.15s_ease_both]">
               {[true, step2, step3].map((active, i) => (
                 <div
@@ -138,7 +143,6 @@ export function ContactForm() {
               ))}
             </div>
 
-            {/* Service selector */}
             <span className="mb-2.5 block text-[0.7rem] font-medium uppercase tracking-[0.12em] text-white/60">
               What service do you need?
             </span>
@@ -160,24 +164,41 @@ export function ContactForm() {
               ))}
             </div>
 
-            {/* Error message */}
             {error && (
               <div className="mb-5 rounded-lg border-l-[3px] border-red-500 bg-red-500/10 p-3.5">
                 <p className="text-sm text-red-200">{error}</p>
               </div>
             )}
 
-            {/* Form */}
             <form
               onSubmit={handleSubmit}
               onInput={step3 ? undefined : markStep3Started}
               className="flex flex-col gap-4"
             >
-              {/* Hidden service field */}
               <input type="hidden" name="service" value={service || ""} />
-              <input type="hidden" name="formType" value="contact" />
+              <input type="hidden" name="formType" value="appointment" />
 
-              {/* Name row */}
+              <div className="flex flex-col gap-1">
+                <label htmlFor="appointmentDate" className={LABEL_CLASS}>Preferred appointment date</label>
+                <div className="relative">
+                  <input
+                    id="appointmentDate"
+                    name="appointmentDate"
+                    type="date"
+                    min={todayValue}
+                    required
+                    disabled={loading}
+                    className={cn(INPUT_CLASS, "pr-10", {
+                      "border-red-500/60": fieldErrors.appointmentDate,
+                    })}
+                  />
+                  <CalendarDays className="pointer-events-none absolute right-0 top-1/2 h-4 w-4 -translate-y-1/2 text-white/45" />
+                </div>
+                {fieldErrors.appointmentDate && (
+                  <p className="text-[0.7rem] text-red-400">{fieldErrors.appointmentDate}</p>
+                )}
+              </div>
+
               <div className="grid grid-cols-2 gap-3.5 max-[520px]:grid-cols-1">
                 {NAME_FIELDS.map(({ id, label, placeholder }) => (
                   <div key={id} className="flex flex-col gap-1">
@@ -199,7 +220,6 @@ export function ContactForm() {
                 ))}
               </div>
 
-              {/* Email */}
               <div className="flex flex-col gap-1">
                 <label htmlFor="em" className={LABEL_CLASS}>Email address</label>
                 <input
@@ -218,7 +238,6 @@ export function ContactForm() {
                 )}
               </div>
 
-              {/* Phone */}
               <div className="flex flex-col gap-1">
                 <label htmlFor="ph" className={LABEL_CLASS}>Phone number</label>
                 <input
@@ -231,7 +250,6 @@ export function ContactForm() {
                 />
               </div>
 
-              {/* Message */}
               <div className="flex flex-col gap-1">
                 <label htmlFor="msg" className={LABEL_CLASS}>Project details</label>
                 <textarea
@@ -244,12 +262,11 @@ export function ContactForm() {
                 />
               </div>
 
-              {/* Submit */}
               <div className="mt-2 flex items-center gap-5">
                 <button
                   type="submit"
                   disabled={loading || !service}
-                  className="group relative inline-flex items-center gap-2 overflow-hidden rounded-md bg-[#0f0e0c] px-7 py-3.5 text-sm font-semibold tracking-wide text-white transition-[transform,box-shadow] duration-150 disabled:opacity-60 disabled:cursor-not-allowed hover:disabled:shadow-none hover:-translate-y-px hover:shadow-[0_8px_24px_rgba(184,74,46,0.25)]"
+                  className="group relative inline-flex items-center gap-2 overflow-hidden rounded-md bg-[#0f0e0c] px-7 py-3.5 text-sm font-semibold tracking-wide text-white transition-[transform,box-shadow] duration-150 disabled:cursor-not-allowed disabled:opacity-60 hover:-translate-y-px hover:shadow-[0_8px_24px_rgba(184,74,46,0.25)] hover:disabled:shadow-none"
                 >
                   <span className="absolute inset-0 -translate-x-full bg-primary transition-transform duration-300 ease-out group-hover:translate-x-0" />
                   <span className="relative z-10 flex items-center gap-2">
@@ -260,7 +277,7 @@ export function ContactForm() {
                       </>
                     ) : (
                       <>
-                        Get Free Estimate
+                        Request Appointment
                         <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
                       </>
                     )}
@@ -272,7 +289,6 @@ export function ContactForm() {
               </div>
             </form>
 
-            {/* Emergency strip */}
             <div className="mt-8 flex items-center gap-3.5 rounded-r-lg border-l-[3px] border-secondary bg-black/25 p-4 shadow-[0_10px_26px_rgba(0,0,0,0.3)]">
               <div>
                 <span className="mb-0.5 block text-[0.68rem] font-semibold uppercase tracking-widest text-primary">
@@ -288,7 +304,6 @@ export function ContactForm() {
             </div>
           </>
         ) : (
-          /* Success state */
           <div className="flex flex-col items-center justify-center gap-4 py-12 text-center animate-[fade-up_0.5s_ease_both]">
             <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary">
               <Check className="h-7 w-7 text-white" strokeWidth={2.5} />
@@ -297,7 +312,7 @@ export function ContactForm() {
               Request received!
             </h3>
             <p className="max-w-70 text-sm leading-relaxed text-white/65">
-              We&apos;ve received your estimate request and will reach out within 24 business hours to discuss your project.
+              We&apos;ve received your appointment request and will reach out within 24 business hours to confirm the date.
             </p>
             <button
               onClick={handleReset}

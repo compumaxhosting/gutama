@@ -45,6 +45,7 @@ export async function POST(request: NextRequest) {
     }
 
     const data = validationResult.data;
+    const isAppointmentRequest = data.formType === "appointment";
 
     // Get environment variables
     const toEmails = parseEmailList(process.env.CONTACT_TO_EMAIL);
@@ -89,7 +90,9 @@ export async function POST(request: NextRequest) {
       ...(ccEmails.length > 0 && { cc: ccEmails }),
       ...(bccEmails.length > 0 && { bcc: bccEmails }),
       ...(data.em && { replyTo: data.em }),
-      subject: `New Service Request: ${data.service} from ${data.fn} ${data.ln}`,
+      subject: isAppointmentRequest
+        ? `New Appointment Request: ${data.service} on ${data.appointmentDate} from ${data.fn} ${data.ln}`
+        : `New Service Request: ${data.service} from ${data.fn} ${data.ln}`,
       html,
       text,
     };
