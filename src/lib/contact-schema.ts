@@ -35,6 +35,8 @@ const contactFormBaseSchema = z.object({
   formType: z.enum(["contact", "appointment"]).optional(),
   service: z.enum(SERVICE_OPTIONS),
   appointmentDate: z.string().optional(),
+  captchaCode: z.string().length(4, "Enter a valid 4-digit captcha code"),
+  captchaInput: z.string().length(4, "Enter a valid 4-digit captcha code"),
   fn: z
     .string()
     .min(2, "First name must be at least 2 characters")

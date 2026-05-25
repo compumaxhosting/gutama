@@ -20,6 +20,10 @@ const NAME_FIELDS = [
   { id: "ln", label: "Last name", placeholder: "Doe" },
 ] as const;
 
+function generateCaptchaCode() {
+  return `${Math.floor(1000 + Math.random() * 9000)}`;
+}
+
 export function ContactForm() {
   const [service, setService] = useState<Service | null>(null);
   const [step3, setStep3] = useState(false);
@@ -27,6 +31,8 @@ export function ContactForm() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
+  const [captchaCode, setCaptchaCode] = useState(() => generateCaptchaCode());
+  const [captchaInput, setCaptchaInput] = useState("");
   const step2 = Boolean(service);
 
   const markStep3Started = useCallback(() => {
@@ -53,6 +59,8 @@ export function ContactForm() {
         em: (formData.get("em") as string).trim(),
         ph: (formData.get("ph") as string).trim(),
         msg: (formData.get("msg") as string).trim(),
+        captchaCode,
+        captchaInput: (formData.get("captchaInput") as string).trim(),
       };
 
       // Client-side validation
@@ -66,6 +74,11 @@ export function ContactForm() {
           }
         });
         setFieldErrors(errors);
+        return;
+      }
+
+      if (payload.captchaInput !== payload.captchaCode) {
+        setFieldErrors({ captchaInput: "Captcha code does not match." });
         return;
       }
 
@@ -104,6 +117,8 @@ export function ContactForm() {
     setLoading(false);
     setError(null);
     setFieldErrors({});
+    setCaptchaCode(generateCaptchaCode());
+    setCaptchaInput("");
     setSubmitted(false);
   };
 
@@ -242,6 +257,54 @@ export function ContactForm() {
                   disabled={loading}
                   className="resize-none rounded-lg border-[1.5px] border-white/24 bg-white/2 p-3 text-[0.93rem] leading-relaxed text-white outline-none transition-colors placeholder:text-white/45 focus:border-secondary disabled:opacity-50"
                 />
+              </div>
+
+              <div className="flex flex-col gap-2 rounded-xl border border-white/12 bg-black/18 p-3.5">
+                <div className="flex items-start justify-between gap-4">
+                  <div>
+                    <p className={LABEL_CLASS}>CAPTCHA</p>
+                    <p className="mt-1 font-mono text-[1.15rem] tracking-[0.32em] text-primary">
+                      {captchaCode}
+                    </p>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setCaptchaCode(generateCaptchaCode());
+                      setCaptchaInput("");
+                      setFieldErrors((currentErrors) => {
+                        const nextErrors = { ...currentErrors };
+                        delete nextErrors.captchaInput;
+                        return nextErrors;
+                      });
+                    }}
+                    disabled={loading}
+                    className="rounded-md border border-white/18 px-3 py-1.5 text-[0.72rem] font-semibold uppercase tracking-[0.14em] text-white/70 transition-colors hover:border-secondary hover:text-secondary disabled:opacity-60"
+                  >
+                    Refresh
+                  </button>
+                </div>
+                <div className="flex flex-col gap-1">
+                  <label htmlFor="captchaInput" className={LABEL_CLASS}>Enter the 4-digit code</label>
+                  <input
+                    id="captchaInput"
+                    name="captchaInput"
+                    value={captchaInput}
+                    onChange={(event) => setCaptchaInput(event.target.value)}
+                    inputMode="numeric"
+                    autoComplete="off"
+                    maxLength={4}
+                    placeholder="1234"
+                    required
+                    disabled={loading}
+                    className={cn(INPUT_CLASS, "w-full", {
+                      "border-red-500/60": fieldErrors.captchaInput,
+                    })}
+                  />
+                  {fieldErrors.captchaInput && (
+                    <p className="text-[0.7rem] text-red-400">{fieldErrors.captchaInput}</p>
+                  )}
+                </div>
               </div>
 
               {/* Submit */}

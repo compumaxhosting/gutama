@@ -47,6 +47,18 @@ export async function POST(request: NextRequest) {
     const data = validationResult.data;
     const isAppointmentRequest = data.formType === "appointment";
 
+    if (data.captchaInput !== data.captchaCode) {
+      return NextResponse.json(
+        {
+          error: "Please check your form and try again.",
+          fieldErrors: {
+            captchaInput: "Captcha code does not match.",
+          },
+        },
+        { status: 400 }
+      );
+    }
+
     // Get environment variables
     const toEmails = parseEmailList(process.env.CONTACT_TO_EMAIL);
     const ccEmails = parseEmailList(process.env.CONTACT_CC_EMAIL);

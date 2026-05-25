@@ -42,6 +42,7 @@ export function generateContactEmailHtml(data: ContactFormInput): {
 } {
   const escapedFn = escapeHtml(data.fn);
   const escapedLn = escapeHtml(data.ln);
+  const escapedFullName = `${escapedFn} ${escapedLn}`.trim();
   const escapedEm = escapeHtml(data.em);
   const escapedPh = escapeHtml(data.ph);
   const escapedService = escapeHtml(data.service);
@@ -74,8 +75,18 @@ export function generateContactEmailHtml(data: ContactFormInput): {
           <tr>
             <td style="padding: 40px 30px;">
               <p style="margin: 0 0 24px 0; color: ${textColor}; font-size: 16px; line-height: 1.6;">
-                <strong>New service request received from ${escapedFn} ${escapedLn}</strong>
+                <strong>New service request received</strong>
               </p>
+              <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom: 24px; border-bottom: 1px solid #e0e0e0; padding-bottom: 24px;">
+                <tr>
+                  <td style="padding: 8px 0;">
+                    <p style="margin: 0; color: #999; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; font-weight: bold;">Name</p>
+                    <p style="margin: 4px 0 0 0; color: ${textColor}; font-size: 14px; font-weight: 600;">
+                      ${escapedFullName}
+                    </p>
+                  </td>
+                </tr>
+              </table>
               <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom: 24px;">
                 <tr>
                   <td style="background-color: ${accentColor}; padding: 12px 16px; border-radius: 4px; text-align: center;">
@@ -168,7 +179,7 @@ export function generateContactEmailHtml(data: ContactFormInput): {
 
   const text = `${brandName} – New Service Request
 
-FROM: ${escapedFn} ${escapedLn}
+NAME: ${escapedFullName}
 EMAIL: ${escapedEm}
 ${escapedPh ? `PHONE: ${escapedPh}\n` : ""}SERVICE: ${escapedService}
 ${escapedAppointmentDate ? `APPOINTMENT DATE: ${escapedAppointmentDate}\n` : ""}
