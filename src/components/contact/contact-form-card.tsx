@@ -294,7 +294,7 @@ export function ContactForm() {
                     inputMode="numeric"
                     autoComplete="off"
                     maxLength={4}
-                    placeholder="1234"
+                    placeholder="-- --"
                     required
                     disabled={loading}
                     className={cn(INPUT_CLASS, "w-full", {
