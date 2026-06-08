@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { ArrowRight, Check, Loader2 } from "lucide-react";
 
 import { siteConfig } from "@/config/site";
@@ -31,9 +31,13 @@ export function ContactForm() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
-  const [captchaCode, setCaptchaCode] = useState(() => generateCaptchaCode());
+  const [captchaCode, setCaptchaCode] = useState("");
   const [captchaInput, setCaptchaInput] = useState("");
   const step2 = Boolean(service);
+
+  useEffect(() => {
+    setCaptchaCode(generateCaptchaCode());
+  }, []);
 
   const markStep3Started = useCallback(() => {
     setStep3((prev) => (prev ? prev : true));
