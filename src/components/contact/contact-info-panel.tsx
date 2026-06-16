@@ -1,6 +1,7 @@
 import { Phone, Mail } from "lucide-react";
 
 import { siteConfig } from "@/config/site";
+import Image from "next/image";
 
 const CONTACT_LINKS = [
   {
@@ -50,10 +51,25 @@ export function ContactInfoPanel() {
               </span>
             </div>
 
-            <h1 className="mb-7 font-serif text-[clamp(2.4rem,4vw,3.6rem)] font-black leading-none text-white opacity-0 animate-[fade-up_0.35s_0.1s_ease_both]">
-              Your home<br />deserves
-              <em className="block not-italic text-primary">the best.</em>
-            </h1>
+            <div className="mb-7 flex flex-col gap-6 sm:flex-row sm:items-start sm:gap-8">
+              <h1 className="font-serif text-[clamp(2.4rem,4vw,3.6rem)] font-black leading-none text-white opacity-0 animate-[fade-up_0.35s_0.1s_ease_both]">
+                Your home<br />deserves
+                <em className="block not-italic text-primary">the best.</em>
+              </h1>
+
+              <div className="shrink-0 rounded-3xl border border-white/10 bg-white/5 p-4 opacity-0 animate-[fade-up_0.35s_0.15s_ease_both] sm:w-40">
+                <p className="mb-3 text-[0.65rem] uppercase tracking-[0.2em] text-white/45">
+                  Review us
+                </p>
+                <Image
+                  src="/review-barcode.png"
+                  alt="Review us barcode"
+                  width={160}
+                  height={160}
+                  className="h-32 w-full object-contain"
+                />
+              </div>
+            </div>
 
             <div className="h-0.75 w-11 origin-left scale-x-0 bg-primary animate-[scale-x-in_0.3s_0.15s_ease_both]" />
           </div>
