@@ -1,3 +1,4 @@
+
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
@@ -10,8 +11,47 @@ import { siteConfig } from "@/config/site";
 export function RoofRemovalFaqSection() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
+  const faqs = [
+    {
+      question: "What is roof removal?",
+      answer:
+        "Roof removal is the process of completely removing existing roofing materials before installing a new roof. This allows contractors to inspect the roof deck, identify hidden damage, and ensure proper installation.",
+    },
+    {
+      question: "How long does roof removal take?",
+      answer:
+        "Most residential roof removal projects can be completed within one to two days. Larger or more complex roofs may require additional time.",
+    },
+    {
+      question: "Is roof removal better than a roof overlay?",
+      answer:
+        "In many cases, yes. Roof removal allows for structural inspection, hidden damage detection, and proper installation of new roofing materials, which often leads to a longer-lasting roof.",
+    },
+    {
+      question: "How much does roof removal cost in Essex County, NJ?",
+      answer:
+        "Roof removal costs vary based on roof size, material type, accessibility, and whether repairs are needed. A professional inspection is the best way to receive an accurate estimate.",
+    },
+    {
+      question:
+        "Can damaged roof decking be replaced during roof removal?",
+      answer:
+        "Yes. Any damaged or rotted decking discovered during the tear-off process can be repaired or replaced before the new roof is installed.",
+    },
+    {
+      question: "Does homeowners insurance cover roof removal?",
+      answer:
+        "Insurance may cover roof removal when damage is caused by a covered event such as hail, wind, or severe storms. Coverage depends on the terms of your policy.",
+    },
+    {
+      question: "How do I know if I need a roof inspection?",
+      answer:
+        "If your roof is more than 20 years old, has visible damage, leaks, or storm-related issues, scheduling a professional inspection is recommended.",
+    },
+  ];
+
   return (
-    <section className="bg-muted/20 py-28 px-6">
+    <section className="bg-muted/20 py-12 px-6">
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-start gap-20 lg:grid-cols-[1fr_1.6fr]">
         {/* LEFT */}
         <div>
@@ -22,7 +62,7 @@ export function RoofRemovalFaqSection() {
             </p>
 
             <h2 className="mb-7 font-serif text-[clamp(32px,3.5vw,48px)] leading-snug text-foreground">
-              Common
+              Frequently Asked
               <br />
               <em className="text-secondary">Questions</em>
             </h2>
@@ -30,9 +70,10 @@ export function RoofRemovalFaqSection() {
             <div className="mx-0 mb-7 h-px w-24 bg-linear-to-r from-secondary to-secondary/30" />
 
             <p className="mb-8 text-sm leading-loose text-muted-foreground">
-              Still have questions? We can explain the tear-off process, cleanup
-              standards, and what deck issues may only be visible once the old
-              roof is removed.
+              Have questions about roof removal? Our team can explain the
+              tear-off process, project timelines, inspections, repairs,
+              insurance considerations, and what to expect before your new
+              roofing system is installed.
             </p>
 
             <Button
@@ -50,135 +91,72 @@ export function RoofRemovalFaqSection() {
 
         {/* RIGHT */}
         <div className="flex flex-col gap-0">
-          {/* 1 */}
-          <div className="border-b border-border/40">
-            <button
-              onClick={() => setActiveIndex(activeIndex === 0 ? null : 0)}
-              className="flex w-full items-center justify-between gap-4 py-6 text-left"
+          {faqs.map((faq, index) => (
+            <div
+              key={faq.question}
+              className="border-b border-border/40"
             >
-              <span
-                className={`font-serif text-lg ${activeIndex === 0 ? "text-secondary" : "text-foreground"}`}
+              <button
+                onClick={() =>
+                  setActiveIndex(
+                    activeIndex === index ? null : index
+                  )
+                }
+                className="flex w-full items-center justify-between gap-4 py-6 text-left cursor-pointer"
               >
-                How much does an affordable roof tear-off in NJ cost?
-              </span>
-              <motion.div
-                animate={{ rotate: activeIndex === 0 ? 90 : 0 }}
-                transition={{ duration: 0.3 }}
-              >
-                <ChevronRight
-                  size={18}
-                  className={
-                    activeIndex === 0
+                <span
+                  className={`font-serif text-lg ${
+                    activeIndex === index
                       ? "text-secondary"
-                      : "text-muted-foreground"
-                  }
-                />
-              </motion.div>
-            </button>
-
-            <AnimatePresence initial={false}>
-              {activeIndex === 0 && (
-                <motion.div
-                  initial={{ height: 0, opacity: 0 }}
-                  animate={{ height: "auto", opacity: 1 }}
-                  exit={{ height: 0, opacity: 0 }}
-                  transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-                  className="overflow-hidden"
+                      : "text-foreground"
+                  }`}
                 >
-                  <p className="pb-6 text-sm leading-loose text-muted-foreground">
-                    Costs vary by square footage and material, but Gutama Home
-                    Improvement provides competitive, transparent pricing for
-                    all Essex County residents.
-                  </p>
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </div>
+                  {faq.question}
+                </span>
 
-          {/* 2 */}
-          <div className="border-b border-border/40">
-            <button
-              onClick={() => setActiveIndex(activeIndex === 1 ? null : 1)}
-              className="flex w-full items-center justify-between gap-4 py-6 text-left"
-            >
-              <span
-                className={`font-serif text-lg ${activeIndex === 1 ? "text-secondary" : "text-foreground"}`}
-              >
-                Do you provide emergency roof removal after storm damage?
-              </span>
-              <motion.div animate={{ rotate: activeIndex === 1 ? 90 : 0 }}>
-                <ChevronRight
-                  size={18}
-                  className={
-                    activeIndex === 1
-                      ? "text-secondary"
-                      : "text-muted-foreground"
-                  }
-                />
-              </motion.div>
-            </button>
-
-            <AnimatePresence initial={false}>
-              {activeIndex === 1 && (
                 <motion.div
-                  initial={{ height: 0, opacity: 0 }}
-                  animate={{ height: "auto", opacity: 1 }}
-                  exit={{ height: 0, opacity: 0 }}
-                  className="overflow-hidden"
+                  animate={{
+                    rotate: activeIndex === index ? 90 : 0,
+                  }}
+                  transition={{ duration: 0.3 }}
                 >
-                  <p className="pb-6 text-sm leading-loose text-muted-foreground">
-                    Yes. We offer storm-damaged roof removal in NJ, prioritizing
-                    safety and quick debris clearance to prevent further
-                    structural issues.
-                  </p>
+                  <ChevronRight
+                    size={18}
+                    className={
+                      activeIndex === index
+                        ? "text-secondary"
+                        : "text-muted-foreground"
+                    }
+                  />
                 </motion.div>
-              )}
-            </AnimatePresence>
-          </div>
+              </button>
 
-          {/* 3 */}
-          <div className="border-b border-border/40">
-            <button
-              onClick={() => setActiveIndex(activeIndex === 2 ? null : 2)}
-              className="flex w-full items-center justify-between gap-4 py-6 text-left"
-            >
-              <span
-                className={`font-serif text-lg ${activeIndex === 2 ? "text-secondary" : "text-foreground"}`}
-              >
-                Which areas in Essex County do you serve?
-              </span>
-              <motion.div animate={{ rotate: activeIndex === 2 ? 90 : 0 }}>
-                <ChevronRight
-                  size={18}
-                  className={
-                    activeIndex === 2
-                      ? "text-secondary"
-                      : "text-muted-foreground"
-                  }
-                />
-              </motion.div>
-            </button>
-
-            <AnimatePresence initial={false}>
-              {activeIndex === 2 && (
-                <motion.div
-                  initial={{ height: 0, opacity: 0 }}
-                  animate={{ height: "auto", opacity: 1 }}
-                  exit={{ height: 0, opacity: 0 }}
-                  className="overflow-hidden"
-                >
-                  <p className="pb-6 text-sm leading-loose text-muted-foreground">
-                    We are a leading roof tear-off contractor in Essex County,
-                    serving Newark, East Orange, West Orange, Irvington, and
-                    surrounding North Jersey neighborhoods.
-                  </p>
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </div>
-
-          {/* 4 */}
-          
+              <AnimatePresence initial={false}>
+                {activeIndex === index && (
+                  <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{
+                      height: "auto",
+                      opacity: 1,
+                    }}
+                    exit={{
+                      height: 0,
+                      opacity: 0,
+                    }}
+                    transition={{
+                      duration: 0.35,
+                      ease: [0.22, 1, 0.36, 1],
+                    }}
+                    className="overflow-hidden"
+                  >
+                    <p className="pb-6 text-sm leading-loose text-muted-foreground">
+                      {faq.answer}
+                    </p>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+          ))}
         </div>
       </div>
     </section>
