@@ -8,9 +8,15 @@ import { FlatRoofFaqSection } from "@/components/services/flat-roof/faq-section"
 import { FlatRoofHeroSection } from "@/components/services/flat-roof/hero-section";
 import { FlatRoofOverviewSection } from "@/components/services/flat-roof/overview-section";
 import { FlatRoofProcessSection } from "@/components/services/flat-roof/process-section";
-import { FlatRoofShowcaseSection } from "@/components/services/flat-roof/showcase-section";
-import { FlatRoofTestimonialSection } from "@/components/services/flat-roof/testimonial-section";
+// import { FlatRoofShowcaseSection } from "@/components/services/flat-roof/showcase-section";
+// import { FlatRoofTestimonialSection } from "@/components/services/flat-roof/testimonial-section";
 import { RelatedServicesSection } from "@/components/services/related-services-section";
+import { WhatIsFlatRoofSection } from "@/components/services/flat-roof/about-flatroof-section";
+import {FlatRoofSystemSection} from "@/components/services/flat-roof/working-section";
+import {FlatRoofTypesSection} from "@/components/services/flat-roof/flatroof-types-section";
+import { FlatRoofResidentialCommercialSection } from "@/components/services/flat-roof/residential-commercial-section";
+import { FlatRoofWhyChooseUsSection } from "@/components/services/flat-roof/whychooseus-section";
+import { FlatRoofAreasWeServeSection } from "@/components/services/flat-roof/areasofservice-section";
 
 export const metadata: Metadata = buildMetadata({
   title: `Flat Roof Installation & Repair | ${siteConfig.business.regionLabel}`,
@@ -23,10 +29,16 @@ export default function Page() {
     <div className="bg-background text-foreground selection:bg-secondary/30">
       <FlatRoofHeroSection />
       <FlatRoofOverviewSection />
-      <FlatRoofBenefitsSection />
+      <WhatIsFlatRoofSection />
+      <FlatRoofSystemSection />
+      <FlatRoofTypesSection />
       <FlatRoofProcessSection />
-      <FlatRoofShowcaseSection />
-      <FlatRoofTestimonialSection />
+      <FlatRoofBenefitsSection />
+      <FlatRoofResidentialCommercialSection />
+      <FlatRoofWhyChooseUsSection />
+      <FlatRoofAreasWeServeSection />
+      {/* <FlatRoofShowcaseSection /> */}
+      {/* <FlatRoofTestimonialSection /> */}
       <FlatRoofFaqSection />
       <RelatedServicesSection currentServiceSlug="flat-roof" />
       <FlatRoofCtaSection />
