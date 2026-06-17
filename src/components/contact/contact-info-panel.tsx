@@ -41,33 +41,47 @@ export function ContactInfoPanel() {
       {/* Content */}
       <div className="relative z-10 px-10 pt-16 pb-16 lg:py-24">
         <div className="flex flex-col gap-10 sm:flex-row sm:items-end sm:gap-14">
-
           {/* LEFT: Eyebrow + Headline + Accent rule */}
           <div className="flex-1">
             <div className="mb-5 inline-flex items-center gap-2 opacity-0 animate-[fade-up_0.35s_0.05s_ease_both]">
               <div className="h-1.25 w-1.25 rounded-full bg-primary" />
               <span className="text-[0.7rem] font-medium uppercase tracking-[0.2em] text-white/45">
-                {siteConfig.business.regionLabel} · Since {siteConfig.business.foundedYear}
+                {siteConfig.business.regionLabel} · Since{" "}
+                {siteConfig.business.foundedYear}
               </span>
             </div>
 
             <div className="mb-7 flex flex-col gap-6 sm:flex-row sm:items-start sm:gap-8">
               <h1 className="font-serif text-[clamp(2.4rem,4vw,3.6rem)] font-black leading-none text-white opacity-0 animate-[fade-up_0.35s_0.1s_ease_both]">
-                Your home<br />deserves
+                Your home
+                <br />
+                deserves
                 <em className="block not-italic text-primary">the best.</em>
               </h1>
 
-              <div className="shrink-0 rounded-3xl border border-white/10 bg-white/5 p-4 opacity-0 animate-[fade-up_0.35s_0.15s_ease_both] sm:w-40">
+              <div className="shrink-0 rounded-3xl border border-white bg-white/5 p-4 opacity-0 animate-[fade-up_0.35s_0.15s_ease_both] sm:w-40">
                 <p className="mb-3 text-[0.65rem] uppercase tracking-[0.2em] text-white/45">
                   Review us
                 </p>
-                <Image
-                  src="/review-barcode.png"
-                  alt="Review us barcode"
-                  width={160}
-                  height={160}
-                  className="h-32 w-full object-contain"
-                />
+
+                <a
+                  href="https://g.page/r/CZcJLgWQY05CEAE/review?utm_source=gbp&utm_medium=reviews&utm_campaign=qr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block cursor-pointer transition-transform hover:scale-105"
+                >
+                  <Image
+                    src="/review-barcode.png"
+                    alt="Review us barcode"
+                    width={160}
+                    height={160}
+                    className="h-32 w-full object-contain"
+                  />
+                </a>
+
+                <p className="mt-3 rounded-lg border border-yellow-400/40 bg-yellow-500/15 px-3 py-2 text-center text-xs font-bold text-yellow-300 shadow-[0_0_15px_rgba(250,204,21,0.25)]">
+                  ⭐ Click or Scan to Leave a 5-Star Review
+                </p>
               </div>
             </div>
 
@@ -102,10 +116,11 @@ export function ContactInfoPanel() {
             {/* Hours badge */}
             <div className="inline-flex w-fit items-center gap-2 rounded-full border border-white/10 px-3.5 py-1.5">
               <div className="h-1.5 w-1.5 rounded-full bg-green-500" />
-              <span className="text-xs text-white/45">Open · Mon–Sat, 7am – 7pm</span>
+              <span className="text-xs text-white/45">
+                Open · Mon–Sat, 7am – 7pm
+              </span>
             </div>
           </div>
-
         </div>
       </div>
     </div>
