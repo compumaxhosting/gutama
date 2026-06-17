@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 
+
 export const metadata: Metadata = {
   title:
     "Re-Roofing Services in Essex County, NJ | Gutama Home Improvement",
