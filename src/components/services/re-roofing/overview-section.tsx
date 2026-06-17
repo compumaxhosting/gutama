@@ -7,59 +7,37 @@ export function ReRoofingOverviewSection() {
         <div>
           <p className="mb-5 inline-flex items-center gap-2 text-[11px] font-medium tracking-[0.18em] uppercase text-secondary">
             <span className="h-px w-6 bg-secondary" />
-            What We Do
+            Re-Roofing Services
           </p>
 
           <h2 className="mb-6 font-serif text-[clamp(36px,4vw,56px)] leading-snug text-foreground">
-            Professional Roof Replacement in
+            Re-Roofing Services in
             <br />
-            <em className="text-secondary">Newark & Essex County, NJ</em>
+            <em className="text-secondary">Essex County, NJ</em>
           </h2>
 
           <div className="mx-0 mb-7 h-px w-24 bg-linear-to-r from-secondary to-secondary/30" />
 
-          <p className="mb-8 text-base leading-loose text-muted-foreground">
-            Gutama Home Improvement provides top-tier roof replacement services
-            in NJ, specializing in both residential roof replacement in Newark,
-            NJ and commercial roof replacement in Essex County. Whether you need
-            a durable asphalt roof replacement in New Jersey or a specialized
-            flat roof replacement in NJ, we ensure a clean foundation and
-            weather-resistant results.
-          </p>
-          <h3 className="mb-4 text-xl font-serif text-foreground">
-            Why Newark Homeowners Trust Us
+          <h3 className="mb-4 font-serif text-xl text-foreground">
+            Professional Re-Roofing Solutions for Homes and Businesses
           </h3>
-          <p className="mb-10 text-base leading-loose text-muted-foreground">
-            As a locally owned professional roofing replacement contractor, we
-            solve North Jersey’s toughest challenges, from salt-air wear to
-            storm damage roof replacement in NJ.
+
+          <p className="mb-4 text-base leading-loose text-muted-foreground">
+            Re-roofing is the process of replacing an aging or damaged roof with
+            a new roofing system to restore protection, improve energy
+            efficiency, and extend the life of your property. A professional
+            re-roofing project helps prevent leaks, weather damage, and costly
+            structural repairs while increasing the value and appearance of your
+            home or commercial building.
           </p>
 
-          <ul className="flex flex-col gap-3.5">
-            <li className="flex items-center gap-3">
-              <div className="h-px w-5 shrink-0 bg-secondary" />
-              <span className="text-sm tracking-wide text-foreground/80">
-                Comprehensive coverage — serving Newark, West Orange, and all
-                Essex County regions
-              </span>
-            </li>
-
-            <li className="flex items-center gap-3">
-              <div className="h-px w-5 shrink-0 bg-secondary" />
-              <span className="text-sm tracking-wide text-foreground/80">
-                Rapid response — expert emergency roof replacement services in
-                NJ
-              </span>
-            </li>
-
-            <li className="flex items-center gap-3">
-              <div className="h-px w-5 shrink-0 bg-secondary" />
-              <span className="text-sm tracking-wide text-foreground/80">
-                Budget-friendly — high-quality, affordable roof replacement in
-                NJ with industrial-grade materials
-              </span>
-            </li>
-          </ul>
+          <p className="text-base leading-loose text-muted-foreground">
+            At Gutama Home Improvement, we provide expert re-roofing services
+            throughout Essex County, NJ. Whether your roof has reached the end
+            of its lifespan, suffered storm damage, or is showing signs of wear
+            and tear, our experienced roofing contractors deliver reliable
+            solutions designed for long-term performance.
+          </p>
         </div>
 
         <div>
@@ -67,7 +45,7 @@ export function ReRoofingOverviewSection() {
             <div className="relative aspect-4/5 overflow-hidden">
               <Image
                 src="/images/before-roof.webp"
-                alt="Roof tear-off preparation"
+                alt="Professional Re-Roofing Services in Essex County NJ"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover transition-transform duration-700 hover:scale-105"
@@ -83,30 +61,12 @@ export function ReRoofingOverviewSection() {
                 740+
               </p>
               <p className="text-[11px] tracking-[0.12em] uppercase text-muted-foreground">
-                Roofs Removed
+                Roofs Replaced
               </p>
             </div>
           </div>
         </div>
       </div>
-      {/* Full-width bottom content */}
-      <div className="mx-auto mt-20 max-w-4xl text-center">
-        <div className="mx-auto mb-6 h-px w-24 bg-linear-to-r from-secondary to-secondary/30" />
-
-        <h3 className="mb-4 font-serif text-[clamp(24px,2.5vw,32px)] text-foreground">
-          Top-Rated{" "}
-          <em className="text-secondary">Roof Replacement Services</em>
-        </h3>
-
-        <p className="text-base leading-loose text-muted-foreground">
-          Gutama Home Improvement provides expert roof replacement services in
-          NJ, offering homeowners and businesses in Newark and Essex County
-          durable, weather-resistant solutions. We specialize in residential
-          roof replacement in Newark, NJ, ensuring a professional,
-          cost-effective transition to a high-quality, long-lasting new roof.
-        </p>
-      </div>
     </section>
   );
 }
-

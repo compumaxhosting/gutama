@@ -10,8 +10,42 @@ import { siteConfig } from "@/config/site";
 export function ReRoofingFaqSection() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
+  const faqs = [
+    {
+      question:
+        "What is the difference between re-roofing and roof replacement?",
+      answer:
+        "Re-roofing refers to installing a new roofing system over or in place of an existing roof, while roof replacement often involves removing old materials and replacing the entire roofing structure when necessary.",
+    },
+    {
+      question: "How long does a re-roofing project take?",
+      answer:
+        "Most residential re-roofing projects are completed within a few days, depending on roof size, weather conditions, and project complexity.",
+    },
+    {
+      question: "How do I know if I need re-roofing?",
+      answer:
+        "Signs include roof leaks, damaged shingles, sagging areas, moisture problems, and an aging roof nearing the end of its lifespan.",
+    },
+    {
+      question: "What is the average lifespan of a new roof?",
+      answer:
+        "The lifespan depends on the roofing material. Asphalt shingles can last 20 to 30 years, while metal roofing systems may last 40 years or longer.",
+    },
+    {
+      question: "Does homeowners insurance cover re-roofing?",
+      answer:
+        "Insurance coverage depends on the cause of damage and the terms of your policy. Storm-related damage may be covered under many policies.",
+    },
+    {
+      question: "Can re-roofing improve energy efficiency?",
+      answer:
+        "Yes. Modern roofing materials and improved ventilation systems can help reduce energy consumption and improve indoor comfort.",
+    },
+  ];
+
   return (
-    <section className="bg-muted/20 py-28 px-6">
+    <section className="bg-muted/20 py-12 px-6">
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-start gap-20 lg:grid-cols-[1fr_1.6fr]">
         {/* LEFT */}
         <div>
@@ -22,7 +56,7 @@ export function ReRoofingFaqSection() {
             </p>
 
             <h2 className="mb-7 font-serif text-[clamp(32px,3.5vw,48px)] leading-snug text-foreground">
-              Common
+              Frequently Asked
               <br />
               <em className="text-secondary">Questions</em>
             </h2>
@@ -30,9 +64,10 @@ export function ReRoofingFaqSection() {
             <div className="mx-0 mb-7 h-px w-24 bg-linear-to-r from-secondary to-secondary/30" />
 
             <p className="mb-8 text-sm leading-loose text-muted-foreground">
-              Still have questions? We can review whether your roof is ready for
-              replacement, what material options fit best, and what to expect
-              during installation.
+              Have questions about re-roofing? Our team can help you understand
+              project timelines, roofing materials, inspections, insurance
+              considerations, and what to expect throughout the installation
+              process.
             </p>
 
             <Button
@@ -50,134 +85,72 @@ export function ReRoofingFaqSection() {
 
         {/* RIGHT */}
         <div className="flex flex-col gap-0">
-          {/* 1 */}
-          <div className="border-b border-border/40">
-            <button
-              onClick={() => setActiveIndex(activeIndex === 0 ? null : 0)}
-              className="flex w-full items-center justify-between gap-4 py-6 text-left"
+          {faqs.map((faq, index) => (
+            <div
+              key={faq.question}
+              className="border-b border-border/40"
             >
-              <span
-                className={`font-serif text-lg ${activeIndex === 0 ? "text-secondary" : "text-foreground"}`}
+              <button
+                onClick={() =>
+                  setActiveIndex(
+                    activeIndex === index ? null : index
+                  )
+                }
+                className="flex w-full items-center justify-between gap-4 py-6 text-left"
               >
-                Where can I find affordable roof replacement in NJ?
-              </span>
-              <motion.div animate={{ rotate: activeIndex === 0 ? 90 : 0 }}>
-                <ChevronRight
-                  size={18}
-                  className={
-                    activeIndex === 0
+                <span
+                  className={`font-serif text-lg ${
+                    activeIndex === index
                       ? "text-secondary"
-                      : "text-muted-foreground"
-                  }
-                />
-              </motion.div>
-            </button>
-
-            <AnimatePresence initial={false}>
-              {activeIndex === 0 && (
-                <motion.div
-                  initial={{ height: 0, opacity: 0 }}
-                  animate={{ height: "auto", opacity: 1 }}
-                  exit={{ height: 0, opacity: 0 }}
-                  className="overflow-hidden"
+                      : "text-foreground"
+                  }`}
                 >
-                  <p className="pb-6 text-sm leading-loose text-muted-foreground">
-                    Gutama Home Improvement offers budget-friendly, high-quality
-                    roof replacement services in NJ, specifically serving
-                    Newark, East Orange, and the broader Essex County area with
-                    transparent pricing.
-                  </p>
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </div>
+                  {faq.question}
+                </span>
 
-          {/* 2 */}
-          <div className="border-b border-border/40">
-            <button
-              onClick={() => setActiveIndex(activeIndex === 1 ? null : 1)}
-              className="flex w-full items-center justify-between gap-4 py-6 text-left"
-            >
-              <span
-                className={`font-serif text-lg ${activeIndex === 1 ? "text-secondary" : "text-foreground"}`}
-              >
-                Who is the best professional roofing replacement contractor in
-                Essex County?
-              </span>
-              <motion.div animate={{ rotate: activeIndex === 1 ? 90 : 0 }}>
-                <ChevronRight
-                  size={18}
-                  className={
-                    activeIndex === 1
-                      ? "text-secondary"
-                      : "text-muted-foreground"
-                  }
-                />
-              </motion.div>
-            </button>
-
-            <AnimatePresence initial={false}>
-              {activeIndex === 1 && (
                 <motion.div
-                  initial={{ height: 0, opacity: 0 }}
-                  animate={{ height: "auto", opacity: 1 }}
-                  exit={{ height: 0, opacity: 0 }}
-                  className="overflow-hidden"
+                  animate={{
+                    rotate: activeIndex === index ? 90 : 0,
+                  }}
+                  transition={{ duration: 0.3 }}
                 >
-                  <p className="pb-6 text-sm leading-loose text-muted-foreground">
-                    Locals recommend Gutama Home Improvement for our expertise
-                    in asphalt roof replacement in New Jersey and our commitment
-                    to safe, efficient, and locally-focused service near Branch
-                    Brook Park and surrounding landmarks.
-                  </p>
+                  <ChevronRight
+                    size={18}
+                    className={
+                      activeIndex === index
+                        ? "text-secondary"
+                        : "text-muted-foreground"
+                    }
+                  />
                 </motion.div>
-              )}
-            </AnimatePresence>
-          </div>
+              </button>
 
-          {/* 3 */}
-          <div className="border-b border-border/40">
-            <button
-              onClick={() => setActiveIndex(activeIndex === 2 ? null : 2)}
-              className="flex w-full items-center justify-between gap-4 py-6 text-left"
-            >
-              <span
-                className={`font-serif text-lg ${activeIndex === 2 ? "text-secondary" : "text-foreground"}`}
-              >
-                Do you offer emergency roof replacement services in NJ?
-              </span>
-              <motion.div animate={{ rotate: activeIndex === 2 ? 90 : 0 }}>
-                <ChevronRight
-                  size={18}
-                  className={
-                    activeIndex === 2
-                      ? "text-secondary"
-                      : "text-muted-foreground"
-                  }
-                />
-              </motion.div>
-            </button>
-
-            <AnimatePresence initial={false}>
-              {activeIndex === 2 && (
-                <motion.div
-                  initial={{ height: 0, opacity: 0 }}
-                  animate={{ height: "auto", opacity: 1 }}
-                  exit={{ height: 0, opacity: 0 }}
-                  className="overflow-hidden"
-                >
-                  <p className="pb-6 text-sm leading-loose text-muted-foreground">
-                    Yes. We provide rapid emergency roof replacement services in
-                    NJ for properties suffering from severe storm damage,
-                    ensuring your home is protected quickly and professionally.
-                  </p>
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </div>
-
-          
-          
+              <AnimatePresence initial={false}>
+                {activeIndex === index && (
+                  <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{
+                      height: "auto",
+                      opacity: 1,
+                    }}
+                    exit={{
+                      height: 0,
+                      opacity: 0,
+                    }}
+                    transition={{
+                      duration: 0.35,
+                      ease: [0.22, 1, 0.36, 1],
+                    }}
+                    className="overflow-hidden"
+                  >
+                    <p className="pb-6 text-sm leading-loose text-muted-foreground">
+                      {faq.answer}
+                    </p>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+          ))}
         </div>
       </div>
     </section>
