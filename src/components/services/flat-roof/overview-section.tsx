@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export function FlatRoofOverviewSection() {
   return (
@@ -34,7 +35,9 @@ export function FlatRoofOverviewSection() {
           </p>
 
           <p className="text-base leading-loose text-muted-foreground">
-            At Gutama Home Improvement, we provide expert flat roof services
+            At <Link href="/" className="text-secondary hover:underline">
+              Gutama Home Improvement
+            </Link>, we provide expert flat roof services
             throughout Essex County, NJ. Whether you need a new flat roof
             installation, flat roof replacement, leak repair, or preventative
             maintenance, our experienced roofing contractors deliver durable

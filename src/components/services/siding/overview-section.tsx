@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export function SidingOverviewSection() {
   return (
@@ -27,7 +28,9 @@ export function SidingOverviewSection() {
           </p>
 
           <p className="mb-4 text-base leading-loose text-muted-foreground">
-            At Gutama Home Improvement, we provide professional siding
+            At <Link href="/" className="text-secondary hover:underline">
+              Gutama Home Improvement
+            </Link>, we provide professional siding
             installation, repair, and replacement services throughout Essex
             County, NJ. Our team delivers durable exterior solutions designed to
             improve energy efficiency, weather resistance, and long-term curb

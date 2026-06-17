@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export function ChimneyOverviewSection() {
   return (
@@ -31,7 +32,9 @@ export function ChimneyOverviewSection() {
           </p>
 
           <p className="text-base leading-loose text-muted-foreground">
-            At Gutama Home Improvement, we provide professional chimney repair,
+            At <Link href="/" className="text-secondary hover:underline">
+              Gutama Home Improvement
+            </Link>, we provide professional chimney repair,
             inspection, maintenance, and rebuilding services in Essex County,
             NJ, for both residential and commercial properties.
           </p>

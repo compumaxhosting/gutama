@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export function SlateRoofOverviewSection() {
   return (
@@ -36,7 +37,9 @@ export function SlateRoofOverviewSection() {
           </p>
 
           <p className="text-base leading-loose text-muted-foreground">
-            At Gutama Home Improvement, we provide professional slate roof
+            At <Link href="/" className="text-secondary hover:underline">
+              Gutama Home Improvement
+            </Link>, we provide professional slate roof
             installation, replacement, repair, and maintenance services for
             homes and businesses across Essex County and surrounding areas.
           </p>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export function ReRoofingOverviewSection() {
   return (
@@ -32,7 +33,9 @@ export function ReRoofingOverviewSection() {
           </p>
 
           <p className="text-base leading-loose text-muted-foreground">
-            At Gutama Home Improvement, we provide expert re-roofing services
+            At <Link href="/" className="text-secondary hover:underline">
+              Gutama Home Improvement
+            </Link>, we provide expert re-roofing services
             throughout Essex County, NJ. Whether your roof has reached the end
             of its lifespan, suffered storm damage, or is showing signs of wear
             and tear, our experienced roofing contractors deliver reliable
