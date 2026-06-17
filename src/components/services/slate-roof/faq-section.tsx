@@ -8,41 +8,123 @@ import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
 
 export function SlateRoofFaqSection() {
-  const content = {
-        intro: "Get clear answers from our slate roofing experts before you commit to repair, maintenance, or full replacement work.",
-        items: [
-          { q: "Where can I find a qualified slate roofing contractor in Essex County?", a: "Gutama Home Improvement is a premier slate roofing contractor in Essex County, serving Newark, Bloomfield, and West Orange with decades of specialized experience in natural stone roofing." },
-          { q: "Does your company offer slate roof repair services in NJ?", a: "Yes, we provide expert slate roof repair services in NJ, including individual tile replacement and leak detection for residential and commercial properties throughout North Jersey." },
-          { q: "How often should I schedule slate roof maintenance services in NJ?", a: "We recommend annual slate roof maintenance services NJ to inspect for cracked tiles and ensure the integrity of the flashing, especially for historic homes in areas like Montclair or Glen Ridge." },
-        ],
-      };
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
+  const faqs = [
+    {
+      question: "What is the lifespan of a slate roof?",
+      answer:
+        "A slate roof can last 75 to 150 years, depending on installation quality and ongoing maintenance.",
+    },
+    {
+      question: "Is slate roofing expensive?",
+      answer:
+        "Yes, slate roofing has a higher upfront cost than many other roofing materials, but it is often more cost-effective over time due to its exceptional lifespan and minimal maintenance requirements.",
+    },
+    {
+      question: "Can slate roofs be repaired?",
+      answer:
+        "Yes. Individual slate tiles can often be replaced without replacing the entire roof when damage is limited to specific areas.",
+    },
+    {
+      question: "Is slate roofing good for New Jersey weather?",
+      answer:
+        "Yes. Slate roofing performs extremely well in New Jersey because it resists snow, rain, wind, temperature fluctuations, and other harsh weather conditions.",
+    },
+    {
+      question: "Does slate roofing require maintenance?",
+      answer:
+        "Yes, but maintenance needs are relatively minimal. Periodic inspections and occasional tile replacement help maximize the lifespan of the roofing system.",
+    },
+  ];
+
   return (
-    <section className="bg-muted/20 py-28 px-6">
+    <section className="bg-muted/20 py-12 px-6">
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-start gap-20 lg:grid-cols-[1fr_1.6fr]">
+        {/* LEFT */}
         <div>
           <div className="lg:sticky lg:top-28">
-            <p className="mb-5 inline-flex items-center gap-2 text-[11px] font-medium tracking-[0.18em] uppercase text-secondary"><span className="h-px w-6 bg-secondary" />FAQ</p>
-            <h2 className="mb-7 font-serif text-[clamp(32px,3.5vw,48px)] leading-snug text-foreground">Common<br /><em className="text-secondary">Questions</em></h2>
+            <p className="mb-5 inline-flex items-center gap-2 text-[11px] font-medium tracking-[0.18em] uppercase text-secondary">
+              <span className="h-px w-6 bg-secondary" />
+              FAQ
+            </p>
+
+            <h2 className="mb-7 font-serif text-[clamp(32px,3.5vw,48px)] leading-snug text-foreground">
+              Slate Roofing
+              <br />
+              <em className="text-secondary">Questions</em>
+            </h2>
+
             <div className="mx-0 mb-7 h-px w-24 bg-linear-to-r from-secondary to-secondary/30" />
-            <p className="mb-8 text-sm leading-loose text-muted-foreground">{content.intro}</p>
-            <Button asChild variant="outline" className="h-12 border-secondary/40 px-6 text-sm text-secondary hover:bg-secondary/10 hover:text-secondary"><a href={`tel:${siteConfig.phones.english}`}><Phone size={14} className="mr-2 inline-block" />Speak with a Specialist</a></Button>
+
+            <p className="mb-8 text-sm leading-loose text-muted-foreground">
+              Get answers to common questions about slate roofing installation,
+              repairs, maintenance, longevity, and performance in New Jersey.
+            </p>
+
+            <Button
+              asChild
+              variant="outline"
+              className="h-12 border-secondary/40 px-6 text-sm text-secondary hover:bg-secondary/10 hover:text-secondary"
+            >
+              <a href={`tel:${siteConfig.phones.english}`}>
+                <Phone size={14} className="mr-2 inline-block" />
+                Speak with a Specialist
+              </a>
+            </Button>
           </div>
         </div>
+
+        {/* RIGHT */}
         <div className="flex flex-col gap-0">
-          {content.items.map((item, i) => (
-            <div key={item.q} className="border-b border-border/40">
-              <button onClick={() => setActiveIndex(activeIndex === i ? null : i)} className="flex w-full cursor-pointer items-center justify-between gap-4 bg-transparent py-6 text-left">
-                <span className={["font-serif text-lg transition-colors duration-200", activeIndex === i ? "text-secondary" : "text-foreground"].join(" ")}>{item.q}</span>
-                <motion.div animate={{ rotate: activeIndex === i ? 90 : 0 }} transition={{ duration: 0.3 }}>
-                  <ChevronRight size={18} className={activeIndex === i ? "text-secondary" : "text-muted-foreground"} />
+          {faqs.map((faq, index) => (
+            <div key={faq.question} className="border-b border-border/40">
+              <button
+                onClick={() =>
+                  setActiveIndex(activeIndex === index ? null : index)
+                }
+                className="flex w-full cursor-pointer items-center justify-between gap-4 bg-transparent py-6 text-left"
+              >
+                <span
+                  className={`font-serif text-lg transition-colors duration-200 ${
+                    activeIndex === index
+                      ? "text-secondary"
+                      : "text-foreground"
+                  }`}
+                >
+                  {faq.question}
+                </span>
+
+                <motion.div
+                  animate={{ rotate: activeIndex === index ? 90 : 0 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <ChevronRight
+                    size={18}
+                    className={
+                      activeIndex === index
+                        ? "text-secondary"
+                        : "text-muted-foreground"
+                    }
+                  />
                 </motion.div>
               </button>
+
               <AnimatePresence initial={false}>
-                {activeIndex === i && (
-                  <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }} className="overflow-hidden">
-                    <p className="pb-6 text-sm leading-loose text-muted-foreground">{item.a}</p>
+                {activeIndex === index && (
+                  <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: "auto", opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    transition={{
+                      duration: 0.35,
+                      ease: [0.22, 1, 0.36, 1],
+                    }}
+                    className="overflow-hidden"
+                  >
+                    <p className="pb-6 text-sm leading-loose text-muted-foreground">
+                      {faq.answer}
+                    </p>
                   </motion.div>
                 )}
               </AnimatePresence>
