@@ -11,7 +11,7 @@ export function RoofRemovalOverviewSection() {
           </p>
 
           <h2 className="mb-6 font-serif text-[clamp(36px,4vw,56px)] leading-snug text-foreground">
-            The Best Roof Removal Services in
+            Roof Removal Services
             <br />
             <em className="text-secondary">Essex County, NJ</em>
           </h2>
@@ -19,25 +19,18 @@ export function RoofRemovalOverviewSection() {
           <div className="mx-0 mb-7 h-px w-24 bg-linear-to-r from-secondary to-secondary/30" />
 
           <p className="mb-4 text-base leading-loose text-muted-foreground">
-            Gutama Home Improvement provides expert roof removal services in NJ,
-            specializing in safe, efficient debris disposal for homes and
-            businesses. Whether you need a residential roof removal in Newark,
-            NJ or a commercial roof removal in East Orange, our team ensures a
-            clean slate for your next installation.
+            Roof removal is the process of completely removing old roofing materials before installing a new roof. A professional roof tear-off allows roofing contractors to inspect the roof deck, identify hidden damage, and ensure the new roofing system is installed correctly. Homeowners and business owners throughout Essex County, NJ choose roof removal services to improve roof performance, extend roof lifespan, and protect their property from future roofing issues.
           </p>
 
-          <h3 className="mb-4 text-xl font-serif text-foreground">
+          {/* <h3 className="mb-4 text-xl font-serif text-foreground">
             Why Choose Our Essex County Roof Tear-Off?
-          </h3> 
+          </h3>  */}
 
           <p className="mb-4 text-base leading-loose text-muted-foreground">
-            We handle the heavy lifting so you don&apos;t have to. From
-            storm-damaged roof removal to specialized flat roof removal in New
-            Jersey, we serve the entire region, including West Orange and
-            Bloomfield.
+            At Gutama Home Improvement, we provide safe, efficient, and professional roof removal services for residential and commercial properties. Whether your roof has reached the end of its lifespan, suffered storm damage, or requires a complete replacement, our experienced team is here to help.
           </p>
 
-          <ul className="flex flex-col gap-3.5">
+          {/* <ul className="flex flex-col gap-3.5">
             <li className="flex items-center gap-3">
               <div className="h-px w-5 shrink-0 bg-secondary" />
               <span className="text-sm tracking-wide text-foreground/80">
@@ -60,7 +53,7 @@ export function RoofRemovalOverviewSection() {
                 storms
               </span>
             </li>
-          </ul>
+          </ul> */}
         </div>
 
         <div>
@@ -92,7 +85,7 @@ export function RoofRemovalOverviewSection() {
       </div>
 
       {/* Full-width bottom content */}
-      <div className="mx-auto mt-20 max-w-4xl text-center">
+      {/* <div className="mx-auto mt-20 max-w-4xl text-center">
         <div className="mx-auto mb-6 h-px w-24 bg-linear-to-r from-secondary to-secondary/30" />
 
         <h3 className="mb-4 font-serif text-[clamp(24px,2.5vw,32px)] text-foreground">
@@ -107,7 +100,7 @@ export function RoofRemovalOverviewSection() {
           removal in Newark, NJ, ensuring a clean, safe, and cost-effective
           foundation for your new roofing system.
         </p>
-      </div>
+      </div> */}
     </section>
   );
 }

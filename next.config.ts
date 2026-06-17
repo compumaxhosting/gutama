@@ -9,6 +9,21 @@ const nextConfig: NextConfig = {
     optimizeCss: true,
     optimizePackageImports: ["lucide-react", "framer-motion"],
   },
+
+  async redirects() {
+    return [
+      {
+        source: "/index.php",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/index.html",
+        destination: "/",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
