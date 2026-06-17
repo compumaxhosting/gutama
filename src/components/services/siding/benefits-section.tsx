@@ -1,48 +1,81 @@
 import {
-  Award,
-  Clock,
-  Home,
-  Ruler,
   Shield,
-  Users,
+  Zap,
+  Home,
+  Building,
+  Wrench,
+  TrendingUp,
 } from "lucide-react";
 
-const ICON_MAP = {
-  award: Award,
-  clock: Clock,
-  home: Home,
-  ruler: Ruler,
-  shield: Shield,
-  users: Users,
-} as const;
+const benefits = [
+  {
+    icon: Shield,
+    title: "Weather Protection",
+    desc: "Protects your home from rain, wind, snow, moisture intrusion, and seasonal temperature changes.",
+  },
+  {
+    icon: Zap,
+    title: "Energy Efficiency",
+    desc: "Improves insulation performance and helps reduce heating and cooling costs throughout the year.",
+  },
+  {
+    icon: Home,
+    title: "Curb Appeal",
+    desc: "Enhances the appearance of your property while increasing overall resale value.",
+  },
+  {
+    icon: Building,
+    title: "Structural Protection",
+    desc: "Helps prevent moisture damage, mold growth, wood rot, and other structural issues.",
+  },
+  {
+    icon: Wrench,
+    title: "Low Maintenance Options",
+    desc: "Modern siding materials are designed for durability and require minimal upkeep.",
+  },
+  {
+    icon: TrendingUp,
+    title: "Long-Term Investment",
+    desc: "High-quality siding increases property lifespan, performance, and long-term value.",
+  },
+];
 
 export function SidingBenefitsSection() {
-  const content: Array<{ icon: keyof typeof ICON_MAP; title: string; desc: string }> = [
-        { icon: "shield", title: "Weather-Ready Protection", desc: "Durable siding materials are installed to withstand NJ's harsh seasonal shifts and reduce exposure issues." },
-        { icon: "home", title: "Energy Efficiency", desc: "Insulated siding options can help support better comfort and lower monthly utility costs." },
-        { icon: "users", title: "Expert Siding Contractors", desc: "Our team serves Newark and Essex County neighborhoods with reliable communication and craftsmanship." },
-        { icon: "clock", title: "Same-Day Consultations", desc: "We provide fast assessments for siding repair, replacement, and exterior upgrades." },
-        { icon: "award", title: "Premium Material Options", desc: "Vinyl and fiber cement siding solutions are selected for long-term durability and clean appearance." },
-        { icon: "ruler", title: "Clean Finish Details", desc: "Trim transitions, alignment, and moisture-conscious detailing are handled with precision." },
-      ];
-
   return (
-    <section className="bg-muted/20 py-28 px-6">
+    <section className="bg-muted/20 py-12 px-6">
       <div className="mx-auto max-w-7xl">
         <div className="mb-20 text-center">
-          <p className="mb-5 inline-flex items-center gap-2 text-[11px] font-medium tracking-[0.18em] uppercase text-secondary"><span className="h-px w-6 bg-secondary" />Why Clients Choose Us</p>
-          <h2 className="mb-6 font-serif text-[clamp(36px,4vw,52px)] text-foreground">The <em className="text-secondary">Difference</em> You&apos;ll Notice</h2>
+          <p className="mb-5 inline-flex items-center gap-2 text-[11px] font-medium tracking-[0.18em] uppercase text-secondary">
+            <span className="h-px w-6 bg-secondary" />
+            Key Advantages
+          </p>
+
+          <h2 className="mb-6 font-serif text-[clamp(36px,4vw,52px)] text-foreground">
+            Benefits of
+            <em className="text-secondary"> Professional Siding Services</em>
+          </h2>
         </div>
+
         <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">
-          {content.map((benefit) => {
-            const Icon = ICON_MAP[benefit.icon];
+          {benefits.map((benefit) => {
+            const Icon = benefit.icon;
+
             return (
-              <div key={benefit.title} className="glass-card border border-border/40 p-11 transition-all duration-500 hover:-translate-y-1 hover:border-secondary/40 hover:shadow-luxury">
+              <div
+                key={benefit.title}
+                className="glass-card border border-border/40 p-11 transition-all duration-500 hover:-translate-y-1 hover:border-secondary/40 hover:shadow-luxury"
+              >
                 <div className="mb-7 flex h-11 w-11 items-center justify-center border border-secondary/35 bg-secondary/5">
                   <Icon size={18} className="text-secondary" />
                 </div>
-                <h3 className="mb-3 font-serif text-xl text-foreground leading-snug">{benefit.title}</h3>
-                <p className="text-sm text-muted-foreground leading-loose">{benefit.desc}</p>
+
+                <h3 className="mb-3 font-serif text-xl leading-snug text-foreground">
+                  {benefit.title}
+                </h3>
+
+                <p className="text-sm leading-loose text-muted-foreground">
+                  {benefit.desc}
+                </p>
               </div>
             );
           })}
