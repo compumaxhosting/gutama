@@ -1,7 +1,3 @@
-import type { Metadata } from "next";
-
-import { siteConfig } from "@/config/site";
-import { buildMetadata } from "@/lib/seo";
 import { FlatRoofBenefitsSection } from "@/components/services/flat-roof/benefits-section";
 import { FlatRoofCtaSection } from "@/components/services/flat-roof/cta-section";
 import { FlatRoofFaqSection } from "@/components/services/flat-roof/faq-section";
@@ -18,11 +14,6 @@ import { FlatRoofResidentialCommercialSection } from "@/components/services/flat
 import { FlatRoofWhyChooseUsSection } from "@/components/services/flat-roof/whychooseus-section";
 import { FlatRoofAreasWeServeSection } from "@/components/services/flat-roof/areasofservice-section";
 
-export const metadata: Metadata = buildMetadata({
-  title: `Flat Roof Installation & Repair | ${siteConfig.business.regionLabel}`,
-  description: "Specialized flat roofing systems including TPO, EPDM, and modified bitumen.",
-  path: "/services/flat-roof",
-});
 
 export default function Page() {
   return (
