@@ -1,0 +1,64 @@
+
+export function ChimneyWarningSignsSection() {
+  const signs = [
+    "Cracks in chimney bricks or mortar",
+    "Water leaks near fireplace or ceiling",
+    "Smoke entering the home",
+    "Weak or reversed chimney draft",
+    "White staining (efflorescence) on bricks",
+    "Rusted chimney components",
+    "Damaged or missing chimney cap",
+    "Loose or falling masonry pieces",
+    "Musty smell from fireplace",
+  ];
+
+  return (
+    <section className="bg-muted/20 py-12 px-6">
+      <div className="mx-auto max-w-7xl">
+        <div className="mb-16 text-center">
+          <p className="mb-5 inline-flex items-center gap-2 text-[11px] font-medium tracking-[0.18em] uppercase text-secondary">
+            <span className="h-px w-6 bg-secondary" />
+            Warning Signs
+          </p>
+
+          <h2 className="mb-6 font-serif text-[clamp(36px,4vw,52px)] text-foreground">
+            Signs You Need
+            <em className="text-secondary"> Chimney Repair</em>
+          </h2>
+
+          <p className="mx-auto max-w-3xl text-base leading-loose text-muted-foreground">
+            You may need professional chimney services if you notice any of the
+            following warning signs. Early inspection helps prevent expensive
+            structural repairs and safety hazards.
+          </p>
+        </div>
+
+        <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
+          {signs.map((sign) => (
+            <div
+              key={sign}
+              className="glass-card border border-border/40 p-6 transition-all duration-300 hover:border-secondary/40"
+            >
+              <div className="flex items-start gap-4">
+                <div className="mt-1 h-2 w-2 shrink-0 rounded-full bg-secondary" />
+
+                <p className="text-sm leading-loose text-foreground/80">
+                  {sign}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-12 border border-secondary/20 bg-secondary/5 p-6 text-center">
+          <p className="text-sm leading-loose text-muted-foreground">
+            Cracks, leaks, draft problems, and deteriorating masonry can worsen
+            over time. Scheduling a professional chimney inspection early can
+            help identify problems before they lead to costly repairs or safety
+            concerns.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
