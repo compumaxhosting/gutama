@@ -17,17 +17,40 @@ const ICON_MAP = {
 } as const;
 
 export function EmergencyRepairBenefitsSection() {
-  const content: Array<{ icon: keyof typeof ICON_MAP; title: string; desc: string }> = [
-        { icon: "clock", title: "24/7 Availability", desc: "Emergency roofing teams remain available around the clock for urgent leak and storm response." },
-        { icon: "shield", title: "Rapid Response", desc: "Same-day dispatch helps limit interior water spread and immediate structural risk." },
-        { icon: "ruler", title: "Expert Tarping & Patching", desc: "Temporary stabilization is applied quickly, followed by a durable permanent repair plan." },
-        { icon: "award", title: "Storm Repair Expertise", desc: "Experienced crews handle wind, puncture, and impact damage with code-conscious methods." },
-        { icon: "users", title: "Insurance Documentation", desc: "Damage documentation and repair records are prepared to support claims processing." },
-        { icon: "home", title: "Local Knowledge", desc: "Service tailored to Newark and Essex County home types and weather patterns." },
-      ];
+  const content: Array<{
+    icon: keyof typeof ICON_MAP;
+    title: string;
+    desc: string;
+  }> = [
+      {
+        icon: "shield",
+        title: "Prevents Water Damage",
+        desc: "Stops leaks before they damage ceilings, walls, and insulation.",
+      },
+      {
+        icon: "home",
+        title: "Protects Home Structure",
+        desc: "Prevents long-term structural weakening.",
+      },
+      {
+        icon: "award",
+        title: "Reduces Repair Costs",
+        desc: "Early intervention avoids expensive reconstruction.",
+      },
+      {
+        icon: "users",
+        title: "Improves Safety",
+        desc: "Eliminates risks from falling debris or weakened roofing.",
+      },
+      {
+        icon: "clock",
+        title: "Fast Response Protection",
+        desc: "Immediate action minimizes storm-related damage.",
+      },
+    ];
 
   return (
-    <section className="bg-muted/20 py-28 px-6">
+    <section className="bg-muted/20 py-12 px-6">
       <div className="mx-auto max-w-7xl">
         <div className="mb-20 text-center">
           <p className="mb-5 inline-flex items-center gap-2 text-[11px] font-medium tracking-[0.18em] uppercase text-secondary"><span className="h-px w-6 bg-secondary" />Why Clients Choose Us</p>

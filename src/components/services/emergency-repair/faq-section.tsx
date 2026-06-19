@@ -9,13 +9,36 @@ import { siteConfig } from "@/config/site";
 
 export function EmergencyRepairFaqSection() {
   const content = {
-        intro: "Still have questions? Our emergency team can walk you through immediate safety steps and rapid-response repair options.",
-        items: [
-          { q: "What should I do if my roof starts leaking during a storm?", a: "First, clear valuables from the area and place buckets to catch water. Then call for emergency roof repair in Essex County, NJ immediately. Do not climb onto a wet or wind-damaged roof; wait for a properly equipped emergency roofing contractor." },
-          { q: "Do you offer roof repairs on weekends or holidays?", a: "Yes. We provide 24-hour roof repair in NJ, including weekends and holidays. Emergencies do not follow a schedule, so our teams are always ready for urgent roof repair in Essex County." },
-          { q: "Can you fix a roof damaged by a fallen tree?", a: "Absolutely. We specialize in storm damage roof repair in NJ, including immediate stabilization and debris response followed by professional emergency repair to restore structural integrity." },
-        ],
-      };
+    intro:
+      "Find answers to common questions about emergency roof repair services, response times, roof leaks, storm damage, and insurance-related concerns.",
+
+    items: [
+      {
+        q: "What is emergency roof repair?",
+        a: "Emergency roof repair is immediate roofing service to stop leaks and prevent further damage after storms or sudden roof failure.",
+      },
+      {
+        q: "How fast can emergency roof repair be done?",
+        a: "Most emergency responses begin the same day, depending on weather and severity.",
+      },
+      {
+        q: "Is emergency roof repair permanent?",
+        a: "Some repairs are temporary (like tarping), while others fully restore the damaged area.",
+      },
+      {
+        q: "What should I do during a roof leak emergency?",
+        a: "Move valuables, contain water if possible, and call a professional roofing contractor immediately.",
+      },
+      {
+        q: "Does insurance cover emergency roof repair?",
+        a: "In many cases, storm-related damage may be covered depending on your insurance policy.",
+      },
+      {
+        q: "What causes emergency roof damage?",
+        a: "Common causes include storms, falling trees, wind damage, and aging roofing materials.",
+      },
+    ],
+  };
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   return (

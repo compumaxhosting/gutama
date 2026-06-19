@@ -16,38 +16,43 @@ const ICON_MAP = {
   users: Users,
 } as const;
 
-export function GuttersBenefitsSection() {
+export function GuttersWhyChooseSection() {
   const content: Array<{
-    icon: keyof typeof ICON_MAP;
-    title: string;
-    desc: string;
-  }> = [
-      {
-        icon: "shield",
-        title: "Foundation Protection",
-        desc: "Prevents water damage around your home's base.",
-      },
-      {
-        icon: "home",
-        title: "Roof Protection",
-        desc: "Reduces roof leaks and water backup issues.",
-      },
-      {
-        icon: "users",
-        title: "Prevents Mold & Mildew",
-        desc: "Controls moisture buildup around walls and siding.",
-      },
-      {
-        icon: "award",
-        title: "Improves Property Value",
-        desc: "Well-maintained drainage systems improve home inspection results.",
-      },
-      {
-        icon: "clock",
-        title: "Reduces Maintenance Costs",
-        desc: "Prevents expensive structural repairs over time.",
-      },
-    ];
+  icon: keyof typeof ICON_MAP;
+  title: string;
+  desc: string;
+}> = [
+  {
+    icon: "ruler",
+    title: "Proper Slope & Drainage Alignment",
+    desc: "Professional installation ensures water flows efficiently through the gutter system and away from the property.",
+  },
+  {
+    icon: "shield",
+    title: "Leak-Free Sealing & Installation",
+    desc: "Proper sealing techniques help prevent leaks, overflow issues, and water intrusion.",
+  },
+  {
+    icon: "award",
+    title: "Durable Materials",
+    desc: "Quality materials are selected to withstand New Jersey weather conditions year after year.",
+  },
+  {
+    icon: "home",
+    title: "Foundation Protection",
+    desc: "Correctly installed gutters help reduce the risk of water pooling and foundation damage.",
+  },
+  {
+    icon: "clock",
+    title: "Long-Term Performance",
+    desc: "Well-designed gutter systems provide reliable drainage and reduced maintenance over time.",
+  },
+  {
+    icon: "users",
+    title: "Built for New Jersey Weather",
+    desc: "At Gutama Home Improvement, we design gutter systems built to withstand heavy rain, snow, and seasonal storms in New Jersey.",
+  },
+];
 
   return (
     <section className="bg-muted/20 py-28 px-6">

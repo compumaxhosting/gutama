@@ -9,17 +9,40 @@ import { siteConfig } from "@/config/site";
 
 export function GuttersFaqSection() {
   const content = {
-        intro: "Still have questions? We can walk you through pricing, gutter types, and what system is best for your home's drainage needs.",
-        items: [
-          { q: "How much does gutter installation in Essex County, NJ, cost?", a: "Pricing for gutter installation in Essex County, NJ, depends on linear footage and material choice, such as aluminum or copper. We offer competitive rates and free onsite estimates in cities like West Orange and Bloomfield to ensure you get an accurate, transparent quote." },
-          { q: "Why should I choose seamless gutters over traditional ones?", a: "Seamless gutter installation in NJ is superior because it eliminates the seams where most leaks occur. This design reduces maintenance needs and significantly extends system lifespan, providing better long-term protection for your Essex County property." },
-          { q: "Do you provide gutter installation near me in Newark?", a: "Yes, we are full-service gutter installers in Essex County, NJ, providing expert residential services across Newark, East Orange, and Irvington. We handle everything from initial measurements to final debris cleanup after your rain gutter installation." },
-        ],
-      };
+    intro:
+      "Find answers to common questions about gutter installation, repair, cleaning, and replacement services.",
+
+    items: [
+      {
+        q: "What do gutter services include?",
+        a: "Gutter services include installation, repair, cleaning, and replacement of roof drainage systems.",
+      },
+      {
+        q: "How often should gutters be cleaned?",
+        a: "Most gutters should be cleaned at least twice a year, especially in spring and fall.",
+      },
+      {
+        q: "What happens if gutters are not maintained?",
+        a: "Blocked gutters can cause roof leaks, foundation damage, mold growth, and basement flooding.",
+      },
+      {
+        q: "How long do gutters last?",
+        a: "Depending on material, gutters typically last 15–30 years.",
+      },
+      {
+        q: "What is the best gutter material?",
+        a: "Aluminum and seamless gutters are most popular due to durability and low maintenance.",
+      },
+      {
+        q: "Can gutters be repaired instead of replaced?",
+        a: "Yes, minor issues like leaks or loose sections can often be repaired.",
+      },
+    ],
+  };
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   return (
-    <section className="bg-muted/20 py-28 px-6">
+    <section className="bg-muted/20 py-12 px-6">
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-start gap-20 lg:grid-cols-[1fr_1.6fr]">
         <div>
           <div className="lg:sticky lg:top-28">

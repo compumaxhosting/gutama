@@ -1,17 +1,41 @@
 export function GuttersProcessSection() {
   const content = {
-        intro: "A reliable gutter system starts with field measurements, correct slope planning, and downspout placement tailored to the property.",
-        timeline: "1-3 Days",
-        timelineNote: "Typical timeline for installation or repair of residential gutter systems",
-        steps: [
-          { num: "01", title: "Measurement & Runoff Review", desc: "We measure roof edges, inspect drainage paths, and identify problem areas where overflow or poor discharge occurs." },
-          { num: "02", title: "Layout Planning", desc: "System size, downspout count, pitch, and discharge direction are planned for the property's water movement needs." },
-          { num: "03", title: "Preparation & Removal", desc: "Old gutters are removed where needed and fascia or attachment points are checked before installation." },
-          { num: "04", title: "Installation", desc: "Seamless runs, hangers, end caps, outlets, and downspouts are installed for clean appearance and dependable drainage." },
-          { num: "05", title: "Flow Testing", desc: "We confirm slope, water movement, and secure attachment throughout the system." },
-          { num: "06", title: "Final Walkthrough", desc: "You receive a completed review of the system, maintenance guidance, and recommendations for long-term performance." },
-        ],
-      };
+  intro:
+    "At Gutama Home Improvement, we follow a structured installation process to ensure proper drainage, long-term durability, and reliable system performance.",
+
+  timeline: "Project-Based",
+
+  timelineNote:
+    "Timeline varies depending on gutter length, property size, and installation requirements",
+
+  steps: [
+    {
+      num: "01",
+      title: "Property Inspection",
+      desc: "We assess roof structure, drainage needs, and existing gutter condition.",
+    },
+    {
+      num: "02",
+      title: "Material Selection",
+      desc: "We recommend materials based on durability, budget, and aesthetics including aluminum gutters, seamless gutters, copper gutters, and vinyl gutters.",
+    },
+    {
+      num: "03",
+      title: "Custom Measurement",
+      desc: "We measure rooflines for precise, leak-free installation.",
+    },
+    {
+      num: "04",
+      title: "Installation",
+      desc: "Gutters and downspouts are securely installed and sealed.",
+    },
+    {
+      num: "05",
+      title: "Water Flow Testing",
+      desc: "We test drainage to ensure proper water direction and performance.",
+    },
+  ],
+};
 
   return (
     <section className="bg-background py-28 px-6">
