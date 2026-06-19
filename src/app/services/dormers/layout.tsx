@@ -1,54 +1,61 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Dormer Installation Essex County NJ | Dormer Contractors Newark",
+  title:
+    "Dormer Installation Services in Essex County, NJ | Roof Dormer Additions",
+
   description:
-    "Expert dormer installation in Essex County, NJ. Top-rated dormer contractors specializing in roof additions, shed dormers, and attic expansions in Newark and East Orange.",
-  keywords: [
-    "dormer installation Essex County NJ",
-    "dormer contractors Newark NJ",
-    "roof dormer installation East Orange",
-    "dormer addition Irvington",
-    "custom dormer construction Bloomfield",
-  ],
-  authors: [{ name: "Gutama Roofing & Chimney" }],
+    "Professional dormer installation in Essex County, NJ. Add space, light, and value with expert dormer construction, repair, and roof modifications.",
+
+  authors: [{ name: "Gutama Home Improvement" }],
+
   robots: {
     index: true,
     follow: true,
-    googleBot: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
   },
+
   metadataBase: new URL("https://www.gutamaroofingnj.com"),
+
   alternates: {
     canonical: "/services/dormers",
   },
+
   openGraph: {
     type: "website",
-    title: "Expert Dormer Installation & Home Additions in Essex County, NJ",
+    title:
+      "Dormer Installation Services in Essex County, NJ | Roof Dormer Additions",
+
     description:
-      "Expand your home with custom dormer construction. We are the best dormer contractors in Newark, Livingston, and West Orange. Affordable attic transformations!",
+      "Expert dormer installation, repair, and roof modifications in Essex County, NJ. Increase space, light, and home value with professional service.",
+
     url: "https://www.gutamaroofingnj.com/services/dormers",
-    siteName: "Gutama Roofing & Chimney",
+
+    siteName: "Gutama Home Improvement",
+
     images: [
       {
-        url: "https://www.gutamaroofingnj.com/Images%20New/service-dormers.webp",
+        url: "https://www.gutamaroofingnj.com/images/service-dormers.webp",
         width: 1200,
         height: 630,
+        alt: "Dormer Installation Services",
       },
     ],
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "Top Dormer Contractors in Essex County, NJ",
+
+    title:
+      "Dormer Installation Services in Essex County, NJ | Roof Dormer Additions",
+
     description:
-      "Expert dormer installation in Newark, East Orange, and Livingston. Call now for a free consultation.",
-    images: ["https://www.gutamaroofingnj.com/Images%20New/service-dormers.webp"],
-    creator: "@GutamaRoofingNJ",
+      "Professional dormer construction, repair, and roof modifications throughout Essex County, NJ.",
+
+    images: [
+      "https://www.gutamaroofingnj.com/images/service-dormers.webp",
+    ],
   },
-  appleWebApp: {
-    capable: true,
-    title: "Gutama Dormers",
-    statusBarStyle: "black",
-  },
+
   referrer: "strict-origin-when-cross-origin",
 };
 
@@ -71,11 +78,15 @@ export default function DormersLayout({
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "HomeAndConstructionBusiness",
-            name: "Gutama Roofing & Chimney",
-            "@id": "https://www.gutamaroofingnj.com/services/dormers",
+
+            name: "Gutama Home Improvement",
+
             url: "https://www.gutamaroofingnj.com/services/dormers",
+
             telephone: ["+1-973-820-5130", "+1-973-342-4134"],
+
             email: "antoniogutama@gmail.com",
+
             address: {
               "@type": "PostalAddress",
               streetAddress: "272-274 Orange St",
@@ -84,39 +95,18 @@ export default function DormersLayout({
               postalCode: "07103",
               addressCountry: "US",
             },
-            areaServed: [
-              {
-                "@type": "City",
-                name: "Newark",
-              },
-              {
-                "@type": "City",
-                name: "East Orange",
-              },
-              {
-                "@type": "City",
-                name: "Irvington",
-              },
-              {
-                "@type": "City",
-                name: "Bloomfield",
-              },
-              {
-                "@type": "City",
-                name: "Livingston",
-              },
-              {
-                "@type": "City",
-                name: "West Orange",
-              },
-              {
-                "@type": "AdministrativeArea",
-                name: "Essex County",
-              },
-            ],
-            image: "https://www.gutamaroofingnj.com/Images%20New/service-dormers.webp",
+
+            image:
+              "https://www.gutamaroofingnj.com/images/service-dormers.webp",
+
             description:
-              "Expert dormer installation and house addition services in Essex County, NJ. Specializing in custom dormer construction and attic expansions.",
+              "Professional dormer installation, repair, and roof modification services in Essex County, NJ.",
+
+            areaServed: {
+              "@type": "AdministrativeArea",
+              name: "Essex County, NJ",
+            },
+
             priceRange: "$$",
           }),
         }}

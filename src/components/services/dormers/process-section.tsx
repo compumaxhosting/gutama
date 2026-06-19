@@ -1,17 +1,44 @@
 export function DormersProcessSection() {
   const content = {
-        intro: "Dormer construction succeeds when structural framing, roof integration, and exterior detailing are coordinated from day one.",
-        timeline: "3-8 Weeks",
-        timelineNote: "Typical timeline depending on size, structure, and finishing scope",
-        steps: [
-          { num: "01", title: "Site Review & Feasibility", desc: "We review the attic or upper level, roof structure, and the most effective dormer type for your goals." },
-          { num: "02", title: "Design & Approvals", desc: "Plans, dimensions, and municipal permitting are coordinated before field work begins." },
-          { num: "03", title: "Roof Opening & Framing", desc: "The existing roof is opened and the dormer structure is framed with proper load transfer and weather protection." },
-          { num: "04", title: "Envelope Installation", desc: "Roofing, flashing, windows, siding, and exterior trim are installed to make the new dormer watertight." },
-          { num: "05", title: "Interior Integration", desc: "Interior framing, insulation, drywall prep, and finish transitions are completed for a cohesive result." },
-          { num: "06", title: "Final Review", desc: "We inspect fit, finish, and weatherproofing details with you before closing the project." },
-        ],
-      };
+  intro:
+    "Dormer installation requires careful planning, structural reinforcement, and seamless integration with the existing roof system to ensure long-term durability and performance.",
+
+  timeline: "6 Steps",
+  timelineNote: "Professional dormer construction process",
+
+  steps: [
+    {
+      num: "01",
+      title: "Roof Inspection",
+      desc: "We evaluate structural integrity and determine dormer feasibility.",
+    },
+    {
+      num: "02",
+      title: "Design & Planning",
+      desc: "We plan dormer size, style, and placement based on your home structure.",
+    },
+    {
+      num: "03",
+      title: "Permits & Code Compliance",
+      desc: "We ensure compliance with New Jersey building codes and Essex County regulations.",
+    },
+    {
+      num: "04",
+      title: "Structural Modification",
+      desc: "Roof framing is reinforced to support the new dormer structure.",
+    },
+    {
+      num: "05",
+      title: "Dormer Build-Out",
+      desc: "We construct framing, install roofing, and integrate windows.",
+    },
+    {
+      num: "06",
+      title: "Final Finishing",
+      desc: "We complete insulation, sealing, waterproofing, and interior finishing.",
+    },
+  ],
+};
 
   return (
     <section className="bg-background py-28 px-6">
