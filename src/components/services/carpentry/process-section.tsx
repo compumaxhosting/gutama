@@ -1,20 +1,44 @@
 export function CarpentryProcessSection() {
   const content = {
-        intro: "A disciplined carpentry process keeps layout, fit, and finish aligned from the first measurement to the final walkthrough.",
-        timeline: "3-10 Days",
-        timelineNote: "Typical timeline depending on repair scope and finish complexity",
-        steps: [
-          { num: "01", title: "Assessment & Measurements", desc: "We inspect existing conditions, identify structural concerns, and confirm exact dimensions." },
-          { num: "02", title: "Scope & Material Planning", desc: "Material selections, repair strategy, and sequencing are finalized before fabrication begins." },
-          { num: "03", title: "Preparation & Protection", desc: "Work areas are protected and damaged materials are removed with care to preserve adjacent finishes." },
-          { num: "04", title: "Build & Installation", desc: "Framing, trim, panels, or specialty woodwork are installed with tight tolerances and clean alignment." },
-          { num: "05", title: "Finish Detailing", desc: "Joints, edges, transitions, and exposed surfaces are refined for a polished final appearance." },
-          { num: "06", title: "Final Review", desc: "We walk the completed scope with you, verify quality, and address any finishing touches before sign-off." },
-        ],
-      };
+  intro:
+    "Every carpentry project begins with a thorough assessment and a clear plan. Our structured approach helps ensure precision, durability, and quality craftsmanship from start to finish.",
+
+  timeline: "1-7 Days",
+
+  timelineNote:
+    "Typical timeline depending on project size, complexity, and repair requirements",
+
+  steps: [
+    {
+      num: "01",
+      title: "Inspection & Assessment",
+      desc: "We evaluate structural integrity, inspect existing wood components, and identify any damaged or weakened areas that require attention.",
+    },
+    {
+      num: "02",
+      title: "Planning & Design",
+      desc: "Our team determines the most effective repair, replacement, or construction approach based on project goals and site conditions.",
+    },
+    {
+      num: "03",
+      title: "Material Selection",
+      desc: "We select durable, high-quality wood materials and components suited to the project's structural and aesthetic requirements.",
+    },
+    {
+      num: "04",
+      title: "Construction or Repair",
+      desc: "Framing, installation, custom woodwork, or repair work is completed with careful attention to accuracy, strength, and craftsmanship.",
+    },
+    {
+      num: "05",
+      title: "Finishing & Quality Check",
+      desc: "Final adjustments, alignment checks, and finish details are completed to ensure long-lasting performance and professional results.",
+    },
+  ],
+};
 
   return (
-    <section className="bg-background py-28 px-6">
+    <section className="bg-background py-12 px-6">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-20 lg:grid-cols-[1fr_1.4fr]">
         <div>
           <div className="lg:sticky lg:top-28">

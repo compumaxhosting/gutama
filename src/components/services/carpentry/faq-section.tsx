@@ -9,13 +9,32 @@ import { siteConfig } from "@/config/site";
 
 export function CarpentryFaqSection() {
   const content = {
-        intro: "Still have questions? We can walk you through custom carpentry options, project scope, and repair strategies for your home.",
-        items: [
-          { q: "Do you provide custom carpentry in East Orange, NJ, for small repairs?", a: "Yes. We offer a full range of services, from minor repairs to large-scale custom carpentry projects, ensuring every home in East Orange receives expert attention." },
-          { q: "What makes you the best carpentry company in Essex County, NJ?", a: "Our reputation is built on reliability, superior finish carpentry, and deep local knowledge. We provide affordable, high-end woodwork across all major cities, including Newark and Livingston." },
-          { q: "Are your residential carpentry services in Livingston, NJ, licensed and insured?", a: "Absolutely. All our woodwork projects are performed by fully licensed and insured contractors, guaranteeing peace of mind and professional results for every Essex County homeowner." },
-        ],
-      };
+  intro:
+    "Still have questions? Our team can help you understand repair options, custom woodwork solutions, structural concerns, and what to expect during your carpentry project.",
+
+  items: [
+    {
+      q: "What are carpentry services?",
+      a: "Carpentry services include building, repairing, and installing wood structures in residential and commercial properties. These services range from structural framing and repairs to custom woodwork and finish carpentry.",
+    },
+    {
+      q: "What does a carpenter do?",
+      a: "A carpenter works on framing, repairs, trim installation, decking, custom woodwork, and other structural or decorative woodworking projects designed to improve a property's function and appearance.",
+    },
+    {
+      q: "How long does carpentry work last?",
+      a: "High-quality carpentry can last for decades when properly installed, maintained, and protected from excessive moisture, weather exposure, and pest damage.",
+    },
+    {
+      q: "Can damaged wood be repaired?",
+      a: "Yes. Many damaged wood structures can be repaired without complete replacement when issues such as rot, water damage, or deterioration are identified early.",
+    },
+    {
+      q: "What is finish carpentry?",
+      a: "Finish carpentry includes decorative and detailed woodwork such as trim, molding, baseboards, crown molding, door casings, and other interior finishing elements that enhance a property's appearance.",
+    },
+  ],
+};
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   return (

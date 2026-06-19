@@ -17,17 +17,45 @@ const ICON_MAP = {
 } as const;
 
 export function CarpentryBenefitsSection() {
-  const content: Array<{ icon: keyof typeof ICON_MAP; title: string; desc: string }> = [
-        { icon: "home", title: "Custom Design", desc: "Tailored cabinetry and shelving built to your exact specifications and layout needs." },
-        { icon: "ruler", title: "Finish Excellence", desc: "Expert crown molding, baseboards, and trim deliver a polished, architectural finish." },
-        { icon: "users", title: "Local Reliability", desc: "Serving Newark and all Essex County neighborhoods with dependable workmanship and clear communication." },
-        { icon: "clock", title: "Same-Day Consultations", desc: "Fast, professional assessments for carpentry repairs and custom woodwork projects." },
-        { icon: "shield", title: "Durable Materials", desc: "High-quality wood selection supports long-term performance and structural integrity." },
-        { icon: "award", title: "Licensed Experts", desc: "Fully licensed and insured carpentry professionals trusted by North Jersey homeowners." },
-      ];
+  const content: Array<{
+  icon: keyof typeof ICON_MAP;
+  title: string;
+  desc: string;
+}> = [
+  {
+    icon: "ruler",
+    title: "Accurate Structural Alignment",
+    desc: "Professional carpentry ensures framing, trim, and structural components are installed with precision and proper alignment.",
+  },
+  {
+    icon: "shield",
+    title: "Durable Wood Construction",
+    desc: "Quality craftsmanship and material selection help create strong, reliable wood structures built to last.",
+  },
+  {
+    icon: "award",
+    title: "Code-Compliant Installation",
+    desc: "Projects are completed according to current building standards and industry best practices.",
+  },
+  {
+    icon: "home",
+    title: "Proper Load Distribution",
+    desc: "Structural elements are installed correctly to support weight safely and maintain long-term stability.",
+  },
+  {
+    icon: "clock",
+    title: "Long-Lasting Results",
+    desc: "Expert installation reduces future repairs and helps maximize the lifespan of carpentry work.",
+  },
+  {
+    icon: "users",
+    title: "Local New Jersey Expertise",
+    desc: "At Gutama Home Improvement, we deliver carpentry solutions designed for New Jersey's climate and construction requirements.",
+  },
+];
 
   return (
-    <section className="bg-muted/20 py-28 px-6">
+    <section className="bg-muted/20 py-12 px-6">
       <div className="mx-auto max-w-7xl">
         <div className="mb-20 text-center">
           <p className="mb-5 inline-flex items-center gap-2 text-[11px] font-medium tracking-[0.18em] uppercase text-secondary"><span className="h-px w-6 bg-secondary" />Why Clients Choose Us</p>
