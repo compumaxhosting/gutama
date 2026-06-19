@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 
 export function AdditionsCtaSection() {
   return (
-    <section className="relative overflow-hidden py-36 px-6">
+    <section className="relative overflow-hidden py-8 px-6">
       <div className="absolute inset-0">
         <Image src="/images/service-additions.webp" alt="Home additions background" fill className="object-cover" sizes="100vw" quality={60} />
         <div className="absolute inset-0 bg-background/90" />

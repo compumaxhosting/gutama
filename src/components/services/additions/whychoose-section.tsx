@@ -1,34 +1,39 @@
-import { Award, Home, Ruler, Shield, Users } from "lucide-react";
+import { Award, Clock, Home, Ruler, Shield, Users } from "lucide-react";
 
 const BENEFITS = [
   {
+    icon: Shield,
+    title: "Safe Structural Integration",
+    desc: "Home additions are designed and constructed to integrate safely with the existing structure.",
+  },
+  {
     icon: Home,
-    title: "Increased Living Space",
-    desc: "Add functional space without moving to a new home.",
+    title: "Proper Foundation Support",
+    desc: "Every addition is built on a foundation system designed for long-term stability and performance.",
   },
   {
     icon: Award,
-    title: "Higher Property Value",
-    desc: "Well-designed additions significantly increase resale value.",
-  },
-  {
-    icon: Users,
-    title: "Better Lifestyle Comfort",
-    desc: "Improve layout, privacy, and daily usability.",
+    title: "Code-Compliant Construction",
+    desc: "All work follows New Jersey building codes and local Essex County requirements.",
   },
   {
     icon: Ruler,
-    title: "Custom Design Options",
-    desc: "Build spaces tailored to your exact needs.",
+    title: "Waterproofing & Insulation Efficiency",
+    desc: "Proper sealing, insulation, and moisture protection help improve comfort and energy efficiency.",
   },
   {
-    icon: Shield,
-    title: "Cost-Effective Expansion",
-    desc: "Often more affordable than purchasing a new home.",
+    icon: Clock,
+    title: "Long-Term Durability",
+    desc: "Quality materials and professional construction methods help maximize lifespan and reliability.",
+  },
+  {
+    icon: Users,
+    title: "Built for New Jersey Weather",
+    desc: "Additions are designed to withstand snow, rain, wind, and seasonal temperature changes.",
   },
 ];
 
-export function AdditionsBenefitsSection() {
+export function WhyChooseSection() {
   return (
     <section className="bg-muted/20 py-12 px-6">
       <div className="mx-auto max-w-7xl">

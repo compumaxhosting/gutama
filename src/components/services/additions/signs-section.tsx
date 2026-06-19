@@ -1,0 +1,55 @@
+export function AdditionsSignsSection() {
+  const signs = [
+    "Your home feels overcrowded",
+    "You need more bedrooms or bathrooms",
+    "You work from home and need office space",
+    "Your family is growing",
+    "You want to increase property value",
+    "You prefer expanding instead of relocating",
+  ];
+
+  return (
+    <section className="bg-background py-12 px-6">
+      <div className="mx-auto max-w-7xl">
+        <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+          <div>
+            <p className="mb-5 inline-flex items-center gap-2 text-[11px] font-medium tracking-[0.18em] uppercase text-secondary">
+              <span className="h-px w-6 bg-secondary" />
+              When to Expand
+            </p>
+
+            <h2 className="mb-6 font-serif text-[clamp(36px,4vw,52px)] leading-tight text-foreground">
+              Signs You May Need
+              <br />
+              <em className="text-secondary">a Home Addition</em>
+            </h2>
+
+            <div className="mb-8 h-px w-24 bg-linear-to-r from-secondary to-secondary/30" />
+
+            <p className="text-base leading-loose text-muted-foreground">
+              If your current home no longer supports your lifestyle, a home
+              addition can provide the extra space and functionality you need
+              without the cost and disruption of moving.
+            </p>
+          </div>
+
+          <div className="border border-border/40 bg-card p-8 md:p-10">
+            <div className="grid gap-4">
+              {signs.map((sign) => (
+                <div
+                  key={sign}
+                  className="flex items-center gap-4 border-b border-border/30 pb-4 last:border-0 last:pb-0"
+                >
+                  <div className="h-px w-6 shrink-0 bg-secondary" />
+                  <span className="text-base text-muted-foreground">
+                    {sign}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
