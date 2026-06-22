@@ -86,7 +86,7 @@ export function HeroSection() {
             <Button
               asChild
               size="lg"
-              className="px-8 py-6 text-base font-semibold"
+              className="px-8 py-6 text-base font-semibold text-amber"
             >
               <Link href="#contact">
                 Get Free Roofing Estimate

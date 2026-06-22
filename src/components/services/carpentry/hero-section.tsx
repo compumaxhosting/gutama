@@ -61,7 +61,7 @@ export function CarpentryHeroSection() {
         <p className="mb-12 max-w-lg text-[clamp(15px,1.8vw,19px)] leading-relaxed text-muted-foreground">{content.description}</p>
 
         <div className="flex flex-wrap gap-3.5">
-          <Button asChild className="h-12 px-7 text-sm uppercase tracking-[0.14em]"><Link href="/contact">Request Free Estimate</Link></Button>
+          <Button asChild className="h-12 px-7 text-sm uppercase tracking-[0.14em] text-amber"><Link href="/contact">Request Free Estimate</Link></Button>
           <Button asChild variant="outline" className="h-12 border-secondary/40 px-6 text-sm text-secondary hover:bg-secondary/10 hover:text-secondary"><a href={`tel:${siteConfig.phones.english}`}><Phone size={15} className="mr-2 inline-block" />{siteConfig.phones.english}</a></Button>
         </div>
 

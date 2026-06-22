@@ -51,7 +51,7 @@ export function AboutCta() {
         {/* Buttons */}
         <Reveal delay={0.08}>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Button asChild size="lg" className="px-8 py-6 text-base font-semibold">
+            <Button asChild size="lg" className="px-8 py-6 text-base font-semibold text-amber">
               <Link href="/contact">
                 Request a Free Estimate
                 <ArrowRight className="ml-2 h-5 w-5" />

@@ -67,7 +67,7 @@ export function CtaSection() {
             <Button
               asChild
               size="lg"
-              className="px-8 py-6 text-base font-semibold"
+              className="px-8 py-6 text-base font-semibold text-amber"
             >
               <a href={`tel:${siteConfig.phones.english}`}>
                 <Phone className="mr-2 h-5 w-5" />

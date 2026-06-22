@@ -32,7 +32,7 @@ export function AdditionsCtaSection() {
           Contact our Essex County team today for a free consultation and personalized estimate on your home addition project.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
-          <Button asChild className="h-12 px-7 text-sm uppercase tracking-[0.14em]">
+          <Button asChild className="h-12 px-7 text-sm uppercase tracking-[0.14em] text-amber">
             <Link href="/contact">Request Free Consultation</Link>
           </Button>
           <Button asChild variant="outline" className="h-12 border-secondary/40 px-6 text-sm text-secondary hover:bg-secondary/10 hover:text-secondary">

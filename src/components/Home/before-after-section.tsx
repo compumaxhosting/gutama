@@ -64,7 +64,7 @@ export function BeforeAfterSection() {
                       sizes="(max-width: 768px) 50vw, 33vw"
                       quality={60}
                     />
-                    <span className="absolute left-2 top-2 rounded bg-primary px-2 py-1 text-xs font-bold text-primary-foreground">
+                    <span className="absolute left-2 top-2 rounded bg-primary px-2 py-1 text-xs font-bold text-amber">
                       BEFORE
                     </span>
                   </div>

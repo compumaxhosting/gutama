@@ -76,7 +76,7 @@ export function ServicesSection({
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute bottom-3 left-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/90">
-                    <Layers className="h-5 w-5 text-primary-foreground" />
+                    <Layers className="h-5 w-5 text-amber" />
                   </div>
                 </div>
 
@@ -123,7 +123,7 @@ export function ServicesSection({
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute bottom-3 left-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/90">
-                    <Home className="h-5 w-5 text-primary-foreground" />
+                    <Home className="h-5 w-5 text-amber" />
                   </div>
                 </div>
 
@@ -170,7 +170,7 @@ export function ServicesSection({
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute bottom-3 left-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/90">
-                    <Square className="h-5 w-5 text-primary-foreground" />
+                    <Square className="h-5 w-5 text-amber" />
                   </div>
                 </div>
 
@@ -216,7 +216,7 @@ export function ServicesSection({
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute bottom-3 left-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/90">
-                    <Diamond className="h-5 w-5 text-primary-foreground" />
+                    <Diamond className="h-5 w-5 text-amber" />
                   </div>
                 </div>
 
@@ -263,7 +263,7 @@ export function ServicesSection({
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute bottom-3 left-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/90">
-                    <Flame className="h-5 w-5 text-primary-foreground" />
+                    <Flame className="h-5 w-5 text-amber" />
                   </div>
                 </div>
 
@@ -310,7 +310,7 @@ export function ServicesSection({
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute bottom-3 left-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/90">
-                    <PanelTop className="h-5 w-5 text-primary-foreground" />
+                    <PanelTop className="h-5 w-5 text-amber" />
                   </div>
                 </div>
 
@@ -357,7 +357,7 @@ export function ServicesSection({
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute bottom-3 left-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/90">
-                    <Hammer className="h-5 w-5 text-primary-foreground" />
+                    <Hammer className="h-5 w-5 text-amber" />
                   </div>
                 </div>
 
@@ -404,7 +404,7 @@ export function ServicesSection({
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute bottom-3 left-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/90">
-                    <Triangle className="h-5 w-5 text-primary-foreground" />
+                    <Triangle className="h-5 w-5 text-amber" />
                   </div>
                 </div>
 
@@ -451,7 +451,7 @@ export function ServicesSection({
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute bottom-3 left-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/90">
-                    <Building2 className="h-5 w-5 text-primary-foreground" />
+                    <Building2 className="h-5 w-5 text-amber" />
                   </div>
                 </div>
 
@@ -498,7 +498,7 @@ export function ServicesSection({
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute bottom-3 left-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/90">
-                    <Droplets className="h-5 w-5 text-primary-foreground" />
+                    <Droplets className="h-5 w-5 text-amber" />
                   </div>
                 </div>
 
@@ -545,7 +545,7 @@ export function ServicesSection({
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute bottom-3 left-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/90">
-                    <AlertTriangle className="h-5 w-5 text-primary-foreground" />
+                    <AlertTriangle className="h-5 w-5 text-amber" />
                   </div>
                 </div>
 

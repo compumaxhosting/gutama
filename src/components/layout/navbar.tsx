@@ -240,7 +240,8 @@ export function Navbar() {
                 </span>
               </a>
 
-              <Button asChild>
+              <Button asChild
+              className="text-amber">
                 <Link href="/contact">Get Free Estimate</Link>
               </Button>
             </div>
