@@ -38,7 +38,7 @@ export function AdditionsBenefitsSection() {
               Why Clients Choose Us
             </p>
             <h2 className="mb-6 font-serif text-[clamp(36px,4vw,52px)] text-foreground">
-              The <em className="text-secondary">Difference</em> You&apos;ll Notice
+              <em className="text-secondary">Benefits</em> of Home Additions
             </h2>
           </div>
 
