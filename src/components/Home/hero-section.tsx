@@ -50,16 +50,39 @@ export function HeroSection() {
         </Reveal>
 
         {/* ❌ REMOVE HEAVY ANIMATION FROM H1 (LCP FIX) */}
-        <h1 className="mx-auto mt-6 max-w-5xl font-serif text-4xl font-bold leading-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
-          Roofing Contractor in {siteConfig.business.regionLabel}
+        <h1 className="mx-auto mt-10 max-w-5xl font-serif text-4xl font-bold leading-tight text-foreground sm:text-5xl ">
+          Trusted Roofing Experts in New Jersey
           <br />
           <span className="text-gradient-gold text-[0.8em]">
-            Premium Roofing & Exterior Solutions
+            Free Inspections & Quality Work
           </span>
         </h1>
 
+        <div className="mx-auto mt-16 flex max-w-4xl flex-col gap-4 md:flex-row md:justify-center md:gap-8">
+          <div className="rounded-xl bg-black/20 px-6 py-4 backdrop-blur-sm">
+            <p className="text-sm font-bold uppercase tracking-[0.2em] text-primary">
+              Local Expertise
+            </p>
+            <p className="mt-1 text-base font-medium text-white">
+              Your Local Roofing Partner
+              <br />
+              Keeping New Jersey Homes Safe & Protected
+            </p>
+          </div>
+
+          <div className="rounded-xl bg-black/20 px-6 py-4 backdrop-blur-xl">
+            <p className="text-sm font-bold uppercase tracking-[0.2em] text-primary">
+              Fast Response
+            </p>
+            <p className="mt-1 text-base font-medium text-white">
+              Roof Problems Don&apos;t Wait
+              <br />
+              Fast, Reliable Roofing Services
+            </p>
+          </div>
+        </div>
         <Reveal delay={0.12}>
-          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <div className="mt-16 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Button
               asChild
               size="lg"
