@@ -13,12 +13,14 @@ import {FlatRoofTypesSection} from "@/components/services/flat-roof/flatroof-typ
 import { FlatRoofResidentialCommercialSection } from "@/components/services/flat-roof/residential-commercial-section";
 import { FlatRoofWhyChooseUsSection } from "@/components/services/flat-roof/whychooseus-section";
 import { FlatRoofAreasWeServeSection } from "@/components/services/flat-roof/areasofservice-section";
+import {LocationNavigationSection} from "@/components/services/flat-roof/locations-section";
 
 
 export default function Page() {
   return (
     <div className="bg-background text-foreground selection:bg-secondary/30">
       <FlatRoofHeroSection />
+      <LocationNavigationSection />
       <FlatRoofOverviewSection />
       <WhatIsFlatRoofSection />
       <FlatRoofSystemSection />

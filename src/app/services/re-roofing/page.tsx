@@ -18,12 +18,13 @@ import { ResidentialReRoofingSection } from "@/components/services/re-roofing/re
 import { CommercialReRoofingSection } from "@/components/services/re-roofing/commercial-reroofing";
 import {ReRoofingWhyChooseUsSection} from "@/components/services/re-roofing/whychoose-section";
 import { ReRoofingAreasWeServeSection } from "@/components/services/re-roofing/areasofservice-section";
-
+import {LocationNavigationSection} from "@/components/services/re-roofing/locations-section";
 
 export default function Page() {
   return (
     <div className="bg-background text-foreground selection:bg-secondary/30">
       <ReRoofingHeroSection />
+      <LocationNavigationSection />
       <ReRoofingOverviewSection />
       <WhatIsReRoofingSection />
       <HowReRoofingWorksSection />

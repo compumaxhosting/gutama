@@ -1,0 +1,81 @@
+import Image from "next/image";
+import Link from "next/link";
+
+export function EmergencyRepairOverviewSection() {
+    const content = {
+        title: "Emergency Roof Repair",
+        accent: "Newark, NJ",
+
+        paragraphs: [
+            "Emergency roof repair is the immediate response to roof damage that threatens your property, safety, or belongings. Whether caused by storms, fallen tree limbs, high winds, heavy rain, or sudden roof leaks, emergency roofing services help prevent further damage and restore protection as quickly as possible.",
+
+            "At Gutama Roofing NJ, we provide emergency roof repair services throughout Newark, Essex County, and surrounding communities. Our experienced emergency roofing contractors respond quickly to residential and commercial roofing emergencies, offering temporary protection and permanent repair solutions when you need them most.",
+        ],
+
+        image: "/images/roof.webp",
+        imageAlt: "Emergency roof repair services in Newark NJ",
+        badgeValue: "24/7",
+        badgeLabel: "Emergency Response",
+};
+
+
+    return (
+        <section className="relative bg-background py-28 px-6">
+            <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-20 lg:grid-cols-2">
+                <div>
+                    <p className="mb-5 inline-flex items-center gap-2 text-[11px] font-medium tracking-[0.18em] uppercase text-secondary">
+                        <span className="h-px w-6 bg-secondary" />
+                        What We Do
+                    </p>
+
+                    <h2 className="mb-6 font-serif text-[clamp(36px,4vw,56px)] leading-snug text-foreground">
+                        {content.title}
+                        <br />
+                        <em className="text-secondary">{content.accent}</em>
+                    </h2>
+
+                    <div className="mx-0 mb-7 h-px w-24 bg-linear-to-r from-secondary to-secondary/30" />
+
+                    <p className="mb-8 text-base leading-loose text-muted-foreground">
+                        {content.paragraphs[0]}
+                    </p>
+
+                    <p className="text-base leading-loose text-muted-foreground">
+                        At <Link href="/" className="text-secondary hover:underline">
+                            Gutama Home Improvement
+                        </Link>, we provide 24/7 emergency roof repair services in Essex County, NJ, helping homeowners and businesses protect their property from immediate roofing emergencies.
+                    </p>
+                </div>
+
+                <div>
+                    <div className="relative">
+                        <div className="relative aspect-4/5 overflow-hidden">
+                            <Image
+                                src={content.image}
+                                alt={content.imageAlt}
+                                fill
+                                sizes="(max-width: 1024px) 100vw, 50vw"
+                                className="object-cover transition-transform duration-700 hover:scale-105"
+                            />
+
+                            <div className="absolute inset-0 bg-linear-to-br from-secondary/20 to-transparent" />
+                        </div>
+
+                        <div className="absolute -right-6 -bottom-6 -z-10 h-28 w-28 border border-secondary/30" />
+                        <div className="absolute -top-6 -left-6 -z-10 h-20 w-20 border border-secondary/20" />
+
+                        <div className="absolute -left-7 bottom-7 border border-secondary/40 bg-card/85 px-5 py-4 backdrop-blur-sm">
+                            <p className="mb-1 font-serif text-3xl leading-none text-secondary">
+                                {content.badgeValue}
+                            </p>
+
+                            <p className="text-[11px] tracking-[0.12em] uppercase text-muted-foreground">
+                                {content.badgeLabel}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+}

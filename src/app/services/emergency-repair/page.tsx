@@ -13,11 +13,13 @@ import {EmergencyRepairTypesSection} from "@/components/services/emergency-repai
 import {EmergencyRepairPropertyTypesSection} from "@/components/services/emergency-repair/residentialandcommercial-section";
 import {EmergencyRepairAreasWeServeSection} from "@/components/services/emergency-repair/areas-of-service-section";
 import {EmergencyRepairWhyChooseSection} from "@/components/services/emergency-repair/whychoose-section";
+import {LocationNavigationSection} from "@/components/services/emergency-repair/locations-section";
 
 export default function Page() {
   return (
     <div className="bg-background text-foreground selection:bg-secondary/30">
       <EmergencyRepairHeroSection />
+      <LocationNavigationSection />
       <EmergencyRepairOverviewSection />
       <EmergencyRepairBasicsSection />
       <EmergencyRepairSignsSection />
