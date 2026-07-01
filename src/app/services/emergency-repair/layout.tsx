@@ -1,21 +1,15 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "24/7 Emergency Roof Repair Essex County NJ | Same Day Service",
+  title: "Emergency Roof Repair in Essex County, NJ | 24/7 Roofing Services",
   description:
-    "Need urgent roof repair in Essex County, NJ? We offer 24/7 emergency roofing services, storm damage repair, and fast leak fixes in Newark, West Orange, and all NJ areas.",
-  keywords: [
-    "Emergency roof repair Essex County NJ",
-    "24 hour roof repair NJ",
-    "emergency roofing contractor NJ",
-    "roof leak repair emergency NJ",
-    "storm damage roof repair NJ",
-  ],
-  authors: [{ name: "Gutama Roofing NJ" }],
+    "24/7 emergency roof repair in Essex County, NJ. Fast response for leaks, storm damage, and urgent roof repairs to protect your home.",
+  authors: [{ name: "Gutama Home Improvement" }],
   robots: {
     index: true,
     follow: true,
-    googleBot: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+    googleBot:
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
   },
   metadataBase: new URL("https://www.gutamaroofingnj.com"),
   alternates: {
@@ -23,14 +17,15 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    title: "24/7 Emergency Roof Repair & Storm Damage Fixes | Essex County, NJ",
+    title:
+      "Emergency Roof Repair in Essex County, NJ | 24/7 Roofing Services",
     description:
-      "Fast, reliable emergency roofing contractor serving Essex County. Same-day repairs for leaks and storm damage. Available 24 hours a day, 7 days a week.",
+      "Fast emergency roof repair in Essex County, NJ. We fix leaks, storm damage, and roof failures with 24/7 rapid response service.",
     url: "https://www.gutamaroofingnj.com/services/emergency-repair",
-    siteName: "Gutama Roofing NJ",
+    siteName: "Gutama Home Improvement",
     images: [
       {
-        url: "https://www.gutamaroofingnj.com/Images%20New/service-emergency.webp",
+        url: "https://www.gutamaroofingnj.com/images/gallery-roof-3.webp",
         width: 1200,
         height: 630,
       },
@@ -38,16 +33,15 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Urgent Roof Repair | Essex County, NJ | 24/7 Service",
+    title:
+      "Emergency Roof Repair in Essex County, NJ | 24/7 Roofing Services",
     description:
-      "Stop that leak now! Expert emergency roofing services in Newark, West Orange, and across Essex County. Call for same-day storm damage repair.",
-    images: ["https://www.gutamaroofingnj.com/Images%20New/service-emergency.webp"],
-    site: "@gutamaroofing",
-    creator: "@GutamaRoofingNJ",
+      "Fast emergency roof repair in Essex County, NJ. We fix leaks, storm damage, and roof failures with 24/7 rapid response service.",
+    images: ["https://www.gutamaroofingnj.com/images/gallery-roof-3.webp"],
   },
   appleWebApp: {
     capable: true,
-    title: "NJ Emergency Roofing",
+    title: "Emergency Roof Repair",
     statusBarStyle: "black",
   },
   referrer: "strict-origin-when-cross-origin",
@@ -72,8 +66,9 @@ export default function EmergencyRepairLayout({
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "RoofingContractor",
-            name: "Gutama Roofing NJ",
-            "@id": "https://www.gutamaroofingnj.com/services/emergency-repair",
+            name: "Gutama Home Improvement",
+            "@id":
+              "https://www.gutamaroofingnj.com/services/emergency-repair",
             url: "https://www.gutamaroofingnj.com/services/emergency-repair",
             telephone: ["+1-973-820-5130", "+1-973-342-4134"],
             email: "antoniogutama@gmail.com",
@@ -86,13 +81,7 @@ export default function EmergencyRepairLayout({
               addressCountry: "US",
             },
             description:
-              "Emergency roof repair services in Essex County, NJ. Providing 24-hour urgent roofing assistance, leak repairs, and storm damage restoration.",
-            knowsAbout: [
-              "Emergency roof repair",
-              "24 hour roof repair",
-              "Storm damage repair",
-              "Roof leak repair",
-            ],
+              "24/7 emergency roof repair services in Essex County, NJ. Fast response for roof leaks, storm damage, roof failures, and urgent roofing emergencies.",
             areaServed: [
               {
                 "@type": "AdministrativeArea",
@@ -104,22 +93,19 @@ export default function EmergencyRepairLayout({
               },
               {
                 "@type": "City",
-                name: "West Orange",
-              },
-              {
-                "@type": "City",
                 name: "East Orange",
-              },
-              {
-                "@type": "City",
-                name: "Livingston",
               },
               {
                 "@type": "City",
                 name: "Bloomfield",
               },
+              {
+                "@type": "City",
+                name: "West Orange",
+              },
             ],
-            image: "https://www.gutamaroofingnj.com/Images%20New/service-emergency.webp",
+            image:
+              "https://www.gutamaroofingnj.com/images/gallery-roof-3.webp",
             priceRange: "$$",
           }),
         }}

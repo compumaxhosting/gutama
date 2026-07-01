@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export function RoofRemovalOverviewSection() {
   return (
@@ -27,7 +28,9 @@ export function RoofRemovalOverviewSection() {
           </h3>  */}
 
           <p className="mb-4 text-base leading-loose text-muted-foreground">
-            At Gutama Home Improvement, we provide safe, efficient, and professional roof removal services for residential and commercial properties. Whether your roof has reached the end of its lifespan, suffered storm damage, or requires a complete replacement, our experienced team is here to help.
+            At <Link href="/" className="text-secondary hover:underline">
+              Gutama Home Improvement
+            </Link>, we provide safe, efficient, and professional roof removal services for residential and commercial properties. Whether your roof has reached the end of its lifespan, suffered storm damage, or requires a complete replacement, our experienced team is here to help.
           </p>
 
           {/* <ul className="flex flex-col gap-3.5">

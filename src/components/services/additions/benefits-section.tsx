@@ -1,41 +1,36 @@
-import { Award, Clock, Home, Ruler, Shield, Users } from "lucide-react";
+import { Award, Home, Ruler, Shield, Users } from "lucide-react";
 
 const BENEFITS = [
   {
-    icon: Shield,
-    title: "Local Permitting Expertise",
-    desc: "We handle Essex County building codes and municipality-specific zoning requirements from start to finish.",
-  },
-  {
     icon: Home,
-    title: "Seamless Integration",
-    desc: "Room additions are designed to blend with your existing roofline, siding, and architectural character.",
-  },
-  {
-    icon: Users,
-    title: "All-In-One Solution",
-    desc: "As a full-service home addition contractor, we manage design, framing, exterior work, and final finishes.",
+    title: "Increased Living Space",
+    desc: "Add functional space without moving to a new home.",
   },
   {
     icon: Award,
-    title: "Enhanced Value",
-    desc: "Expert-grade house extensions increase square footage, comfort, and long-term property ROI.",
+    title: "Higher Property Value",
+    desc: "Well-designed additions significantly increase resale value.",
+  },
+  {
+    icon: Users,
+    title: "Better Lifestyle Comfort",
+    desc: "Improve layout, privacy, and daily usability.",
   },
   {
     icon: Ruler,
-    title: "Durable Materials",
-    desc: "We prioritize weather-resistant materials suitable for New Jersey conditions and long-term performance.",
+    title: "Custom Design Options",
+    desc: "Build spaces tailored to your exact needs.",
   },
   {
-    icon: Clock,
-    title: "Transparent Timeline",
-    desc: "From permits to final walkthrough, your project follows a clear schedule with regular milestone updates.",
+    icon: Shield,
+    title: "Cost-Effective Expansion",
+    desc: "Often more affordable than purchasing a new home.",
   },
-] as const;
+];
 
 export function AdditionsBenefitsSection() {
   return (
-    <section className="bg-muted/20 py-28 px-6">
+    <section className="bg-muted/20 py-12 px-6">
       <div className="mx-auto max-w-7xl">
         <div className="mb-20 text-center">
             <p className="mb-5 inline-flex items-center gap-2 text-[11px] font-medium tracking-[0.18em] uppercase text-secondary">
@@ -43,7 +38,7 @@ export function AdditionsBenefitsSection() {
               Why Clients Choose Us
             </p>
             <h2 className="mb-6 font-serif text-[clamp(36px,4vw,52px)] text-foreground">
-              The <em className="text-secondary">Difference</em> You&apos;ll Notice
+              <em className="text-secondary">Benefits</em> of Home Additions
             </h2>
           </div>
 

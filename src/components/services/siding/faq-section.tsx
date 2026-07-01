@@ -9,40 +9,120 @@ import { siteConfig } from "@/config/site";
 
 export function SidingFaqSection() {
   const content = {
-        intro: "Still have questions? We can walk you through pricing, material options, and how our siding installation process protects your home long term.",
-        items: [
-          { q: "How much does vinyl siding installation cost in East Orange, NJ?", a: "Costs vary based on your home's size, but we provide affordable siding installation starting with a free, transparent estimate to fit your specific budget." },
-          { q: "Where can I find reliable siding contractors in Newark, NJ?", a: "Our team provides expert residential siding services across all Newark neighborhoods, specializing in both emergency repairs and full-scale house siding installation." },
-          { q: "Do you offer fiber cement siding installation in Livingston, NJ?", a: "Yes. We specialize in James Hardie and fiber cement products, providing Livingston homeowners with a fire-resistant, durable, and low-maintenance exterior solution." },
-        ],
-      };
+    intro:
+      "Have questions about siding installation, repair, or replacement? Our team can help you choose the right siding solution for your property and budget.",
+
+    items: [
+      {
+        q: "What are siding services?",
+        a: "Siding services include installation, repair, replacement, and maintenance of exterior wall coverings that protect your home or building from weather, moisture, and structural damage.",
+      },
+      {
+        q: "How long does siding last?",
+        a: "Depending on the material selected, siding can last anywhere from 20 to more than 50 years when properly installed and maintained.",
+      },
+      {
+        q: "What is the best siding material?",
+        a: "Vinyl siding and fiber cement siding are among the most popular options due to their durability, low maintenance requirements, and long-term value.",
+      },
+      {
+        q: "Can damaged siding be repaired?",
+        a: "Yes. Minor damage such as cracks, loose panels, or isolated storm damage can often be repaired without replacing the entire siding system.",
+      },
+      {
+        q: "Does siding improve energy efficiency?",
+        a: "Yes. Modern siding systems can improve insulation performance, reduce heat loss, and help lower heating and cooling costs.",
+      },
+    ],
+  };
+
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   return (
-    <section className="bg-muted/20 py-28 px-6">
+    <section className="bg-muted/20 py-12 px-6">
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-start gap-20 lg:grid-cols-[1fr_1.6fr]">
+        {/* LEFT */}
         <div>
           <div className="lg:sticky lg:top-28">
-            <p className="mb-5 inline-flex items-center gap-2 text-[11px] font-medium tracking-[0.18em] uppercase text-secondary"><span className="h-px w-6 bg-secondary" />FAQ</p>
-            <h2 className="mb-7 font-serif text-[clamp(32px,3.5vw,48px)] leading-snug text-foreground">Common<br /><em className="text-secondary">Questions</em></h2>
+            <p className="mb-5 inline-flex items-center gap-2 text-[11px] font-medium tracking-[0.18em] uppercase text-secondary">
+              <span className="h-px w-6 bg-secondary" />
+              FAQ
+            </p>
+
+            <h2 className="mb-7 font-serif text-[clamp(32px,3.5vw,48px)] leading-snug text-foreground">
+              Frequently Asked
+              <br />
+              <em className="text-secondary">Questions</em>
+            </h2>
+
             <div className="mx-0 mb-7 h-px w-24 bg-linear-to-r from-secondary to-secondary/30" />
-            <p className="mb-8 text-sm leading-loose text-muted-foreground">{content.intro}</p>
-            <Button asChild variant="outline" className="h-12 border-secondary/40 px-6 text-sm text-secondary hover:bg-secondary/10 hover:text-secondary"><a href={`tel:${siteConfig.phones.english}`}><Phone size={14} className="mr-2 inline-block" />Speak with a Specialist</a></Button>
+
+            <p className="mb-8 text-sm leading-loose text-muted-foreground">
+              {content.intro}
+            </p>
+
+            <Button
+              asChild
+              variant="outline"
+              className="h-12 border-secondary/40 px-6 text-sm text-secondary hover:bg-secondary/10 hover:text-secondary"
+            >
+              <a href={`tel:${siteConfig.phones.english}`}>
+                <Phone size={14} className="mr-2 inline-block" />
+                Speak with a Specialist
+              </a>
+            </Button>
           </div>
         </div>
+
+        {/* RIGHT */}
         <div className="flex flex-col gap-0">
           {content.items.map((item, i) => (
             <div key={item.q} className="border-b border-border/40">
-              <button onClick={() => setActiveIndex(activeIndex === i ? null : i)} className="flex w-full cursor-pointer items-center justify-between gap-4 bg-transparent py-6 text-left">
-                <span className={["font-serif text-lg transition-colors duration-200", activeIndex === i ? "text-secondary" : "text-foreground"].join(" ")}>{item.q}</span>
-                <motion.div animate={{ rotate: activeIndex === i ? 90 : 0 }} transition={{ duration: 0.3 }}>
-                  <ChevronRight size={18} className={activeIndex === i ? "text-secondary" : "text-muted-foreground"} />
+              <button
+                onClick={() => setActiveIndex(activeIndex === i ? null : i)}
+                className="flex w-full cursor-pointer items-center justify-between gap-4 bg-transparent py-6 text-left"
+              >
+                <span
+                  className={[
+                    "font-serif text-lg transition-colors duration-200",
+                    activeIndex === i
+                      ? "text-secondary"
+                      : "text-foreground",
+                  ].join(" ")}
+                >
+                  {item.q}
+                </span>
+
+                <motion.div
+                  animate={{ rotate: activeIndex === i ? 90 : 0 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <ChevronRight
+                    size={18}
+                    className={
+                      activeIndex === i
+                        ? "text-secondary"
+                        : "text-muted-foreground"
+                    }
+                  />
                 </motion.div>
               </button>
+
               <AnimatePresence initial={false}>
                 {activeIndex === i && (
-                  <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }} className="overflow-hidden">
-                    <p className="pb-6 text-sm leading-loose text-muted-foreground">{item.a}</p>
+                  <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: "auto", opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    transition={{
+                      duration: 0.35,
+                      ease: [0.22, 1, 0.36, 1],
+                    }}
+                    className="overflow-hidden"
+                  >
+                    <p className="pb-6 text-sm leading-loose text-muted-foreground">
+                      {item.a}
+                    </p>
                   </motion.div>
                 )}
               </AnimatePresence>

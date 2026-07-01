@@ -1,48 +1,81 @@
 import {
-  Award,
-  Clock,
-  Home,
-  Ruler,
   Shield,
-  Users,
+  Droplets,
+  Flame,
+  Building2,
+  Wallet,
+  Home,
 } from "lucide-react";
 
-const ICON_MAP = {
-  award: Award,
-  clock: Clock,
-  home: Home,
-  ruler: Ruler,
-  shield: Shield,
-  users: Users,
-} as const;
+const benefits = [
+  {
+    icon: Shield,
+    title: "Improved Safety",
+    desc: "Professional chimney services help prevent fire hazards, smoke issues, and carbon monoxide risks by ensuring the system operates safely.",
+  },
+  {
+    icon: Droplets,
+    title: "Leak Protection",
+    desc: "Repairs and maintenance help stop water infiltration that can damage roofing systems, masonry, ceilings, and interior finishes.",
+  },
+  {
+    icon: Flame,
+    title: "Better Heating Efficiency",
+    desc: "A properly functioning chimney promotes efficient airflow and supports the performance of fireplaces and heating systems.",
+  },
+  {
+    icon: Building2,
+    title: "Longer Chimney Lifespan",
+    desc: "Routine inspections and repairs help prevent premature structural deterioration and extend the life of the chimney system.",
+  },
+  {
+    icon: Wallet,
+    title: "Cost Savings",
+    desc: "Addressing minor issues early helps reduce the likelihood of expensive reconstruction projects and emergency repairs.",
+  },
+  {
+    icon: Home,
+    title: "Property Value",
+    desc: "Well-maintained chimneys improve home inspection results, enhance curb appeal, and support long-term property value.",
+  },
+];
 
 export function ChimneyBenefitsSection() {
-  const content: Array<{ icon: keyof typeof ICON_MAP; title: string; desc: string }> = [
-        { icon: "clock", title: "Same-Day Inspections", desc: "Rapid chimney safety checks across Livingston, West Orange, and nearby Essex County towns." },
-        { icon: "ruler", title: "Affordable Repairs", desc: "Budget-friendly masonry restoration, liner fixes, and targeted repair scopes that solve root issues." },
-        { icon: "award", title: "Certified Sweeps", desc: "Professional chimney cleaning helps remove creosote and reduce the risk of chimney fires." },
-        { icon: "shield", title: "Code-Focused Safety", desc: "Inspections and repairs are performed with local compliance and long-term fire safety in mind." },
-        { icon: "users", title: "Local Service Team", desc: "Trusted by homeowners in Newark, East Orange, Bloomfield, Irvington, and surrounding areas." },
-        { icon: "home", title: "All-in-One Care", desc: "From maintenance and cleanings to restoration and emergency response, we cover complete chimney care." },
-      ];
-
   return (
-    <section className="bg-muted/20 py-28 px-6">
+    <section className="bg-muted/20 py-12 px-6">
       <div className="mx-auto max-w-7xl">
         <div className="mb-20 text-center">
-          <p className="mb-5 inline-flex items-center gap-2 text-[11px] font-medium tracking-[0.18em] uppercase text-secondary"><span className="h-px w-6 bg-secondary" />Why Clients Choose Us</p>
-          <h2 className="mb-6 font-serif text-[clamp(36px,4vw,52px)] text-foreground">The <em className="text-secondary">Difference</em> You&apos;ll Notice</h2>
+          <p className="mb-5 inline-flex items-center gap-2 text-[11px] font-medium tracking-[0.18em] uppercase text-secondary">
+            <span className="h-px w-6 bg-secondary" />
+            Why It Matters
+          </p>
+
+          <h2 className="mb-6 font-serif text-[clamp(36px,4vw,52px)] text-foreground">
+            Benefits of Professional
+            <em className="text-secondary"> Chimney Services</em>
+          </h2>
         </div>
+
         <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">
-          {content.map((benefit) => {
-            const Icon = ICON_MAP[benefit.icon];
+          {benefits.map((benefit) => {
+            const Icon = benefit.icon;
+
             return (
-              <div key={benefit.title} className="glass-card border border-border/40 p-11 transition-all duration-500 hover:-translate-y-1 hover:border-secondary/40 hover:shadow-luxury">
+              <div
+                key={benefit.title}
+                className="glass-card border border-border/40 p-11 transition-all duration-500 hover:-translate-y-1 hover:border-secondary/40 hover:shadow-luxury"
+              >
                 <div className="mb-7 flex h-11 w-11 items-center justify-center border border-secondary/35 bg-secondary/5">
                   <Icon size={18} className="text-secondary" />
                 </div>
-                <h3 className="mb-3 font-serif text-xl text-foreground leading-snug">{benefit.title}</h3>
-                <p className="text-sm text-muted-foreground leading-loose">{benefit.desc}</p>
+
+                <h3 className="mb-3 font-serif text-xl leading-snug text-foreground">
+                  {benefit.title}
+                </h3>
+
+                <p className="text-sm leading-loose text-muted-foreground">
+                  {benefit.desc}
+                </p>
               </div>
             );
           })}

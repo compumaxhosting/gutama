@@ -1,4 +1,3 @@
-
 import { AboutSection } from "@/components/Home/about-section";
 import { BeforeAfterSection } from "@/components/Home/before-after-section";
 import { CtaSection } from "@/components/Home/cta-section";
@@ -9,8 +8,6 @@ import { ServiceAreasSection } from "@/components/Home/service-areas-section";
 import { ServicesSection } from "@/components/Home/services-section";
 import { TestimonialsSection } from "@/components/Home/testimonials-section";
 import { WhyChooseSection } from "@/components/Home/why-choose-section";
-
-
 
 export default function HomePage() {
   return (

@@ -1,33 +1,33 @@
 const PROCESS = [
   {
     num: "01",
-    title: "Discovery & Site Survey",
-    desc: "We walk your property, photograph existing conditions, and discuss your vision, budget, and timeline.",
+    title: "Initial Consultation",
+    desc: "We assess your property and discuss goals, budget, and design ideas.",
   },
   {
     num: "02",
-    title: "Design & Permitting",
-    desc: "Architectural drawings, structural engineering, and municipal permit filing - all managed in-house.",
+    title: "Design & Planning",
+    desc: "We create a structural plan based on your home layout and expansion needs.",
   },
   {
     num: "03",
-    title: "Foundation & Framing",
-    desc: "Site prep, footings, and structural framing built to exceed local code requirements.",
+    title: "Permits & Compliance",
+    desc: "We ensure all work follows New Jersey building codes and Essex County regulations.",
   },
   {
     num: "04",
-    title: "Envelope & Systems",
-    desc: "Roofing, windows, exterior cladding, HVAC, electrical, and plumbing rough-in completed and inspected.",
+    title: "Structural Construction",
+    desc: "Foundation work, framing, and structural integration are completed.",
   },
   {
     num: "05",
-    title: "Interior Finishing",
-    desc: "Insulation, drywall, flooring, trim, paint, and fixtures installed to your selections.",
+    title: "Systems Installation",
+    desc: "Electrical, plumbing, HVAC, and insulation are installed.",
   },
   {
     num: "06",
-    title: "Final Walkthrough",
-    desc: "Comprehensive quality review with you present. We do not close a project until you are fully satisfied.",
+    title: "Finishing Work",
+    desc: "Flooring, painting, and interior finishing complete the project.",
   },
 ] as const;
 
@@ -48,12 +48,19 @@ export function AdditionsProcessSection() {
             </h2>
             <div className="mx-0 mb-7 h-px w-24 bg-linear-to-r from-secondary to-secondary/30" />
             <p className="text-[15px] leading-loose text-muted-foreground">
-              Six deliberate stages refined over two decades of residential addition work in Essex County.
+              At Gutama Home Improvement, we follow a structured process to ensure every
+              home addition is completed safely, efficiently, and to the highest quality
+              standards.
             </p>
             <div className="mt-10 border border-secondary/30 bg-secondary/5 p-6">
               <p className="mb-2.5 text-[11px] tracking-[0.16em] uppercase text-secondary">Average Timeline</p>
-              <p className="mb-1 font-serif text-[32px] text-foreground">12-28 Weeks</p>
-              <p className="text-xs text-muted-foreground">From permit approval to final walkthrough</p>
+              <p className="mb-1 font-serif text-[32px] text-foreground">
+                Project-Based
+              </p>
+
+              <p className="text-xs text-muted-foreground">
+                Timeline varies depending on addition size, permits, and construction scope
+              </p>
             </div>
           </div>
         </div>

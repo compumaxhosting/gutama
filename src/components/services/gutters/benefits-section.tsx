@@ -17,14 +17,37 @@ const ICON_MAP = {
 } as const;
 
 export function GuttersBenefitsSection() {
-  const content: Array<{ icon: keyof typeof ICON_MAP; title: string; desc: string }> = [
-        { icon: "ruler", title: "Leak-Free Performance", desc: "Custom-cut seamless gutter layouts minimize joints and reduce common leak points." },
-        { icon: "shield", title: "Local Weather Resistance", desc: "Heavy-gauge aluminum systems are built to handle NJ snow, ice, and storm rainfall." },
-        { icon: "home", title: "Precision Fit", desc: "Expertly pitched systems guide water away from foundations to help prevent soil erosion." },
-        { icon: "users", title: "Comprehensive Service", desc: "From replacement to new installs, we serve Newark, West Orange, and surrounding Essex County areas." },
-        { icon: "clock", title: "Efficient Scheduling", desc: "Fast site assessments and clear timelines keep your gutter project moving smoothly." },
-        { icon: "award", title: "Long-Term Protection", desc: "Professionally installed gutters help protect siding, landscaping, and structural longevity." },
-      ];
+  const content: Array<{
+    icon: keyof typeof ICON_MAP;
+    title: string;
+    desc: string;
+  }> = [
+      {
+        icon: "shield",
+        title: "Foundation Protection",
+        desc: "Prevents water damage around your home's base.",
+      },
+      {
+        icon: "home",
+        title: "Roof Protection",
+        desc: "Reduces roof leaks and water backup issues.",
+      },
+      {
+        icon: "users",
+        title: "Prevents Mold & Mildew",
+        desc: "Controls moisture buildup around walls and siding.",
+      },
+      {
+        icon: "award",
+        title: "Improves Property Value",
+        desc: "Well-maintained drainage systems improve home inspection results.",
+      },
+      {
+        icon: "clock",
+        title: "Reduces Maintenance Costs",
+        desc: "Prevents expensive structural repairs over time.",
+      },
+    ];
 
   return (
     <section className="bg-muted/20 py-28 px-6">

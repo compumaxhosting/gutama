@@ -16,13 +16,14 @@ import {RoofRemovalBenefitsSection} from "@/components/services/roof-removal/roo
 import {ResidentialRoofRemovalSection} from "@/components/services/roof-removal/residential-roofremoval";
 import {CommercialRoofRemovalSection} from "@/components/services/roof-removal/commercial-roofremoval";
 import {AreasWeServeSection} from "@/components/services/roof-removal/service-areas";
-
+import {LocationNavigationSection} from "@/components/services/roof-removal/locations-section";
 
 
 export default function Page() {
   return (
     <div className="bg-background text-foreground selection:bg-secondary/30">
       <RoofRemovalHeroSection />
+      <LocationNavigationSection />
       <RoofRemovalOverviewSection />
       {/* <RoofRemovalShowcaseSection /> */}
       {/* <RoofRemovalTestimonialSection /> */}

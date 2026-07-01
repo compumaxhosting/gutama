@@ -9,13 +9,36 @@ import { siteConfig } from "@/config/site";
 
 export function DormersFaqSection() {
   const content = {
-        intro: "Still have questions? We can walk you through build timelines, permit steps, and the best dormer type for your home.",
-        items: [
-          { q: "How long does a roof dormer installation in East Orange take?", a: "Most projects are completed within 2-4 weeks, depending on the complexity of the custom dormer construction and local permit approvals in Essex County." },
-          { q: "What is the benefit of a shed dormer installation in Livingston, NJ?", a: "Shed dormers provide maximum interior headspace and usable floor area, making them one of the most affordable dormer options for adding extra rooms." },
-          { q: "Do I need a permit for a dormer addition in Irvington, NJ?", a: "Yes, all dormer additions require local building permits. Our team handles the entire process to ensure your project meets Newark and Essex County safety standards." },
-        ],
-      };
+    intro:
+      "Get answers to common questions about dormer construction, permitting requirements, project timelines, and long-term benefits.",
+
+    items: [
+      {
+        q: "What is a dormer used for?",
+        a: "A dormer is used to add space, natural light, and ventilation by extending a roof vertically.",
+      },
+      {
+        q: "Does a dormer increase home value?",
+        a: "Yes. Dormers typically increase property value by adding usable square footage and improving home design.",
+      },
+      {
+        q: "How much does a dormer cost in New Jersey?",
+        a: "Dormer cost depends on size, design, structural changes, and materials. A professional inspection is required for accurate pricing.",
+      },
+      {
+        q: "How long does dormer installation take?",
+        a: "Most dormer projects take several weeks depending on complexity, permits, and weather conditions.",
+      },
+      {
+        q: "Do dormers require permits in New Jersey?",
+        a: "Yes. Dormer construction typically requires permits and inspections to meet local building codes.",
+      },
+      {
+        q: "Can any house have a dormer added?",
+        a: "Most homes can support dormers, but a structural evaluation is required before installation.",
+      },
+    ],
+  };
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   return (

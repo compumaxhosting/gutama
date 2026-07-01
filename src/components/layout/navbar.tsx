@@ -16,7 +16,7 @@ const NAV_LINKS = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
-  { label: "Gallery", href: "/gallery" }, 
+  { label: "Gallery", href: "/gallery" },
   { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
 ];
@@ -228,15 +228,20 @@ export function Navbar() {
 
           <div className="flex items-center gap-2">
             <GoogleTranslateWidget />
-            <div className="hidden items-center gap-3 lg:flex">
+            <div className="hidden items-center gap-2 xl:gap-3 lg:flex">
               <a
                 href={`tel:${siteConfig.phones.english}`}
                 className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
               >
                 <Phone className="h-4 w-4 text-primary" />
-                {siteConfig.phones.english}
+
+                <span className="min-[1136px]:inline hidden">
+                  {siteConfig.phones.english}
+                </span>
               </a>
-              <Button asChild>
+
+              <Button asChild
+              className="text-amber">
                 <Link href="/contact">Get Free Estimate</Link>
               </Button>
             </div>

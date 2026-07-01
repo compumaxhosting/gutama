@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 
 export function AdditionsCtaSection() {
   return (
-    <section className="relative overflow-hidden py-36 px-6">
+    <section className="relative overflow-hidden py-8 px-6">
       <div className="absolute inset-0">
         <Image src="/images/service-additions.webp" alt="Home additions background" fill className="object-cover" sizes="100vw" quality={60} />
         <div className="absolute inset-0 bg-background/90" />
@@ -32,7 +32,7 @@ export function AdditionsCtaSection() {
           Contact our Essex County team today for a free consultation and personalized estimate on your home addition project.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
-          <Button asChild className="h-12 px-7 text-sm uppercase tracking-[0.14em]">
+          <Button asChild className="h-12 px-7 text-sm uppercase tracking-[0.14em] text-amber">
             <Link href="/contact">Request Free Consultation</Link>
           </Button>
           <Button asChild variant="outline" className="h-12 border-secondary/40 px-6 text-sm text-secondary hover:bg-secondary/10 hover:text-secondary">

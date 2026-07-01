@@ -16,7 +16,7 @@ export function EmergencyRepairCtaSection() {
       };
 
   return (
-    <section className="relative overflow-hidden py-36 px-6">
+    <section className="relative overflow-hidden py-8 px-6">
       <div className="absolute inset-0">
         <Image src={content.image} alt={content.imageAlt} fill className="object-cover" sizes="100vw" quality={60} />
         <div className="absolute inset-0 bg-background/90" />
@@ -30,7 +30,7 @@ export function EmergencyRepairCtaSection() {
         <h2 className="mb-5 font-serif text-[clamp(38px,5vw,64px)] leading-none text-foreground">{content.title}<br /><em className="text-secondary">{content.accent}</em></h2>
         <p className="mx-auto mb-14 max-w-lg text-base leading-loose text-muted-foreground">{content.description}</p>
         <div className="flex flex-wrap justify-center gap-4">
-          <Button asChild className="h-12 px-7 text-sm uppercase tracking-[0.14em]"><Link href="/contact">{content.buttonLabel}</Link></Button>
+          <Button asChild className="h-12 px-7 text-sm uppercase tracking-[0.14em] text-amber"><Link href="/contact">{content.buttonLabel}</Link></Button>
           <Button asChild variant="outline" className="h-12 border-secondary/40 px-6 text-sm text-secondary hover:bg-secondary/10 hover:text-secondary"><a href={`tel:${siteConfig.phones.english}`}><Phone size={14} className="mr-2 inline-block" />Call 973-820-5130</a></Button>
         </div>
         <p className="mt-7 text-xs tracking-wide text-muted-foreground">No obligation - Licensed & insured - {siteConfig.business.regionLabel}</p>

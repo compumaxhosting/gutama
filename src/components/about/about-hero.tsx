@@ -80,7 +80,7 @@ export function AboutHero() {
         {/* CTAs */}
         <Reveal delay={0.1}>
           <div className="flex flex-wrap gap-3.5">
-            <Button asChild className="h-12 px-7 text-sm uppercase tracking-[0.14em]">
+            <Button asChild className="h-12 px-7 text-sm uppercase tracking-[0.14em] text-amber">
               <Link href="/contact">
                 Get Free Estimate
                 <ArrowRight className="ml-2 h-4 w-4" />

@@ -1,0 +1,82 @@
+import {
+  Award,
+  MapPin,
+  Shield,
+  Users,
+} from "lucide-react";
+
+const REASONS = [
+  {
+    icon: MapPin,
+    title: "Local Newark Roofing Expertise",
+    desc: "We understand the roofing challenges caused by New Jersey winters, ice and water buildup, seasonal storms, wind exposure, and humidity fluctuations throughout Essex County.",
+  },
+  {
+    icon: Users,
+    title: "Experienced Roofing Contractors",
+    desc: "Our skilled team provides dependable workmanship, careful project management, and attention to detail on every re-roofing project.",
+  },
+  {
+    icon: Shield,
+    title: "Quality Roofing Materials",
+    desc: "We install premium roofing products designed to withstand New Jersey's climate while providing long-term protection and performance.",
+  },
+  {
+    icon: Award,
+    title: "Honest Recommendations",
+    desc: "Every roof is carefully evaluated so we can recommend the most cost-effective solution based on the actual condition of your property.",
+  },
+] as const;
+
+export function ReRoofingWhyChooseSection() {
+  return (
+    <section className="bg-background py-12 px-6">
+      <div className="mx-auto max-w-7xl">
+        <div className="mb-16 text-center">
+          <p className="mb-5 inline-flex items-center gap-2 text-[11px] font-medium tracking-[0.18em] uppercase text-secondary">
+            <span className="h-px w-6 bg-secondary" />
+            Why Homeowners Choose Us
+          </p>
+
+          <h2 className="mb-6 font-serif text-[clamp(36px,4vw,52px)] text-foreground">
+            Why Choose
+            <br />
+            <em className="text-secondary">Gutama Roofing NJ</em>
+          </h2>
+
+          <div className="mx-auto h-px w-24 bg-linear-to-r from-secondary to-secondary/30" />
+
+          <p className="mx-auto mt-6 max-w-3xl text-base leading-loose text-muted-foreground">
+            From roof inspections to complete re-roofing projects, our team
+            focuses on quality workmanship, honest guidance, and long-term
+            roofing performance for Newark homeowners and businesses.
+          </p>
+        </div>
+
+        <div className="grid gap-2 md:grid-cols-2">
+          {REASONS.map((item) => (
+            <div
+              key={item.title}
+              className="glass-card border border-border/40 p-10 transition-all duration-500 hover:border-secondary/40 hover:shadow-luxury"
+            >
+              <div className="mb-6 flex h-11 w-11 items-center justify-center border border-secondary/35 bg-secondary/5">
+                <item.icon
+                  size={18}
+                  className="text-secondary"
+                />
+              </div>
+
+              <h3 className="mb-3 font-serif text-2xl text-foreground">
+                {item.title}
+              </h3>
+
+              <p className="text-sm leading-loose text-muted-foreground">
+                {item.desc}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

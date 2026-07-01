@@ -7,20 +7,37 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
 
-const FAQS = [
-  {
-    q: "How much does a home addition cost in Essex County, NJ?",
-    a: "Costs vary based on the project&apos;s scope, but a second story addition or room extension typically depends on square footage and material choices. We provide detailed, transparent quotes tailored to your specific Newark or West Orange property.",
-  },
-  {
-    q: "Do I need a permit for a room addition in Essex County?",
-    a: "Yes. Every municipality, from Bloomfield to Livingston, requires specific building permits for structural changes. As your general contractor, we manage the entire application process to ensure your project is fully compliant.",
-  },
-  {
-    q: "Can you match my new house extension to my existing home?",
-    a: "Absolutely. We specialize in custom home additions that replicate your home&apos;s current siding, roofline, and architectural style, ensuring the new space looks like it was always part of the original build.",
-  },
-] as const;
+const FAQS = {
+  intro:
+    "Find answers to common questions about home additions, permits, construction timelines, costs, and property value considerations.",
+
+  items: [
+    {
+      q: "What is a home addition?",
+      a: "A home addition is the process of expanding an existing home by building new rooms or structures attached to the property.",
+    },
+    {
+      q: "How much does a home addition cost in New Jersey?",
+      a: "Costs vary based on size, design, materials, and structural complexity. A professional estimate is required for accuracy.",
+    },
+    {
+      q: "Do I need permits for a home addition in NJ?",
+      a: "Yes, most home additions require permits and inspections under New Jersey building regulations.",
+    },
+    {
+      q: "How long does a home addition take?",
+      a: "Most projects take several weeks to several months depending on complexity and size.",
+    },
+    {
+      q: "Does a home addition increase home value?",
+      a: "Yes, home additions typically provide strong return on investment by increasing usable square footage.",
+    },
+    {
+      q: "Can I live in my home during construction?",
+      a: "In many cases yes, but it depends on the scale of the project.",
+    },
+  ],
+}; 
 
 export function AdditionsFaqSection() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -41,7 +58,7 @@ export function AdditionsFaqSection() {
             </h2>
             <div className="mx-0 mb-7 h-px w-24 bg-linear-to-r from-secondary to-secondary/30" />
             <p className="mb-8 text-sm leading-loose text-muted-foreground">
-              Still have questions? Our project specialists can walk you through permitting, scope, and budget options for your addition.
+              {FAQS.intro}
             </p>
             <Button asChild variant="outline" className="h-12 border-secondary/40 px-6 text-sm text-secondary hover:bg-secondary/10 hover:text-secondary">
               <a href={`tel:${siteConfig.phones.english}`}>
@@ -53,7 +70,7 @@ export function AdditionsFaqSection() {
         </div>
 
         <div className="flex flex-col gap-0">
-          {FAQS.map((item, i) => (
+          {FAQS.items.map((item, i) => (
             <div key={item.q} className="border-b border-border/40">
               <button
                 onClick={() => setActiveIndex(activeIndex === i ? null : i)}

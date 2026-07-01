@@ -1,0 +1,68 @@
+export function FlatRoofWhatIsSection() {
+  const materials = [
+    "EPDM Roofing (Rubber Roofing)",
+    "TPO Roofing",
+    "PVC Roofing",
+    "Modified Bitumen Roofing",
+    "Built-Up Roofing (BUR)",
+    "Flat Roof Coating Systems",
+  ];
+
+  return (
+    <section className="bg-muted/20 py-12 px-6">
+      <div className="mx-auto max-w-7xl">
+        <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+          <div>
+            <p className="mb-5 inline-flex items-center gap-2 text-[11px] font-medium tracking-[0.18em] uppercase text-secondary">
+              <span className="h-px w-6 bg-secondary" />
+              Roofing Systems
+            </p>
+
+            <h2 className="mb-6 font-serif text-[clamp(36px,4vw,56px)] leading-snug text-foreground">
+              What Is
+              <br />
+              <em className="text-secondary">Flat Roofing?</em>
+            </h2>
+
+            <div className="mb-8 h-px w-24 bg-linear-to-r from-secondary to-secondary/30" />
+
+            <p className="mb-6 text-base leading-loose text-muted-foreground">
+              Flat roofing refers to a roofing system with a very low slope
+              designed to efficiently drain water while maximizing usable roof
+              space. Unlike traditional pitched roofs, flat roofs offer easier
+              maintenance access and are widely used for commercial properties
+              and multi-family buildings throughout Newark, NJ.
+            </p>
+
+            <p className="text-base leading-loose text-muted-foreground">
+              Modern flat roofing systems are engineered using advanced
+              waterproof membranes and insulation materials that provide
+              superior protection against rain, snow, wind, and temperature
+              fluctuations.
+            </p>
+          </div>
+
+          <div className="border border-border/40 bg-card p-8 md:p-10">
+            <p className="mb-6 text-xs font-medium uppercase tracking-[0.16em] text-secondary">
+              Common Flat Roofing Materials
+            </p>
+
+            <div className="space-y-4">
+              {materials.map((item) => (
+                <div
+                  key={item}
+                  className="flex items-center gap-3 border-b border-border/30 pb-4 last:border-0 last:pb-0"
+                >
+                  <div className="h-px w-5 shrink-0 bg-secondary" />
+                  <span className="text-sm text-foreground/85">
+                    {item}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

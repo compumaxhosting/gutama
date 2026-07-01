@@ -1,0 +1,70 @@
+export function DormersTypesSection() {
+  const dormers = [
+    {
+      title: "Gable Dormer",
+      description:
+        "A triangular roof dormer that provides strong ventilation and traditional architectural style.",
+    },
+    {
+      title: "Shed Dormer",
+      description:
+        "A single-sloped roof design that maximizes interior ceiling height and usable space.",
+    },
+    {
+      title: "Hip Dormer",
+      description:
+        "A dormer with sloped sides that blends smoothly into the existing roofline.",
+    },
+    {
+      title: "Flat Roof Dormer",
+      description:
+        "A modern design that creates maximum interior space and is ideal for home additions.",
+    },
+  ];
+
+  return (
+    <section className="bg-background py-12 px-6">
+      <div className="mx-auto max-w-7xl">
+        <div className="mb-16 text-center">
+          <p className="mb-5 inline-flex items-center gap-2 text-[11px] font-medium tracking-[0.18em] uppercase text-secondary">
+            <span className="h-px w-6 bg-secondary" />
+            Dormer Options
+          </p>
+
+          <h2 className="mb-6 font-serif text-[clamp(36px,4vw,52px)] text-foreground">
+            Types of
+            <br />
+            <em className="text-secondary">Dormers</em>
+          </h2>
+
+          <div className="mx-auto h-px w-24 bg-linear-to-r from-secondary to-secondary/30" />
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-2">
+          {dormers.map((dormer, index) => (
+            <div
+              key={dormer.title}
+              className="border border-border/40 bg-card p-8"
+            >
+              <div className="mb-6 flex items-center gap-4">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center border border-secondary/30 bg-secondary/5">
+                  <span className="font-serif text-secondary">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                </div>
+
+                <h3 className="font-serif text-2xl text-foreground">
+                  {dormer.title}
+                </h3>
+              </div>
+
+              <p className="text-sm leading-loose text-muted-foreground">
+                {dormer.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
