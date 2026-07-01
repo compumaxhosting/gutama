@@ -1,17 +1,8 @@
-import type { Metadata } from "next";
 
-import { siteConfig } from "@/config/site";
-import { buildMetadata } from "@/lib/seo";
 import { ServicesSection } from "@/components/Home/services-section";
 import { Container } from "@/components/ui/container";
 import { Reveal } from "@/components/motion/reveal";
 
-export const metadata: Metadata = buildMetadata({
-  title: `Our Services | ${siteConfig.business.regionLabel}`,
-  description:
-    "Explore roofing, siding, chimney, gutters, dormers, additions, and emergency repair services offered across Essex County, New Jersey.",
-  path: "/services",
-});
 
 export default function ServicesPage() {
   return (
