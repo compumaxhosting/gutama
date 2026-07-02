@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     "best roofing contractor",
   ],
 
-  authors: [{ name: "xyz.com" }],
+  authors: [{ name: "gutamaroofingnj.com" }],
 
   robots: {
     index: true,
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical:
-      "https://www.xyz.com/local-roofing-contractor-vs-national-company",
+      "https://www.gutamaroofingnj.com/local-roofing-contractor-vs-national-company",
   },
 
   openGraph: {
@@ -38,11 +38,11 @@ export const metadata: Metadata = {
     title: "Local Roofing Contractor vs National Company | Expert Guide",
     description:
       "Discover why a local roofing contractor is better than national companies for faster service, better pricing, and reliable roof repairs.",
-    url: "https://www.xyz.com/local-roofing-contractor-vs-national-company",
-    siteName: "xyz.com",
+    url: "https://www.gutamaroofingnj.com/local-roofing-contractor-vs-national-company",
+    siteName: "gutamaroofingnj.com",
     images: [
       {
-        url: "https://www.xyz.com/images/roofing-og.jpg",
+        url: "https://www.gutamaroofingnj.com/images/localvsnational.webp",
         alt: "Local roofing contractor inspecting a residential roof",
       },
     ],
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     title: "Local Roofing Contractor vs National Company | Expert Guide",
     description:
       "Discover why a local roofing contractor is better than national companies for faster service, better pricing, and reliable roof repairs.",
-    images: ["https://www.xyz.com/images/roofing-og.jpg"],
+    images: ["https://www.gutamaroofingnj.com/images/localvsnational.webp"],
   },
 
   referrer: "strict-origin-when-cross-origin",
