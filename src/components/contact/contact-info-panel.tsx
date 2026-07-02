@@ -10,12 +10,7 @@ const CONTACT_LINKS = [
     href: `tel:${siteConfig.phones.english}`,
     Icon: Phone,
   },
-  {
-    label: "Español",
-    value: siteConfig.phones.spanish,
-    href: `tel:${siteConfig.phones.spanish}`,
-    Icon: Phone,
-  },
+ 
   {
     label: "Email",
     value: siteConfig.email,
