@@ -176,7 +176,11 @@ export default function RootLayout({
       <head>
         {/* ✅ PERFORMANCE BOOST - Preconnect to critical CDNs */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
       </head>
@@ -195,11 +199,16 @@ export default function RootLayout({
 
         <Script id="google-analytics" strategy="lazyOnload">
           {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-8K697EFF53');
-          `}
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      // Existing GA4
+      gtag('config', 'G-8K697EFF53');
+
+      // New GA4
+      gtag('config', 'G-QPZMC65FEW');
+    `}
         </Script>
 
         {/* ✅ SEO SCHEMA (non-blocking) */}
