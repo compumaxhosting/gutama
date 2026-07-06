@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Facebook, Instagram, Mail, MapPin, Music2, Phone } from "lucide-react";
+import { FaYelp } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
 
 import { siteConfig } from "@/config/site";
 import { BrandLink } from "@/components/ui/brand-link";
@@ -43,6 +45,16 @@ const SOCIAL_LINKS = [
     label: "TikTok",
     href: "https://www.tiktok.com/@gutamaroofingnj.com",
     icon: Music2,
+  },
+  {
+    label: "X",
+    href: "https://x.com/gutamaroofingnj",
+    icon: FaXTwitter,
+  },
+  {
+    label: "Yelp",
+    href: "https://m.yelp.com/biz/gutama-home-improvement-newark-5",
+    icon: FaYelp,
   },
 ] as const;
 
