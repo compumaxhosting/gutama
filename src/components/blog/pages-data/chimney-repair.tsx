@@ -362,7 +362,7 @@ export const chimneyRepairEssexCounty = {
             masonry can all contribute to water leaks inside your home. Working
             with a contractor experienced in both{" "}
             <Link
-              href="/services/flat-roof"
+              href="/services/chimney"
               className="text-secondary"
               target="/blank"
               rel="noreferrer"
@@ -374,9 +374,7 @@ export const chimneyRepairEssexCounty = {
           </p>
 
           <p>
-            <Link href="/"
-              className="text-secondary"
-              target="/blank">
+            <Link href="/" className="text-secondary" target="/blank">
               Gutama Home Improvement
             </Link>{" "}
             provides comprehensive exterior services throughout Essex County,
