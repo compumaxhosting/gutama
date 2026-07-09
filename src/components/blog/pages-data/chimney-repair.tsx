@@ -3,8 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const chimneyRepairEssexCounty = {
-  title:
-    "How to Know When You Need Chimney Repair in Essex County, NJ",
+  title: "How to Know When You Need Chimney Repair in Essex County, NJ",
 
   description: [
     {
@@ -19,15 +18,11 @@ export const chimneyRepairEssexCounty = {
           </p>
 
           <p>
-            For homeowners across{" "}
-            <Link href="/" target="_blank">
-              Essex County, NJ
-            </Link>
-            , regular chimney inspections can prevent expensive repairs, water
-            damage, and structural issues before they become major problems.
-            Whether you live in Newark, West Orange, Bloomfield, Livingston, or
-            Montclair, understanding the early warning signs of chimney damage
-            can save both time and money.
+            For homeowners across, regular chimney inspections can prevent
+            expensive repairs, water damage, and structural issues before they
+            become major problems. Whether you live in Newark, West Orange,
+            Bloomfield, Livingston, or Montclair, understanding the early
+            warning signs of chimney damage can save both time and money.
           </p>
 
           <p>
@@ -63,9 +58,7 @@ export const chimneyRepairEssexCounty = {
             instability, and expensive repairs.
           </p>
 
-          <p className="font-semibold mt-4">
-            Quick Answer:
-          </p>
+          <p className="font-semibold mt-4">Quick Answer:</p>
 
           <p>
             Routine chimney inspections help identify cracks, deteriorated
@@ -73,9 +66,7 @@ export const chimneyRepairEssexCounty = {
             structural repairs or safety hazards.
           </p>
 
-          <p className="font-semibold mt-4">
-            Why routine maintenance matters:
-          </p>
+          <p className="font-semibold mt-4">Why routine maintenance matters:</p>
 
           <ul>
             <li>Prevents water leaks inside your home</li>
@@ -131,8 +122,8 @@ export const chimneyRepairEssexCounty = {
 
           <p>
             White powdery deposits on chimney bricks indicate excessive moisture
-            moving through the masonry. Although the staining itself is harmless,
-            it signals a moisture problem that should not be ignored.
+            moving through the masonry. Although the staining itself is
+            harmless, it signals a moisture problem that should not be ignored.
           </p>
 
           <h4 className="text-secondary text-md md:text-lg font-semibold mt-5 mb-2">
@@ -169,9 +160,7 @@ export const chimneyRepairEssexCounty = {
             necessary.
           </p>
 
-          <p className="font-semibold mt-4">
-            The most common causes include:
-          </p>
+          <p className="font-semibold mt-4">The most common causes include:</p>
 
           <ul>
             <li>Harsh New Jersey winter weather</li>
@@ -191,13 +180,12 @@ export const chimneyRepairEssexCounty = {
           </p>
         </>
       ),
-    },    {
+    },
+    {
       subtitle: "4. Risks of Delaying Chimney Repairs",
       content: (
         <>
-          <p className="font-semibold mt-2">
-            Quick Answer:
-          </p>
+          <p className="font-semibold mt-2">Quick Answer:</p>
 
           <p>
             Delaying chimney repairs can lead to water damage, structural
@@ -206,9 +194,7 @@ export const chimneyRepairEssexCounty = {
             waiting until extensive damage develops.
           </p>
 
-          <p className="font-semibold mt-4">
-            Potential consequences include:
-          </p>
+          <p className="font-semibold mt-4">Potential consequences include:</p>
 
           <ul>
             <li>Interior water damage and ceiling stains</li>
@@ -247,12 +233,8 @@ export const chimneyRepairEssexCounty = {
                   <th className="border border-gray-500 p-2">
                     Chimney Condition
                   </th>
-                  <th className="border border-gray-500 p-2">
-                    Repair
-                  </th>
-                  <th className="border border-gray-500 p-2">
-                    Replacement
-                  </th>
+                  <th className="border border-gray-500 p-2">Repair</th>
+                  <th className="border border-gray-500 p-2">Replacement</th>
                 </tr>
               </thead>
 
@@ -331,9 +313,9 @@ export const chimneyRepairEssexCounty = {
         <>
           <p>
             Homes throughout Essex County experience weather conditions that can
-            accelerate chimney deterioration. Heavy rainfall, snow
-            accumulation, freezing temperatures, and seasonal humidity all place
-            continuous stress on masonry structures.
+            accelerate chimney deterioration. Heavy rainfall, snow accumulation,
+            freezing temperatures, and seasonal humidity all place continuous
+            stress on masonry structures.
           </p>
 
           <p>
@@ -369,7 +351,8 @@ export const chimneyRepairEssexCounty = {
           </ul>
         </>
       ),
-    },    {
+    },
+    {
       subtitle: "7. Professional Roofing & Chimney Services",
       content: (
         <>
@@ -377,13 +360,23 @@ export const chimneyRepairEssexCounty = {
             Chimney problems often develop alongside roofing issues. Damaged
             flashing, worn shingles surrounding the chimney, or deteriorated
             masonry can all contribute to water leaks inside your home. Working
-            with a contractor experienced in both roofing and chimney repair
+            with a contractor experienced in both{" "}
+            <Link
+              href="/services/flat-roof"
+              className="text-secondary"
+              target="/blank"
+              rel="noreferrer"
+            >
+              roofing and chimney repair
+            </Link>
             helps ensure the underlying cause is properly addressed rather than
             temporarily patched.
           </p>
 
           <p>
-            <Link href="/" target="_blank">
+            <Link href="/"
+              className="text-secondary"
+              target="/blank">
               Gutama Home Improvement
             </Link>{" "}
             provides comprehensive exterior services throughout Essex County,
@@ -423,8 +416,8 @@ export const chimneyRepairEssexCounty = {
             </li>
 
             <li>
-              Water stains near the fireplace often indicate flashing or
-              masonry problems.
+              Water stains near the fireplace often indicate flashing or masonry
+              problems.
             </li>
 
             <li>
@@ -497,9 +490,9 @@ export const chimneyRepairEssexCounty = {
           </p>
 
           <p>
-            If you&apos;ve noticed cracks, leaks, deteriorating mortar, or any other
-            warning signs, schedule a professional chimney inspection before the
-            damage worsens.
+            If you&apos;ve noticed cracks, leaks, deteriorating mortar, or any
+            other warning signs, schedule a professional chimney inspection
+            before the damage worsens.
           </p>
 
           <div className="mt-8 rounded-2xl border border-secondary/20 bg-linear-to-br from-secondary/10 via-background to-background p-5 shadow-[0_20px_60px_-30px_rgba(181,137,0,0.35)] md:p-6">

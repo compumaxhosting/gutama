@@ -10,14 +10,14 @@ type BlogBreadcrumbsProps = {
 export function BlogBreadcrumbs({ title }: BlogBreadcrumbsProps) {
   return (
     <nav
-      className="sticky top-24.25 z-999 border-b border-secondary/10 bg-background/80 backdrop-blur-md"
+      className="sticky top-24.25 z-10 border-b border-secondary/10 bg-background/80 backdrop-blur-md"
       aria-label="Breadcrumb"
     >
       <Container className="py-2 sm:py-3">
         <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[11px] sm:text-xs md:text-sm">
           <Link
             href="/"
-            className="relative z-9999 shrink-0 text-muted-foreground transition-colors duration-200 hover:text-secondary"
+            className="relative z-10 shrink-0 text-muted-foreground transition-colors duration-200 hover:text-secondary"
           >
             Home
           </Link>
@@ -27,7 +27,7 @@ export function BlogBreadcrumbs({ title }: BlogBreadcrumbsProps) {
           />
           <Link
             href="/blog"
-            className="relative z-9999 shrink-0 text-muted-foreground transition-colors duration-200 hover:text-secondary"
+            className="relative z-10 shrink-0 text-muted-foreground transition-colors duration-200 hover:text-secondary"
           >
             Blog
           </Link>

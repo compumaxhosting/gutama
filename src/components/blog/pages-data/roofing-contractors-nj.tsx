@@ -12,12 +12,19 @@ export const roofingContractorsNj = {
       content: (
         <>
           <p>
-            If you&apos;re searching for <Link href="/" target="/blank">roofing services in Essex County, NJ</Link>, you
-            need a contractor who understands the region&apos;s climate, building
-            codes, and neighborhood-specific challenges. Whether you&apos;re dealing
-            with a leaking roof in Newark, aging shingles in Livingston, or
-            storm damage in West Orange, the right local roofer makes all the
-            difference.
+            If you&apos;re searching for{" "}
+            <Link
+              href="/services/roof-removal"
+              className="text-secondary"
+              target="/blank"
+            >
+              roofing services in Essex County, NJ
+            </Link>
+            , you need a contractor who understands the region&apos;s climate,
+            building codes, and neighborhood-specific challenges. Whether
+            you&apos;re dealing with a leaking roof in Newark, aging shingles in
+            Livingston, or storm damage in West Orange, the right local roofer
+            makes all the difference.
           </p>
           <p>
             Gutama Home Improvement is a trusted roofing contractor serving all
@@ -30,7 +37,8 @@ export const roofingContractorsNj = {
           <p>
             This guide covers everything you need to know about hiring a roofing
             contractor in Essex County — what services to look for, what
-            questions to ask, how much it costs, and why local expertise matters.
+            questions to ask, how much it costs, and why local expertise
+            matters.
           </p>
         </>
       ),
@@ -41,22 +49,34 @@ export const roofingContractorsNj = {
 
   sections: [
     {
-      subtitle:
-        "1. Why Local Roofing Expertise Matters in Essex County, NJ",
+      subtitle: "1. Why Local Roofing Expertise Matters in Essex County, NJ",
       content: (
         <>
           <p>
-            Essex County experiences a full range of Northeast weather — hot, humid summers, freezing winters, heavy snow loads, and nor&apos;easters. This climate puts significant stress on roofing systems year-round. A contractor unfamiliar with New Jersey&apos;s building codes, municipal permit requirements, and local weather patterns can leave your home vulnerable.
+            Essex County experiences a full range of Northeast weather — hot,
+            humid summers, freezing winters, heavy snow loads, and
+            nor&apos;easters. This climate puts significant stress on roofing
+            systems year-round. A contractor unfamiliar with New Jersey&apos;s
+            building codes, municipal permit requirements, and local weather
+            patterns can leave your home vulnerable.
           </p>
           <p>
-            Local roofing companies like <Link href="/" target="/blank">Gutama Home Improvement</Link> know which materials perform best in NJ&apos;s climate, which towns require permits for replacement projects (such as Newark and Bloomfield), and how to assess damage specific to older housing stock found across Essex County.
+            Local roofing companies like{" "}
+            <Link href="/" className="text-secondary" target="_blank">
+              Gutama Home Improvement
+            </Link>{" "}
+            know which materials perform best in NJ&apos;s climate, which towns
+            require permits for replacement projects (such as Newark and
+            Bloomfield), and how to assess damage specific to older housing
+            stock found across Essex County.
           </p>
 
-          <p className="font-semibold mt-4">
-            Quick Answer:
-          </p>
+          <p className="font-semibold mt-4">Quick Answer:</p>
           <p>
-            Local roofing contractors in Essex County, NJ provide faster response times, knowledge of regional codes, and familiarity with the area&apos;s weather-related roof damage patterns — making them a smarter choice than out-of-area contractors.
+            Local roofing contractors in Essex County, NJ provide faster
+            response times, knowledge of regional codes, and familiarity with
+            the area&apos;s weather-related roof damage patterns — making them a
+            smarter choice than out-of-area contractors.
           </p>
 
           <p className="font-semibold mt-4">
@@ -74,8 +94,7 @@ export const roofingContractorsNj = {
     },
 
     {
-      subtitle:
-        "2. What Roofing Services Are Available in Essex County?",
+      subtitle: "2. What Roofing Services Are Available in Essex County?",
       content: (
         <>
           <h4 className="text-secondary text-md md:text-lg font-semibold mt-3 mb-2">
@@ -97,7 +116,10 @@ export const roofingContractorsNj = {
             Roof Replacement
           </h4>
           <p>
-            A full roof replacement is necessary when a roof is beyond repair — typically after 20–25 years for asphalt shingles, or when more than 30% of the surface is damaged. Gutama Home Improvement handles complete tear-off and installation of new roofing systems.
+            A full roof replacement is necessary when a roof is beyond repair —
+            typically after 20–25 years for asphalt shingles, or when more than
+            30% of the surface is damaged. Gutama Home Improvement handles
+            complete tear-off and installation of new roofing systems.
           </p>
 
           <h4 className="text-secondary text-md md:text-lg font-semibold mt-6 mb-3">
@@ -111,7 +133,9 @@ export const roofingContractorsNj = {
                   <th className="border border-gray-500 p-2">Material</th>
                   <th className="border border-gray-500 p-2">Lifespan</th>
                   <th className="border border-gray-500 p-2">Best For</th>
-                  <th className="border border-gray-500 p-2">Avg. Cost(Per Sq Ft)</th>
+                  <th className="border border-gray-500 p-2">
+                    Avg. Cost(Per Sq Ft)
+                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -153,30 +177,40 @@ export const roofingContractorsNj = {
             Siding Installation & Replacement
           </h4>
           <p>
-            Gutama also provides full exterior siding services, including vinyl, fiber cement, and wood siding — common upgrades for Essex County homes looking to improve curb appeal and insulation.
+            Gutama also provides full exterior siding services, including vinyl,
+            fiber cement, and wood siding — common upgrades for Essex County
+            homes looking to improve curb appeal and insulation.
           </p>
 
           <h4 className="text-secondary text-md md:text-lg font-semibold mt-3 mb-2">
             Exterior Services
           </h4>
           <p>
-            Beyond roofing and siding, the company offers soffit, fascia, gutter installation, and general exterior home improvement across the county.
+            Beyond roofing and siding, the company offers soffit, fascia, gutter
+            installation, and general exterior home improvement across the
+            county.
           </p>
         </>
       ),
     },
 
     {
-      subtitle:
-        "3. How Much Does Roof Repair or Replacement Cost in NJ?",
+      subtitle: "3. How Much Does Roof Repair or Replacement Cost in NJ?",
       content: (
         <>
-          <p className="text-secondary text-md md:text-lg font-semibold">Quick Answer:</p>
+          <p className="text-secondary text-md md:text-lg font-semibold">
+            Quick Answer:
+          </p>
           <p>
-            In Essex County, NJ, a basic roof repair typically costs $300–$1,500 depending on the damage. A full asphalt shingle replacement on an average-sized home (1,500–2,500 sq ft) runs $7,000–$15,000. Prices vary based on material, pitch, and labor.
+            In Essex County, NJ, a basic roof repair typically costs $300–$1,500
+            depending on the damage. A full asphalt shingle replacement on an
+            average-sized home (1,500–2,500 sq ft) runs $7,000–$15,000. Prices
+            vary based on material, pitch, and labor.
           </p>
 
-          <p className="text-secondary text-md md:text-lg font-semibold mt-3">Cost factors:</p>
+          <p className="text-secondary text-md md:text-lg font-semibold mt-3">
+            Cost factors:
+          </p>
           <ul>
             <li>Roof size</li>
             <li>Pitch complexity</li>
@@ -186,31 +220,48 @@ export const roofingContractorsNj = {
             <li>Urgency</li>
           </ul>
 
-          <p>
-            Always get 2–3 quotes. Gutama offers free estimates.
-          </p>
+          <p>Always get 2–3 quotes. Gutama offers free estimates.</p>
         </>
       ),
     },
 
     {
-      subtitle:
-        "4. How Do You Choose the Right Roofing Contractor?",
+      subtitle: "4. How Do You Choose the Right Roofing Contractor?",
       content: (
         <>
           <p className="text-secondary text-md md:text-lg">
-            Choosing a roofing contractor is one of the most important home improvement decisions you&apos;ll make. Here&apos;s a practical checklist:
+            Choosing a roofing contractor is one of the most important home
+            improvement decisions you&apos;ll make. Here&apos;s a practical
+            checklist:
           </p>
 
           <p className="font-semibold mt-4">What to look for:</p>
           <ul>
-            <li>1.	Licensed and insured in New Jersey — Verify through the NJ Division of Consumer Affairs</li>
-            <li>2.	Local experience — Look for contractors with proven work in your specific town</li>
-            <li>3.	Written estimates — Never accept a verbal quote only</li>
-            <li>4.	Manufacturer certifications — GAF, Owens Corning, or CertainTeed certifications indicate quality</li>
-            <li>5.	Warranties — Both manufacturer (material) and workmanship warranties</li>
-            <li>6.	References and reviews — Check Google Business Profile and Houzz reviews</li>
-            <li>7.	No high-pressure tactics — Avoid contractors pushing same-day sign-offs after storms</li>
+            <li>
+              1. Licensed and insured in New Jersey — Verify through the NJ
+              Division of Consumer Affairs
+            </li>
+            <li>
+              2. Local experience — Look for contractors with proven work in
+              your specific town
+            </li>
+            <li>3. Written estimates — Never accept a verbal quote only</li>
+            <li>
+              4. Manufacturer certifications — GAF, Owens Corning, or
+              CertainTeed certifications indicate quality
+            </li>
+            <li>
+              5. Warranties — Both manufacturer (material) and workmanship
+              warranties
+            </li>
+            <li>
+              6. References and reviews — Check Google Business Profile and
+              Houzz reviews
+            </li>
+            <li>
+              7. No high-pressure tactics — Avoid contractors pushing same-day
+              sign-offs after storms
+            </li>
           </ul>
 
           <p className="font-semibold mt-4">Red flags:</p>
@@ -228,8 +279,8 @@ export const roofingContractorsNj = {
       content: (
         <>
           <p>
-            Gutama Home Improvement provides roofing, siding, and exterior services
-            throughout all of Essex County, NJ, including:
+            Gutama Home Improvement provides roofing, siding, and exterior
+            services throughout all of Essex County, NJ, including:
           </p>
 
           <div className="overflow-x-auto mt-4">
@@ -241,46 +292,115 @@ export const roofingContractorsNj = {
                 </tr>
               </thead>
               <tbody>
-                <tr><td className="border p-2 border-gray-500">Newark, NJ</td><td className="border p-2 border-gray-500">07102</td></tr>
-                <tr><td className="border p-2 border-gray-500">East Orange, NJ</td><td className="border p-2 border-gray-500">07017</td></tr>
-                <tr><td className="border p-2 border-gray-500">Orange, NJ</td><td className="border p-2 border-gray-500">07050</td></tr>
-                <tr><td className="border p-2 border-gray-500">Irvington, NJ</td><td className="border p-2 border-gray-500">07111</td></tr>
-                <tr><td className="border p-2 border-gray-500">Belleville, NJ</td><td className="border p-2 border-gray-500">07109</td></tr>
-                <tr><td className="border p-2 border-gray-500">Bloomfield, NJ</td><td className="border p-2 border-gray-500">07003</td></tr>
-                <tr><td className="border p-2 border-gray-500">Caldwell, NJ</td><td className="border p-2 border-gray-500">07006</td></tr>
-                <tr><td className="border p-2 border-gray-500">Cedar Grove, NJ</td><td className="border p-2 border-gray-500">07009</td></tr>
-                <tr><td className="border p-2 border-gray-500">Essex Fells, NJ</td><td className="border p-2 border-gray-500">07021</td></tr>
-                <tr><td className="border p-2 border-gray-500">Glen Ridge, NJ</td><td className="border p-2 border-gray-500">07028</td></tr>
-                <tr><td className="border p-2 border-gray-500">Livingston, NJ</td><td className="border p-2 border-gray-500">07039</td></tr>
-                <tr><td className="border p-2 border-gray-500">Maplewood, NJ</td><td className="border p-2 border-gray-500">07040</td></tr>
-                <tr><td className="border p-2 border-gray-500">Millburn, NJ</td><td className="border p-2 border-gray-500">07041</td></tr>
-                <tr><td className="border p-2 border-gray-500">North Caldwell, NJ</td><td className="border p-2 border-gray-500">07006</td></tr>
-                <tr><td className="border p-2 border-gray-500">Nutley, NJ</td><td className="border p-2 border-gray-500">07110</td></tr>
-                <tr><td className="border p-2 border-gray-500">Roseland, NJ</td><td className="border p-2 border-gray-500">07068</td></tr>
-                <tr><td className="border p-2 border-gray-500">South Orange, NJ</td><td className="border p-2 border-gray-500">07079</td></tr>
-                <tr><td className="border p-2 border-gray-500">Verona, NJ</td><td className="border p-2 border-gray-500">07044</td></tr>
-                <tr><td className="border p-2 border-gray-500">West Orange, NJ</td><td className="border p-2 border-gray-500">07052</td></tr>
+                <tr>
+                  <td className="border p-2 border-gray-500">Newark, NJ</td>
+                  <td className="border p-2 border-gray-500">07102</td>
+                </tr>
+                <tr>
+                  <td className="border p-2 border-gray-500">
+                    East Orange, NJ
+                  </td>
+                  <td className="border p-2 border-gray-500">07017</td>
+                </tr>
+                <tr>
+                  <td className="border p-2 border-gray-500">Orange, NJ</td>
+                  <td className="border p-2 border-gray-500">07050</td>
+                </tr>
+                <tr>
+                  <td className="border p-2 border-gray-500">Irvington, NJ</td>
+                  <td className="border p-2 border-gray-500">07111</td>
+                </tr>
+                <tr>
+                  <td className="border p-2 border-gray-500">Belleville, NJ</td>
+                  <td className="border p-2 border-gray-500">07109</td>
+                </tr>
+                <tr>
+                  <td className="border p-2 border-gray-500">Bloomfield, NJ</td>
+                  <td className="border p-2 border-gray-500">07003</td>
+                </tr>
+                <tr>
+                  <td className="border p-2 border-gray-500">Caldwell, NJ</td>
+                  <td className="border p-2 border-gray-500">07006</td>
+                </tr>
+                <tr>
+                  <td className="border p-2 border-gray-500">
+                    Cedar Grove, NJ
+                  </td>
+                  <td className="border p-2 border-gray-500">07009</td>
+                </tr>
+                <tr>
+                  <td className="border p-2 border-gray-500">
+                    Essex Fells, NJ
+                  </td>
+                  <td className="border p-2 border-gray-500">07021</td>
+                </tr>
+                <tr>
+                  <td className="border p-2 border-gray-500">Glen Ridge, NJ</td>
+                  <td className="border p-2 border-gray-500">07028</td>
+                </tr>
+                <tr>
+                  <td className="border p-2 border-gray-500">Livingston, NJ</td>
+                  <td className="border p-2 border-gray-500">07039</td>
+                </tr>
+                <tr>
+                  <td className="border p-2 border-gray-500">Maplewood, NJ</td>
+                  <td className="border p-2 border-gray-500">07040</td>
+                </tr>
+                <tr>
+                  <td className="border p-2 border-gray-500">Millburn, NJ</td>
+                  <td className="border p-2 border-gray-500">07041</td>
+                </tr>
+                <tr>
+                  <td className="border p-2 border-gray-500">
+                    North Caldwell, NJ
+                  </td>
+                  <td className="border p-2 border-gray-500">07006</td>
+                </tr>
+                <tr>
+                  <td className="border p-2 border-gray-500">Nutley, NJ</td>
+                  <td className="border p-2 border-gray-500">07110</td>
+                </tr>
+                <tr>
+                  <td className="border p-2 border-gray-500">Roseland, NJ</td>
+                  <td className="border p-2 border-gray-500">07068</td>
+                </tr>
+                <tr>
+                  <td className="border p-2 border-gray-500">
+                    South Orange, NJ
+                  </td>
+                  <td className="border p-2 border-gray-500">07079</td>
+                </tr>
+                <tr>
+                  <td className="border p-2 border-gray-500">Verona, NJ</td>
+                  <td className="border p-2 border-gray-500">07044</td>
+                </tr>
+                <tr>
+                  <td className="border p-2 border-gray-500">
+                    West Orange, NJ
+                  </td>
+                  <td className="border p-2 border-gray-500">07052</td>
+                </tr>
               </tbody>
             </table>
           </div>
 
           <p className="mt-4">
-            Whether you&apos;re in a century-old colonial in Glen Ridge or a newer build
-            in Roseland, Gutama&apos;s team brings local knowledge and professional-grade
-            workmanship to every project.
+            Whether you&apos;re in a century-old colonial in Glen Ridge or a
+            newer build in Roseland, Gutama&apos;s team brings local knowledge
+            and professional-grade workmanship to every project.
           </p>
 
           <p>
-            <strong>Google Business Profile Tip:</strong> Search &ldquo;Gutama Home
-            Improvement Essex County NJ&ldquo; to find verified reviews, photos, and
-            contact details.
+            <strong>Google Business Profile Tip:</strong> Search &ldquo;Gutama
+            Home Improvement Essex County NJ&ldquo; to find verified reviews,
+            photos, and contact details.
           </p>
 
-          <h4 className="text-secondary font-semibold">
-            Business Contact
-          </h4>
+          <h4 className="text-secondary font-semibold">Business Contact</h4>
           <ul>
-            <li><strong>Business Name:</strong> Gutama Home Improvement</li>
+            <li>
+              <strong>Business Name:</strong> Gutama Home Improvement
+            </li>
             <li>
               <strong>Address:</strong> 272-274 Orange St, Newark, NJ 07103
             </li>
@@ -297,36 +417,42 @@ export const roofingContractorsNj = {
     },
 
     {
-      subtitle:
-        "6. Real-World Example: Roof Replacement in West Orange, NJ",
+      subtitle: "6. Real-World Example: Roof Replacement in West Orange, NJ",
       content: (
         <>
-          <h4 className="text-secondary font-semibold">
-            The Situation
-          </h4>
+          <h4 className="text-secondary font-semibold">The Situation</h4>
           <p>
-            A homeowner on a residential street in West Orange noticed water stains on interior ceilings after a heavy rainstorm in early spring. The roof was 24 years old — original to the house — with curling shingles and failing flashing around two dormers.
+            A homeowner on a residential street in West Orange noticed water
+            stains on interior ceilings after a heavy rainstorm in early spring.
+            The roof was 24 years old — original to the house — with curling
+            shingles and failing flashing around two dormers.
           </p>
 
-          <h4 className="text-secondary font-semibold">
-            The Assessment
-          </h4>
+          <h4 className="text-secondary font-semibold">The Assessment</h4>
           <p>
-            Gutama Home Improvement conducted a thorough inspection and identified that the damage extended beyond isolated repair zones. A full replacement was recommended to avoid recurring leaks and to meet current NJ energy code standards.
+            Gutama Home Improvement conducted a thorough inspection and
+            identified that the damage extended beyond isolated repair zones. A
+            full replacement was recommended to avoid recurring leaks and to
+            meet current NJ energy code standards.
           </p>
 
-          <h4 className="text-secondary font-semibold">
-            The Solution
-          </h4>
+          <h4 className="text-secondary font-semibold">The Solution</h4>
           <p>
-            The team performed a complete tear-off of the existing two-layer shingle system, replaced damaged decking in two sections, installed new synthetic underlayment, and completed the job with 30-year architectural shingles. Gutters were also cleaned and re-pitched for proper drainage.
+            The team performed a complete tear-off of the existing two-layer
+            shingle system, replaced damaged decking in two sections, installed
+            new synthetic underlayment, and completed the job with 30-year
+            architectural shingles. Gutters were also cleaned and re-pitched for
+            proper drainage.
           </p>
 
-          <h4 className="text-secondary font-semibold">
-            The Outcome
-          </h4>
+          <h4 className="text-secondary font-semibold">The Outcome</h4>
           <p>
-            The project was completed in two days with all required West Orange municipal permits in place. The homeowner received both a manufacturer&apos;s warranty and a five-year workmanship warranty. This kind of end-to-end service — inspection, permitting, replacement, and warranty — is what separates a reliable local contractor from a storm-chaser.
+            The project was completed in two days with all required West Orange
+            municipal permits in place. The homeowner received both a
+            manufacturer&apos;s warranty and a five-year workmanship warranty.
+            This kind of end-to-end service — inspection, permitting,
+            replacement, and warranty — is what separates a reliable local
+            contractor from a storm-chaser.
           </p>
         </>
       ),
@@ -337,7 +463,8 @@ export const roofingContractorsNj = {
       content: (
         <>
           <p>
-            Get quick answers to the most common homeowner questions before scheduling your estimate.
+            Get quick answers to the most common homeowner questions before
+            scheduling your estimate.
           </p>
         </>
       ),
@@ -378,11 +505,18 @@ export const roofingContractorsNj = {
       content: (
         <>
           <p>
-            Finding a trustworthy, affordable roofing contractor in Essex County, NJ doesn&apos;t have to be stressful. Whether you need a quick repair in Irvington, a full replacement in Millburn, or new siding in Bloomfield, Gutama Home Improvement has the local experience, licensing, and proven track record to get the job done right.
+            Finding a trustworthy, affordable roofing contractor in Essex
+            County, NJ doesn&apos;t have to be stressful. Whether you need a
+            quick repair in Irvington, a full replacement in Millburn, or new
+            siding in Bloomfield, Gutama Home Improvement has the local
+            experience, licensing, and proven track record to get the job done
+            right.
           </p>
 
           <p>
-            Don&apos;t wait until a small leak becomes a major structural problem. The best time to address roofing issues is before the next storm season hits.
+            Don&apos;t wait until a small leak becomes a major structural
+            problem. The best time to address roofing issues is before the next
+            storm season hits.
           </p>
 
           <h4 className="text-secondary font-semibold">
@@ -391,21 +525,36 @@ export const roofingContractorsNj = {
           <ul>
             <li>Call: 973-820-5130</li>
             <li>Visit: www.gutamaroofingnj.com</li>
-            <li>Serving: Newark, East Orange, Irvington, Bloomfield, Livingston, West Orange, and all Essex County communities</li>
+            <li>
+              Serving: Newark, East Orange, Irvington, Bloomfield, Livingston,
+              West Orange, and all Essex County communities
+            </li>
           </ul>
 
           <h4 className="text-secondary font-semibold">
             Quick Summary Checklist
           </h4>
           <ul>
-            <li>✓ Gutama Home Improvement serves all 19+ cities in Essex County, NJ</li>
-            <li>✓ Services include roof repair, replacement, siding, and exterior work</li>
+            <li>
+              ✓ Gutama Home Improvement serves all 19+ cities in Essex County,
+              NJ
+            </li>
+            <li>
+              ✓ Services include roof repair, replacement, siding, and exterior
+              work
+            </li>
             <li>✓ Free written estimates available</li>
             <li>✓ Licensed, insured, and familiar with NJ building codes</li>
-            <li>✓ Works with major shingle brands (architectural, 3-tab, impact-resistant)</li>
+            <li>
+              ✓ Works with major shingle brands (architectural, 3-tab,
+              impact-resistant)
+            </li>
             <li>✓ Handles municipal permits on your behalf</li>
             <li>✓ Warranties on both materials and workmanship</li>
-            <li>✓ Trusted by homeowners from Newark to Millburn and everywhere in between</li>
+            <li>
+              ✓ Trusted by homeowners from Newark to Millburn and everywhere in
+              between
+            </li>
           </ul>
         </>
       ),
@@ -416,7 +565,10 @@ export const roofingContractorsNj = {
       content: (
         <>
           <p>
-            Don&apos;t wait until a small leak becomes a major structural problem. The best time to address roofing issues is before the next storm season hits. Contact Gutama Home Improvement today for a free inspection and written estimate.
+            Don&apos;t wait until a small leak becomes a major structural
+            problem. The best time to address roofing issues is before the next
+            storm season hits. Contact Gutama Home Improvement today for a free
+            inspection and written estimate.
           </p>
           <div className="mt-8 rounded-2xl border border-secondary/20 bg-linear-to-br from-secondary/10 via-background to-background p-5 shadow-[0_20px_60px_-30px_rgba(181,137,0,0.35)] md:p-6">
             <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between">
@@ -425,7 +577,8 @@ export const roofingContractorsNj = {
                   Ready to get started?
                 </p>
                 <p className="text-sm text-muted-foreground">
-                  Visit the roofing service page to request a quote and learn more.
+                  Visit the roofing service page to request a quote and learn
+                  more.
                 </p>
               </div>
 
@@ -446,6 +599,6 @@ export const roofingContractorsNj = {
           </div>
         </>
       ),
-    }
+    },
   ],
 };

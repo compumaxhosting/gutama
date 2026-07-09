@@ -12,7 +12,14 @@ export const localRoofingVsNational = {
       content: (
         <>
           <p>
-            Hiring a roofing contractor is one of the most important decisions
+            Hiring a {" "}
+            <Link
+              href="/services/flat-roof"
+              target="_blank"
+              rel="noreferrer"
+              className="text-secondary"
+            >
+              roofing contractor</Link> is one of the most important decisions
             for protecting your home. In most cases, choosing a{" "}
             <strong>local roofing contractor</strong> is better than going with
             a large national company because you get faster response times,
@@ -337,13 +344,14 @@ export const localRoofingVsNational = {
         <>
           <p>
             At{" "}
-            <a
-              href="https://www.gutamaroofingnj.com"
+            <Link
+              href="/"
               target="_blank"
               rel="noreferrer"
+              className="text-secondary"
             >
               gutamaroofing
-            </a>
+            </Link>
             , we specialize in delivering reliable, high-quality roofing
             solutions designed to protect your home and investment. Our team
             brings years of hands-on experience in roof installation, repair,
@@ -401,15 +409,7 @@ export const localRoofingVsNational = {
 
           <p className="mt-6">
             If you are looking for a trusted example of strong local roofing
-            service standards, companies like{" "}
-            <a
-              href="https://www.gutamaroofingnj.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              gutamaroofing
-            </a>
-            demonstrate how local roofing contractors build reputation through
+            service standards, companies likegutamaroofing demonstrate how local roofing contractors build reputation through
             reliability, customer care, and fast response times. They reflect
             the advantages of working with a dedicated regional roofing
             specialist—personal attention, accountability, and long-term roofing
