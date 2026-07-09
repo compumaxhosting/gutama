@@ -368,8 +368,7 @@ export const chimneyRepairEssexCounty = {
               rel="noreferrer"
             >
               roofing and chimney repair
-            </Link>
-            helps ensure the underlying cause is properly addressed rather than
+            </Link>{" "} helps ensure the underlying cause is properly addressed rather than
             temporarily patched.
           </p>
 
