@@ -1,7 +1,6 @@
-import { Phone, Mail } from "lucide-react";
-
-import { siteConfig } from "@/config/site";
 import Image from "next/image";
+import { Mail, Phone } from "lucide-react";
+import { siteConfig } from "@/config/site";
 
 const CONTACT_LINKS = [
   {
@@ -10,7 +9,6 @@ const CONTACT_LINKS = [
     href: `tel:${siteConfig.phones.english}`,
     Icon: Phone,
   },
- 
   {
     label: "Email",
     value: siteConfig.email,
@@ -21,103 +19,108 @@ const CONTACT_LINKS = [
 
 export function ContactInfoPanel() {
   return (
-    <div className="relative flex min-h-115 flex-col justify-end overflow-hidden bg-[#1c1208] lg:min-h-full lg:justify-center">
-      {/* Background photo + gradient overlays */}
+    <section className="relative overflow-hidden bg-[#1c1208]">
+      {/* Background */}
       <div className="absolute inset-0 bg-[linear-gradient(170deg,hsl(0_72%_45%/0.15)_0%,transparent_45%),linear-gradient(to_top,rgba(15,14,12,0.97)_0%,rgba(15,14,12,0.45)_55%,rgba(15,14,12,0.2)_100%)] bg-cover bg-center bg-no-repeat" />
 
-      {/* Diagonal slash accent */}
-      <div className="pointer-events-none absolute right-0 bottom-0 h-0 w-0 border-solid border-[0_0_200px_80px] border-[transparent_transparent_hsl(0_72%_45%/0.15)_transparent]" />
+      {/* Accent Triangle */}
+      <div className="pointer-events-none absolute bottom-0 right-0 h-0 w-0 border-[0_0_180px_70px] border-solid border-[transparent_transparent_hsl(0_72%_45%/0.15)_transparent]" />
 
-      {/* Watermark G */}
-      {/* <div className="pointer-events-none absolute top-1/2 right-[-0.08em] -translate-y-1/2 select-none font-serif text-[clamp(18rem,26vw,30rem)] leading-none tracking-[-0.04em] text-transparent italic [-webkit-text-stroke:1px_hsl(0_72%_45%_/_0.15)]">
-        G
-      </div> */}
-
-      {/* Content */}
-      <div className="relative z-10 px-10 pt-16 pb-16 lg:py-24">
-        <div className="flex flex-col gap-10 sm:flex-row sm:items-end sm:gap-14">
-          {/* LEFT: Eyebrow + Headline + Accent rule */}
+      <div className="relative z-10 mx-auto max-w-7xl px-6 py-14 sm:px-8 md:px-10 lg:px-12 lg:py-24">
+        <div className="flex flex-col gap-12 lg:flex-row lg:items-center lg:justify-between">
+          {/* LEFT CONTENT */}
           <div className="flex-1">
-            <div className="mb-5 inline-flex items-center gap-2 opacity-0 animate-[fade-up_0.35s_0.05s_ease_both]">
-              <div className="h-1.25 w-1.25 rounded-full bg-primary" />
-              <span className="text-[0.7rem] font-medium uppercase tracking-[0.2em] text-white/45">
+            {/* Eyebrow */}
+            <div className="mb-6 inline-flex items-center gap-2">
+              <div className="h-2 w-2 rounded-full bg-primary" />
+
+              <span className="text-[11px] uppercase tracking-[0.25em] text-white/50">
                 {siteConfig.business.regionLabel} · Since{" "}
                 {siteConfig.business.foundedYear}
               </span>
             </div>
 
-            <div className="mb-7 flex flex-col gap-6 sm:flex-row sm:items-start sm:gap-8">
-              <h1 className="font-serif text-[clamp(2.4rem,4vw,3.6rem)] font-black leading-none text-white opacity-0 animate-[fade-up_0.35s_0.1s_ease_both]">
-                Your home
-                <br />
-                deserves
-                <em className="block not-italic text-primary">the best.</em>
-              </h1>
+            {/* Heading + QR */}
+            <div className="flex flex-col gap-8 xl:flex-row xl:items-start">
+              <div className="flex-1">
+                <h1 className="font-serif text-4xl font-black leading-tight text-white sm:text-5xl lg:text-6xl">
+                  Your home
+                  <br />
+                  deserves
+                  <span className="block text-primary">the best.</span>
+                </h1>
+              </div>
 
-              <div className="shrink-0 rounded-3xl border border-white bg-white/5 p-4 opacity-0 animate-[fade-up_0.35s_0.15s_ease_both] sm:w-40">
-                <p className="mb-3 text-[0.65rem] uppercase tracking-[0.2em] text-white/45">
-                  Review us
+              {/* QR Card */}
+              <div className="w-full max-w-xs rounded-3xl border border-white/10 bg-white/5 p-5 backdrop-blur-sm">
+                <p className="mb-4 text-center text-xs uppercase tracking-[0.25em] text-white/50">
+                  Review Us
                 </p>
 
                 <a
                   href="https://g.page/r/CZcJLgWQY05CEAE/review?utm_source=gbp&utm_medium=reviews&utm_campaign=qr"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block cursor-pointer transition-transform hover:scale-105"
+                  className="block transition duration-300 hover:scale-105"
                 >
                   <Image
                     src="/review-barcode.png"
-                    alt="Review us barcode"
-                    width={160}
-                    height={160}
-                    className="h-32 w-full object-contain"
+                    alt="Google Review QR Code"
+                    width={200}
+                    height={200}
+                    className="mx-auto h-auto w-full max-w-[180px] object-contain"
                   />
                 </a>
 
-                <p className="mt-3 rounded-lg border border-yellow-400/40 bg-yellow-500/15 px-3 py-2 text-center text-xs font-bold text-yellow-300 shadow-[0_0_15px_rgba(250,204,21,0.25)]">
+                <p className="mt-5 rounded-xl border border-yellow-500/30 bg-yellow-500/10 px-3 py-3 text-center text-xs font-semibold text-yellow-300">
                   ⭐ Click or Scan to Leave a 5-Star Review
                 </p>
               </div>
             </div>
 
-            <div className="h-0.75 w-11 origin-left scale-x-0 bg-primary animate-[scale-x-in_0.3s_0.15s_ease_both]" />
+            <div className="mt-8 h-1 w-16 rounded-full bg-primary" />
           </div>
 
-          {/* Vertical divider (sm+) */}
-          <div className="hidden sm:block w-px self-stretch bg-white/10" />
+          {/* Divider */}
+          <div className="h-px w-full bg-white/10 lg:h-72 lg:w-px" />
 
-          {/* RIGHT: Contact links + Hours */}
-          <div className="flex flex-col gap-5 opacity-0 animate-[fade-up_0.35s_0.15s_ease_both]">
-            <div className="flex flex-col gap-4">
+          {/* RIGHT CONTENT */}
+          <div className="flex flex-1 flex-col items-center gap-8">
+            <div className="flex w-full flex-col gap-5">
               {CONTACT_LINKS.map(({ label, value, href, Icon }) => (
                 <a
                   key={label}
                   href={href}
-                  className="group flex items-center gap-4 transition-transform duration-200 hover:translate-x-1"
+                  className="group flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-4 transition-all duration-300 hover:border-primary/40 hover:bg-primary/10"
                 >
-                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-white/10 transition-all duration-200 group-hover:border-primary/50 group-hover:bg-primary/25">
-                    <Icon className="h-3.5 w-3.5 text-white/70" />
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/10 transition-all duration-300 group-hover:border-primary group-hover:bg-primary/20">
+                    <Icon className="h-5 w-5 text-white" />
                   </div>
-                  <div>
-                    <span className="block text-[0.65rem] uppercase tracking-widest text-white/30">
+
+                  <div className="min-w-0">
+                    <p className="text-[11px] uppercase tracking-[0.25em] text-white/45">
                       {label}
-                    </span>
-                    <span className="text-sm text-white/80">{value}</span>
+                    </p>
+
+                    <p className="break-all text-sm font-medium text-white sm:text-base">
+                      {value}
+                    </p>
                   </div>
                 </a>
               ))}
             </div>
 
-            {/* Hours badge */}
-            <div className="inline-flex w-fit items-center gap-2 rounded-full border border-white/10 px-3.5 py-1.5">
-              <div className="h-1.5 w-1.5 rounded-full bg-green-500" />
-              <span className="text-xs text-white/45">
-                Open · Mon–Sat, 7am – 7pm
+            {/* Hours */}
+            <div className="flex flex-wrap items-center justify-center gap-3 rounded-full border border-white/10 bg-white/5 px-6 py-3 text-center">
+              <span className="h-2.5 w-2.5 rounded-full bg-green-500" />
+
+              <span className="text-sm text-white/70">
+                Open • Mon – Sat • 7:00 AM – 7:00 PM
               </span>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
