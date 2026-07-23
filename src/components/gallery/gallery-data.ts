@@ -20,6 +20,12 @@ export const GALLERY_PROJECTS: GalleryProject[] = [
     title: "Complete Roof Replacement",
     category: "Roofing",
     desc: "Architectural shingle installation in West Orange",
+    image: "/images/gallery-top.jpeg",
+  },
+  {
+    title: "Complete Roof Replacement",
+    category: "Roofing",
+    desc: "Architectural shingle installation in West Orange",
     image: "/images/gallery-roof-1.webp",
   },
   {
