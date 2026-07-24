@@ -17,7 +17,7 @@ export const GALLERY_CATEGORIES: GalleryCategory[] = [
 
 export const GALLERY_PROJECTS: GalleryProject[] = [
   {
-    title: "Complete Roof Replacement",
+    title: "Roofing in Essex County, NJ",
     category: "Roofing",
     desc: "Architectural shingle installation in West Orange",
     image: "/images/gallery-top.jpeg",
