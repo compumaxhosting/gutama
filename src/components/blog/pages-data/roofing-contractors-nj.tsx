@@ -588,7 +588,7 @@ export const roofingContractorsNj = {
                 className="h-auto w-full rounded-2xl bg-secondary! px-5 py-3 text-sm font-semibold whitespace-normal text-white! shadow-lg shadow-secondary/20 sm:h-12 sm:w-auto sm:rounded-full sm:px-8"
               >
                 <Link
-                  href="/services/re-roofing"
+                  href="/book-appointment"
                   className="flex w-full items-center justify-center gap-2 text-center leading-snug text-white!"
                 >
                   Get Your Free Roofing Estimate Today
