@@ -43,5 +43,19 @@ export const BLOG_PROJECTS: BlogProject[] = [
     href: "/blog/local-roofing-contractor-vs-national-company",
     date: "2th July 2026",
   },
+  {
+    title:
+      "Roofing Contractor Essex County NJ: 15 Warning Signs You Need Roof Repair Before It's Too Late",
+
+    shortDesc:
+      "Learn the 15 warning signs that indicate your roof needs professional repair. Discover when to repair or replace your roof and how early action can prevent expensive damage.",
+
+    image: "/blog/roof-repair-warning-signs.webp",
+
+    href:
+      "/blog/roofing-contractor-essex-county-nj-roof-repair-warning-signs",
+
+    date: "31st July 2026",
+  },
 ];
 

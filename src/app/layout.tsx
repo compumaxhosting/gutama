@@ -7,7 +7,10 @@ import { SiteShell } from "@/components/layout/site-shell";
 
 import "./globals.css";
 
-// ✅ OPTIMIZED FONTS (big performance win)
+// -----------------------------------------------------------------------------
+// Fonts
+// -----------------------------------------------------------------------------
+
 const bodyFont = Inter({
   variable: "--font-body",
   subsets: ["latin"],
@@ -22,9 +25,15 @@ const headingFont = Playfair_Display({
   preload: true,
 });
 
+// -----------------------------------------------------------------------------
+// Metadata
+// -----------------------------------------------------------------------------
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+
   title: "Roofing Contractor Essex County NJ | Gutama Home Improvement",
+
   description:
     "Gutama Home Improvement provides expert roofing, siding, and exterior services in Essex County, NJ. Licensed, insured, and trusted for roof repair, replacement, and emergency services. Get a free estimate today.",
 
@@ -32,166 +41,396 @@ export const metadata: Metadata = {
     "roofing contractor essex county nj",
     "roof repair nj",
     "roof replacement essex county",
-    "siding contractor nj",
-    "chimney repair nj",
+    "roofing company essex county",
+    "roof installation nj",
     "emergency roofing nj",
+    "roof inspection nj",
+    "storm damage roof repair",
+    "flat roofing essex county",
+    "metal roofing nj",
+    "asphalt shingle roofing",
+    "chimney repair nj",
+    "chimney flashing repair",
+    "gutter installation nj",
+    "gutter repair essex county",
+    "siding contractor nj",
+    "vinyl siding installation",
+    "commercial roofing nj",
+    "residential roofing essex county",
   ],
 
-  authors: [{ name: "Gutama Home Improvement" }],
+  authors: [
+    {
+      name: "Gutama Home Improvement",
+    },
+  ],
+
+  creator: "Gutama Home Improvement",
+
+  publisher: "Gutama Home Improvement",
+
+  referrer: "strict-origin-when-cross-origin",
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+
+  alternates: {
+    canonical: siteUrl,
+  },
+
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
 
   openGraph: {
     title: "Roofing Contractor Essex County NJ | Gutama Home Improvement",
+
     description:
-      "Licensed & insured roofing experts in Essex County, NJ. Roof repair, replacement, siding, chimney & emergency services.",
+      "Licensed & insured roofing experts in Essex County, NJ. Roof repair, roof replacement, siding, chimney, gutters, and emergency roofing services.",
+
     url: siteUrl,
+
     siteName: "Gutama Home Improvement",
+
+    locale: "en_US",
+
+    type: "website",
+
     images: [
       {
         url: `${siteUrl}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Roofing Services in Essex County NJ",
+        alt: "Gutama Home Improvement Roofing Services",
       },
     ],
-    locale: "en_US",
-    type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
+
     title: "Roofing Contractor Essex County NJ | Gutama Home Improvement",
+
     description:
-      "Expert roofing, siding & exterior services in Essex County, NJ. Free estimates available.",
+      "Trusted roofing contractor serving Essex County, NJ with roof repair, replacement, siding, gutters, chimney repair, and emergency roofing services.",
+
     images: [`${siteUrl}/og-image.jpg`],
   },
 
   verification: {
     google: "J6O-s5I-EDNOpmUgaLfDLYzww-7_LvQl4x3ZFCvAtxk",
+
     other: {
       "p:domain_verify": "3b615b98ad92040f9a19c646b3461c46",
     },
   },
-
-  robots: {
-    index: true,
-    follow: true,
-  },
 };
+
+// -----------------------------------------------------------------------------
+// Viewport
+// -----------------------------------------------------------------------------
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
   userScalable: true,
-  themeColor: "#ffffff",
   viewportFit: "cover",
+  themeColor: "#ffffff",
 };
+
+// -----------------------------------------------------------------------------
+// Schema.org - Roofing Contractor
+// -----------------------------------------------------------------------------
+
+const roofingContractorSchema = {
+  "@context": "https://schema.org",
+
+  "@type": "RoofingContractor",
+
+  "@id": `${siteUrl}/#roofingcontractor`,
+
+  name: "Gutama Home Improvement",
+
+  url: siteUrl,
+
+  image: `${siteUrl}/images/logo.webp`,
+
+  logo: `${siteUrl}/images/logo.webp`,
+
+  description:
+    "Professional roofing contractor serving Essex County, NJ with roof repair, replacement, siding, chimney, gutters, and emergency roofing services.",
+
+  telephone: siteConfig.phone,
+
+  email: siteConfig.email,
+
+  priceRange: "$$",
+
+  address: {
+    "@type": "PostalAddress",
+
+    streetAddress: siteConfig.address.streetAddress,
+
+    addressLocality: siteConfig.address.locality,
+
+    addressRegion: siteConfig.address.region,
+
+    postalCode: siteConfig.address.postalCode,
+
+    addressCountry: siteConfig.address.country,
+  },
+
+  geo: {
+    "@type": "GeoCoordinates",
+
+    latitude: "40.7357",
+
+    longitude: "-74.1724",
+  },
+
+  areaServed: [
+    {
+      "@type": "AdministrativeArea",
+      name: "Essex County",
+    },
+    {
+      "@type": "AdministrativeArea",
+      name: "Newark",
+    },
+  ],
+
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+
+      dayOfWeek: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ],
+
+      opens: "08:00",
+
+      closes: "18:00",
+    },
+  ],
+
+  makesOffer: [
+    {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: "Roof Repair",
+      },
+    },
+    {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: "Roof Replacement",
+      },
+    },
+    {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: "Roof Inspection",
+      },
+    },
+    {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: "Emergency Roof Repair",
+      },
+    },
+    {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: "Storm Damage Roof Repair",
+      },
+    },
+    {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: "Emergency Roof Tarping",
+      },
+    },
+    {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: "Roof Maintenance",
+      },
+    },
+    {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: "Flat Roofing",
+      },
+    },
+    {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: "Metal Roofing",
+      },
+    },
+    {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: "Slate Roofing",
+      },
+    },
+    {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: "Asphalt Shingle Roofing",
+      },
+    },
+    {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: "Siding Installation",
+      },
+    },
+    {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: "Gutter Installation",
+      },
+    },
+    {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: "Chimney Repair",
+      },
+    },
+  ],
+};
+
+// Continue with **Part 2** (Organization Schema, WebSite Schema, and RootLayout component).
+// -----------------------------------------------------------------------------
+// Schema.org - Organization
+// -----------------------------------------------------------------------------
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+
+  "@type": "Organization",
+
+  "@id": `${siteUrl}/#organization`,
+
+  name: "Gutama Home Improvement",
+
+  url: siteUrl,
+
+  logo: `${siteUrl}/images/logo.webp`,
+
+  image: `${siteUrl}/images/logo.webp`,
+
+  email: siteConfig.email,
+
+  telephone: siteConfig.phones.english,
+
+  address: {
+    "@type": "PostalAddress",
+
+    streetAddress: siteConfig.address.streetAddress,
+
+    addressLocality: siteConfig.address.locality,
+
+    addressRegion: siteConfig.address.region,
+
+    postalCode: siteConfig.address.postalCode,
+
+    addressCountry: siteConfig.address.country,
+  },
+};
+
+// -----------------------------------------------------------------------------
+// Schema.org - WebSite
+// -----------------------------------------------------------------------------
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+
+  "@type": "WebSite",
+
+  "@id": `${siteUrl}/#website`,
+
+  url: siteUrl,
+
+  name: "Gutama Home Improvement",
+
+  publisher: {
+    "@id": `${siteUrl}/#organization`,
+  },
+
+  inLanguage: "en-US",
+};
+
+// -----------------------------------------------------------------------------
+// Root Layout
+// -----------------------------------------------------------------------------
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const localBusinessSchema = {
-    "@context": "https://schema.org",
-    "@type": "RoofingContractor",
-    name: "Gutama Home Improvement",
-    url: siteUrl,
-    description:
-      "Professional roofing contractor in Essex County, NJ offering roof repair, replacement, siding, chimney, and emergency services.",
-    image: `${siteUrl}/logo.png`,
-    telephone: "+1-973-820-5130",
-    email: "antoniogutama@gmail.com",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: siteConfig.address.streetAddress,
-      addressLocality: siteConfig.address.locality,
-      addressRegion: siteConfig.address.region,
-      postalCode: siteConfig.address.postalCode,
-      addressCountry: siteConfig.address.country,
-    },
-    areaServed: {
-      "@type": "Place",
-      name: "Essex County, NJ",
-    },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: "40.7357",
-      longitude: "-74.1724",
-    },
-    openingHoursSpecification: [
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-        ],
-        opens: "08:00",
-        closes: "18:00",
-      },
-    ],
-    priceRange: "$$",
-    makesOffer: [
-      {
-        "@type": "Offer",
-        itemOffered: { "@type": "Service", name: "Roof Repair" },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: { "@type": "Service", name: "Roof Replacement" },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: { "@type": "Service", name: "Flat Roofing" },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: { "@type": "Service", name: "Slate Roofing" },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: { "@type": "Service", name: "Siding Installation" },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: { "@type": "Service", name: "Chimney Repair" },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: { "@type": "Service", name: "Gutter Installation" },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: { "@type": "Service", name: "Emergency Roof Repair" },
-      },
-    ],
-  };
-
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* ✅ PERFORMANCE BOOST - Preconnect to critical CDNs */}
+        {/* Performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
+
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
-        <link rel="preconnect" href="https://www.googletagmanager.com" />
-        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+
+        <link
+          rel="preconnect"
+          href="https://www.googletagmanager.com"
+        />
+
+        <link
+          rel="dns-prefetch"
+          href="https://www.googletagmanager.com"
+        />
       </head>
 
       <body
         className={`${bodyFont.variable} ${headingFont.variable} antialiased`}
       >
-        {/* ✅ MAIN LAYOUT */}
         <SiteShell>{children}</SiteShell>
 
-        {/* ✅ GOOGLE ANALYTICS (fully deferred - no render blocking) */}
+        {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-8K697EFF53"
           strategy="lazyOnload"
@@ -199,25 +438,45 @@ export default function RootLayout({
 
         <Script id="google-analytics" strategy="lazyOnload">
           {`
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+            window.dataLayer = window.dataLayer || [];
 
-      // Existing GA4
-      gtag('config', 'G-8K697EFF53');
+            function gtag(){dataLayer.push(arguments);}
 
-      // New GA4
-      gtag('config', 'G-QPZMC65FEW');
-    `}
+            gtag('js', new Date());
+
+            gtag('config', 'G-8K697EFF53');
+
+            gtag('config', 'G-QPZMC65FEW');
+          `}
         </Script>
 
-        {/* ✅ SEO SCHEMA (non-blocking) */}
+        {/* Roofing Contractor Schema */}
         <Script
-          id="local-business-schema"
+          id="roofing-contractor-schema"
           type="application/ld+json"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(localBusinessSchema),
+            __html: JSON.stringify(roofingContractorSchema),
+          }}
+        />
+
+        {/* Organization Schema */}
+        <Script
+          id="organization-schema"
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
+
+        {/* Website Schema */}
+        <Script
+          id="website-schema"
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteSchema),
           }}
         />
       </body>
