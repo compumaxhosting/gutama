@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 
 export const metadata: Metadata = {
   title:
@@ -6,6 +6,10 @@ export const metadata: Metadata = {
 
   description:
     "Read expert roofing tips, maintenance guides, and home improvement advice from Gutama Home Improvement serving Essex County, NJ.",
+
+  alternates: {
+    canonical: "https://www.gutamaroofingnj.com/blog",
+  },
 
   keywords: [
     "roofing blog Essex County NJ",
@@ -25,12 +29,6 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
-  },
-
-  themeColor: "#ffffff",
-
-  alternates: {
-    canonical: "https://www.gutamaroofingnj.com/blog",
   },
 
   openGraph: {
@@ -59,6 +57,10 @@ export const metadata: Metadata = {
   },
 
   referrer: "strict-origin-when-cross-origin",
+};
+
+export const viewport: Viewport = {
+  themeColor: "#ffffff",
 };
 
 export default function Layout({
