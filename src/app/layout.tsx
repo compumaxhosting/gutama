@@ -61,13 +61,13 @@ export const metadata: Metadata = {
 
   authors: [
     {
-      name: "Gutama Home Improvement",
+      name: siteConfig.business.name,
     },
   ],
 
-  creator: "Gutama Home Improvement",
+  creator: siteConfig.business.name,
 
-  publisher: "Gutama Home Improvement",
+  publisher: siteConfig.business.name,
 
   referrer: "strict-origin-when-cross-origin",
 
@@ -101,7 +101,7 @@ export const metadata: Metadata = {
 
     url: siteUrl,
 
-    siteName: "Gutama Home Improvement",
+    siteName: siteConfig.business.name,
 
     locale: "en_US",
 
@@ -142,11 +142,6 @@ export const metadata: Metadata = {
 // -----------------------------------------------------------------------------
 
 export const viewport: Viewport = {
-  width: "device-width",
-  initialScale: 1,
-  maximumScale: 5,
-  userScalable: true,
-  viewportFit: "cover",
   themeColor: "#ffffff",
 };
 
@@ -161,7 +156,7 @@ const roofingContractorSchema = {
 
   "@id": `${siteUrl}/#roofingcontractor`,
 
-  name: "Gutama Home Improvement",
+  name: siteConfig.business.name,
 
   url: siteUrl,
 
@@ -172,7 +167,7 @@ const roofingContractorSchema = {
   description:
     "Professional roofing contractor serving Essex County, NJ with roof repair, replacement, siding, chimney, gutters, and emergency roofing services.",
 
-  telephone: siteConfig.phone,
+  telephone: siteConfig.phones.english,
 
   email: siteConfig.email,
 
@@ -209,26 +204,72 @@ const roofingContractorSchema = {
       "@type": "AdministrativeArea",
       name: "Newark",
     },
-  ],
-
-  openingHoursSpecification: [
     {
-      "@type": "OpeningHoursSpecification",
-
-      dayOfWeek: [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-      ],
-
-      opens: "08:00",
-
-      closes: "18:00",
+      "@type": "AdministrativeArea",
+      name: "Bloomfield",
+    },
+    {
+      "@type": "AdministrativeArea",
+      name: "Belleville",
+    },
+    {
+      "@type": "AdministrativeArea",
+      name: "Montclair",
+    },
+    {
+      "@type": "AdministrativeArea",
+      name: "Nutley",
+    },
+    {
+      "@type": "AdministrativeArea",
+      name: "East Orange",
+    },
+    {
+      "@type": "AdministrativeArea",
+      name: "West Orange",
+    },
+    {
+      "@type": "AdministrativeArea",
+      name: "Irvington",
+    },
+    {
+      "@type": "AdministrativeArea",
+      name: "Livingston",
+    },
+    {
+      "@type": "AdministrativeArea",
+      name: "Maplewood",
+    },
+    {
+      "@type": "AdministrativeArea",
+      name: "South Orange",
+    },
+    {
+      "@type": "AdministrativeArea",
+      name: "Orange",
+    },
+    {
+      "@type": "AdministrativeArea",
+      name: "Verona",
+    },
+    {
+      "@type": "AdministrativeArea",
+      name: "Cedar Grove",
+    },
+    {
+      "@type": "AdministrativeArea",
+      name: "Millburn",
+    },
+    {
+      "@type": "AdministrativeArea",
+      name: "Caldwell",
+    },
+    {
+      "@type": "AdministrativeArea",
+      name: "Fairfield",
     },
   ],
+
 
   makesOffer: [
     {
@@ -332,8 +373,6 @@ const roofingContractorSchema = {
   ],
 };
 
-// Continue with **Part 2** (Organization Schema, WebSite Schema, and RootLayout component).
-// -----------------------------------------------------------------------------
 // Schema.org - Organization
 // -----------------------------------------------------------------------------
 
@@ -344,7 +383,7 @@ const organizationSchema = {
 
   "@id": `${siteUrl}/#organization`,
 
-  name: "Gutama Home Improvement",
+  name: siteConfig.business.name,
 
   url: siteUrl,
 
@@ -369,6 +408,13 @@ const organizationSchema = {
 
     addressCountry: siteConfig.address.country,
   },
+  sameAs: [
+    "https://www.facebook.com/gutamaroofingnj",
+    "https://www.instagram.com/gutamahomeimprovement",
+    "https://www.tiktok.com/@gutamaroofingnj.com",
+    "https://x.com/gutamaroofingnj",
+    "https://www.yelp.com/biz/gutama-home-improvement-newark-5",
+  ],
 };
 
 // -----------------------------------------------------------------------------
@@ -384,7 +430,7 @@ const websiteSchema = {
 
   url: siteUrl,
 
-  name: "Gutama Home Improvement",
+  name: siteConfig.business.name,
 
   publisher: {
     "@id": `${siteUrl}/#organization`,

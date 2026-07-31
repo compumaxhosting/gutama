@@ -1,3 +1,4 @@
+import { siteConfig } from "@/config/site";
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 
@@ -42,7 +43,7 @@ export const metadata: Metadata = {
 
   authors: [
     {
-      name: "Gutama Home Improvement",
+      name: siteConfig.business.name,
     },
   ],
 
@@ -70,7 +71,7 @@ export const metadata: Metadata = {
     description:
       "Discover 15 warning signs you need roof repair in Essex County, NJ. Prevent expensive damage with expert roofing advice.",
 
-    siteName: "Gutama Home Improvement",
+    siteName: siteConfig.business.name,
 
     images: [
       {
@@ -128,12 +129,12 @@ export default function BlogLayout({
 
     author: {
       "@type": "Organization",
-      name: "Gutama Home Improvement",
+      name: siteConfig.business.name,
     },
 
     publisher: {
       "@type": "Organization",
-      name: "Gutama Home Improvement",
+      name: siteConfig.business.name,
 
       logo: {
         "@type": "ImageObject",
