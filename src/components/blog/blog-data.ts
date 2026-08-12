@@ -65,5 +65,13 @@ export const BLOG_PROJECTS: BlogProject[] = [
     href: "/blog/siding-installation-essex-county-nj-2026-guide",
     date: "5th August 2026",
   },
+  {
+    title: "Dormer Installation in Essex County, NJ: Complete Guide for Homeowners",
+    shortDesc:
+      "Learn about dormer installation in Essex County NJ, including types, costs, roofing, flashing, repairs, permits, and maintenance for homeowners.",
+    image: "/blog/dormer-installation-essex-county-nj.webp",
+    href: "/blog/dormer-installation-essex-county-nj",
+    date: "12th August 2026",
+  },
 ];
 
