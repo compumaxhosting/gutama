@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     siteName: "Gutama Roofing NJ",
     images: [
       {
-        url: "https://www.gutamaroofingnj.com/Images%20New/service-gutters.webp",
+        url: "https://www.gutamaroofingnj.com/images/service-gutters.webp",
         width: 1200,
         height: 630,
       },
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "Seamless Gutter Installation | Essex County, NJ",
     description:
       "Affordable and weather-resistant gutter installation in Essex County. Get your free estimate from our local Newark experts today!",
-    images: ["https://www.gutamaroofingnj.com/Images%20New/service-gutters.webp"],
+    images: ["https://www.gutamaroofingnj.com/images/service-gutters.webp"],
     site: "@gutamaroofing",
     creator: "@GutamaRoofingNJ",
   },
@@ -120,7 +120,7 @@ export default function GuttersLayout({
                 name: "Livingston",
               },
             ],
-            image: "https://www.gutamaroofingnj.com/Images%20New/service-gutters.webp",
+            image: "https://www.gutamaroofingnj.com/images/service-gutters.webp",
             priceRange: "$$",
           }),
         }}

@@ -127,6 +127,9 @@ export default function BlogLayout({
     image:
       "https://www.gutamaroofingnj.com/blog/roof-repair-warning-signs.webp",
 
+    datePublished: "2026-07-31T00:00:00+00:00",
+    dateModified: "2026-07-31T00:00:00+00:00",
+
     author: {
       "@type": "Organization",
       name: siteConfig.business.name,

@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     siteName: "Gutama Home Improvement",
     images: [
       {
-        url: "https://www.gutamaroofingnj.com/images/blog/roofing-blog-essex-county-nj.jpg",
+        url: "https://www.gutamaroofingnj.com/blog/roofing-blog.webp",
         alt: "Roofing blog featuring expert roofing tips and home improvement guides by Gutama Home Improvement",
       },
     ],
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     description:
       "Stay informed with roofing tips, roof maintenance advice, and home improvement insights from Essex County, NJ roofing experts.",
     images: [
-      "https://www.gutamaroofingnj.com/images/blog/roofing-blog-essex-county-nj.jpg",
+      "https://www.gutamaroofingnj.com/blog/roofing-blog.webp",
     ],
   },
 

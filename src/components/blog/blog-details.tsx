@@ -59,6 +59,7 @@ export function BlogDetails({
                         <SectionHeading
                             eyebrow="Blog Article"
                             title={title}
+                            as="h1"
                         />
                     </Reveal>
 

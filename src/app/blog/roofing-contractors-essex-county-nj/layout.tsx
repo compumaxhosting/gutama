@@ -109,6 +109,9 @@ export default function RootLayout({
 
     image: `${siteUrl}/blog/roofing-blog.webp`,
 
+    datePublished: "2026-05-01T00:00:00+00:00",
+    dateModified: "2026-05-01T00:00:00+00:00",
+
     author: {
       "@type": "Organization",
       name: siteConfig.business.name,

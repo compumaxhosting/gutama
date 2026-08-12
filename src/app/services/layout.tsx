@@ -29,8 +29,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 
-  themeColor: "#ffffff",
-
   alternates: {
     canonical: "https://www.gutamaroofingnj.com/services",
   },
@@ -45,7 +43,7 @@ export const metadata: Metadata = {
     siteName: "Gutama Home Improvement",
     images: [
       {
-        url: "https://www.gutamaroofingnj.com/images/services/roofing-services-essex-county-nj.jpg",
+        url: "https://www.gutamaroofingnj.com/images/Hero.webp",
         alt: "Professional roofing services by Gutama Home Improvement in Essex County, New Jersey",
       },
     ],
@@ -57,7 +55,7 @@ export const metadata: Metadata = {
     description:
       "Trusted roofing contractor providing roof repair, replacement, siding, gutter, chimney, and emergency roofing services in Essex County, NJ.",
     images: [
-      "https://www.gutamaroofingnj.com/images/services/roofing-services-essex-county-nj.jpg",
+      "https://www.gutamaroofingnj.com/images/Hero.webp",
     ],
   },
 

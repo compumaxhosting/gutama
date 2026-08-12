@@ -27,8 +27,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 
-  themeColor: "#ffffff",
-
   alternates: {
     canonical: "https://www.gutamaroofingnj.com/about",
   },
@@ -43,7 +41,7 @@ export const metadata: Metadata = {
     siteName: "Gutama Home Improvement",
     images: [
       {
-        url: "https://www.gutamaroofingnj.com/images/about-gutama-home-improvement.jpg",
+        url: "https://www.gutamaroofingnj.com/images/about-aerial.webp",
         alt: "Gutama Home Improvement roofing team working on a residential roofing project in Essex County, NJ",
       },
     ],
@@ -56,7 +54,7 @@ export const metadata: Metadata = {
     description:
       "Trusted roofing contractor serving Essex County, NJ since 2008. Family-owned, licensed, bilingual, and committed to quality craftsmanship.",
     images: [
-      "https://www.gutamaroofingnj.com/images/about-gutama-home-improvement.jpg",
+      "https://www.gutamaroofingnj.com/images/about-aerial.webp",
     ],
   },
 

@@ -51,7 +51,7 @@ export const metadata: Metadata = {
 
     images: [
       {
-        url: "https://www.gutamaroofingnj.com/Images%20New/service-re-roofing.webp",
+        url: "https://www.gutamaroofingnj.com/images/service-re-roofing.webp",
         width: 1200,
         height: 630,
         alt: "Re-Roofing Services in Essex County NJ",
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
       "Professional residential and commercial re-roofing services throughout Essex County, NJ.",
 
     images: [
-      "https://www.gutamaroofingnj.com/Images%20New/service-re-roofing.webp",
+      "https://www.gutamaroofingnj.com/images/service-re-roofing.webp",
     ],
   },
 
@@ -99,7 +99,7 @@ export default function ReRoofingLayout({
             name: "Gutama Home Improvement",
 
             image:
-              "https://www.gutamaroofingnj.com/Images%20New/service-re-roofing.webp",
+              "https://www.gutamaroofingnj.com/images/service-re-roofing.webp",
 
             "@id":
               "https://www.gutamaroofingnj.com/services/re-roofing",

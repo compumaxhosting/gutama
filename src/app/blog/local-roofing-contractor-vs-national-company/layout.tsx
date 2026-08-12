@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: `${siteUrl}/local-roofing-contractor-vs-national-company`,
+    canonical: `${siteUrl}/blog/local-roofing-contractor-vs-national-company`,
   },
 
   openGraph: {
@@ -52,13 +52,13 @@ export const metadata: Metadata = {
     description:
       "Discover why a local roofing contractor is better than national companies for faster service, better pricing, and reliable roof repairs.",
 
-    url: `${siteUrl}/local-roofing-contractor-vs-national-company`,
+    url: `${siteUrl}/blog/local-roofing-contractor-vs-national-company`,
 
     siteName: siteConfig.business.name,
 
     images: [
       {
-        url: `${siteUrl}/images/localvsnational.webp`,
+        url: `${siteUrl}/blog/localvsnational.webp`,
         width: 1200,
         height: 630,
         alt: "Local roofing contractor inspecting a residential roof",
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
     description:
       "Discover why a local roofing contractor is better than national companies for faster service, better pricing, and reliable roof repairs.",
 
-    images: [`${siteUrl}/images/localvsnational.webp`],
+    images: [`${siteUrl}/blog/localvsnational.webp`],
   },
 };
 
@@ -98,7 +98,10 @@ export default function Layout({
     description:
       "Discover why a local roofing contractor is better than national companies for faster service, better pricing, and reliable roof repairs.",
 
-    image: `${siteUrl}/images/localvsnational.webp`,
+    image: `${siteUrl}/blog/localvsnational.webp`,
+
+    datePublished: "2026-07-02T00:00:00+00:00",
+    dateModified: "2026-07-02T00:00:00+00:00",
 
     author: {
       "@type": "Organization",
@@ -117,10 +120,10 @@ export default function Layout({
 
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `${siteUrl}/local-roofing-contractor-vs-national-company`,
+      "@id": `${siteUrl}/blog/local-roofing-contractor-vs-national-company`,
     },
 
-    url: `${siteUrl}/local-roofing-contractor-vs-national-company`,
+    url: `${siteUrl}/blog/local-roofing-contractor-vs-national-company`,
 
     inLanguage: "en-US",
   };

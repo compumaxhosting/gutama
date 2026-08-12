@@ -43,12 +43,12 @@ export function ContactInfoPanel() {
             {/* Heading + QR */}
             <div className="flex flex-col gap-8 xl:flex-row xl:items-start">
               <div className="flex-1">
-                <h1 className="font-serif text-4xl font-black leading-tight text-white sm:text-5xl lg:text-6xl">
+                <h2 className="font-serif text-4xl font-black leading-tight text-white sm:text-5xl lg:text-6xl">
                   Your home
                   <br />
                   deserves
                   <span className="block text-primary">the best.</span>
-                </h1>
+                </h2>
               </div>
 
               {/* QR Card */}

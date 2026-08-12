@@ -24,8 +24,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 
-  themeColor: "#ffffff",
-
   alternates: {
     canonical: "https://www.gutamaroofingnj.com/contact",
   },
@@ -40,7 +38,7 @@ export const metadata: Metadata = {
     siteName: "Gutama Home Improvement",
     images: [
       {
-        url: "https://www.gutamaroofingnj.com/images/contact/contact-gutama-home-improvement.jpg",
+        url: "https://www.gutamaroofingnj.com/images/Hero.webp",
         alt: "Contact Gutama Home Improvement for roofing services and free estimates in Essex County, NJ",
       },
     ],
@@ -52,7 +50,7 @@ export const metadata: Metadata = {
     description:
       "Get your free roofing estimate today. Contact Gutama Home Improvement for trusted roof repair, replacement, and exterior services in Essex County, NJ.",
     images: [
-      "https://www.gutamaroofingnj.com/images/contact/contact-gutama-home-improvement.jpg",
+      "https://www.gutamaroofingnj.com/images/Hero.webp",
     ],
   },
 

@@ -54,7 +54,7 @@ export const metadata: Metadata = {
 
     images: [
       {
-        url: "https://www.gutamaroofingnj.com/images/flat-roofing-newark-nj.jpg",
+        url: "https://www.gutamaroofingnj.com/images/service-flat-roof.webp",
         alt: "Flat Roofing Newark NJ - EPDM, TPO, Flat Roof Repair and Replacement",
       },
     ],
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
       "Professional flat roofing services in Newark NJ. Flat roof repair, replacement, EPDM roofing, TPO roofing, leak repair, and free estimates.",
 
     images: [
-      "https://www.gutamaroofingnj.com/images/flat-roofing-newark-nj.jpg",
+      "https://www.gutamaroofingnj.com/images/service-flat-roof.webp",
     ],
   },
 
