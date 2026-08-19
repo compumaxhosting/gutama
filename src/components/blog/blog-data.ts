@@ -41,7 +41,7 @@ export const BLOG_PROJECTS: BlogProject[] = [
       "Local roofing contractors offer faster response times, personalized service, better local code knowledge, and stronger accountability compared to national companies",
     image: "/blog/localvsnational.webp",
     href: "/blog/local-roofing-contractor-vs-national-company",
-    date: "2th July 2026",
+    date: "2nd July 2026",
   },
   {
     title:
@@ -73,5 +73,13 @@ export const BLOG_PROJECTS: BlogProject[] = [
     href: "/blog/dormer-installation-essex-county-nj",
     date: "12th August 2026",
   },
+  {
+  title: "Best Roofing Contractor in Essex County, NJ: Roof Repair, Replacement & Installation",
+  shortDesc:
+    "Learn how to choose the best roofing contractor in Essex County, NJ. Discover roof repair, replacement, installation, inspections, leak repair, and maintenance services for homes and businesses.",
+  image: "/blog/roofing-contractor-essex-county-nj.webp",
+  href: "/blog/best-roofing-contractor-essex-county-nj",
+  date: "19th August 2026",
+},
 ];
 
