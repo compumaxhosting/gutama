@@ -74,12 +74,21 @@ export const BLOG_PROJECTS: BlogProject[] = [
     date: "12th August 2026",
   },
   {
-  title: "Best Roofing Contractor in Essex County, NJ: Roof Repair, Replacement & Installation",
-  shortDesc:
-    "Learn how to choose the best roofing contractor in Essex County, NJ. Discover roof repair, replacement, installation, inspections, leak repair, and maintenance services for homes and businesses.",
-  image: "/blog/roofing-contractor-essex-county-nj.webp",
-  href: "/blog/best-roofing-contractor-essex-county-nj",
-  date: "19th August 2026",
-},
+    title: "Best Roofing Contractor in Essex County, NJ: Roof Repair, Replacement & Installation",
+    shortDesc:
+      "Learn how to choose the best roofing contractor in Essex County, NJ. Discover roof repair, replacement, installation, inspections, leak repair, and maintenance services for homes and businesses.",
+    image: "/blog/roofing-contractor-essex-county-nj.webp",
+    href: "/blog/best-roofing-contractor-essex-county-nj",
+    date: "19th August 2026",
+  },
+  {
+    title: "Best Carpentry Services in NJ | Gutama Roofing",
+    shortDesc:
+      "Discover the best carpentry services in NJ from Gutama Roofing. Explore reliable residential and commercial carpentry solutions across New Jersey.",
+    image: "/blog/carpentry-services.webp",
+    href: "/blog/best-carpentry-services-nj",
+    date: "31st August 2026",
+  },
 ];
+
 
