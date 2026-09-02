@@ -452,14 +452,6 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         {/* Performance */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-
         <link
           rel="preconnect"
           href="https://www.googletagmanager.com"
