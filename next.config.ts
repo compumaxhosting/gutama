@@ -1,4 +1,3 @@
-
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
@@ -6,6 +5,7 @@ const nextConfig: NextConfig = {
     formats: ["image/avif", "image/webp"],
     qualities: [45, 50, 60, 75, 90],
   },
+
   experimental: {
     optimizeCss: true,
     optimizePackageImports: ["lucide-react", "framer-motion"],
@@ -22,15 +22,6 @@ const nextConfig: NextConfig = {
         source: "/index.html",
         destination: "/",
         permanent: true,
-      },
-    ];
-  },
-
-  async rewrites() {
-    return [
-      {
-        source: "/roofing",
-        destination: "/services/roofing",
       },
     ];
   },

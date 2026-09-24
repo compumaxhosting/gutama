@@ -10,50 +10,75 @@ import { siteConfig } from "@/config/site";
 export function RoofingFaqSection() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
-  const faqs = [
-    {
-      question: "When is a complete roof removal mandatory instead of re-roofing?",
-      answer:
-        "Under New Jersey Uniform Construction Code, a residential building cannot support more than two layers of roofing materials due to structural weight limits. If your home already has two layers, or if the underlying wooden decking has rot, water saturation, or sagging, a full tear-off down to bare wood is legally mandatory and structurally essential.",
-    },
-    {
-      question: "How do I choose between asphalt shingles, flat membranes, and slate?",
-      answer:
-        "The choice is dictated by roof pitch, architectural style, and budget. Steep or standard pitched roofs (4:12+) typically use architectural shingles for balanced durability and cost. Low-slope or flat areas (under 2:12 pitch) require seamless rubber (EPDM) or heat-welded TPO membranes to prevent ponding water leaks. Historic estates and prestige homes benefit from natural quarry slate, which offers a 75–150 year lifespan.",
-    },
-    {
-      question: "What happens if rotted decking is discovered during tear-off?",
-      answer:
-        "Our crew inspects every square foot of plywood or tongue-and-groove decking as soon as the old shingles are stripped. Any rotted, mold-damaged, or delaminated wood is immediately cut out and replaced with high-grade CDX plywood before any underlayment or new roofing materials are applied.",
-    },
-    {
-      question: "How long does a typical roofing replacement take?",
-      answer:
-        "Most residential roofing projects (up to 3,000 sq ft) are completed within 1 to 2 days, including complete tear-off, decking repairs, new shingle installation, and magnetic nail sweep cleanup. Complex slate restorations or multi-unit commercial flat roofs may take 3 to 5 days depending on square footage and weather.",
-    },
-    {
-      question: "Do you pull permits and manage inspections in Essex County, NJ?",
-      answer:
-        "Yes. As a fully licensed and insured New Jersey Home Improvement Contractor, Gutama handles all required municipal permit applications, documentation, and coordination with local building inspectors across Newark, Montclair, East Orange, Livingston, and all Essex County municipalities.",
-    },
-    {
-      question: "What warranties protect my new roof system?",
-      answer:
-        "We offer comprehensive dual-tier protection: robust manufacturer warranties on materials (e.g., 30-year to 50-year Limited Lifetime Warranties on GAF/Owens Corning architectural shingles and 20–30 year commercial membrane warranties) coupled with our dedicated Gutama workmanship guarantee.",
-    },
-    {
-      question: "How do you protect my landscaping, driveway, and property during work?",
-      answer:
-        "We use comprehensive site shielding protocols: heavy-duty vinyl tarps over gutters, siding, and shrubs, plywood barriers over delicate flowerbeds and HVAC compressors, and continuous rolling magnetic nail sweeps to ensure zero loose fasteners remain on your driveway or lawn.",
-    },
-  ];
+ const faqs = [
+   {
+     question: "How do I know if my roof needs repair or replacement?",
+     answer:
+       "Signs such as recurring leaks, missing or damaged shingles, sagging areas, water stains, or an aging roof may indicate that professional attention is needed. A roof inspection can help determine whether a repair is sufficient or a replacement makes more sense.",
+   },
+   {
+     question: "How quickly can a roofing problem be repaired?",
+     answer:
+       "The timeframe depends on the type and extent of the damage. Minor leaks or damaged shingles may be repaired relatively quickly, while larger or storm-related issues may require a more detailed inspection and repair plan.",
+   },
+   {
+     question: "Do you provide roofing services for commercial properties?",
+     answer:
+       "Yes. Gutama Home Improvement provides roofing services for both residential and commercial properties, including flat roofing systems such as EPDM and TPO.",
+   },
+   {
+     question: "What types of roofing systems do you work with?",
+     answer:
+       "Our roofing services include asphalt shingle roofing, flat roofing, EPDM, TPO, and slate roofing. We can recommend a suitable option based on your property's structure, existing roof, and project requirements.",
+   },
+   {
+     question: "Can you repair a slate roof instead of replacing it?",
+     answer:
+       "In many cases, damaged slate roofing can be repaired without replacing the entire roof. The appropriate approach depends on the condition of the slate, flashing, underlayment, and surrounding roofing materials.",
+   },
+   {
+     question: "What happens during a roof tear-off?",
+     answer:
+       "During a roof tear-off, the existing roofing materials are carefully removed so the underlying roof deck can be inspected. Any damaged areas can then be addressed before the new roofing system is installed.",
+   },
+   {
+     question: "How can I tell if a roof leak is getting worse?",
+     answer:
+       "Water stains on ceilings or walls, damp insulation, peeling paint, mold growth, or repeated leaks are signs that moisture may be entering the structure. Even a small visible leak can indicate a larger roofing issue.",
+   },
+   {
+     question: "Do you offer emergency roof repairs in Essex County?",
+     answer:
+       "Yes. If your property has sudden roof damage from severe weather, fallen branches, or an unexpected leak, contact Gutama Home Improvement to discuss the damage and available repair options.",
+   },
+   {
+     question: "How long does a roof replacement usually take?",
+     answer:
+       "Project duration varies based on the roof's size, materials, complexity, weather conditions, and the condition of the existing roof deck. Your roofing contractor can provide a more accurate timeline after an inspection.",
+   },
+   {
+     question: "Do you provide free roofing estimates?",
+     answer:
+       "Yes. Gutama Home Improvement offers free roof inspections and estimates to help property owners understand the condition of their roof and the work that may be required.",
+   },
+   {
+     question: "Do you provide roofing services throughout Essex County, NJ?",
+     answer:
+       "Yes. Gutama Home Improvement serves homeowners and businesses throughout Essex County, including Newark, Montclair, West Orange, Bloomfield, Livingston, Maplewood, Orange, East Orange, and surrounding communities.",
+   },
+   {
+     question: "What should I do if my roof is damaged after a storm?",
+     answer:
+       "If you notice missing shingles, exposed areas, leaks, or other storm damage, contact a roofing professional for an inspection. If possible, document the visible damage with photos, but avoid walking on or attempting to repair the roof yourself.",
+   },
+ ];
 
   return (
     <section className="bg-muted/20 py-20 px-6 border-t border-border/40">
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-start gap-16 lg:grid-cols-[1fr_1.6fr]">
         {/* LEFT */}
-        <div>
-          <div className="lg:sticky lg:top-28">
+        <div className="flex h-full items-start">
+          <div className="w-full lg:sticky lg:top-28">
             <p className="mb-5 inline-flex items-center gap-2 text-[11px] font-medium tracking-[0.18em] uppercase text-secondary">
               <span className="h-px w-6 bg-secondary" />
               Frequently Asked Questions
@@ -68,8 +93,9 @@ export function RoofingFaqSection() {
             <div className="mx-0 mb-7 h-px w-24 bg-linear-to-r from-secondary to-secondary/30" />
 
             <p className="mb-8 text-sm leading-loose text-muted-foreground">
-              Have questions regarding which roofing category is best for your property? 
-              Our master roofers are available to explain codes, material selections, timelines, and warranty terms.
+              Have questions regarding which roofing category is best for your
+              property? Our master roofers are available to explain codes,
+              material selections, timelines, and warranty terms.
             </p>
 
             <Button

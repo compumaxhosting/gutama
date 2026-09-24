@@ -8,12 +8,10 @@ import { siteConfig } from "@/config/site";
 export function RoofingHeroSection() {
   const content = {
     label: "Roofing",
-    title: "Master Roofing",
-    accent: "Services & Systems",
+    title: "Roofing Services in",
+    accent: "Essex County, NJ",
     image: "/images/Hero.webp",
     imageAlt: "Gutama Roofing Solutions in Essex County NJ",
-    description:
-      "Your premier roofing contractor in Essex County, NJ. From structural tear-offs and complete architectural replacements to high-performance flat membranes and historic slate restoration, explore our specialized roofing disciplines.",
     stats: [
       { value: "18+", label: "Years in Essex County" },
       { value: "1,200+", label: "Roofs Completed" },
@@ -72,21 +70,19 @@ export function RoofingHeroSection() {
         <div className="mb-7 inline-flex items-center gap-2 border border-secondary/40 bg-background/40 px-4 py-1.5 backdrop-blur-xs">
           <div className="h-1.5 w-1.5 rounded-full bg-secondary" />
           <span className="text-[11px] font-medium tracking-[0.22em] uppercase text-secondary">
-            Master Craftsmanship — {siteConfig.business.regionLabel}
+            Roofing Contractor — {siteConfig.business.regionLabel}
           </span>
         </div>
 
         {/* Hero Title */}
-        <h1 className="mb-4 font-serif text-[clamp(44px,7.5vw,92px)] leading-none tracking-[-0.01em] text-foreground">
+        <h1 className="mb-4 font-serif text-[clamp(40px,6.5vw,82px)] leading-none tracking-[-0.01em] text-foreground">
           {content.title}
           <span className="block italic text-secondary">{content.accent}</span>
         </h1>
 
         <div className="mb-7 h-px w-48 origin-left bg-linear-to-r from-secondary via-secondary/60 to-transparent" />
 
-        <p className="mb-10 max-w-2xl text-[clamp(15px,1.6vw,19px)] leading-relaxed text-muted-foreground">
-          {content.description}
-        </p>
+        
 
         {/* CTAs */}
         <div className="flex flex-wrap gap-4">
@@ -111,13 +107,16 @@ export function RoofingHeroSection() {
         {/* Trust Badges Bar */}
         <div className="mt-14 flex flex-wrap items-center gap-6 text-xs text-muted-foreground/80">
           <span className="inline-flex items-center gap-2">
-            <ShieldCheck className="h-4 w-4 text-secondary" /> NJ Licensed Home Improvement Contractor
+            <ShieldCheck className="h-4 w-4 text-secondary" /> NJ Licensed Home
+            Improvement Contractor
           </span>
           <span className="inline-flex items-center gap-2">
-            <Award className="h-4 w-4 text-secondary" /> Certified Shingle & Membrane Installers
+            <Award className="h-4 w-4 text-secondary" /> Certified Shingle &
+            Membrane Installers
           </span>
           <span className="inline-flex items-center gap-2">
-            <Clock className="h-4 w-4 text-secondary" /> Prompt Storm Damage Response
+            <Clock className="h-4 w-4 text-secondary" /> Prompt Storm Damage
+            Response
           </span>
         </div>
 

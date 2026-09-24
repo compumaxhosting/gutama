@@ -22,6 +22,7 @@ const NAV_LINKS = [
 ];
 
 const SERVICE_LINKS = [
+  { label: "Roofing", href: "/services/roofing" },
   { label: "Roof Removal", href: "/services/roof-removal" },
   { label: "Re-Roofing", href: "/services/re-roofing" },
   { label: "Flat Roof", href: "/services/flat-roof" },
