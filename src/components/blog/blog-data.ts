@@ -89,6 +89,14 @@ export const BLOG_PROJECTS: BlogProject[] = [
     href: "/blog/best-carpentry-services-nj",
     date: "31st August 2026",
   },
+  {
+    title: "Can You Add a Dormer to an Existing Roof? Essex County NJ Guide",
+    shortDesc:
+      "Explore dormer types, roof suitability, costs, permits, and planning tips for Essex County, NJ homeowners considering an existing-roof dormer addition.",
+    image: "/blog/dormer-addition-existing-roof-essex-county-nj.webp",
+    href: "/blog/dormer-addition-existing-roof-essex-county-nj",
+    date: "15th September 2026",
+  },
 ];
 
 

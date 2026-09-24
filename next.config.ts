@@ -25,6 +25,15 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+
+  async rewrites() {
+    return [
+      {
+        source: "/roofing",
+        destination: "/services/roofing",
+      },
+    ];
+  },
 };
 
 export default nextConfig;
