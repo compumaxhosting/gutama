@@ -1,19 +1,21 @@
 import Image from "next/image";
-import Link from "next/link";
-import {
-  ArrowRight,
-  CheckCircle2,
-  Home,
-  Layers,
-  Diamond,
-  Square,
-} from "lucide-react";
+import { Home, Layers, Diamond, Square } from "lucide-react";
 
 import { Container } from "@/components/ui/container";
 import { Reveal } from "@/components/motion/reveal";
 
 export function RoofingCategoriesSection() {
   const services = [
+    {
+      id: "roofing",
+      title: "Roofing",
+      description:
+        "We repair leaks, damaged shingles, flashing issues, and storm-related roof damage to help protect your home.",
+      href: "/services/roofing",
+      image: "/images/gallery-roof-1.webp",
+      alt: "Roof repair service in Essex County NJ",
+      icon: Home,
+    },
     {
       id: "roof-repair",
       title: "Roof Repair",

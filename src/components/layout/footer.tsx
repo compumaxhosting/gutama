@@ -18,6 +18,7 @@ const QUICK_LINKS = [
 ];
 
 const TOP_SERVICES = [
+  { slug: "roofing", shortTitle: "Roofing" },
   { slug: "roof-removal", shortTitle: "Roof Removal" },
   { slug: "re-roofing", shortTitle: "Re-Roofing" },
   { slug: "flat-roof", shortTitle: "Flat Roof" },
@@ -64,28 +65,45 @@ export function Footer() {
       <div className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-y-10 px-4 py-16 md:grid-cols-2 md:gap-x-12 md:gap-y-12 lg:grid-cols-4 lg:gap-x-12 lg:gap-y-12">
         <div>
           <Link href="/" className="inline-flex">
-            <Image src="/images/logo2.webp" alt={siteConfig.business.name} width={200} height={80} quality={60} sizes="400px" className="h-22 w-auto object-contain" />
+            <Image
+              src="/images/logo2.webp"
+              alt={siteConfig.business.name}
+              width={200}
+              height={80}
+              quality={60}
+              sizes="400px"
+              className="h-22 w-auto object-contain"
+            />
           </Link>
-          <p className="text-sm leading-relaxed text-muted-foreground">{siteConfig.business.description}</p>
+          <p className="text-sm leading-relaxed text-muted-foreground">
+            {siteConfig.business.description}
+          </p>
           <div className="mt-4 flex flex-col gap-2 text-sm">
-            <a href={`tel:${siteConfig.phones.english}`} className="flex items-center gap-2 text-muted-foreground transition-colors hover:text-foreground">
+            <a
+              href={`tel:${siteConfig.phones.english}`}
+              className="flex items-center gap-2 text-muted-foreground transition-colors hover:text-foreground"
+            >
               <Phone className="h-4 w-4 text-primary" />
               English: {siteConfig.phones.english}
             </a>
-           
-            <a href={`mailto:${siteConfig.email}`} className="flex items-center gap-2 text-muted-foreground transition-colors hover:text-foreground">
+
+            <a
+              href={`mailto:${siteConfig.email}`}
+              className="flex items-center gap-2 text-muted-foreground transition-colors hover:text-foreground"
+            >
               <Mail className="h-4 w-4 text-secondary" />
               {siteConfig.email}
             </a>
             <a
-              href="https://www.google.com/maps/place/Gutama+Home+Improvement+DBA+Gutama+Roofing+NJ/@40.748483,-74.180517,854m/data=!3m2!1e3!4b1!4m6!3m5!1s0x89c255ed2c302515:0x424e6390052e0997!8m2!3d40.748483!4d-74.180517!16s%2Fg%2F11j4tvckzl?entry=ttu&g_ep=EgoyMDI2MDMyMy4xIKXMDSoASAFQAw%3D%3D"
+              href="https://maps.app.goo.gl/Ft48fUmJwB71CMAk9"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-muted-foreground transition-colors hover:text-foreground"
               aria-label="Open business location in Google Maps"
             >
               <MapPin className="h-4 w-4 text-primary" />
-              {siteConfig.address.streetAddress}, {siteConfig.address.locality}, {siteConfig.address.region} {siteConfig.address.postalCode}
+              {siteConfig.address.streetAddress}, {siteConfig.address.locality},{" "}
+              {siteConfig.address.region} {siteConfig.address.postalCode}
             </a>
           </div>
         </div>
@@ -95,7 +113,11 @@ export function Footer() {
           <div className="gold-divider mx-0! my-4" />
           <div className="flex flex-col gap-2">
             {QUICK_LINKS.map((item) => (
-              <Link key={item.label} href={item.href} className="text-sm text-muted-foreground transition-colors hover:text-foreground">
+              <Link
+                key={item.label}
+                href={item.href}
+                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+              >
                 {item.label}
               </Link>
             ))}
@@ -119,15 +141,22 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="font-serif text-lg text-foreground">Need An Estimate?</h3>
+          <h3 className="font-serif text-lg text-foreground">
+            Need An Estimate?
+          </h3>
           <div className="gold-divider mx-0! my-4" />
           <div className="space-y-3 text-sm text-muted-foreground">
             <p>Call us for free consultation and project planning.</p>
-            <Link href="/contact" className="text-secondary hover:text-secondary/85">
+            <Link
+              href="/contact"
+              className="text-secondary hover:text-secondary/85"
+            >
               Go to Contact Page
             </Link>
             <div className="pt-2">
-              <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">Follow Us</p>
+              <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
+                Follow Us
+              </p>
               <div className="flex items-center gap-3">
                 {SOCIAL_LINKS.map(({ label, href, icon: Icon }) => (
                   <a
@@ -148,7 +177,11 @@ export function Footer() {
       </div>
 
       <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-3 border-t border-border/40 px-4 py-5 text-xs text-muted-foreground sm:text-sm md:flex-row">
-        <p>© {new Date().getFullYear()} <BrandLink>{siteConfig.business.name}</BrandLink>. All rights reserved.</p>
+        <p>
+          © {new Date().getFullYear()}{" "}
+          <BrandLink>{siteConfig.business.name}</BrandLink>. All rights
+          reserved.
+        </p>
         <p>Licensed & Fully Insured | {siteConfig.business.regionLabel}</p>
       </div>
     </footer>

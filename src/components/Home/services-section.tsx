@@ -59,6 +59,50 @@ export function ServicesSection({
         >
           <StaggerItem>
             <Link
+              href="/services/roofing"
+              className={`group block ${cardClassName ? "h-full" : ""}`.trim()}
+              aria-label="Roofing services in Essex County NJ"
+            >
+              <article
+                className={`glass-card overflow-hidden border transition-all duration-500 hover:-translate-y-2 hover:border-primary/40 hover:shadow-luxury ${cardClassName}`.trim()}
+              >
+                <div className="relative h-44 overflow-hidden">
+                  <Image
+                    src="/images/gallery-roof-1.webp"
+                    alt="Roof repair service in Essex County NJ"
+                    fill
+                    quality={60}
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
+                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+
+                  <div className="absolute bottom-3 left-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/90">
+                    <Home className="h-5 w-5 text-amber" />
+                  </div>
+                </div>
+
+                <div className="p-5">
+                  <h3 className="font-serif text-lg font-semibold text-foreground">
+                    Roofing
+                  </h3>
+
+                  <p
+                    className={`mt-2 text-sm leading-relaxed text-muted-foreground ${descriptionClampClassName}`.trim()}
+                  >
+                    We repair leaks, damaged shingles, flashing issues, and
+                    storm-related roof damage to help protect your home.
+                  </p>
+
+                  <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary transition-all group-hover:gap-2">
+                    Learn More
+                    <ArrowRight className="h-4 w-4" />
+                  </span>
+                </div>
+              </article>
+            </Link>
+          </StaggerItem>
+          <StaggerItem>
+            <Link
               href="/services/roof-removal"
               className={`group block ${cardClassName ? "h-full" : ""}`.trim()}
               aria-label="Roof removal service in Essex County NJ"

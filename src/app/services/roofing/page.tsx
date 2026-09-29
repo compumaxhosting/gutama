@@ -4,6 +4,7 @@ import { RoofingComparisonGuideSection } from "@/components/services/roofing/roo
 import { RoofingServiceAreasSection } from "@/components/services/roofing/roofing-service-areas";
 import { RoofingFaqSection } from "@/components/services/roofing/roofing-faq-section";
 import { RoofingCtaSection } from "@/components/services/roofing/roofing-cta-section";
+import { RelatedServicesSection } from "@/components/services/related-services-section";
 
 export default function RoofingPage() {
   return (
@@ -11,6 +12,7 @@ export default function RoofingPage() {
       <RoofingHeroSection />
       <RoofingCategoriesSection />
       <RoofingComparisonGuideSection />
+      <RelatedServicesSection currentServiceSlug="roofing" />
       <RoofingServiceAreasSection />
       <RoofingFaqSection />
       <RoofingCtaSection />
